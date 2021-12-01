@@ -213,12 +213,13 @@ PNCognate <- function(codon){
 
 
 checkWobble <- function(codon,trna){
-  
-  reverse <- reverse.complement(codon)
+  canonical.wobble <- 0.6
+  non.canonical.wobble <- 0.64
+  reverse <- reverseComplement(codon)
   trna.split <- unlist(strsplit(trna,""))
   codon.split <- unlist(strsplit(codon,""))
   reverse.split <- unlist(strsplit(reverse,""))
-  if(reverse.complement(codon) == trna) 
+  if(reverseComplement(codon) == trna) 
   {
     return(1)
   } else{
@@ -268,16 +269,54 @@ checkWobble <- function(codon,trna){
   }
 }
 
-
-EquationThree <- function(anticodon){
-  w <- 0
-  if (lenght(cognates) > 1){
-    
-  }
-  input[anticodon,2] * (.652)
-  cognates
+EquationOne <- function(codon){
+  
+  print(EquationFour(codon)/(EquationThree(codon)+EquationFour(codon)+0.0003146))
   
 }
+
+EquationTwo <- function(codon){
+  #return not print
+  #adijust equation 1,2
+  #compare cognates and values
+  print(0.0003146/(EquationThree(codon)+EquationFour(codon)+0.0003146))
+  
+}
+
+EquationThree <- function(codon, cognates, psuedocogantes, input){
+  rc <- 0
+  
+  for (val in length(cognates)){
+    anticodon = reverseComplement(val)
+    wj <- checkWobble(codon,val)
+    rc = rc + input[anticodon,2] * (.652) * wj
+    
+      
+  }
+  
+  for (val in length(psuedocognates)){
+    anticodon = reverseComplement(val)
+    wj <- checkWobble(codon,val)
+    rc = rc + input[anticodon,2] * (.00062) * wj
+  }
+   rc = 10.992*rc
+   return(rc)
+}
+
+EquationFour <- function(codon, nearcognates, input){
+  rn <- 0
+  
+  for (val in length(nearcognates)){
+    anticodon = reverseComplement(val)
+    wj <- checkWobble(codon, val)
+    rn = rn + input[anticodon,2] * (.00062) * wj
+  }
+  
+  rn = 10.992*rn
+  return(rn)
+}
+
+EquationOne("AGA")
 
 makeLists <- function(codon){
   
@@ -298,10 +337,10 @@ removeAnticodon(input,"AAG")
 
 #print(input)
 #ggplot(data = key, aes(x = as.integer(key[,6]), y = as.integer(key[,8])) +
-  #geom_point()
+#geom_point()
 #print(input[x,])
 for(val in 1:nrow(input))
-  {
+{
   codon <- input[val,1]
   print(paste("Current codon:", codon$Codon))
   ## remember to reverse the coding sequence to get anticodon first
@@ -315,6 +354,5 @@ for(val in 1:nrow(input))
 
 
 wobble("AAA")
-
 
 
