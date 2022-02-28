@@ -39,24 +39,30 @@ reverseComplement <- function(seq)
   trna <- unlist(lapply(reverse,complementRules))
   trna <- paste(trna,collapse='')
   return(trna)
-  
+}
+
+
+getNeighbors <- function(codon)
+{
+  neighbors <- character(length=12)
+  nuc <- unlist(strsplit(codon,split='',fixed=T))
+  neighbors[1:4] <- paste0(nuc[1],c("A","G","T","C"),nuc[3])
+  neighbors[5:8] <- paste0(c("A","G","T","C"),nuc[2],nuc[3])
+  neighbors[9:12] <- paste0(nuc[1],nuc[2],c("A","G","T","C"))
+  return(neighbors)
 }
 
 
 ## I would work with T rather than U. I think most of our files use T.
-wobble <- function(anticodon){  
-  
-  makeLists(codon)
+getWobble <- function(anticodon,aa){  
   
   val <- 1
-  
   if(substring(anticodon,val,val) == "A"){
     unlist(strsplit(anticodon,""))
     anticodon.split <- unlist(strsplit(anticodon,""))
     wobble <- c("T","C","G", "A")
     a <- paste0(wobble, anticodon.split[2], anticodon.split[3])
     cognates <- c(a)
-    # print(cognates)
   }
   if(substring(anticodon,val,val) == "G"){
     
@@ -65,8 +71,6 @@ wobble <- function(anticodon){
     wobble <- c("G","A") ## when you do the reverse complement, will give correct wobble rules between tRNA and codon
     a <- paste0(wobble, anticodon.split[2], anticodon.split[3])
     cognates <- c(a)
-    # print(cognates)
-    
   } 
   
   if(substring(anticodon,val,val) == "T"){
@@ -75,18 +79,20 @@ wobble <- function(anticodon){
     wobble <- c("T","C","G", "A")
     a <- paste0(wobble, anticodon.split[2], anticodon.split[3])
     cognates <- c(a)
-    #print(cognates)
-    
   }
   
   if(substring(anticodon,val,val) == "C"){
     unlist(strsplit(anticodon,""))
     anticodon.split <- unlist(strsplit(anticodon,""))
-    wobble <- c("C")
+    if (aa == "I")
+    {
+      wobble <- c("T")
+    } else {
+      wobble <- c("C")
+    }
+    
     a <- paste0(wobble, anticodon.split[2], anticodon.split[3])
     cognates <- c(a)
-    #print(cognates)
-    
   }
   
   return(a)
@@ -96,8 +102,6 @@ wobble <- function(anticodon){
 #parameter nucleotide
 #call wobble wobble function
 #paste specific spot
-
-
 anticodonGenerator <- function(codon){
   CodonColumn <- c(CodonColumn, codon)
   
@@ -105,7 +109,6 @@ anticodonGenerator <- function(codon){
   rev_order = nchar(codon):1
   reversed_chars = string_split[[1]][rev_order]
   paste(reversed_chars, collapse = "")
-  #print(reversed_chars)
   for(val in c(1:3)){
     if (reversed_chars[val] == "A"){
       reversed_chars[val] <- 'T'
@@ -175,7 +178,7 @@ check.same.codons<- function(set.1,set.2)
   return(T)
 }
 
-PNCognate <- function(codon){
+PNCognate <- function(codon,trna){
   
   a <- strsplit(codon,",")
   neighbor <- list()
@@ -213,25 +216,21 @@ PNCognate <- function(codon){
       a[[val]] <- "C"
       neighbor.append(a)
     }
-    for(val in c(0,lenght(a))){
-      if (key[val, 2] != 0){
-        if(a[[val,3]] == a[[codon,3]]){
-          if(wobble(codon) != val){
-            
+    for(val in seq(1,length(a)))
+    {
+      if (input[val, 2] != 0)
+      {
+        if(a[[val,3]] == a[[codon,3]])
+        {
+          if(getWobble(codon) != val)
+          {
             pcognate.append(val)
-          }
-          else{
-            
+          } else{
             ncognate.append(val)
           }
         }
-        
-        
-        
       }
     }
-    
-    
   }
 }
 
@@ -344,45 +343,101 @@ EquationFour <- function(codon, nearcognates, input){
 EquationOne("AGA")
 
 makeLists <- function(codon){
-  
   cognates <- list()
   ncognates <- list()
   pcognates <- list()
-  
-  
 }
 
 
-first_column <- c("value_1", "value_2", ...)
-
-df <- data.frame(first_column, second_column)
 
 
-#input <- read.csv(file = 'ecoli_tRNA_2010', header = TRUE, stringsAsFactors = TRUE)
-input <- read_tsv(file = "ecoli_tRNA_2010.tsv")#, header = F, sep = ',', stringsAsFactors = F)
-key <- read_tsv(file = 'shah_gilchrist_2010_ecoli.tsv')#, header = T, sep = ' ', stringsAsFactors = F)
-## the rownames() function with tibbles (dataframes read in from read_tsv) is deprectated, so let's remove that for now.
-
-removeAnticodon(input,"AAG")
+#removeAnticodon(input,"AAG")
 
 #print(input)
 #ggplot(data = key, aes(x = as.integer(key[,6]), y = as.integer(key[,8])) +
 #geom_point()
 #print(input[x,])
+
+input <- read_tsv(file = "ecoli_tRNA_2010.tsv")
+input <- input %>% rowwise() %>% 
+  mutate(AntiCodon = reverseComplement(Codon)) %>% 
+  mutate(AntiCodon=ifelse(Codon == "ATA","CAT",AntiCodon)) ## This is because of some weirdness with bacteria. 
+key <- read_tsv(file = 'shah_gilchrist_2010_ecoli.tsv')
+
+#### Start of Alex's additions ####
+
+df <- data.frame(Codon = input$Codon,AA=input$AA,Cognate=NA,Pseudo.cognate=NA,Near.cognate=NA)
+rownames(df) <- df$Codon
+
+
 for(val in 1:nrow(input))
 {
-  codon <- input[val,1]
-  print(paste("Current codon:", codon$Codon))
-  ## remember to reverse the coding sequence to get anticodon first
-  anticodon <- reverseComplement(codon$Codon)
-  print(paste("Current anticodon:",anticodon))
-  wobbles <- unlist(lapply(wobble(anticodon),reverseComplement))
-  #print(wobble(anticodonGenerator(codon)))
-  print(paste0("Can wobble with codons:",paste(wobbles,collapse=",")))
+  codon <- input[val,"Codon"] %>% deframe()
+  codon.aa <- input[val,"AA"] %>% deframe()
+  anticodon <- input[val,"AntiCodon"] %>% deframe()
+  
+  ## Get anticodon neighbors
+  one.step.neighbors <- getNeighbors(anticodon)
+  neighbors.df <- input %>% 
+    filter((AntiCodon %in% one.step.neighbors))
+  anticodon.neighbors <- neighbors.df$AntiCodon
+  names(anticodon.neighbors) <- anticodon.neighbors
+ 
+  ## Find the anticodons that could match codon via wobble
+  wobbles <- purrr::map(anticodon.neighbors,function(x)
+    {
+       anticodon.aa <- neighbors.df %>% filter(AntiCodon == x) %>% 
+         dplyr::select(AA) %>% deframe
+       tmp <- data.frame(AA=anticodon.aa,AntiCodon=x,Wobble=rep(FALSE,length(anticodon.aa)))
+       for (aa in anticodon.aa)
+       {
+         wobble.list <- unlist(lapply(getWobble(x,aa),reverseComplement))
+         if (codon %in% wobble.list) 
+         {
+           tmp[which(tmp$AA == aa),"Wobble"] <- TRUE
+           #return(data.frame(Wobble=TRUE))
+         } 
+       }
+       tmp
+    }) %>% bind_rows() %>% distinct()
+  neighbors.df <- neighbors.df %>% left_join(wobbles,by=c("AntiCodon","AA"))
+  
+  ## Label codons as cognate, pseudo-cognate, or near-cognate
+  neighbors.df <- neighbors.df %>% mutate(Category = case_when(
+                                            AA == codon.aa & tRNA > 0 & Wobble ~"Cognate",
+                                            AA == codon.aa & tRNA > 0 ~ "Pseudo-Cognate",
+                                            AA != codon.aa & tRNA > 0 ~ "Near-Cognate"
+                                          ) 
+                                            )
+  cognates <- neighbors.df %>% filter(Category == "Cognate") %>% dplyr::select(AntiCodon) %>% deframe() %>% unique()
+  if (length(cognates) > 1)
+  {
+    cognates <- paste(cognates,collapse=",")
+  } else if (length(cognates) == 0) {
+    cognates <- "" 
+  }
+  
+  
+  pseudo.cognates <- neighbors.df %>% filter(Category == "Pseudo-Cognate") %>% dplyr::select(AntiCodon) %>% deframe()
+  if (length(pseudo.cognates) > 1)
+  {
+    pseudo.cognates <- paste(pseudo.cognates,collapse=",")
+  } else if (length(pseudo.cognates) == 0) {
+   pseudo.cognates <- "" 
+  }
+  
+  near.cognates <- neighbors.df %>% filter(Category == "Near-Cognate") %>% dplyr::select(AntiCodon) %>% deframe() %>% unique()
+  if (length(near.cognates) > 1)
+  {
+    near.cognates <- paste(near.cognates,collapse=",")
+  } else if (length(near.cognates) == 0) {
+    near.cognates <- "" 
+  }
+  df[codon,"Cognate"] <- cognates
+  df[codon,"Pseudo.cognate"] <- pseudo.cognates
+  df[codon,"Near.cognate"] <- near.cognates
 }
 
+df <- df %>% arrange(AA,Codon)
 
-
-df <- data.frame(AA = AAColumn, Codon = CodonColumn, Cognate = CognateColumn, PsuedoCognate = PCColumn, NearCognate = NearCog, Rc = RC, Rn = RN, Em = EM, En = EM)
-print(df)
-
+#### End of Alex's additions ####
