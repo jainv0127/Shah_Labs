@@ -3,8 +3,7 @@
 #git push
 
 library(tidyverse)
-#library(ggplot2)
-#library(stringr)
+
 AAColumn <- c()
 CodonColumn <- c()
 CognateColumn <- c()
@@ -165,12 +164,12 @@ check.same.codons<- function(set.1,set.2)
     return(F)
   } else {
     disagree <- setdiff(set.1,set.2)
-    if (length(disagree) >0)
+    if (length(disagree) > 0)
     {
       return(F)
     }
     disagree <- setdiff(set.2,set.1)
-    if (length(disagree) >0)
+    if (length(disagree) > 0)
     {
       return(F)
     }
@@ -349,14 +348,6 @@ makeLists <- function(codon){
 }
 
 
-
-
-#removeAnticodon(input,"AAG")
-
-#print(input)
-#ggplot(data = key, aes(x = as.integer(key[,6]), y = as.integer(key[,8])) +
-#geom_point()
-#print(input[x,])
 
 input <- read_tsv(file = "ecoli_tRNA_2010.tsv")
 input <- input %>% rowwise() %>% 
