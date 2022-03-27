@@ -15,8 +15,8 @@ RN <- c()
 EM <- c()
 EN <- c()
 
-  #move further down.
-  
+#move further down.
+
 complementRules <- function(nucleotide)
 {
   if (nucleotide == "A")
@@ -145,12 +145,14 @@ removeAnticodon <- function(input,codon)
   }
 }
 
+#use function below on each row and column
+#make sure each row agrees with key
 check.same.codons<- function(set.1,set.2)
 {
   #one set is my own set of psuedo/near cognate tRNA for given codon
   #other set is key
   #first check psudeo, near cognates
-    #then check values
+  #then check values
   #get value in data frame. merge data frames
   #plot data
   #x value key elongation rate(Rc)
@@ -177,6 +179,8 @@ check.same.codons<- function(set.1,set.2)
   }
   return(T)
 }
+
+#merge on codon and AA
 
 PNCognate <- function(codon,trna){
   
@@ -307,25 +311,33 @@ EquationTwo <- function(codon){
   
 }
 
-EquationThree <- function(codon, cognates, psuedocogantes, input){
+EquationThree <- function(codon, cognates, pseudo.cognates, input, aa){
   rc <- 0
-  
-  for (val in length(cognates)){
+  #splits up string
+  cognates <- str_split(cognates, ",")
+  pseudo.cognates <- str_split(pseudo.cognates, ",")
+
+  for (val in unlist(cognates)){
+    tRNA <- input %>% filter(val == AntiCodon & aa == AA) %>% select(tRNA) %>% deframe()
     anticodon = reverseComplement(val)
+    print(codon)
+    print(val)
     wj <- checkWobble(codon,val)
-    rc = rc + input[anticodon,2] * (.652) * wj
+    rc = rc + tRNA * (.652) * wj
     
-      
+    
   }
   
-  for (val in length(psuedocognates)){
+  for (val in unlist(pseudo.cognates)){
+    tRNA <- input %>% filter(val == AntiCodon & aa == AA) %>% select(tRNA) %>% deframe()
     anticodon = reverseComplement(val)
     wj <- checkWobble(codon,val)
-    rc = rc + input[anticodon,2] * (.00062) * wj
+    rc = rc + tRNA * (.00062) * wj
   }
-   rc = 10.992*rc
-   return(rc)
+  rc = 10.992*rc
+  return(rc)
 }
+
 
 EquationFour <- function(codon, nearcognates, input){
   rn <- 0
@@ -340,7 +352,6 @@ EquationFour <- function(codon, nearcognates, input){
   return(rn)
 }
 
-EquationOne("AGA")
 
 makeLists <- function(codon){
   cognates <- list()
@@ -375,40 +386,42 @@ for(val in 1:nrow(input))
   codon <- input[val,"Codon"] %>% deframe()
   codon.aa <- input[val,"AA"] %>% deframe()
   anticodon <- input[val,"AntiCodon"] %>% deframe()
-  
+  reverse.Comp <- reverseComplement(codon)
+    
   ## Get anticodon neighbors
-  one.step.neighbors <- getNeighbors(anticodon)
+  one.step.neighbors <- getNeighbors(reverse.Comp)
   neighbors.df <- input %>% 
     filter((AntiCodon %in% one.step.neighbors))
   anticodon.neighbors <- neighbors.df$AntiCodon
   names(anticodon.neighbors) <- anticodon.neighbors
- 
+
+  
   ## Find the anticodons that could match codon via wobble
   wobbles <- purrr::map(anticodon.neighbors,function(x)
+  {
+    anticodon.aa <- neighbors.df %>% filter(AntiCodon == x) %>% 
+      dplyr::select(AA) %>% deframe
+    tmp <- data.frame(AA=anticodon.aa,AntiCodon=x,Wobble=rep(FALSE,length(anticodon.aa)))
+    for (aa in anticodon.aa)
     {
-       anticodon.aa <- neighbors.df %>% filter(AntiCodon == x) %>% 
-         dplyr::select(AA) %>% deframe
-       tmp <- data.frame(AA=anticodon.aa,AntiCodon=x,Wobble=rep(FALSE,length(anticodon.aa)))
-       for (aa in anticodon.aa)
-       {
-         wobble.list <- unlist(lapply(getWobble(x,aa),reverseComplement))
-         if (codon %in% wobble.list) 
-         {
-           tmp[which(tmp$AA == aa),"Wobble"] <- TRUE
-           #return(data.frame(Wobble=TRUE))
-         } 
-       }
-       tmp
-    }) %>% bind_rows() %>% distinct()
+      wobble.list <- unlist(lapply(getWobble(x,aa),reverseComplement))
+      if (codon %in% wobble.list) 
+      {
+        tmp[which(tmp$AA == aa),"Wobble"] <- TRUE
+        #return(data.frame(Wobble=TRUE))
+      } 
+    }
+    tmp
+  }) %>% bind_rows() %>% distinct()
   neighbors.df <- neighbors.df %>% left_join(wobbles,by=c("AntiCodon","AA"))
   
   ## Label codons as cognate, pseudo-cognate, or near-cognate
   neighbors.df <- neighbors.df %>% mutate(Category = case_when(
-                                            AA == codon.aa & tRNA > 0 & Wobble ~"Cognate",
-                                            AA == codon.aa & tRNA > 0 ~ "Pseudo-Cognate",
-                                            AA != codon.aa & tRNA > 0 ~ "Near-Cognate"
-                                          ) 
-                                            )
+    AA == codon.aa & tRNA > 0 & Wobble ~"Cognate",
+    AA == codon.aa & tRNA > 0 ~ "Pseudo-Cognate",
+    AA != codon.aa & tRNA > 0 ~ "Near-Cognate"
+  ) 
+  )
   cognates <- neighbors.df %>% filter(Category == "Cognate") %>% dplyr::select(AntiCodon) %>% deframe() %>% unique()
   if (length(cognates) > 1)
   {
@@ -423,7 +436,7 @@ for(val in 1:nrow(input))
   {
     pseudo.cognates <- paste(pseudo.cognates,collapse=",")
   } else if (length(pseudo.cognates) == 0) {
-   pseudo.cognates <- "" 
+    pseudo.cognates <- "" 
   }
   
   near.cognates <- neighbors.df %>% filter(Category == "Near-Cognate") %>% dplyr::select(AntiCodon) %>% deframe() %>% unique()
@@ -440,4 +453,68 @@ for(val in 1:nrow(input))
 
 df <- df %>% arrange(AA,Codon)
 
+print(df)
 #### End of Alex's additions ####
+library (tidyverse)
+merge.df <- df %>% left_join(key, by= c("AA", "Codon"))
+merge.df <- merge.df %>% mutate(Cognates = ifelse(is.na(Cognates), "", Cognates))
+merge.df <- merge.df %>% mutate(`Pseudo-cognates` = ifelse(is.na(`Pseudo-cognates`), "", `Pseudo-cognates`))
+merge.df <- merge.df %>% mutate(`Near-cognates` = ifelse(is.na(`Near-cognates`), "", `Near-cognates`))
+merge.df <- merge.df %>% mutate(`Near-cognates` = ifelse(is.na(`Near-cognates`), "", `Near-cognates`))
+merge.df <- merge.df %>% mutate(`Near-cognates` = ifelse(is.na(`Near-cognates`), "", `Near-cognates`))
+
+for(i in 1:nrow(merge.df)){
+  
+  row <- merge.df[i,]
+  check <- check.same.codons(row$Cognate, row$Cognates)
+  if(check == FALSE){
+    print(row$Codon)
+    
+  }
+}
+
+for(i in 1:nrow(merge.df)){
+  
+  row <- merge.df[i,]
+  check <- check.same.codons(row$Near.cognate, row$`Near-cognates`)
+  if(check == FALSE){
+    print(row$Codon)
+    
+  }
+}
+
+for(i in 1:nrow(merge.df)){
+  
+  row <- merge.df[i,]
+  check <- check.same.codons(row$Pseudo.cognate, row$`Pseudo-cognates`)
+  if(check == FALSE){
+    print(row$Codon)
+    
+  }
+}
+
+# check to see if it is longer than empty string. see if anything is in psudeo  cognate(otherwise skip)
+merge.df <- left_join(df, input)
+for(i in 1:nrow(merge.df)){
+  row = merge.df[i,]
+  EquationThree(row$Codon, row$Cognate, row$Pseudo.cognate, input, row$AA)
+  
+}
+
+Scatter.Plot <- function(datas){
+  ggplot(datas, aes(x = Rc, y = Em)) +
+  geom_point()
+  scale_x_continuous = seq(0, 12,4)
+  scale_y_continuous = seq(0, 12, 4)
+  labs(
+    x <- row$Rc
+    y <- row$Em
+    #I need to actually create a column and add the values from equations 1-4 into the df for top part to work. Im not sure how to.
+    title = "Title"
+  )
+}
+
+
+x <- mtcars$wt
+y <- mtcars$mpg
+Scatter.Plot(df)
