@@ -179,6 +179,8 @@ check.same.codons<- function(set.1,set.2)
   return(T)
 }
 
+#merge on codon and AA
+
 PNCognate <- function(codon,trna){
   
   a <- strsplit(codon,",")
@@ -308,25 +310,31 @@ EquationTwo <- function(codon){
   
 }
 
-EquationThree <- function(codon, cognates, psuedocogantes, input){
+EquationThree <- function(codon, cognates, pseudo.cognates, input, aa){
   rc <- 0
-  
-  for (val in length(cognates)){
+  #splits up string
+  cognates <- str_split(cognates, ",")
+  pseudo.cognates <- str_split(pseudo.cognates, ",")
+
+  for (val in unlist(cognates)){
+    tRNA <- input %>% filter(val == AntiCodon & aa == AA) %>% select(tRNA) %>% deframe()
     anticodon = reverseComplement(val)
+    print(codon)
+    print(val)
     wj <- checkWobble(codon,val)
-    rc = rc + input[anticodon,2] * (.652) * wj
-    
-    
+    rc = rc + tRNA * (.652) * wj
   }
   
-  for (val in length(psuedocognates)){
+  for (val in unlist(pseudo.cognates)){
+    tRNA <- input %>% filter(val == AntiCodon & aa == AA) %>% select(tRNA) %>% deframe()
     anticodon = reverseComplement(val)
     wj <- checkWobble(codon,val)
-    rc = rc + input[anticodon,2] * (.00062) * wj
+    rc = rc + tRNA * (.00062) * wj
   }
   rc = 10.992*rc
   return(rc)
 }
+
 
 EquationFour <- function(codon, nearcognates, input){
   rn <- 0
@@ -446,7 +454,51 @@ check.same.codons(CognateColumn, key$eM)
 check.same.codons(CognateColumn, key$eN)
 
 
+library (tidyverse)
+merge.df <- df %>% left_join(key, by= c("AA", "Codon"))
+merge.df <- merge.df %>% mutate(Cognates = ifelse(is.na(Cognates), "", Cognates))
+merge.df <- merge.df %>% mutate(`Pseudo-cognates` = ifelse(is.na(`Pseudo-cognates`), "", `Pseudo-cognates`))
+merge.df <- merge.df %>% mutate(`Near-cognates` = ifelse(is.na(`Near-cognates`), "", `Near-cognates`))
+merge.df <- merge.df %>% mutate(`Near-cognates` = ifelse(is.na(`Near-cognates`), "", `Near-cognates`))
+merge.df <- merge.df %>% mutate(`Near-cognates` = ifelse(is.na(`Near-cognates`), "", `Near-cognates`))
 
+for(i in 1:nrow(merge.df)){
+  
+  row <- merge.df[i,]
+  check <- check.same.codons(row$Cognate, row$Cognates)
+  if(check == FALSE){
+    print(row$Codon)
+    
+  }
+}
+
+for(i in 1:nrow(merge.df)){
+  
+  row <- merge.df[i,]
+  check <- check.same.codons(row$Near.cognate, row$`Near-cognates`)
+  if(check == FALSE){
+    print(row$Codon)
+    
+  }
+}
+
+for(i in 1:nrow(merge.df)){
+  
+  row <- merge.df[i,]
+  check <- check.same.codons(row$Pseudo.cognate, row$`Pseudo-cognates`)
+  if(check == FALSE){
+    print(row$Codon)
+    
+  }
+}
+
+# check to see if it is longer than empty string. see if anything is in psudeo  cognate(otherwise skip)
+merge.df <- left_join(df, input)
+for(i in 1:nrow(merge.df)){
+  row = merge.df[i,]
+  EquationThree(row$Codon, row$Cognate, row$Pseudo.cognate, input, row$AA)
+  
+}
 
 Scatter.Plot <- function(datas){
   ggplot(datas, aes(x = Rc, y = Em)) +
@@ -459,5 +511,6 @@ Scatter.Plot <- function(datas){
     title = "Title"
   )
 }
+
 
 Scatter.Plot(df)
