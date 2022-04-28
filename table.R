@@ -2,9 +2,10 @@
 #git commit
 #git push
 
+
 library(tidyverse)
 #library(ggplot2)
-#library(stringr)
+library(stringr)
 AAColumn <- c()
 CodonColumn <- c()
 CognateColumn <- c()
@@ -247,10 +248,14 @@ checkWobble <- function(codon,trna){
   trna.split <- unlist(strsplit(trna,""))
   codon.split <- unlist(strsplit(codon,""))
   reverse.split <- unlist(strsplit(reverse,""))
+
   if(reverseComplement(codon) == trna) 
   {
     return(1)
   } else{
+    #print(reverse.split)
+    #print(trna.split)
+    #print(which(reverse.split != trna.split))
     index <- which(reverse.split != trna.split)
     if(index == 1)
     {
@@ -299,55 +304,70 @@ checkWobble <- function(codon,trna){
 
 EquationOne <- function(codon){
   
-  print(EquationFour(codon)/(EquationThree(codon)+EquationFour(codon)+0.0003146))
+  return(EquationFour(codon)/(EquationThree(codon)+EquationFour(codon)+0.0003146))
   
 }
 
 EquationTwo <- function(codon){
   #return not print
   #adijust equation 1,2
+  p <- EquationThree(codon)
+  q <- EquationFour(codon)
   #compare cognates and values
-  print(0.0003146/(EquationThree(codon)+EquationFour(codon)+0.0003146))
-  
+  return(0.0003146/(p + q +0.0003146))
+  print('hi')
 }
 
 EquationThree <- function(codon, cognates, pseudo.cognates, input, aa){
   rc <- 0
   #splits up string
-  cognates <- str_split(cognates, ",")
-  pseudo.cognates <- str_split(pseudo.cognates, ",")
-
-  for (val in unlist(cognates)){
-    tRNA <- input %>% filter(val == AntiCodon & aa == AA) %>% select(tRNA) %>% deframe()
-    anticodon = reverseComplement(val)
-    print(codon)
-    print(val)
-    wj <- checkWobble(codon,val)
-    rc = rc + tRNA * (.652) * wj
-    
+  cognates <- unlist(str_split(cognates, ","))
+  pseudo.cognates <- unlist(str_split(pseudo.cognates, ","))
+  cognates = cognates[which(cognates != "")]
+  pseudo.cognates = pseudo.cognates[which(pseudo.cognates != "")]
+  if(length(cognates) != 0){
+    for (val in cognates){
+      tRNA <- input %>% filter(val == AntiCodon & aa == AA) %>% select(tRNA) %>% deframe()
+      anticodon = reverseComplement(val)
+      wj <- checkWobble(codon,val)
+      rc = rc + tRNA * (.652) * wj
+    }
     
   }
   
-  for (val in unlist(pseudo.cognates)){
-    tRNA <- input %>% filter(val == AntiCodon & aa == AA) %>% select(tRNA) %>% deframe()
-    anticodon = reverseComplement(val)
-    wj <- checkWobble(codon,val)
-    rc = rc + tRNA * (.00062) * wj
+  if(length(pseudo.cognates) != 0){
+    
+    for (val in pseudo.cognates){
+      tRNA <- input %>% filter(val == AntiCodon & aa == AA) %>% select(tRNA) %>% deframe()
+      anticodon = reverseComplement(val)
+      wj <- checkWobble(codon,val)
+      rc = rc + tRNA * (.00062) * wj
+    }
   }
+  
   rc = 10.992*rc
   return(rc)
+  
 }
 
 
-EquationFour <- function(codon, nearcognates, input){
+EquationFour <- function(codon, nearcognates, input, aa){
   rn <- 0
+ 
+  nearcognates <- unlist(str_split(nearcognates, ","))
+  nearcognates = nearcognates[which(nearcognates != "")]
   
-  for (val in length(nearcognates)){
-    anticodon = reverseComplement(val)
-    wj <- checkWobble(codon, val)
-    rn = rn + input[anticodon,2] * (.00062) * wj
+  if(length(nearcognates) != 0){
+    for (val in nearcognates){
+      tRNA <- input %>% filter(val == AntiCodon & aa != AA) %>% select(tRNA) %>% deframe()
+      anticodon = reverseComplement(val)
+      wj <- checkWobble(codon, val)
+      for(t in tRNA){
+        rn = rn + t * (.00062) * wj
+        
+      }
+    }
   }
-  
   rn = 10.992*rn
   return(rn)
 }
@@ -494,27 +514,46 @@ for(i in 1:nrow(merge.df)){
 }
 
 # check to see if it is longer than empty string. see if anything is in psudeo  cognate(otherwise skip)
-merge.df <- left_join(df, input)
+#merge.df <- left_join(df, input)
+#merge.df$Rc <- rep(NA,nrow(merge.df))
 for(i in 1:nrow(merge.df)){
   row = merge.df[i,]
-  EquationThree(row$Codon, row$Cognate, row$Pseudo.cognate, input, row$AA)
+  print(row$Codon)
+  merge.df[i, "Rc_my"] <- EquationThree(row$Codon, row$Cognate, row$Pseudo.cognate, input, row$AA)
+  merge.df[i, "Rn_my"] <- EquationFour(row$Codon, row$Near.cognate, input, row$AA)
+  merge.df[i, "eM_my"] <- EquationTwo(row$Codon)
+  merge.df[i, "eN_my"] <- EquationOne(row$Codon)
   
+  #^used to add Rc values^
 }
 
 Scatter.Plot <- function(datas){
-  ggplot(datas, aes(x = Rc, y = Em)) +
-  geom_point()
-  scale_x_continuous = seq(0, 12,4)
-  scale_y_continuous = seq(0, 12, 4)
-  labs(
-    x <- row$Rc
-    y <- row$Em
-    #I need to actually create a column and add the values from equations 1-4 into the df for top part to work. Im not sure how to.
-    title = "Title"
-  )
+  #need to create column called Rc_key
+
+  
 }
 
+p1 <- ggplot(merge.df, aes(x = Rc, y = Rc_my, label = Codon)) +
+  geom_text()+
+  geom_point()+
+  labs(
+    x = "Key",
+    y = "My Estimate",
+    #I need to actually create a column and add the values from equations 1-4 into the df for top part to work. Im not sure how to.
+    title = "Comparing Elongation Rates to Shah And Gilchrist 2010"
+  )+ 
+  geom_abline(intercept = 0, slope=1, linetype = "dashed")+
+  theme_bw()
 
-x <- mtcars$wt
-y <- mtcars$mpg
-Scatter.Plot(df)
+
+p2 <- ggplot(merge.df, aes(x = Rn, y = Rn_my, label = Codon)) +
+  geom_text()+
+  geom_point()+
+  labs(
+    x = "Key",
+    y = "My Estimate",
+    #I need to actually create a column and add the values from equations 1-4 into the df for top part to work. Im not sure how to.
+    title = "Comparing Near Cognate Elongation Rates to Shah And Gilchrist 2010"
+  )+ 
+  geom_abline(intercept = 0, slope=1, linetype = "dashed")+
+  theme_bw()
