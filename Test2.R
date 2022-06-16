@@ -9,7 +9,7 @@
  
 library(tidyverse)
 library(stringr)
-library(argparse)
+#library(argparse)
 AAColumn <- c()
 CodonColumn <- c()
 CognateColumn <- c()
@@ -19,13 +19,13 @@ RC <- c()
 RN <- c()
 EM <- c()
 EN <- c()
-
-parser <- ArgumentParser()
-parser$add_argument("-o","--output",help="Output results",type="character",default="./")
-parser$add_argument("-i","--input",help="Input tRNA",type="character",default="./")
-args <- parser$parse_args()
-input <- args$input
-output <- args$output
+# 
+# parser <- ArgumentParser()
+# parser$add_argument("-o","--output",help="Output results",type="character",default="./")
+# parser$add_argument("-i","--input",help="Input tRNA",type="character",default="./")
+# args <- parser$parse_args()
+# input <- args$input
+# output <- args$output
 
 
 #input <- read_tsv(file = "ecoli_tRNA_2010.tsv")
@@ -262,134 +262,101 @@ EquationFour <- function(codon, nearcognates, input, aa){
   return(rn)
 }
 
-input <- read_tsv(file = input)
-#file above will be file name inputted
-input <- input %>% rowwise() %>% 
-  mutate(AntiCodon = reverseComplement(Codon)) %>% 
-  mutate(AntiCodon=ifelse(Codon == "ATA","CAT",AntiCodon)) ## This is because of some weirdness with bacteria. 
-key <- read_tsv(file = 'shah_gilchrist_2010_ecoli.tsv')
-
-df <- data.frame(Codon = input$Codon,AA=input$AA,Cognate=NA,Pseudo.cognate=NA,Near.cognate=NA)
-rownames(df) <- df$Codon
-
-for(val in 1:nrow(input))
+calculateElongationMetrics <- function(input.file,target.dir="tGCN/",output.dir="Rates/")
 {
-  codon <- input[val,"Codon"] %>% deframe()
-  codon.aa <- input[val,"AA"] %>% deframe()
-  anticodon <- input[val,"AntiCodon"] %>% deframe()
-  reverse.Comp <- reverseComplement(codon)
-  one.step.neighbors <- getNeighbors(reverse.Comp)
-  neighbors.df <- input %>% 
-    filter((AntiCodon %in% one.step.neighbors))
-  anticodon.neighbors <- neighbors.df$AntiCodon
-  names(anticodon.neighbors) <- anticodon.neighbors
+  input <- read_tsv(file = file.path(target.dir,input.file))
+  if (!dir.exists(output.dir)){
+    dir.create(output.dir)
+  }
+
+  input <- input %>% rowwise() %>% 
+    mutate(AntiCodon = reverseComplement(Codon)) %>% 
+    mutate(AntiCodon=ifelse(Codon == "ATA","CAT",AntiCodon)) ## This is because of some weirdness with bacteria. 
+
+  df <- data.frame(Codon = input$Codon,AA=input$AA,Cognate=NA,Pseudo.cognate=NA,Near.cognate=NA)
+  rownames(df) <- df$Codon
   
-  
-  wobbles <- purrr::map(anticodon.neighbors,function(x)
+  for(val in 1:nrow(input))
   {
-    anticodon.aa <- neighbors.df %>% filter(AntiCodon == x) %>% 
-      dplyr::select(AA) %>% deframe
-    tmp <- data.frame(AA=anticodon.aa,AntiCodon=x,Wobble=rep(FALSE,length(anticodon.aa)))
-    for (aa in anticodon.aa)
+    codon <- input[val,"Codon"] %>% deframe()
+    codon.aa <- input[val,"AA"] %>% deframe()
+    anticodon <- input[val,"AntiCodon"] %>% deframe()
+    reverse.Comp <- reverseComplement(codon)
+    one.step.neighbors <- getNeighbors(reverse.Comp)
+    neighbors.df <- input %>% 
+      filter((AntiCodon %in% one.step.neighbors))
+    anticodon.neighbors <- neighbors.df$AntiCodon
+    names(anticodon.neighbors) <- anticodon.neighbors
+    
+    
+    wobbles <- purrr::map(anticodon.neighbors,function(x)
     {
-      wobble.list <- unlist(lapply(getWobble(x,aa),reverseComplement))
-      if (codon %in% wobble.list) 
+      anticodon.aa <- neighbors.df %>% filter(AntiCodon == x) %>% 
+        dplyr::select(AA) %>% deframe
+      tmp <- data.frame(AA=anticodon.aa,AntiCodon=x,Wobble=rep(FALSE,length(anticodon.aa)))
+      for (aa in anticodon.aa)
       {
-        tmp[which(tmp$AA == aa),"Wobble"] <- TRUE
-      } 
+        wobble.list <- unlist(lapply(getWobble(x,aa),reverseComplement))
+        if (codon %in% wobble.list) 
+        {
+          tmp[which(tmp$AA == aa),"Wobble"] <- TRUE
+        } 
+      }
+      tmp
+    }) %>% bind_rows() %>% distinct()
+    neighbors.df <- neighbors.df %>% left_join(wobbles,by=c("AntiCodon","AA"))
+    
+    neighbors.df <- neighbors.df %>% mutate(Category = case_when(
+      AA == codon.aa & tRNA > 0 & Wobble ~"Cognate",
+      AA == codon.aa & tRNA > 0 ~ "Pseudo-Cognate",
+      AA != codon.aa & tRNA > 0 ~ "Near-Cognate"
+    ) 
+    )
+    cognates <- neighbors.df %>% filter(Category == "Cognate") %>% dplyr::select(AntiCodon) %>% deframe() %>% unique()
+    if (length(cognates) > 1)
+    {
+      cognates <- paste(cognates,collapse=",")
+    } else if (length(cognates) == 0) {
+      cognates <- "" 
     }
-    tmp
-  }) %>% bind_rows() %>% distinct()
-  neighbors.df <- neighbors.df %>% left_join(wobbles,by=c("AntiCodon","AA"))
-  
-  neighbors.df <- neighbors.df %>% mutate(Category = case_when(
-    AA == codon.aa & tRNA > 0 & Wobble ~"Cognate",
-    AA == codon.aa & tRNA > 0 ~ "Pseudo-Cognate",
-    AA != codon.aa & tRNA > 0 ~ "Near-Cognate"
-  ) 
-  )
-  cognates <- neighbors.df %>% filter(Category == "Cognate") %>% dplyr::select(AntiCodon) %>% deframe() %>% unique()
-  if (length(cognates) > 1)
-  {
-    cognates <- paste(cognates,collapse=",")
-  } else if (length(cognates) == 0) {
-    cognates <- "" 
+    
+    
+    pseudo.cognates <- neighbors.df %>% filter(Category == "Pseudo-Cognate") %>% dplyr::select(AntiCodon) %>% deframe()
+    if (length(pseudo.cognates) > 1)
+    {
+      pseudo.cognates <- paste(pseudo.cognates,collapse=",")
+    } else if (length(pseudo.cognates) == 0) {
+      pseudo.cognates <- "" 
+    }
+    
+    near.cognates <- neighbors.df %>% filter(Category == "Near-Cognate") %>% dplyr::select(AntiCodon) %>% deframe() %>% unique()
+    if (length(near.cognates) > 1)
+    {
+      near.cognates <- paste(near.cognates,collapse=",")
+    } else if (length(near.cognates) == 0) {
+      near.cognates <- "" 
+    }
+    df[codon,"Cognate"] <- cognates
+    df[codon,"Pseudo.cognate"] <- pseudo.cognates
+    df[codon,"Near.cognate"] <- near.cognates
   }
   
+  df <- df %>% arrange(AA,Codon)
+
+  merge.df <- df
+ 
   
-  pseudo.cognates <- neighbors.df %>% filter(Category == "Pseudo-Cognate") %>% dplyr::select(AntiCodon) %>% deframe()
-  if (length(pseudo.cognates) > 1)
+  for(i in 1:nrow(merge.df))
   {
-    pseudo.cognates <- paste(pseudo.cognates,collapse=",")
-  } else if (length(pseudo.cognates) == 0) {
-    pseudo.cognates <- "" 
+    row = merge.df[i,]
+    merge.df[i, "Rc"] <- EquationThree(row$Codon, row$Cognate, row$Pseudo.cognate, input, row$AA)
+    merge.df[i, "Rn"] <- EquationFour(row$Codon, row$Near.cognate, input, row$AA)
   }
+  merge.df['eN'] <- 0.003146/(merge.df$Rc_my + merge.df$Rn_my +0.003146)
+  merge.df['eM'] <- merge.df$Rn_my/(merge.df$Rc_my + merge.df$Rn_my +0.003146)
   
-  near.cognates <- neighbors.df %>% filter(Category == "Near-Cognate") %>% dplyr::select(AntiCodon) %>% deframe() %>% unique()
-  if (length(near.cognates) > 1)
-  {
-    near.cognates <- paste(near.cognates,collapse=",")
-  } else if (length(near.cognates) == 0) {
-    near.cognates <- "" 
-  }
-  df[codon,"Cognate"] <- cognates
-  df[codon,"Pseudo.cognate"] <- pseudo.cognates
-  df[codon,"Near.cognate"] <- near.cognates
+  write_tsv(merge.df, file.path(output.dir,input.file))
 }
 
-df <- df %>% arrange(AA,Codon)
-
-print(df)
-#### End of Alex's additions ####
-library (tidyverse)
-merge.df <- df
-#merge.df <- df %>% left_join(key, by= c("AA", "Codon"))
-# <- merge.df %>% mutate(Cognates = ifelse(is.na(Cognates), "", Cognates))
-#merge.df <- merge.df %>% mutate(`Pseudo-cognates` = ifelse(is.na(`Pseudo-cognates`), "", `Pseudo-cognates`))
-#merge.df <- merge.df %>% mutate(`Near-cognates` = ifelse(is.na(`Near-cognates`), "", `Near-cognates`))
-#merge.df <- merge.df %>% mutate(`Near-cognates` = ifelse(is.na(`Near-cognates`), "", `Near-cognates`))
-#merge.df <- merge.df %>% mutate(`Near-cognates` = ifelse(is.na(`Near-cognates`), "", `Near-cognates`))
-# 
-# for(i in 1:nrow(merge.df)){
-#   
-#   row <- merge.df[i,]
-#   check <- check.same.codons(row$Cognate, row$Cognates)
-#   if(check == FALSE){
-#     print(row$Codon)
-#     
-#   }
-# }
-# 
-# for(i in 1:nrow(merge.df)){
-#   
-#   row <- merge.df[i,]
-#   check <- check.same.codons(row$Near.cognate, row$`Near-cognates`)
-#   if(check == FALSE){
-#     print(row$Codon)
-#     
-#   }
-# }
-# 
-# for(i in 1:nrow(merge.df)){
-#   
-#   row <- merge.df[i,]
-#   check <- check.same.codons(row$Pseudo.cognate, row$`Pseudo-cognates`)
-#   if(check == FALSE){
-#     print(row$Codon)
-#     
-#   }
-# }
-
-
-for(i in 1:nrow(merge.df)){
-  row = merge.df[i,]
-  print(row$Codon)
-  merge.df[i, "Rc_my"] <- EquationThree(row$Codon, row$Cognate, row$Pseudo.cognate, input, row$AA)
-  merge.df[i, "Rn_my"] <- EquationFour(row$Codon, row$Near.cognate, input, row$AA)
-  #merge.df[i, "eM_my"] <- EquationTwo(row$Codon)
-  #merge.df[i, "eN_my"] <- EquationOne(row$Codon)
-  
-}
-merge.df['eN_my'] <- 0.003146/(merge.df$Rc_my + merge.df$Rn_my +0.003146)
-merge.df['eM_my'] <- merge.df$Rn_my/(merge.df$Rc_my + merge.df$Rn_my +0.003146)
-write_tsv(merge.df, output)
+tgcn.files <- list.files("tGCN/",recursive=F,full.names = F)
+rates <- lapply(tgcn.files,calculateElongationMetrics)

@@ -450,7 +450,7 @@ for(val in 1:nrow(input))
 
 df <- df %>% arrange(AA,Codon)
 
-print(df)
+
 #### End of Alex's additions ####
 
 check.same.codons(CognateColumn, key$Cognates)
@@ -462,7 +462,6 @@ check.same.codons(CognateColumn, key$eM)
 check.same.codons(CognateColumn, key$eN)
 
 
-library (tidyverse)
 merge.df <- df %>% left_join(key, by= c("AA", "Codon"))
 merge.df <- merge.df %>% mutate(Cognates = ifelse(is.na(Cognates), "", Cognates))
 merge.df <- merge.df %>% mutate(`Pseudo-cognates` = ifelse(is.na(`Pseudo-cognates`), "", `Pseudo-cognates`))
