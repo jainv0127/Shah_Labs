@@ -1,11 +1,5 @@
-#git add
-#git commit
-#git push
-
 library(tidyverse)
 
-
-#move further down.
 
 complementRules <- function(nucleotide)
 {
@@ -237,14 +231,11 @@ checkWobble <- function(codon,trna){
   trna.split <- unlist(strsplit(trna,""))
   codon.split <- unlist(strsplit(codon,""))
   reverse.split <- unlist(strsplit(reverse,""))
-
+  
   if(reverseComplement(codon) == trna) 
   {
     return(1)
   } else{
-    print(reverse.split)
-    print(trna.split)
-    print(which(reverse.split != trna.split))
     index <- which(reverse.split != trna.split)
     if(index == 1)
     {
@@ -308,7 +299,7 @@ EquationTwo <- function(codon){
 EquationThree <- function(codon, cognates, pseudo.cognates, input, aa){
   rc <- 0
   #splits up string
-
+  
   cognates <- unlist(str_split(cognates, ","))
   pseudo.cognates <- unlist(str_split(pseudo.cognates, ","))
   cognates = cognates[which(cognates != "")]
@@ -320,7 +311,7 @@ EquationThree <- function(codon, cognates, pseudo.cognates, input, aa){
       wj <- checkWobble(codon,val)
       rc = rc + tRNA * (.652) * wj
     }
-
+    
   }
   
   if(length(pseudo.cognates) != 0){
@@ -341,19 +332,21 @@ EquationThree <- function(codon, cognates, pseudo.cognates, input, aa){
 
 EquationFour <- function(codon, nearcognates, input, aa){
   rn <- 0
- 
+  print(nearcognates)
   nearcognates <- unlist(str_split(nearcognates, ","))
-  nearcognates = nearcognates[which(nearcognates != "")]
-  
+  nearcognates <- nearcognates[which(nearcognates != "")]
   if(length(nearcognates) != 0){
     for (val in length(nearcognates)){
-      tRNA <- input %>% filter(val == AntiCodon & aa == AA) %>% select(tRNA) %>% deframe()
+      tRNA <- input %>% 
+        filter(val == AntiCodon & aa == AA) %>% 
+        select(tRNA) %>% 
+        deframe()
       anticodon = reverseComplement(val)
       wj <- checkWobble(codon, val)
-      rn = rn + tRNA * (.00062) * wj
+      rn <- rn + tRNA * (.00062) * wj
     }
   }
-  rn = 10.992*rn
+  rn <- 10.992*rn
   return(rn)
 }
 
@@ -366,11 +359,11 @@ makeLists <- function(codon){
 
 
 
-input <- read_tsv(file = "ecoli_tRNA_2010.tsv")
+input <- read_tsv(file = "tGCN/ecoli_tRNA_2010.tsv")
 input <- input %>% rowwise() %>% 
   mutate(AntiCodon = reverseComplement(Codon)) %>% 
   mutate(AntiCodon=ifelse(Codon == "ATA","CAT",AntiCodon)) ## This is because of some weirdness with bacteria. 
-key <- read_tsv(file = 'shah_gilchrist_2010_ecoli.tsv')
+key <- read_tsv(file = 'Original_results/shah_gilchrist_2010_ecoli.tsv')
 
 #### Start of Alex's additions ####
 
@@ -384,14 +377,14 @@ for(val in 1:nrow(input))
   codon.aa <- input[val,"AA"] %>% deframe()
   anticodon <- input[val,"AntiCodon"] %>% deframe()
   reverse.Comp <- reverseComplement(codon)
-    
+  
   ## Get anticodon neighbors
   one.step.neighbors <- getNeighbors(reverse.Comp)
   neighbors.df <- input %>% 
     filter((AntiCodon %in% one.step.neighbors))
   anticodon.neighbors <- neighbors.df$AntiCodon
   names(anticodon.neighbors) <- anticodon.neighbors
-
+  
   
   ## Find the anticodons that could match codon via wobble
   wobbles <- purrr::map(anticodon.neighbors,function(x)
@@ -453,13 +446,13 @@ df <- df %>% arrange(AA,Codon)
 
 #### End of Alex's additions ####
 
-check.same.codons(CognateColumn, key$Cognates)
+check.same.codons(cognates, key$Cognates)
 check.same.codons(pseudo.cognates, key$`Pseudo-cognates`)
 check.same.codons(near.cognates, key$`Near-cognates`)
-check.same.codons(Rc, key$Rc)
-check.same.codons(CognateColumn, key$Rn)
-check.same.codons(CognateColumn, key$eM)
-check.same.codons(CognateColumn, key$eN)
+# check.same.codons(Rc, key$Rc)
+# check.same.codons(CognateColumn, key$Rn)
+# check.same.codons(CognateColumn, key$eM)
+# check.same.codons(CognateColumn, key$eN)
 
 
 merge.df <- df %>% left_join(key, by= c("AA", "Codon"))
@@ -500,28 +493,16 @@ for(i in 1:nrow(merge.df)){
 }
 
 # check to see if it is longer than empty string. see if anything is in psudeo  cognate(otherwise skip)
-merge.df <- left_join(df, input)
-merge.df$Rc <- rep(NA,nrow(merge.df))
-for(i in 1:nrow(merge.df)){
-  row = merge.df[i,]
-  merge.df[i, "Rc"] <- EquationThree(row$Codon, row$Cognate, row$Pseudo.cognate, input, row$AA)
-  merge.df[i, "Rn"] <- EquationFour(row$Codon, row$nearcognates, input, row$AA)
-  
+df.w.tRNA <- left_join(df, input)
+df.w.tRNA$Rc <- rep(NA,nrow(df.w.tRNA))
+for(i in 1:nrow(df.w.tRNA)){
+  row <- df.w.tRNA[i,]
+  df.w.tRNA[i, "Rc"] <- EquationThree(row$Codon, row$Cognate, row$Pseudo.cognate, input, row$AA)
+  df.w.tRNA[i, "Rn"] <- EquationFour(row$Codon, row$Near.cognate, input, row$AA)
+}
+
+df.w.tRNA['eN'] <- 0.003146/(df.w.tRNA$Rc + df.w.tRNA$Rn +0.003146)
+df.w.tRNA['eM'] <- df.w.tRNA$Rn/(merge.df$Rc + df.w.tRNA$Rn +0.003146)
+
   #^used to add Rc values^
-}
-
-Scatter.Plot <- function(datas){
-  #need to create column called Rc_key
-  ggplot(datas, aes(x = Rc_key, y = Rc)) +
-  geom_point()+
-  labs(
-
-    x = "Key",
-    y = "My Estimate",
-    #I need to actually create a column and add the values from equations 1-4 into the df for top part to work. Im not sure how to.
-    title = "Title"
-  )
-}
-
-
-Scatter.Plot(df)
+  

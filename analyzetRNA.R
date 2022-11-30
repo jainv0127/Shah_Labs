@@ -10,15 +10,7 @@
 library(tidyverse)
 library(stringr)
 #library(argparse)
-AAColumn <- c()
-CodonColumn <- c()
-CognateColumn <- c()
-PCColumn <- c()
-NearCog <- c()
-RC <- c()
-RN <- c()
-EM <- c()
-EN <- c()
+
 # 
 # parser <- ArgumentParser()
 # parser$add_argument("-o","--output",help="Output results",type="character",default="./")
@@ -26,9 +18,6 @@ EN <- c()
 # args <- parser$parse_args()
 # input <- args$input
 # output <- args$output
-
-
-#input <- read_tsv(file = "ecoli_tRNA_2010.tsv")
 
 
 complementRules <- function(nucleotide)
@@ -352,11 +341,17 @@ calculateElongationMetrics <- function(input.file,target.dir="tGCN/",output.dir=
     merge.df[i, "Rc"] <- EquationThree(row$Codon, row$Cognate, row$Pseudo.cognate, input, row$AA)
     merge.df[i, "Rn"] <- EquationFour(row$Codon, row$Near.cognate, input, row$AA)
   }
-  merge.df['eN'] <- 0.003146/(merge.df$Rc_my + merge.df$Rn_my +0.003146)
-  merge.df['eM'] <- merge.df$Rn_my/(merge.df$Rc_my + merge.df$Rn_my +0.003146)
+  merge.df['eN'] <- 0.003146/(merge.df$Rc + merge.df$Rn +0.003146)
+  merge.df['eM'] <- merge.df$Rn/(merge.df$Rc + merge.df$Rn +0.003146)
   
   write_tsv(merge.df, file.path(output.dir,input.file))
 }
 
-tgcn.files <- list.files("tGCN/",recursive=F,full.names = F)
-rates <- lapply(tgcn.files,calculateElongationMetrics)
+
+input <- "ecoli_tRNA_2010.tsv"
+calculateElongationMetrics(input)
+
+
+
+#tgcn.files <- list.files("tGCN/",recursive=F,full.names = F)
+#rates <- lapply(tgcn.files,calculateElongationMetrics)
