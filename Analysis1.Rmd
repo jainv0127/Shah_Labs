@@ -1,0 +1,373 @@
+---
+title: "Analysis of tRNA Pool"
+author: "Vatsal"
+date: "12/8/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+things to do with data...
+
+make super dataset
+compare average error rates between two species - check differences
+t test(google)=
+anova(compare mean across 2+ groups) -> compare mean of all organism. compare depending on psycro, mneso, and thermo
+
+look elongation rates(Rc) and missense(eM)
+
+
+add more organism -> diversity
+Add Pseudoalteromonas haloplanktis TAC125
+Add organisms with large tRNA gene #
+```{r scatter plot}
+
+```
+sum up middle colum(tRNA)
+and compare them
+do pyscrophile have more tRNA gene compared to other enviorment
+
+
+```{r ecoli vs shewSedi(psycrophile)}
+
+
+our <- read_tsv("Rates/Psychrophile/flavPsyc_3.tsv")
+key <- read_tsv("Rates/Mesophile/ecoli_tRNA_2010.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_flavPsyc", "_ecoli"))
+p <- ggplot(combine, aes(x=Rc_flavPsyc,y=Rc_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n flavPsyc") + ylab("Elongation Rates \n ecoli")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_flavPsyc", "_ecoli"))
+pl <- ggplot(c, aes(x=eM_flavPsyc,y=eM_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n flavPsyc") + ylab("Missense Rates \n ecoli")
+
+p
+pl
+
+
+```
+
+
+```{r ecoli vs shewSedi(psycrophile)}
+
+
+our <- read_tsv("Rates/Psychrophile/shewSedi_HAW_EB3.tsv")
+key <- read_tsv("Rates/Mesophile/ecoli_tRNA_2010.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_shewSedi", "_ecoli"))
+p <- ggplot(combine, aes(x=Rc_shewSedi,y=Rc_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n shewSedi") + ylab("Elongation Rates \n ecoli")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_shewSedi", "_ecoli"))
+pl <- ggplot(c, aes(x=eM_shewSedi,y=eM_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n shewSedi") + ylab("Missense Rates \n ecoli")
+
+p
+pl
+
+
+```
+
+
+
+```{r ecoli vs shewLoih(psycrophile)}
+
+
+our <- read_tsv("Rates/Psychrophile/shewLoihPV4.tsv")
+key <- read_tsv("Rates/Mesophile/ecoli_tRNA_2010.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_shewLoih", "_ecoli"))
+p <- ggplot(combine, aes(x=Rc_shewLoih,y=Rc_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n shewLoih") + ylab("Elongation Rates \n ecoli")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_shewLoih", "_ecoli"))
+pl <- ggplot(c, aes(x=eM_shewLoih,y=eM_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n shewLoih") + ylab("Missense Rates \n ecoli")
+
+p
+pl
+
+
+```
+
+```{r ecoli vs desuPsyc(psycrophile)}
+
+
+our <- read_tsv("Rates/Psychrophile/desuPsyc_LSV54.tsv")
+key <- read_tsv("Rates/Mesophile/ecoli_tRNA_2010.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_desuPsyc", "_ecoli"))
+p <- ggplot(combine, aes(x=Rc_desuPsyc,y=Rc_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n desuPsyc") + ylab("Elongation Rates \n ecoli")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_desuPsyc", "_ecoli"))
+pl <- ggplot(c, aes(x=eM_desuPsyc,y=eM_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n desuPsyc") + ylab("Missense Rates \n ecoli")
+
+p
+pl
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r ecoli vs geoTher(Thermophile)}
+our <- read_tsv("Rates/Thermophile/geobTher_NG80_2.tsv")
+key <- read_tsv("Rates/Mesophile/ecoli_tRNA_2010.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_geobTher", "_ecoli"))
+p <- ggplot(combine, aes(x=Rc_geobTher,y=Rc_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n geother") + ylab("Elongation Rates \n ecoli")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_geobTher", "_ecoli"))
+pl <- ggplot(c, aes(x=eM_geobTher,y=eM_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n geobTher") + ylab("Missense Rates \n ecoli")
+
+
+p
+pl
+```
+
+```{r ecoli vs heliMode(Thermophile)}
+our <- read_tsv("Rates/Thermophile/heliMode_ICE1_ATCC51547.tsv")
+key <- read_tsv("Rates/Mesophile/ecoli_tRNA_2010.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_heliMode", "_ecoli"))
+p <- ggplot(combine, aes(x=Rc_heliMode,y=Rc_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n heliMode") + ylab("Elongation Rates \n ecoli")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_heliMode", "_ecoli"))
+pl <- ggplot(c, aes(x=eM_heliMode,y=eM_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n heliMode") + ylab("Missense Rates \n ecoli")
+
+
+p
+pl
+```
+
+
+
+```{r ecoli vs hydrSp(Thermophile)}
+our <- read_tsv("Rates/Thermophile/hydrSp_Y04AAS1.tsv")
+key <- read_tsv("Rates/Mesophile/ecoli_tRNA_2010.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_hydrSp", "_ecoli"))
+p <- ggplot(combine, aes(x=Rc_hydrSp,y=Rc_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n hydrSp") + ylab("Elongation Rates \n ecoli")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_hydrSp", "_ecoli"))
+pl <- ggplot(c, aes(x=eM_hydrSp,y=eM_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n hydrSp") + ylab("Missense Rates \n ecoli")
+
+
+p
+pl
+```
+
+```{r ecoli vs therSp(Thermophile)}
+our <- read_tsv("Rates/Thermophile/therSp_X514.tsv")
+key <- read_tsv("Rates/Mesophile/ecoli_tRNA_2010.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_therSp", "_ecoli"))
+p <- ggplot(combine, aes(x=Rc_therSp,y=Rc_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n therSp") + ylab("Elongation Rates \n ecoli")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_therSp", "_ecoli"))
+pl <- ggplot(c, aes(x=eM_therSp,y=eM_ecoli)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n therSp") + ylab("Missense Rates \n ecoli")
+
+
+p
+pl
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r baciSubt2 vs flavPysc(psycrophile)}
+
+
+our <- read_tsv("Rates/Psychrophile/flavPsyc_3.tsv")
+key <- read_tsv("Rates/Mesophile/baciSubt2_tRNA.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_flavPsyc", "_baciSubt2"))
+p <- ggplot(combine, aes(x=Rc_flavPsyc,y=Rc_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n flavPsyc") + ylab("Elongation Rates \n baciSubt2")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_flavPsyc", "_baciSubt2"))
+pl <- ggplot(c, aes(x=eM_flavPsyc,y=eM_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n flavPsyc") + ylab("Missense Rates \n baciSubt2")
+
+p
+pl
+
+
+```
+
+
+```{r baciSubt2 vs shewSedi(psycrophile)}
+
+
+our <- read_tsv("Rates/Psychrophile/shewSedi_HAW_EB3.tsv")
+key <- read_tsv("Rates/Mesophile/baciSubt2_tRNA.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_shewSedi", "_baciSubt2"))
+p <- ggplot(combine, aes(x=Rc_shewSedi,y=Rc_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n shewSedi") + ylab("Elongation Rates \n baciSubt2")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_shewSedi", "_baciSubt2"))
+pl <- ggplot(c, aes(x=eM_shewSedi,y=eM_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n shewSedi") + ylab("Missense Rates \n baciSubt2")
+
+p
+pl
+
+
+```
+
+
+
+```{r baciSubt2 vs shewLoih(psycrophile)}
+
+
+our <- read_tsv("Rates/Psychrophile/shewLoihPV4.tsv")
+key <- read_tsv("Rates/Mesophile/baciSubt2_tRNA.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_shewLoih", "_baciSubt2"))
+p <- ggplot(combine, aes(x=Rc_shewLoih,y=Rc_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n shewLoih") + ylab("Elongation Rates \n baciSubt2")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_shewLoih", "_baciSubt2"))
+pl <- ggplot(c, aes(x=eM_shewLoih,y=eM_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n shewLoih") + ylab("Missense Rates \n baciSubt2")
+
+p
+pl
+
+
+```
+
+```{r baciSubt2 vs desuPsyc(psycrophile)}
+
+
+our <- read_tsv("Rates/Psychrophile/desuPsyc_LSV54.tsv")
+key <- read_tsv("Rates/Mesophile/ecoli_tRNA_2010.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_desuPsyc", "_baciSubt2"))
+p <- ggplot(combine, aes(x=Rc_desuPsyc,y=Rc_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n desuPsyc") + ylab("Elongation Rates \n baciSubt2")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_desuPsyc", "_baciSubt2"))
+pl <- ggplot(c, aes(x=eM_desuPsyc,y=eM_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n desuPsyc") + ylab("Missense Rates \n baciSubt2")
+
+p
+pl
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r baciSubt2 vs geoTher(Thermophile)}
+our <- read_tsv("Rates/Thermophile/geobTher_NG80_2.tsv")
+key <- read_tsv("Rates/Mesophile/baciSubt2_tRNA.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_geobTher", "_baciSubt2"))
+p <- ggplot(combine, aes(x=Rc_geobTher,y=Rc_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n geother") + ylab("Elongation Rates \n baciSubt2")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_geobTher", "_baciSubt2"))
+pl <- ggplot(c, aes(x=eM_geobTher,y=eM_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n geobTher") + ylab("Missense Rates \n baciSubt2")
+
+
+p
+pl
+```
+
+```{r baciSubt2 vs geoTher(Thermophile)}
+our <- read_tsv("Rates/Thermophile/heliMode_ICE1_ATCC51547.tsv")
+key <- read_tsv("Rates/Mesophile/baciSubt2_tRNA.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_heliMode", "_baciSubt2"))
+p <- ggplot(combine, aes(x=Rc_heliMode,y=Rc_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n heliMode") + ylab("Elongation Rates \n baciSubt2")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_heliMode", "_baciSubt2"))
+pl <- ggplot(c, aes(x=eM_heliMode,y=eM_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n heliMode") + ylab("Missense Rates \n baciSubt2")
+
+
+p
+pl
+```
+
+
+
+```{r baciSubt2 vs hydrSp(Thermophile)}
+our <- read_tsv("Rates/Thermophile/hydrSp_Y04AAS1.tsv")
+key <- read_tsv("Rates/Mesophile/baciSubt2_tRNA.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_hydrSp", "_baciSubt2"))
+p <- ggplot(combine, aes(x=Rc_hydrSp,y=Rc_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n hydrSp") + ylab("Elongation Rates \n baciSubt2")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_hydrSp", "_baciSubt2"))
+pl <- ggplot(c, aes(x=eM_hydrSp,y=eM_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n hydrSp") + ylab("Missense Rates \n baciSubt2")
+
+
+p
+pl
+```
+
+```{r baciSubt2 vs therSp(Thermophile)}
+our <- read_tsv("Rates/Thermophile/therSp_X514.tsv")
+key <- read_tsv("Rates/Mesophile/baciSubt2_tRNA.tsv")
+
+combine <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_therSp", "_baciSubt2"))
+p <- ggplot(combine, aes(x=Rc_therSp,y=Rc_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n therSp") + ylab("Elongation Rates \n baciSubt2")
+
+c <- our %>% left_join(key,by=c("AA","Codon"),suffix = c("_therSp", "_baciSubt2"))
+pl <- ggplot(c, aes(x=eM_therSp,y=eM_baciSubt2)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Rates \n therSp") + ylab("Missense Rates \n baciSubt2")
+
+
+p
+pl
+```
+
+
+
+
+
+
