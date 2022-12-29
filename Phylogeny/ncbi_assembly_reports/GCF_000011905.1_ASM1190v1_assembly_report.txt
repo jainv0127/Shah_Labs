@@ -1,0 +1,28 @@
+# Assembly name:  ASM1190v1
+# Organism name:  Dehalococcoides mccartyi 195 (GNS bacteria)
+# Infraspecific name:  strain=195
+# Taxid:          243164
+# BioSample:      SAMN02603990
+# BioProject:     PRJNA214
+# Submitter:      TIGR
+# Date:           2005-01-07
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# GenBank assembly accession: GCA_000011905.1
+# RefSeq assembly accession: GCF_000011905.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000011915.1	GCF_000011915.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000027.1	assembled-molecule	na	Chromosome	CP000027.1	=	NC_002936.3	Primary Assembly	1469720	na

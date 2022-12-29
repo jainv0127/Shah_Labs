@@ -1,0 +1,30 @@
+# Assembly name:  ASM960v1
+# Organism name:  Buchnera aphidicola str. APS (Acyrthosiphon pisum) (enterobacteria)
+# Infraspecific name:  strain=APS
+# Isolate:  Tokyo1998
+# Taxid:          107806
+# BioSample:      SAMD00061095
+# BioProject:     PRJNA245
+# Submitter:      Rikken GSC
+# Date:           2004-05-11
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000009605.1
+# RefSeq assembly accession: GCF_000009605.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000009615.1	GCF_000009615.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+BA000003.2	assembled-molecule	na	Chromosome	BA000003.2	=	NC_002528.1	Primary Assembly	640681	na
+pLeu	assembled-molecule	pLeu	Plasmid	AP001071.1	=	NC_002253.1	Primary Assembly	7786	na
+pTrp	assembled-molecule	pTrp	Plasmid	AP001070.1	=	NC_002252.1	Primary Assembly	7258	na

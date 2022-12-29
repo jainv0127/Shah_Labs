@@ -1,0 +1,33 @@
+# Assembly name:  ASM1740v1
+# Organism name:  Brucella anthropi ATCC 49188 (a-proteobacteria)
+# Infraspecific name:  strain=ATCC 49188
+# Taxid:          439375
+# BioSample:      SAMN02598421
+# BioProject:     PRJNA19485
+# Submitter:      US DOE Joint Genome Institute
+# Date:           2007-07-12
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# GenBank assembly accession: GCA_000017405.1
+# RefSeq assembly accession: GCF_000017405.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000017415.1	GCF_000017415.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+1	assembled-molecule	1	Chromosome	CP000758.1	=	NC_009667.1	Primary Assembly	2887297	na
+2	assembled-molecule	2	Chromosome	CP000759.1	=	NC_009668.1	Primary Assembly	1895911	na
+pOANT01	assembled-molecule	pOANT01	Plasmid	CP000760.1	=	NC_009669.1	Primary Assembly	170351	na
+pOANT02	assembled-molecule	pOANT02	Plasmid	CP000761.1	=	NC_009670.1	Primary Assembly	101491	na
+pOANT03	assembled-molecule	pOANT03	Plasmid	CP000762.1	=	NC_009671.1	Primary Assembly	93589	na
+pOANT04	assembled-molecule	pOANT04	Plasmid	CP000763.1	=	NC_009672.1	Primary Assembly	57138	na

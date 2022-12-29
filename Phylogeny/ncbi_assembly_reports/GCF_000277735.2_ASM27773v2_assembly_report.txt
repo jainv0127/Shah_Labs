@@ -1,0 +1,30 @@
+# Assembly name:  ASM27773v2
+# Organism name:  Mycobacterium tuberculosis H37Rv (high G+C Gram-positive bacteria)
+# Infraspecific name:  strain=H37Rv
+# Taxid:          83332
+# BioSample:      SAMN03081436
+# BioProject:     PRJNA37301
+# Submitter:      The Broad Institute
+# Date:           2013-11-26
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Assembly method: Newbler v. 2.1-PreRelease-4/28/2009
+# Sequencing technology: 454/Sanger/Illumina
+# Relation to type material: assembly from type material
+# GenBank assembly accession: GCA_000277735.2
+# RefSeq assembly accession: GCF_000277735.2
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000277745.2	GCF_000277745.2	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP003248.2	assembled-molecule	na	Chromosome	CP003248.2	=	NC_018143.2	Primary Assembly	4411709	na

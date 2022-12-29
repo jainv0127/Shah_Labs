@@ -1,0 +1,37 @@
+# Assembly name:  ASM1550v1
+# Organism name:  Polaromonas naphthalenivorans CJ2 (b-proteobacteria)
+# Infraspecific name:  strain=CJ2
+# Taxid:          365044
+# BioSample:      SAMN02598302
+# BioProject:     PRJNA13418
+# Submitter:      DOE Joint Genome Institute
+# Date:           2007-01-04
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000015505.1
+# RefSeq assembly accession: GCF_000015505.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000015515.1	GCF_000015515.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000529.1	assembled-molecule	na	Chromosome	CP000529.1	=	NC_008781.1	Primary Assembly	4410291	na
+pPNAP01	assembled-molecule	pPNAP01	Plasmid	CP000530.1	=	NC_008757.1	Primary Assembly	353291	na
+pPNAP02	assembled-molecule	pPNAP02	Plasmid	CP000531.1	=	NC_008758.1	Primary Assembly	190172	na
+pPNAP03	assembled-molecule	pPNAP03	Plasmid	CP000532.1	=	NC_008759.1	Primary Assembly	171866	na
+pPNAP04	assembled-molecule	pPNAP04	Plasmid	CP000533.1	=	NC_008760.1	Primary Assembly	143747	na
+pPNAP05	assembled-molecule	pPNAP05	Plasmid	CP000534.1	=	NC_008761.1	Primary Assembly	58808	na
+pPNAP06	assembled-molecule	pPNAP06	Plasmid	CP000535.1	=	NC_008762.1	Primary Assembly	21611	na
+pPNAP07	assembled-molecule	pPNAP07	Plasmid	CP000536.1	=	NC_008763.1	Primary Assembly	9898	na
+pPNAP08	assembled-molecule	pPNAP08	Plasmid	CP000537.1	=	NC_008764.1	Primary Assembly	6459	na

@@ -1,0 +1,27 @@
+# Assembly name:  ASM1564v1
+# Organism name:  Prochlorococcus marinus str. AS9601 (cyanobacteria)
+# Infraspecific name:  strain=AS9601
+# Taxid:          146891
+# BioSample:      SAMN02603921
+# BioProject:     PRJNA13548
+# Submitter:      The Gordon and Betty Moore Foundation Marine Microbiology Initiative
+# Date:           2007-01-19
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000015645.1
+# RefSeq assembly accession: GCF_000015645.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000015655.1	GCF_000015655.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000551.1	assembled-molecule	na	Chromosome	CP000551.1	=	NC_008816.1	Primary Assembly	1669886	na

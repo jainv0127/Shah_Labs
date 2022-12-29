@@ -1,0 +1,28 @@
+# Assembly name:  ASM19272v1
+# Organism name:  Brucella melitensis M28 (a-proteobacteria)
+# Infraspecific name:  strain=M28
+# Taxid:          941967
+# BioSample:      SAMN02603655
+# BioProject:     PRJNA61505
+# Submitter:      National Key Laboratory of Veterinary Biotechnology , Harbin Veterinary Research Institute, Chinese Academy of Agricultural Sciences
+# Date:           2011-03-18
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000192725.1
+# RefSeq assembly accession: GCF_000192725.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000192735.1	GCF_000192735.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+1	assembled-molecule	1	Chromosome	CP002459.1	=	NC_017244.1	Primary Assembly	2126133	na
+2	assembled-molecule	2	Chromosome	CP002460.1	=	NC_017245.1	Primary Assembly	1185615	na

@@ -1,0 +1,30 @@
+# Assembly name:  ASM1876v1
+# Organism name:  Shewanella baltica OS195 (g-proteobacteria)
+# Infraspecific name:  strain=OS195
+# Taxid:          399599
+# BioSample:      SAMN00623061
+# BioProject:     PRJNA13389
+# Submitter:      US DOE Joint Genome Institute
+# Date:           2007-11-21
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000018765.1
+# RefSeq assembly accession: GCF_000018765.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000018775.1	GCF_000018775.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000891.1	assembled-molecule	na	Chromosome	CP000891.1	=	NC_009997.1	Primary Assembly	5347283	na
+pS19501	assembled-molecule	pS19501	Plasmid	CP000892.1	=	NC_009998.1	Primary Assembly	75605	na
+pS19502	assembled-molecule	pS19502	Plasmid	CP000893.1	=	NC_009999.1	Primary Assembly	75508	na
+pS19503	assembled-molecule	pS19503	Plasmid	CP000894.1	=	NC_010000.1	Primary Assembly	49148	na

@@ -1,0 +1,1170 @@
+Prokaryote Name	Tax ID	Average CAI	Median CAI	Coefficient of Variation (of CAI)	Nc Difference	Average Nc	Salinity	Oxygen Requirment	Habitat	Temp. Range	Pathogenic	Present in the trimmed list	Super Kingdom	GC content (%)
+ Nostoc azollae  0708 uid49725	551115	0.733039127	0.734	0.048738347	-0.054388483	48.21506772		Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.383736668
+Acaryochloris marina MBIC11017	329726	0.735618125	0.739	0.044133496	0.057045528	53.62107108		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.469558929
+Acetobacter pasteurianus IFO 3283 01	634452	0.562232641	0.554	0.129620459	0.165552181	47.87895168		Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.530995144
+Acholeplasma laidlawii PG 8A	441768	0.631606324	0.625	0.10906547	0.054523452	39.618	Non-halophilic	Facultative	Specialized	Mesophilic		Yes	Bacteria	0.319277591
+Acidaminococcus fermentans DSM 20731 uid43471	591001	0.677834667	0.694	0.140498727	-0.028303293	37.4331616		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.558427037
+Acidimicrobium ferrooxidans DSM 10331	525909	0.674603505	0.678	0.08104806	0.018404537	37.92378039		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.682893321
+Acidiphilium cryptum JF-5	349163	0.62518534	0.654	0.220005398	0.122985575	36.93607479		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.670952643
+Acidithiobacillus ferrooxidans ATCC 23270	243159	0.716212916	0.725	0.081581232	-0.004851992	47.12009198		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.587724572
+Acidithiobacillus ferrooxidans ATCC 53993	380394	0.732023771	0.739	0.069772675	-0.036077479	46.85336906		Aerobic	Specialized	Mesophilic	No	Yes	Bacteria	0.5885049
+Acidobacteria bacterium Ellin345	204669	0.57872931	0.582	0.109487039	0.125266322	44.63855159		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.583838433
+Acidobacterium capsulatum ATCC 51196	240015	0.598171362	0.607	0.163442703	0.104333844	41.57513855		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.604970107
+Acidothermus cellulolyticus 11B	351607	0.632365243	0.639	0.097892241	0.098860038	41.62727982		Aerobic	Aquatic	Thermophilic	No	Yes	Bacteria	0.669073557
+Acidovorax avenae citrulli AAC00-1	397945	0.597155605	0.605	0.189096267	0.064573325	33.82419843	Non-halophilic	Aerobic	Multiple	Mesophilic	Fruit	Yes	Bacteria	0.685323044
+Acidovorax JS42	232721	0.623233195	0.635	0.172686333	0.012123445	35.1372332		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.660875513
+Aciduliprofundum boonei T469 uid43333	439481	0.761992743	0.763	0.037008166	-0.009223073	48.76475109	Mesophilic	Anaerobic	Specialized	Thermophilic	No	Yes	Archaea	0.391579644
+Acinetobacter baumannii	509173	0.524299854	0.518	0.138822374	0.214791202	45.57130835		Aerobic	Aquatic	Mesophilic	Human	No	Bacteria	0.393159098
+Acinetobacter baumannii AB0057	480119	0.531099823	0.524	0.130920846	0.209679757	45.41173243		Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.391949039
+Acinetobacter baumannii AB307 0294	557600	0.533760536	0.524	0.123810492	0.206418887	45.18068072		Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.390436963
+Acinetobacter baumannii ACICU	405416	0.514162592	0.505	0.134323205	0.227180815	45.4386109	Non-halophilic	Aerobic	Aquatic	Mesophilic	Human	Yes	Bacteria	0.38932892
+Acinetobacter baumannii ATCC 17978	400667	0.498642788	0.488	0.141915765	0.227496643	45.48088331		Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.389209078
+Acinetobacter baumannii AYE	509173	0.524299854	0.518	0.138822374	0.214791202	45.57130835		Aerobic	Aquatic	Mesophilic	Human	No	Bacteria	0.393159098
+Acinetobacter baumannii SDF	509170	0.518140402	0.506	0.14564938	0.213157427	45.8753638	Non-halophilic	Aerobic	Aquatic	Mesophilic	Human	No	Bacteria	0.391193124
+Acinetobacter DR1 uid50119	436717	0.561387824	0.553	0.111808097	0.182494589	45.32558061		Anaerobic		Mesophilic		Yes	Bacteria	0.387320733
+Acinetobacter sp ADP1	62977	0.511317413	0.504	0.119300892	0.205610322	46.95506169	Non-halophilic	Aerobic	Multiple	Mesophilic	Human	Yes	Bacteria	0.404295701
+Actinobacillus pleuropneumoniae L20	416269	0.472028632	0.452	0.187890908	0.190069969	43.82549258	Non-halophilic	Facultative	Host-associated	Mesophilic	Porcine	Yes	Bacteria	0.412995135
+Actinobacillus pleuropneumoniae serovar 3 JL03	434271	0.462145934	0.441	0.202321069	0.185988064	43.72906624	Mesophilic	Facultative	Host-associated		Porcine	No	Bacteria	0.412328316
+Actinobacillus pleuropneumoniae serovar 7 AP76	537457	0.48415715	0.467	0.175958448	0.191502719	44.10372057		Facultative	Host-associated	Mesophilic	Porcine	No	Bacteria	0.41226297
+Actinobacillus succinogenes 130Z	339671	0.517587423	0.509	0.125158954	0.178304538	46.33993507	Non-halophilic		Host-associated	Mesophilic	No	Yes	Bacteria	0.449185938
+Actinosynnema mirum DSM 43827	446462	0.677315558	0.685	0.134610777	-0.014964113	29.16191248			Terrestrial	Mesophilic		Yes	Bacteria	0.737088732
+Aeromonas hydrophila ATCC 7966	380703	0.491288756	0.483	0.184966413	0.011461442	36.67344586		Facultative	Multiple	Mesophilic	Animal	Yes	Bacteria	0.615484035
+Aeromonas salmonicida A449	382245	0.463593464	0.455	0.191387443	0.122902015	42.55733721		Facultative	Aquatic	Mesophilic	Fish	Yes	Bacteria	0.581809554
+Aeropyrum pernix	272557	0.656396313	0.663	0.130107091	0.070867902	44.30394733	Mesophilic	Aerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.563112686
+Aggregatibacter actinomycetemcomitans D11S 1	668336	0.537922658	0.53	0.131509676	0.136274565	44.66989434					Human	Yes	Bacteria	0.443506137
+Aggregatibacter aphrophilus NJ8700	634176	0.544531498	0.537	0.121353563	0.168115338	45.7154505		Facultative	Host-associated	Mesophilic		Yes	Bacteria	0.422309649
+Agrobacterium radiobacter K84	311403	0.536583898	0.536	0.182317838	0.164188909	42.61392433	Non-halophilic	Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.598742249
+Agrobacterium tumefaciens C58 Cereon	176299	0.526362538	0.526	0.178936193	0.196894761	43.69783951		Aerobic	Multiple	Mesophilic	Plant	No	Bacteria	0.590411469
+Agrobacterium tumefaciens C58 UWash	176299	0.523853415	0.525	0.182108367	0.198374704	43.91689072		Aerobic	Multiple	Mesophilic	Plant	No	Bacteria	0.590413358
+Agrobacterium vitis S4	311402	0.545592433	0.545	0.144880637	0.141089734	45.65733013		Aerobic	Multiple	Mesophilic	Grape vines	Yes	Bacteria	0.574707488
+Akkermansia muciniphila ATCC BAA 835	349741	0.564572508	0.564	0.143208578	0.119335333	43.69136959		Anaerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.557623544
+Alcanivorax borkumensis SK2	393595	0.591367482	0.585	0.125329134	0.098617746	47.67710477	Moderate halophilic	Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.547277801
+Alicyclobacillus acidocaldarius DSM 446	521098	0.636335682	0.657	0.152643569	0.070076216	42.63218917		Aerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.61892088
+Aliivibrio salmonicida LFI1238	316275	0.463195888	0.444	0.182953838	0.215023944	47.04006557		Facultative	Aquatic	Psychrophilic	Fis	Yes	Bacteria	0.389692415
+Alkalilimnicola ehrlichei MLHE-1	187272	0.651565702	0.662	0.138664809	0.020916918	35.56159985		Facultative	Aquatic		No	Yes	Bacteria	0.675312521
+Alkaliphilus metalliredigens QYMF	293826	0.594361437	0.593	0.09878515	0.137948811	47.61801821	Moderate halophilic			Mesophilic	No	Yes	Bacteria	0.368220245
+Alkaliphilus oremlandii OhILAs	350688	0.539654188	0.53	0.14848347	0.210566253	47.7559946		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.362573066
+Allochromatium vinosum DSM 180 uid46083	572477	0.64289748	0.659	0.161967939	0.071309215	38.66760422		Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.641861407
+alpha proteobacterium IMCC1322 uid47081	488538	0.695671008	0.698	0.068501933	0.0547596	49.93615			Aquatic			No	Bacteria	0.488537065
+Alteromonas macleodii  Deep ecotype 	314275	0.483377006	0.467	0.150826202	0.249093063	53.14713014		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.44879134
+Aminobacterium colombiense DSM 12261 uid47083	572547	0.726230186	0.727	0.03594866	0.012592566	53.79810897		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.453068577
+Ammonifex degensii KC4	429009	0.652940044	0.656	0.09681074	0.044403639	45.7564978		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.594651441
+Amycolatopsis mediterranei U32 uid50565	749927	0.670832468	0.682	0.126148442	0.034361927	31.0856489		Aerobic		Mesophilic		Yes	Bacteria	0.712927927
+Anabaena variabilis ATCC 29413	240292	0.69555	0.696	0.047856524	0.002351046	50.71387882		Aerobic	Multiple		No	Yes	Bacteria	0.41409748
+Anaerocellum thermophilum DSM 6725	521460	0.67788709	0.679	0.053454635	0.077362813	44.73208138		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.351916421
+Anaerococcus prevotii DSM 20548	525919	0.614853988	0.602	0.137652683	0.161604178	43.57578282		Anaerobic	Host-associated	Mesophilic	Yes	Yes	Bacteria	0.356389092
+Anaeromyxobacter dehalogenans 2CP 1	455488	0.764293091	0.783	0.113468186	0.02705962	29.2014		Facultative	Terrestrial	Mesophilic	No	No	Bacteria	0.74716488
+Anaeromyxobacter dehalogenans 2CP-C	290397	0.75771394	0.78	0.134465308	0.039211472	29.2761348		Facultative	Terrestrial	Mesophilic	No	Yes	Bacteria	0.749052704
+Anaeromyxobacter Fw109-5	404589	0.712627632	0.73	0.137964084	0.070994294	30.71533144		Anaerobic	Terrestrial		No	Yes	Bacteria	0.735314012
+Anaeromyxobacter K	447217	0.76261661	0.78	0.115198101	0.03367892	29.05744037	Non-halophilic	Anaerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.748406838
+Anaplasma centrale Israel	574556	0.678662338	0.678	0.053502867	0.088634204	55.21908146		Aerobic	Host-associated	Mesophilic	Cattle	Yes	Bacteria	0.499849189
+Anaplasma marginale Florida	320483	0.696838303	0.695	0.046147899	0.061322708	55.72480161		Aerobic	Host-associated	Mesophilic	Cattle	No	Bacteria	0.497744992
+Anaplasma marginale St Maries	234826	0.690169143	0.69	0.048235477	0.061653944	55.758368		Aerobic	Host-associated		Cattle	Yes	Bacteria	0.497626675
+Anaplasma phagocytophilum HZ	212042	0.601714964	0.6005	0.081631492	0.122880391	51.57456651		Aerobic	Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.416359338
+Anoxybacillus flavithermus WK1	491915	0.551867587	0.548	0.112626544	0.166070015	47.57020755		Facultative	Specialized	Thermophilic	No	Yes	Bacteria	0.417767514
+Aquifex aeolicus	224324	0.674511199	0.674	0.074394362	0.073684814	47.24699407		Aerobic	Specialized	Hyperthermophilic	No	Yes	Bacteria	0.433016028
+Arcanobacterium haemolyticum DSM 20595 uid49489	644284	0.502508906	0.482	0.196656611	0.190062902	46.61171628		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.531332414
+Archaeoglobus fulgidus	224325	0.703866476	0.714	0.082750678	0.069157212	48.42037244		Anaerobic	Aquatic	Hyperthermophilic	No	Yes	Archaea	0.485816654
+Archaeoglobus profundus DSM 5631 uid43493	572546	0.691714758	0.695	0.055648417	0.05917652	48.97834811		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.420045631
+Arcobacter butzleri RM4018	367737	0.680582613	0.679	0.084347405	0.054072136	32.9150024		Aerobic	Multiple	Mesophilic	Human	Yes	Bacteria	0.270451566
+Arcobacter nitrofigilis DSM 7299 uid49001	572480	0.655852453	0.655	0.09541228	0.068922061	35.25374126		Microaerophilic	Multiple	Mesophilic	No	Yes	Bacteria	0.283608506
+Aromatoleum aromaticum EbN1	76114	0.649733611	0.6775	0.185762064	0.041495364	39.2035954	Non-halophilic	Facultative	Terrestrial	Mesophilic	No	Yes	Bacteria	0.646976099
+Arthrobacter aurescens TC1	290340	0.50008661	0.486	0.195374057	0.193791547	43.53577341	Non-halophilic	Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.624298594
+Arthrobacter chlorophenolicus A6	452863	0.545946844	0.538	0.178191639	0.099324335	37.39116184		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.659586425
+Arthrobacter FB24	290399	0.532891131	0.523	0.174167924	0.107220099	38.98323909				Mesophilic	No	Yes	Bacteria	0.653884506
+Aster yellows witches-broom phytoplasma AYWB	322098	0.701837165	0.704	0.074559618	-0.037473617	38.40982184		Aerobic	Host-associated	Mesophilic	Plant	Yes	Bacteria	0.268117463
+Atopobium parvulum DSM 20469	521095	0.531090184	0.51	0.222282927	0.185572818	46.37711014		Anaerobic	Host-associated	Mesophilic		Yes	Bacteria	0.45686599
+Azoarcus BH72	62928	0.690637507	0.707	0.14664865	-0.031526803	33.43995479		Microaerophilic	Host-associated	Mesophilic	No	Yes	Bacteria	0.679164496
+Azoarcus sp EbN1	76114	0.64947227	0.677	0.186180092	0.041782814	39.21527193	Non-halophilic	Facultative	Terrestrial	Mesophilic	No	No	Bacteria	0.646976099
+Azorhizobium caulinodans ORS 571	438753	0.645127813	0.652	0.148334816	0.100206792	35.22528915			Host-associated			Yes	Bacteria	0.673190221
+Azospirillum B510 uid46085	137722	0.5769001	0.586	0.187552171	0.126029507	34.59512275			Terrestrial	Mesophilic	No	Yes	Bacteria	0.676127914
+Azotobacter vinelandii DJ	322710	0.631708166	0.647	0.162316098	-0.002281329	34.90807787		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.65675548
+Bacillus amyloliquefaciens FZB42	326423	0.444960688	0.435	0.133106629	0.209877169	50.83557494		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.464756574
+Bacillus anthracis A0248	592021	0.494574713	0.479	0.165570136	0.181197971	43.41424851		Facultative	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.35242952
+Bacillus anthracis Ames	198094	0.494349206	0.479	0.166223857	0.180732966	43.38971935		Facultative	Multiple	Mesophilic	Animal	Yes	Bacteria	0.353768385
+Bacillus anthracis Ames 0581	261594	0.493285006	0.478	0.166421829	0.18204209	43.45992446		Facultative	Terrestrial	Mesophilic	Animal	No	Bacteria	0.35242952
+Bacillus anthracis CDC 684	568206	0.4919761	0.477	0.164956005	0.182187453	43.47125888				Mesophilic	Animal	No	Bacteria	0.352466594
+Bacillus anthracis str Sterne	260799	0.496819965	0.482	0.163438438	0.179258315	43.47282258		Facultative	Multiple	Mesophilic	Animal	No	Bacteria	0.35379446
+Bacillus cereus 03BB102	572264	0.49425136	0.48	0.162912263	0.181338028	43.41783221		Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.353326331
+Bacillus cereus AH187	405534	0.492275276	0.479	0.161772706	0.184990805	43.55682477	Non-halophilic	Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.355105139
+Bacillus cereus AH820	405535	0.490618837	0.476	0.164831619	0.181826809	43.43525242	Non-halophilic	Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.353102859
+Bacillus cereus ATCC 10987	222523	0.498309447	0.485	0.155060755	0.186438364	43.65950549		Aerobic	Terrestrial	Mesophilic	Human	No	Bacteria	0.354967546
+Bacillus cereus ATCC14579	226900	0.529770769	0.517	0.144974141	0.156466154	43.34824434		Aerobic	Terrestrial	Mesophilic	Human	Yes	Bacteria	0.352883492
+Bacillus cereus B4264	405532	0.513509704	0.5	0.149986437	0.176533247	43.27760212	Non-halophilic	Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.353035669
+Bacillus cereus cytotoxis NVH 391-98	315749	0.487587604	0.475	0.153074894	0.208094634	43.77744922	Non-halophilic	Aerobic	Terrestrial	Mesophilic	Human	No	Bacteria	0.358669998
+Bacillus cereus G9842	405531	0.518595307	0.506	0.143121555	0.165602718	43.21958596	Non-halophilic	Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.350154955
+Bacillus cereus Q1	361100	0.481377821	0.466	0.172007196	0.182882928	43.53352138		Aerobic	Terrestrial	Mesophilic	No	No	Bacteria	0.354679728
+Bacillus cereus ZK	288681	0.519535271	0.507	0.146792085	0.173402158	43.51505997		Aerobic	Terrestrial	Mesophilic	"Human, Animal"	No	Bacteria	0.351272027
+Bacillus clausii KSM-K16	66692	0.581930696	0.581	0.085404386	0.166883504	52.94749336				Mesophilic	No	Yes	Bacteria	0.447533163
+Bacillus halodurans	272558	0.553972144	0.549	0.087987816	0.219261976	54.1270695		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.436855123
+Bacillus licheniformis ATCC 14580	279010	0.476139328	0.47	0.107138426	0.196370006	52.14206023		Facultative	Terrestrial	Mesophilic	Human	Yes	Bacteria	0.461943917
+Bacillus licheniformis DSM 13	279010	0.475952653	0.47	0.106626806	0.197023654	52.18604082		Facultative	Terrestrial	Mesophilic	Human	No	Bacteria	0.461947429
+Bacillus megaterium DSM319 uid48371	592022	0.474685289	0.464	0.13620606	0.267841186	48.60436965		Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.381316373
+Bacillus megaterium QM B1551 uid15862	545693	0.463796416	0.453	0.14445555	0.26315904	48.47488795		Aerobic	Multiple	Mesophilic	No	No	Bacteria	0.379264382
+Bacillus pseudofirmus OF4 uid45847	398511	0.503551619	0.492	0.138181994	0.238989764	50.29858345		Facultative	Terrestrial	Mesophilic		Yes	Bacteria	0.398605589
+Bacillus pumilus SAFR-032	315750	0.48891405	0.479	0.121654496	0.246889897	51.68116048		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.412869065
+Bacillus selenitireducens MLS10 uid49513	439292	0.682208791	0.679	0.054272234	0.071309718	51.33596497	Moderate halophilic	Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.486699604
+Bacillus subtilis	224308	0.425721761	0.414	0.152691812	0.265629073	52.41936794		Facultative	Terrestrial	Mesophilic	No	Yes	Bacteria	0.435144081
+Bacillus thuringiensis Al Hakam	412694	0.4952198	0.48	0.164540477	0.165552738	43.5079782		Facultative	Multiple	Mesophilic	Insect	Yes	Bacteria	0.354337356
+Bacillus thuringiensis BMB171 uid49135	714359	0.514097978	0.5	0.154540095	0.175713571	43.0925852				Mesophilic		No	Bacteria	0.351764675
+Bacillus thuringiensis konkukian	281309	0.489528036	0.475	0.165844147	0.182278131	43.4558701		Facultative	Multiple	Mesophilic	Insect	No	Bacteria	0.353652344
+Bacillus tusciae DSM 2912 uid48361	562970	0.73848104	0.743	0.074385881	-0.023446889	47.6098736	Non-halophilic	Aerobic		Thermophilic		Yes	Bacteria	0.591141308
+Bacillus weihenstephanensis KBAB4	315730	0.534025907	0.523	0.132308879	0.153539685	43.80914819	Non-halophilic	Aerobic	Terrestrial	Mesophilic	Human	Yes	Bacteria	0.354831635
+Bacteroides fragilis NCTC 9434	272559	0.529471791	0.526	0.118307308	0.153410844	50.49994824		Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.431141805
+Bacteroides fragilis YCH46	295405	0.528652833	0.526	0.117197059	0.156334767	50.65037749		Anaerobic		Mesophilic	Human	No	Bacteria	0.43204299
+Bacteroides thetaiotaomicron VPI-5482	226186	0.52048292	0.518	0.13556936	0.164864109	50.23335477		Anaerobic	Host-associated	Mesophilic	Mammal	Yes	Bacteria	0.42860289
+Bacteroides vulgatus ATCC 8482	435590	0.533865867	0.532	0.125329304	0.162860225	49.51458693		Anaerobic	Host-associated	Mesophilic	Mammal	Yes	Bacteria	0.42201496
+Bartonella bacilliformis KC583	360095	0.617667297	0.621	0.077004823	0.092632521	44.34099338		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.38238683
+Bartonella grahamii as4aup	634504	0.589516005	0.593	0.08529953	0.105176249	45.45139052		Aerobic	Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.38037324
+Bartonella henselae Houston-1	283166	0.598807044	0.602	0.080406501	0.096124924	45.41534227		Aerobic	Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.382303486
+Bartonella quintana Toulouse	283165	0.603027358	0.603	0.072058512	0.112806702	45.85394811		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.387968387
+Bartonella tribocorum CIP 105476	382640	0.591869972	0.593	0.08353599	0.112629096	45.94801433		Aerobic	Host-associated	Mesophilic	Rat	Yes	Bacteria	0.38822224
+Baumannia cicadellinicola Homalodisca coagulata	374463	0.641631579	0.637	0.073813053	0.104318152	40.75916878			Host-associated		No	Yes	Bacteria	0.33236175
+Bdellovibrio bacteriovorus	264462	0.463807023	0.448	0.162661761	0.170637726	47.39712365		Aerobic	Multiple	Mesophilic	Gram-negative bacteria	Yes	Bacteria	0.506455015
+Beijerinckia indica ATCC 9039	395963	0.607895561	0.619	0.134364098	0.118006236	46.69703075		Aerobic		Mesophilic		Yes	Bacteria	0.569829557
+Beutenbergia cavernae DSM 12333	471853	0.721914428	0.727	0.083106084	0.060578643	31.08525249		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.731165816
+Bifidobacterium adolescentis ATCC 15703	367928	0.498904884	0.4845	0.303248372	0.198873489	40.05658033	Non-halophilic	Anaerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.591843395
+Bifidobacterium animalis lactis AD011	442563	0.53487642	0.525	0.194238328	0.149501294	40.05297869	Non-halophilic	Anaerobic	Multiple	Mesophilic		Yes	Bacteria	0.604903565
+Bifidobacterium animalis lactis Bl 04	580050	0.520702741	0.513	0.210482273	0.163518769	39.97105552	Non-halophilic	Anaerobic	Multiple	Mesophilic		No	Bacteria	0.604821355
+Bifidobacterium animalis lactis DSM 10140	555970	0.520242616	0.512	0.211055303	0.163964031	39.9935879		Anaerobic	Multiple	Mesophilic	No	No	Bacteria	0.604821303
+Bifidobacterium dentium Bd1	401473	0.50451217	0.49	0.240437509	0.223582349	41.30839099	Non-halophilic	Anaerobic		Mesophilic	Human	Yes	Bacteria	0.585367352
+Bifidobacterium longum	206672	0.483489349	0.465	0.321473419	0.213792633	40.04593792	Non-halophilic	Anaerobic	Host-associated	Mesophilic	No	No	Bacteria	0.601273478
+Bifidobacterium longum infantis ATCC 15697	391904	0.456954483	0.434	0.324249663	0.233792891	40.63927856		Anaerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.598631435
+Bifidobacterium longum JDM301 uid49131	759350	0.505941143	0.4835	0.284591776	0.204006951	39.79765415		Aerobic	Host-associated	Mesophilic	No	No	Bacteria	0.59814887
+Blattabacterium  Blattella germanica  Bge	331104	0.686547445	0.688	0.053869053	0.031380939	35.69147263		Aerobic	Host-associated	Mesophilic		Yes	Bacteria	0.271417131
+Blattabacterium  Periplaneta americana  BPLAN	600809	0.663252302	0.665	0.061241707	0.058096089	37.3346372			Host-associated			Yes	Bacteria	0.282122347
+Bordetella avium 197N	360910	0.537465011	0.535	0.168983586	0.138838349	42.09730539		Aerobic	Host-associated		Animal	Yes	Bacteria	0.615825821
+Bordetella bronchiseptica	257310	0.649261607	0.66	0.141823171	-0.018840981	33.08030252		Aerobic	Host-associated	Mesophilic	Animal	Yes	Bacteria	0.680770208
+Bordetella parapertussis	257311	0.657198341	0.665	0.129429507	-0.026277443	33.01538462		Aerobic	Host-associated	Mesophilic	"Human, Sheep"	Yes	Bacteria	0.680999533
+Bordetella pertussis	257313	0.651223793	0.66	0.13762983	-0.014280064	33.25467292		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.677205827
+Bordetella petrii	340100	0.565933461	0.582	0.202947382	0.085294384	36.67757037		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.654828242
+Borrelia afzelii PKo	390236	0.659573896	0.673	0.09636337	0.049473502	39.20020633	Non-halophilic	Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.277032186
+Borrelia burgdorferi	224326	0.656268769	0.6575	0.090258832	0.055856959	40.0978048		Microaerophilic	Host-associated	Mesophilic	Human	No	Bacteria	0.281699093
+Borrelia burgdorferi ZS7	445985	0.657393722	0.664	0.091974271	0.052528793	39.7098565		Microaerophilic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.282670464
+Borrelia duttonii Ly	412419	0.670560193	0.684	0.108769811	0.010235075	37.21002889		Aerobic	Host-associated	Psychrophilic	Human	Yes	Bacteria	0.280115767
+Borrelia garinii PBi	290434	0.655666137	0.664	0.100011592	0.038113288	39.76992687			Host-associated	Mesophilic	Human	Yes	Bacteria	0.280913759
+Borrelia hermsii DAH	314723	0.672845855	0.6985	0.106322407	0.028228444	39.33821244		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.298277038
+Borrelia recurrentis A1	412418	0.680557672	0.704	0.108189303	-0.002975991	36.5974709		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.275256006
+Borrelia turicatae 91E135	314724	0.668033592	0.697	0.110214179	0.004309408	38.44244832		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.291189648
+Brachybacterium faecium DSM 4810	446465	0.735558491	0.747	0.115990008	0.026043045	30.48159451		Aerobic	Terrestrial		No	Yes	Bacteria	0.720457749
+Brachyspira hyodysenteriae WA1	565034	0.745259168	0.747	0.05834423	-0.076141593	33.89838278		Facultative	Host-associated	Mesophilic	Yes	Yes	Bacteria	0.270007186
+Brachyspira murdochii DSM 12563 uid48819	526224	0.724779406	0.725	0.060703153	-0.033847568	35.85219861		Facultative	Host-associated	Mesophilic	No	Yes	Bacteria	0.27751431
+Bradyrhizobium BTAi1	288000	0.578693605	0.593	0.180630793	0.160050892	37.59959944		Aerobic	Host-associated	Mesophilic		Yes	Bacteria	0.648061997
+Bradyrhizobium japonicum	224911	0.576479393	0.602	0.217695239	0.180152051	39.100986		Aerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.640593804
+Bradyrhizobium ORS278	114615	0.609606456	0.623	0.162826104	0.122483878	35.84560896			Host-associated	Mesophilic	No	Yes	Bacteria	0.65510387
+Brevibacillus brevis NBRC 100599	358681	0.423351465	0.409	0.153305673	0.278168933	54.30148152		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.472735528
+Brucella abortus 9-941	262698	0.554433977	0.553	0.16687229	0.179905719	43.72035174		Facultative	Host-associated	Mesophilic	"Human, Cattle"	Yes	Bacteria	0.572193358
+Brucella abortus bv  1 9 941	262698	0.554433977	0.553	0.16687229	0.179905719	43.72035174		Facultative	Host-associated	Mesophilic	"Human, Cattle"	No	Bacteria	0.572193358
+Brucella abortus S19	430066	0.586983402	0.586	0.145873436	0.169853576	43.63645832	Non-halophilic	Facultative	Multiple	Mesophilic	Mammal	No	Bacteria	0.572216694
+Brucella canis ATCC 23365	483179	0.54935709	0.548	0.170419552	0.182096745	43.72829505					"Dog, Human"	Yes	Bacteria	0.572426571
+Brucella melitensis	224914	0.547344366	0.547	0.168845497	0.179434891	44.03247254		Aerobic	Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.572224645
+Brucella melitensis ATCC 23457	546272	0.553082415	0.55	0.157086907	0.182423118	43.70614128		Facultative	Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.572212228
+Brucella melitensis biovar Abortus	359391	0.556583593	0.554	0.164149859	0.178567549	43.68659059		Facultative	Host-associated	Mesophilic	"Human, cattle"	No	Bacteria	0.572218526
+Brucella microti CCM 4915	568815	0.57518996	0.578	0.168668499	0.167055503	43.7666468	Non-halophilic		Multiple		Mammals	Yes	Bacteria	0.57254348
+Brucella ovis	444178	0.586501166	0.5905	0.160989564	0.155386032	44.02912782		Facultative	Host-associated	Mesophilic	Sheep	Yes	Bacteria	0.571945512
+Brucella suis 1330	204722	0.551233569	0.55	0.170511276	0.179783177	43.67321649		Aerobic	Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.572513065
+Brucella suis ATCC 23445	470137	0.570424321	0.572	0.172341418	0.173577651	43.86964782		Aerobic	Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.572052276
+Buchnera aphidicola	224915	0.686317697	0.688	0.074458464	0.056131872	36.7288678			Host-associated	Mesophilic	No	No	Bacteria	0.253415785
+Buchnera aphidicola 5A  Acyrthosiphon pisum 	563178	0.682931774	0.682	0.049386591	0.018284246	37.12630604			Host-associated	Mesophilic	No	Yes	Bacteria	0.262856591
+Buchnera aphidicola Cc Cinara cedri	372461	0.773577508	0.778	0.058313358	0.001650723	31.38377204			Host-associated	Mesophilic	No	No	Bacteria	0.202000786
+Buchnera aphidicola Sg	198804	0.703976331	0.705	0.052120859	-0.009267145	35.4939073			Host-associated	Mesophilic	No	No	Bacteria	0.253305771
+Buchnera aphidicola Tuc7  Acyrthosiphon pisum 	561501	0.683700587	0.683	0.04952877	0.01367498	37.18027006			Host-associated	Mesophilic	No	No	Bacteria	0.262924622
+Buchnera sp	107806	0.681451977	0.683	0.052107398	0.017852186	37.18041808			Host-associated	Mesophilic	No	No	Bacteria	0.263648633
+Burkholderia 383	269483	0.628351087	0.644	0.171063196	0.031514515	34.81779246		Facultative	Multiple		Human	Yes	Bacteria	0.662724461
+Burkholderia ambifaria AMMD	339670	0.64088493	0.657	0.159520157	0.01740843	34.30651994		Facultative	Multiple	Mesophilic		Yes	Bacteria	0.667748324
+Burkholderia ambifaria MC40 6	398577	0.635276818	0.652	0.164565615	0.028306995	34.62590479	Non-halophilic		Multiple	Mesophilic	Human	No	Bacteria	0.663917187
+Burkholderia CCGE1002 uid42523	640511	0.624475907	0.643	0.166787429	0.08035907	38.90140797		Facultative	Host-associated	Mesophilic		Yes	Bacteria	0.632667703
+Burkholderia cepacia AMMD	339670	0.64088493	0.657	0.159520157	0.01740843	34.30651994		Facultative	Multiple	Mesophilic		No	Bacteria	0.667748324
+Burkholderia glumae BGR1	626418	0.645035303	0.675	0.178084665	0.029009369	34.09228837		Aerobic	Multiple	Mesophilic	Rice	Yes	Bacteria	0.679263326
+Burkholderia mallei ATCC 23344	243160	0.626906193	0.652	0.180742707	0.015851747	33.55270196			Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.684855198
+Burkholderia mallei NCTC 10229	412022	0.641450717	0.658	0.147710401	0.000284794	33.12646416			Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.684673205
+Burkholderia mallei NCTC 10247	320389	0.650387293	0.666	0.138976176	-0.011005535	33.01884443			Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.684845952
+Burkholderia mallei SAVP1	320388	0.654430825	0.671	0.140800447	-0.011576908	33.14678301			Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.684037978
+Burkholderia multivorans ATCC 17616	395019	0.642983498	0.672	0.178912052	0.0516576	34.73591159	Non-halophilic	Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.666860904
+Burkholderia multivorans ATCC 17616 JGI	395019	0.621876672	0.645	0.177410094	0.046382585	34.73591159	Non-halophilic	Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.666860904
+Burkholderia multivorans ATCC 17616 Tohoku	395019	0.62943956	0.65	0.167205688	0.048278956	34.43119408	Non-halophilic	Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.666863419
+Burkholderia phymatum STM815	391038	0.565010804	0.579	0.191064516	0.132440059	40.4531793	Non-halophilic		Host-associated	Mesophilic	No	Yes	Bacteria	0.622924034
+Burkholderia phytofirmans PsJN	398527	0.599948101	0.611	0.163195464	0.097973435	40.27454517		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.622868292
+Burkholderia pseudomallei 1106a	357348	0.623359522	0.645	0.173591536	0.024075855	33.69270948		Aerobic	Terrestrial	Mesophilic	Animal	No	Bacteria	0.682579777
+Burkholderia pseudomallei 1710b	320372	0.596273366	0.63	0.21313182	0.061780154	35.08204991		Aerobic	Terrestrial	Mesophilic	Animal	No	Bacteria	0.679781512
+Burkholderia pseudomallei 668	320373	0.623065679	0.645	0.173055264	0.021639183	33.71671551		Aerobic	Terrestrial	Mesophilic	Animal	Yes	Bacteria	0.68289159
+Burkholderia pseudomallei K96243	272560	0.634792722	0.654	0.161883171	0.020311486	33.70387957		Aerobic	Terrestrial	Mesophilic	Animal	No	Bacteria	0.680587239
+Burkholderia pseudomallei MSHR346	536230	0.642613248	0.667	0.168483584	0.006663319	33.72549969		Aerobic	Terrestrial	Mesophilic	Human	No	Bacteria	0.677087603
+Burkholderia thailandensis E264	271848	0.621895769	0.64	0.164595352	0.033760981	34.28028692		Aerobic	Terrestrial	Mesophilic		Yes	Bacteria	0.676281222
+Burkholderia vietnamiensis G4	269482	0.599391179	0.635	0.223298629	0.087773731	36.65123306		Facultative	Multiple		Human	Yes	Bacteria	0.657380525
+Burkholderia xenovorans LB400	266265	0.581363545	0.596	0.18239573	0.108141048	40.86277185		Aerobic	Multiple	Mesophilic	"Human, Plants"	Yes	Bacteria	0.626278139
+Caldicellulosiruptor saccharolyticus DSM 8903	351627	0.658931077	0.661	0.057479943	0.074743486	44.90697553		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.352540758
+Caldivirga maquilingensis IC-167	397948	0.670200665	0.675	0.070024767	0.027572179	44.28726552		Microaerophilic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.430958424
+Campylobacter concisus 13826	360104	0.645781968	0.641	0.092486342	0.079248185	45.58176193		Microaerophilic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.392668042
+Campylobacter curvus 525 92	360105	0.663721618	0.662	0.061490936	0.023846452	50.02025845		Microaerophilic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.445353337
+Campylobacter fetus 82-40	360106	0.674656067	0.675	0.060520466	0.07188098	43.21058469		Microaerophilic	Host-associated		"Human, Animal"	Yes	Bacteria	0.333075104
+Campylobacter hominis ATCC BAA-381	360107	0.668650611	0.665	0.069099325	0.070972877	44.08822933		Anaerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.317383597
+Campylobacter jejuni	192222	0.674996617	0.676	0.065777252	0.069349982	39.28797835		Microaerophilic	Multiple	Mesophilic	Human	No	Bacteria	0.305485717
+Campylobacter jejuni 81116	407148	0.673583278	0.674	0.064171665	0.062841097	39.20268027		Microaerophilic	Multiple	Mesophilic	Human	No	Bacteria	0.305415158
+Campylobacter jejuni 81-176	354242	0.681249195	0.682	0.067989134	0.059087105	39.28400708		Microaerophilic	Multiple	Mesophilic	Human	Yes	Bacteria	0.304754651
+Campylobacter jejuni doylei 269 97	360109	0.664459514	0.667	0.075089316	0.07851606	39.81171592	Non-halophilic	Microaerophilic	Multiple	Mesophilic	Human	No	Bacteria	0.305733112
+Campylobacter jejuni RM1221	195099	0.67654397	0.677	0.062917883	0.064841455	39.26580842		Microaerophilic	Multiple	Mesophilic	Human	No	Bacteria	0.303061427
+Campylobacter lari RM2100	306263	0.675190343	0.675	0.070002136	0.064754275	37.99444157		Microaerophilic	Multiple	Mesophilic	Animal	Yes	Bacteria	0.296200008
+Candidatus Accumulibacter phosphatis clade IIA UW 1	522306	0.691395671	0.701	0.099557705	-0.073298235	40.85408268			Specialized	Mesophilic		Yes	Bacteria	0.639692597
+Candidatus Amoebophilus asiaticus 5a2	452471	0.668377578	0.673	0.061983886	0.04450279	46.10813722			Host-associated			Yes	Bacteria	0.350450338
+Candidatus Azobacteroides pseudotrichonymphae genomovar  CFP2	511995	0.65115204	0.659	0.088547557	0.062872638	45.18924845			Specialized	Mesophilic	No	Yes	Bacteria	0.329478112
+Candidatus Blochmannia floridanus	203907	0.685288321	0.71	0.113723437	0.026386217	36.52691606			Specialized	Mesophilic	No	No	Bacteria	0.27383188
+Candidatus Blochmannia pennsylvanicus BPEN	291272	0.675604203	0.677	0.050285613	0.002419285	40.89872154					No	Yes	Bacteria	0.295646836
+Candidatus Carsonella ruddii PV	387662	0.783986577	0.781	0.050096102	0.013644767	29.89946309			Specialized		No	No	Bacteria	0.165643672
+Candidatus Desulfococcus oleovorans Hxd3	96561	0.662866909	0.683	0.135142839	-0.034098221	42.13979161		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.561686156
+Candidatus Desulforudis audaxviator MP104C	477974	0.624216937	0.636	0.128223863	0.006992969	42.39329221			Specialized		No	Yes	Bacteria	0.608471421
+Candidatus Hamiltonella defensa 5AT  Acyrthosiphon pisum 	572265	0.590891581	0.601	0.101308046	0.106755814	50.97183525			Host-associated	Mesophilic		Yes	Bacteria	0.404600292
+Candidatus Hodgkinia cicadicola Dsem	573234	0.676044444	0.679	0.041299692	-0.01515315	46.49845185			Specialized		No	No	Bacteria	0.583852012
+Candidatus Korarchaeum cryptofilum OPF8	374847	0.674360082	0.679	0.08178734	0.052431052	45.83409191		Anaerobic	Specialized	Thermophilic		Yes	Archaea	0.490006959
+Candidatus Koribacter versatilis Ellin345	204669	0.56148458	0.566	0.125695026	0.161910805	44.63855159		Aerobic	Terrestrial	Mesophilic	No	No	Bacteria	0.583838433
+Candidatus Liberibacter asiaticus psy62	537021	0.642070099	0.647	0.073868096	0.065661531	46.41511501				Mesophilic	Citrus	Yes	Bacteria	0.364788083
+Candidatus Methanoregula boonei 6A8	456442	0.631456857	0.644	0.111612756	0.054365922	47.05954314		Anaerobic	Terrestrial	Mesophilic	No	Yes	Archaea	0.545136088
+Candidatus Methanosphaerula palustris E1 9c	521011	0.720892623	0.733	0.083791831	-0.069331935	46.40076168		Anaerobic	Specialized	Mesophilic	No	Yes	Archaea	0.553536758
+Candidatus Pelagibacter ubique HTCC1062	335992	0.697541868	0.698	0.056916949	0.04914718	37.1098913		Aerobic	Aquatic	Mesophilic		Yes	Bacteria	0.296830815
+Candidatus Phytoplasma australiense	59748	0.642241758	0.65	0.095885809	0.07367634	38.97053297		Aerobic	Host-associated	Mesophilic	Grapevines	Yes	Bacteria	0.274246868
+Candidatus Phytoplasma mali	37692	0.704784038	0.7175	0.088645825	0.019085649	32.01656103		Aerobic	Host-associated	Mesophilic	Plant	No	Bacteria	0.2139372
+Candidatus Puniceispirillum marinum IMCC1322 uid47081	488538	0.695671008	0.698	0.068501933	0.0547596	49.93615			Aquatic			Yes	Bacteria	0.488537065
+Candidatus Riesia pediculicola USDA uid46841	515618	0.689668966	0.692	0.05149946	0.002592534	39.73495632			Host-associated	Mesophilic	No	No	Bacteria	0.285724593
+Candidatus Ruthia magnifica Cm Calyptogena magnifica 	413404	0.643099889	0.643	0.061283052	0.079123522	43.55915205					No	Yes	Bacteria	0.340334361
+Candidatus Sulcia muelleri DMIN uid47075	641892	0.766390863	0.77	0.047215683	-0.002907837	31.84803046			Specialized			No	Bacteria	0.224930616
+Candidatus Sulcia muelleri GWSS	444179	0.769484848	0.772	0.048303492	-0.001517578	31.78514646						No	Bacteria	0.224408423
+Candidatus Sulcia muelleri SMDSEM	595499	0.744936652	0.749	0.071131509	-0.000506237	32.64380995			Specialized			No	Bacteria	0.22595168
+Candidatus Vesicomyosocius okutanii HA	412965	0.648833718	0.648	0.070094957	0.07632332	40.58168707	Non-halophilic	Anaerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.315949456
+Candidiatus Sulcia muelleri SMDSEM	595499	0.744936652	0.749	0.071131509	-0.000506237	32.64380995			Specialized			No	Bacteria	0.22595168
+Capnocytophaga ochracea DSM 7271	521097	0.592458206	0.591	0.103186634	0.112442915	48.42134811		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.395879713
+Carboxydothermus hydrogenoformans Z-2901	246194	0.702522124	0.705	0.042584581	0.013301573	50.07877969		Anaerobic	Aquatic	Hyperthermophilic	No	Yes	Bacteria	0.420497194
+Catenulispora acidiphila DSM 44928	479433	0.633662449	0.644	0.160801193	0.12837879	32.71513449		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.697670815
+Caulobacter crescentus	190650	0.566344917	0.57	0.195019485	0.120076361	34.94368781		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.672139812
+Caulobacter crescentus NA1000	565050	0.560185927	0.563	0.201445754	0.122135345	34.79993133		Aerobic	Aquatic	Mesophilic	No	No	Bacteria	0.671716471
+Caulobacter K31	366602	0.605161368	0.614	0.157841593	0.108551572	34.51064547	Non-halophilic	Aerobic		Mesophilic	No	Yes	Bacteria	0.67348417
+Caulobacter segnis ATCC 21756 uid41709	509190	0.617162418	0.625	0.175645719	0.074765677	33.59165125		Aerobic	Aquatic	Mesophilic		Yes	Bacteria	0.676668982
+Cellulomonas flavigena DSM 20109 uid48821	446466	0.751732883	0.761	0.104705788	0.037938666	30.31778019		Facultative	Terrestrial	Mesophilic	No	Yes	Bacteria	0.742936215
+Cellvibrio japonicus Ueda107	498211	0.565763402	0.566	0.106014304	0.105125815	47.5049404		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.519912389
+Chitinophaga pinensis DSM 2588	485918	0.594088399	0.586	0.102450221	0.15184638	50.8251504		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.45227118
+Chlamydia muridarum	243161	0.631333733	0.633	0.057269339	0.076766736	48.64797119			Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.403051742
+Chlamydia trachomatis	272561	0.640661027	0.64	0.057264893	0.08418078	49.46937039			Host-associated	Mesophilic	Human	No	Bacteria	0.413048968
+Chlamydia trachomatis 434 Bu	471472	0.637813725	0.638	0.05760036	0.087722688	49.48059559			Host-associated	Mesophilic	Human	No	Bacteria	0.413290953
+Chlamydia trachomatis A HAR-13	315277	0.638162928	0.637	0.058584784	0.08458738	49.4670791			Host-associated	Mesophilic	Human	No	Bacteria	0.412667103
+Chlamydia trachomatis B Jali20 OT	580049	0.639154223	0.638	0.057311026	0.083597794	49.45294247			Host-associated	Mesophilic	Human	Yes	Bacteria	0.41299198
+Chlamydia trachomatis B TZ1A828 OT	672161	0.638243309	0.637	0.057365093	0.085074001	49.44409732			Host-associated	Mesophilic	Human	No	Bacteria	0.413025409
+Chlamydia trachomatis D UW 3 CX	272561	0.643268908	0.643	0.057112066	0.083187019	49.49430972			Host-associated	Mesophilic	Human	No	Bacteria	0.413072568
+Chlamydia trachomatis Jali20	580049	0.639154223	0.638	0.057311026	0.083597794	49.45294247			Host-associated	Mesophilic	Human	No	Bacteria	0.41299198
+Chlamydia trachomatis L2b UCH 1 proctitis	471473	0.637594363	0.638	0.05750023	0.088379864	49.48798407			Host-associated	Mesophilic	Human	No	Bacteria	0.413280211
+Chlamydophila abortus S26 3	218497	0.639509692	0.64	0.052312542	0.069730232	50.28583124			Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.398664077
+Chlamydophila caviae	227941	0.644345395	0.645	0.054868003	0.059701156	48.62561623			Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.391856477
+Chlamydophila felis Fe C-56	264202	0.656762366	0.658	0.048007182	0.038000631	49.6923957			Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.393402233
+Chlamydophila pneumoniae AR39	115711	0.595327461	0.594	0.065292541	0.110809638	50.34540207			Host-associated	Mesophilic	Human	No	Bacteria	0.405750229
+Chlamydophila pneumoniae CWL029	115713	0.601429607	0.6	0.064165843	0.110086502	50.35068219			Host-associated	Mesophilic	Human	No	Bacteria	0.405776969
+Chlamydophila pneumoniae J138	138677	0.600684372	0.599	0.063763919	0.10953927	50.4143524			Host-associated	Mesophilic	Human	No	Bacteria	0.405814943
+Chlamydophila pneumoniae TW 183	182082	0.595010277	0.593	0.064505344	0.113294947	50.37145735			Host-associated	Mesophilic	Human	Yes	Bacteria	0.405762133
+Chlorobaculum parvum NCIB 8327	517417	0.671677128	0.677	0.123138875	-0.017537457	44.03770957		Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.557961148
+Chlorobium chlorochromatii CaD3	340177	0.627081172	0.626	0.071666255	0.041999869	46.97380609		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.44278189
+Chlorobium limicola DSM 245	290315	0.734046361	0.736	0.053947246	-0.023076275	50.13334956	Mesophilic	Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.513168338
+Chlorobium luteolum DSM 273	319225	0.646192727	0.652	0.1130357	0.022675539	45.42689351		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.573300457
+Chlorobium phaeobacteroides BS1	331678	0.750932924	0.751	0.039346813	-0.008592593	52.75674917			Aquatic	Mesophilic	No	Yes	Bacteria	0.489270769
+Chlorobium phaeobacteroides DSM 266	290317	0.693402449	0.696	0.049984448	0.019785269	51.80259037	Mesophilic	Facultative	Aquatic	Mesophilic	No	No	Bacteria	0.483514481
+Chlorobium tepidum TLS	194439	0.672159955	0.678	0.105312757	-0.003886564	44.01374929		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.565298136
+Chloroflexus aggregans DSM 9485	326427	0.66521542	0.667	0.076839542	0.062425927	49.87699769		Facultative	Specialized	Thermophilic	No	Yes	Bacteria	0.564284938
+Chloroflexus aurantiacus J 10 fl	324602	0.662638292	0.665	0.072953735	0.072981196	49.60382782		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.566971523
+Chloroflexus Y 400 fl	480224	0.659518878	0.663	0.07751928	0.073875548	49.64005178						Yes	Bacteria	0.566819006
+Chloroherpeton thalassium ATCC 35110	517418	0.664764706	0.663	0.056460807	-0.006024016	49.81274324		Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.450389196
+Chromobacterium violaceum	243365	0.579298489	0.589	0.215962139	0.004666125	33.95425068		Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.648337431
+Chromohalobacter salexigens DSM 3043	290398	0.628573949	0.639	0.144007916	0.05228988	38.93906224	Moderate halophilic	Aerobic		Mesophilic	No	Yes	Bacteria	0.639118564
+Citrobacter koseri ATCC BAA-895	290338	0.434851584	0.424	0.196392894	0.21441817	45.08691394			Multiple	Mesophilic	"Human, Animal"	Yes	Bacteria	0.538274305
+Citrobacter rodentium ICC168	637910	0.439174171	0.433	0.194030821	0.191524011	43.7425008		Facultative	Multiple	Mesophilic	Mouse	Yes	Bacteria	0.545503972
+Clavibacter michiganensis NCPPB 382	443906	0.709842852	0.728	0.155022203	0.051049865	29.78242506		Aerobic	Multiple	Mesophilic	Tomato	Yes	Bacteria	0.724959406
+Clavibacter michiganensis sepedonicus	31964	0.685629861	0.715	0.186573832	0.067513233	30.61803542		Aerobic	Multiple	Mesophilic	Plant	No	Bacteria	0.72377435
+Clostridiales genomosp  BVAB3 UPII9 5 uid46219	699246	0.656524866	0.654	0.061297778	0.048123149	52.03848049						Yes	Bacteria	0.442119533
+Clostridium acetobutylicum	272562	0.655875915	0.655	0.07809421	0.088572277	39.47211589	Non-halophilic	Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.309251176
+Clostridium beijerinckii NCIMB 8052	290402	0.666008019	0.664	0.090736326	0.09852704	38.28173039	Non-halophilic			Mesophilic	No	Yes	Bacteria	0.298555885
+Clostridium botulinum A	413999	0.652929404	0.656	0.0941268	0.088350315	36.07742649	Non-halophilic	Anaerobic	Multiple	Mesophilic	Human	No	Bacteria	0.282386518
+Clostridium botulinum A ATCC 19397	441770	0.648250329	0.651	0.100049561	0.082885494	36.08161794		Anaerobic	Multiple	Mesophilic	Human	No	Bacteria	0.282053346
+Clostridium botulinum A Hall	441771	0.648548146	0.652	0.100726159	0.08249731	36.06525961		Anaerobic	Multiple	Mesophilic	Human	No	Bacteria	0.281847119
+Clostridium botulinum A2 Kyoto	536232	0.646138787	0.651	0.10980787	0.0932999	36.25448376		Anaerobic	Multiple	Mesophilic	Human	No	Bacteria	0.282110126
+Clostridium botulinum A3 Loch Maree	498214	0.660777219	0.665	0.095646341	0.087796483	36.2662213		Anaerobic	Multiple	Mesophilic	Human	No	Bacteria	0.281433325
+Clostridium botulinum B Eklund 17B	508765	0.729691514	0.731	0.070018085	0.026608749	34.36873045		Anaerobic	Multiple	Mesophilic	No	No	Bacteria	0.274796912
+Clostridium botulinum B1 Okra	498213	0.657648103	0.662	0.095990326	0.092125664	36.22607956		Anaerobic	Multiple	Mesophilic	Human	Yes	Bacteria	0.282279847
+Clostridium botulinum Ba4 657	515621	0.656429258	0.661	0.098341446	0.089090787	35.96294533		Anaerobic	Multiple	Mesophilic	Human	No	Bacteria	0.280444524
+Clostridium botulinum E3 Alaska E43	508767	0.736532984	0.738	0.06607044	0.023927794	34.23666178		Anaerobic	Multiple	Mesophilic	Human	No	Bacteria	0.273612406
+Clostridium botulinum F Langeland	441772	0.651730057	0.656	0.101096159	0.086314867	36.1187792		Anaerobic	Multiple	Mesophilic	Human	No	Bacteria	0.282992533
+Clostridium cellulolyticum H10	394503	0.63654008	0.633	0.073750978	0.122781065	48.67097862		Anaerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.374039871
+Clostridium difficile 630	272563	0.601938757	0.606	0.129967287	0.127967065	36.3484929	Non-halophilic	Anaerobic	Multiple	Mesophilic	Human	Yes	Bacteria	0.290584075
+Clostridium difficile CD196	645462	0.609930341	0.609	0.111870656	0.110233544	35.86758607		Anaerobic	Multiple	Mesophilic	Human	No	Bacteria	0.285631815
+Clostridium difficile R20291	645463	0.609926829	0.612	0.122351097	0.113863582	36.07406616		Anaerobic	Multiple	Mesophilic	Human	No	Bacteria	0.288073958
+Clostridium kluyveri DSM 555	431943	0.628113848	0.646	0.138844454	0.123597146	41.63325113	Non-halophilic	Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.320402356
+Clostridium novyi NT	386415	0.718159692	0.719	0.074006491	0.043459164	35.28574796		Anaerobic	Terrestrial			Yes	Bacteria	0.288556827
+Clostridium perfringens	195102	0.640862083	0.634	0.10181394	0.047715978	34.12840195	Non-halophilic	Anaerobic	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.285120263
+Clostridium perfringens ATCC 13124	195103	0.637488742	0.63	0.106012543	0.047087938	34.25900039	Non-halophilic	Anaerobic	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.283791514
+Clostridium perfringens SM101	289380	0.629047373	0.62	0.113699529	0.039654433	34.21929242	Non-halophilic	Anaerobic	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.282309175
+Clostridium perfringens SM101 uid12521	289380	0.629047373	0.62	0.113699529	0.039654433	34.21929242	Non-halophilic	Anaerobic	Multiple	Mesophilic	"Human, Animal"	Yes	Bacteria	0.282309175
+Clostridium phytofermentans ISDg	357809	0.585608779	0.58	0.110664327	0.155452028	46.54173306		Anaerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.353485255
+Clostridium tetani E88	212717	0.684978592	0.69	0.087200334	0.047434959	36.09408728	Non-halophilic	Anaerobic	Multiple	Mesophilic	Human	Yes	Bacteria	0.286404674
+Clostridium thermocellum ATCC 27405	203119	0.708662213	0.712	0.061063639	0.049607162	50.0855543		Anaerobic	Multiple	Thermophilic	No	Yes	Bacteria	0.389865899
+Colwellia psychrerythraea 34H	167879	0.531802506	0.522	0.12516566	0.193009428	46.83709408		Facultative	Specialized	Psychrophilic	No	Yes	Bacteria	0.38005427
+Conexibacter woesei DSM 14684 uid43467	469383	0.738362361	0.753	0.10292197	-0.028101286	29.95913044		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.727334269
+Coprothermobacter proteolyticus DSM 5265	309798	0.773776911	0.774	0.025810297	0.010865141	54.94924181		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.447701332
+Coraliomargarita akajimensis DSM 45221 uid47079	583355	0.602800831	0.598	0.126228876	0.141300007	49.42112193		Aerobic	Aquatic	Mesophilic		Yes	Bacteria	0.536017795
+Corynebacterium aurimucosum ATCC 700975	548476	0.426159914	0.407	0.285874227	0.287407828	41.94663836		Facultative	Host-associated	Mesophilic		Yes	Bacteria	0.6055882
+Corynebacterium diphtheriae	257309	0.379527174	0.351	0.289319836	0.29404851	48.45558202		Aerobic	Multiple	Mesophilic	Human	Yes	Bacteria	0.534785133
+Corynebacterium efficiens YS-314	196164	0.481109503	0.47	0.268865928	0.187961933	38.4501752		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.629738112
+Corynebacterium glutamicum ATCC 13032 Bielefeld	196627	0.403070593	0.373	0.316304333	0.304215342	47.05897001		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.538417672
+Corynebacterium glutamicum ATCC 13032 Kitasato	196627	0.403877372	0.374	0.31702593	0.3008016	46.98377555		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.53793863
+Corynebacterium glutamicum R	340322	0.408553161	0.382	0.312873892	0.293055302	46.81600898		Facultative	Multiple	Mesophilic		No	Bacteria	0.541301177
+Corynebacterium jeikeium K411	306537	0.436642174	0.418	0.309346377	0.246987492	40.18214343	Non-halophilic	Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.613513607
+Corynebacterium kroppenstedtii DSM 44385	645127	0.485304511	0.473	0.165584287	0.252531144	49.78180934		Facultative	Host-associated	Mesophilic	No	Yes	Bacteria	0.574598538
+Corynebacterium pseudotuberculosis uid50585	765874	0.376920126	0.355	0.231319044	0.335823931	53.8447031						Yes	Bacteria	0.521852182
+Corynebacterium urealyticum DSM 7109	504474	0.479775026	0.467	0.282985591	0.177997067	37.41616228		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.641852442
+Coxiella burnetii	227377	0.771335124	0.775	0.04480921	-0.037070573	52.19425453		Facultative	Multiple	Mesophilic	"Animal, Human"	Yes	Bacteria	0.425988624
+Coxiella burnetii CbuG Q212	434923	0.775461126	0.778	0.043501685	-0.033649316	52.3311689		Facultative	Multiple	Mesophilic	"Animal, Human"	No	Bacteria	0.426331221
+Coxiella burnetii CbuK Q154	434924	0.772077914	0.775	0.044493412	-0.0336652	52.36760528		Facultative	Multiple	Mesophilic	"Animal, Human"	No	Bacteria	0.426169865
+Coxiella burnetii Dugway 7E9-12	434922	0.768730815	0.772	0.04589006	-0.032927019	52.33317566		Facultative	Host-associated	Mesophilic	"Animal, Human"	No	Bacteria	0.423710661
+Coxiella burnetii RSA 331	360115	0.765332898	0.771	0.047043477	-0.034576034	52.07030679		Facultative	Multiple	Mesophilic	"Animal, Human"	No	Bacteria	0.427018168
+Croceibacter atlanticus HTCC2559 uid49661	216432	0.704861334	0.705	0.067677758	0.041840845	42.57510812		Aerobic	Aquatic		No	Yes	Bacteria	0.339000299
+Cronobacter turicensis	413502	0.450348042	0.442	0.187864666	0.159176086	41.29966292		Facultative				No	0.572501256	41.29966292
+Cryptobacterium curtum DSM 15641	469378	0.661450965	0.66	0.078440367	0.149741306	51.61821945		Anaerobic			Human	Yes	Bacteria	0.509115443
+Cupriavidus metallidurans CH34 uid250	266264	0.530742208	0.531	0.204031041	0.159951598	39.43729774		Facultative	Specialized	Mesophilic	No	Yes	Bacteria	0.635309905
+Cupriavidus taiwanensis	164546	0.588678032	0.607	0.19775438	0.085173816	34.08699832		Facultative	Host-associated	Mesophilic	No	Yes	Bacteria	0.669898935
+Cyanobacteria bacterium Yellowstone A-Prime	321327	0.642969992	0.652	0.108007746	0.03391949	44.17950719		Facultative	Specialized	Thermophilic	No	Yes	Bacteria	0.602373323
+Cyanobacteria bacterium Yellowstone B-Prime	321332	0.648045679	0.654	0.087793739	0.041925608	46.05426337		Facultative	Specialized	Thermophilic	No	No	Bacteria	0.584503788
+cyanobacterium UCYN A uid43697	713887	0.683369115	0.685	0.042881956	-0.037920426	40.99253107						Yes	Bacteria	0.311167844
+Cyanothece ATCC 51142	43989	0.721709014	0.725	0.05618755	-0.076029311	45.12212938		Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.379419406
+Cyanothece PCC 7424	65393	0.703827351	0.709	0.060453992	-0.065915671	45.99124422		Facultative	Aquatic	Mesophilic	No	No	Bacteria	0.385098096
+Cyanothece PCC 7425	395961	0.668622178	0.675	0.081349949	0.047759076	50.96973263		Facultative	Aquatic	Mesophilic	No	No	Bacteria	0.506484149
+Cyanothece PCC 8801	41431	0.708646684	0.713	0.056680628	-0.065881332	46.57315756		Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.397578458
+Cyanothece PCC 8802	395962	0.710563079	0.715	0.055510981	-0.060142012	46.61461174		Facultative	Aquatic	Mesophilic	No	No	Bacteria	0.398179101
+Cytophaga hutchinsonii ATCC 33406	269798	0.57260122	0.567	0.097576477	0.148615239	49.14600203		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.388464542
+Dechloromonas aromatica RCB	159087	0.58020103	0.578	0.186073276	0.103820452	42.87158764		Facultative	Multiple		No	Yes	Bacteria	0.592472202
+Deferribacter desulfuricans SSM1 uid46653	639282	0.705152665	0.705	0.070155123	0.040979359	39.62425926		Anaerobic	Specialized	Thermophilic		Yes	Bacteria	0.303108261
+Dehalococcoides BAV1	216389	0.696022594	0.698	0.061548901	0.032992381	50.91691967		Anaerobic				Yes	Bacteria	0.471725742
+Dehalococcoides CBDB1	255470	0.702323314	0.704	0.060063791	0.027592819	50.84516409	Mesophilic	Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.470258731
+Dehalococcoides ethenogenes 195	243164	0.707198302	0.711	0.068786917	0.012190768	49.07504784	Mesophilic	Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.488502572
+Dehalococcoides GT uid42115	633145	0.705645215	0.71	0.066312938	0.028830411	51.03065924		Anaerobic	Aquatic	Mesophilic		Yes	Bacteria	0.473144953
+Dehalococcoides VS	311424	0.698924121	0.7015	0.066668679	0.045060524	50.62052716	Non-halophilic	Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.472713805
+Dehalogenimonas lykanthroporepellens BL DC 9 uid48131	552811	0.668494421	0.682	0.119484146	0.001801312	46.05696095		Anaerobic		Mesophilic		Yes	Bacteria	0.550443816
+Deinococcus deserti VCD115	546414	0.451814952	0.447	0.220171799	0.269211874	41.98500309		Aerobic	Terrestrial	Mesophilic		Yes	Bacteria	0.629702679
+Deinococcus geothermalis DSM 11300	319795	0.593224023	0.598	0.122848611	0.093691327	38.93666291		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.664719957
+Deinococcus radiodurans	243230	0.516509718	0.525	0.203126611	0.199059614	37.28816153		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.666143534
+Delftia acidovorans SPH-1	398578	0.624214361	0.639	0.170227653	-0.004860762	34.05075212	Non-halophilic	Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.66476257
+Denitrovibrio acetiphilus DSM 12809 uid46657	522772	0.659700405	0.658	0.070580082	0.091002602	50.31642289		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.425366309
+Desulfatibacillum alkenivorans AK 01	439235	0.63088374	0.635	0.106780563	-0.011065858	45.31470149		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.544845976
+Desulfitobacterium hafniense DCB 2	272564	0.659490349	0.659	0.060789953	0.057952635	51.80705032		Anaerobic	Specialized	Mesophilic	No	No	Bacteria	0.475373423
+Desulfitobacterium hafniense Y51	138119	0.654809634	0.656	0.067518512	0.057970633	51.98404754		Anaerobic	Specialized	Mesophilic		Yes	Bacteria	0.473598935
+Desulfobacterium autotrophicum HRM2	177437	0.700977667	0.705	0.053556937	0.001769336	50.4303104		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.487636498
+Desulfohalobium retbaense DSM 5692	485915	0.722875383	0.734	0.088840575	-0.058971057	46.85212768	Moderate halophilic	Anaerobic	Specialized	Mesophilic	No	Yes	Bacteria	0.573307987
+Desulfomicrobium baculatum DSM 4028	525897	0.704026735	0.711	0.104208031	-0.124960541	42.82045321		Anaerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.586469987
+Desulfotalea psychrophila LSv54	177439	0.570170242	0.564	0.101453735	0.108445673	51.11374671		Anaerobic	Specialized	Psychrophilic	No	Yes	Bacteria	0.466316031
+Desulfotomaculum acetoxidans DSM 771	485916	0.732699084	0.736	0.048386692	0.011112361	51.87462844		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.415548448
+Desulfotomaculum reducens MI-1	349161	0.57923761	0.574	0.082513484	0.100469064	52.3215	Moderate halophilic	Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.422752504
+Desulfovibrio desulfuricans ATCC 27774	525146	0.556158457	0.555	0.143651263	0.143159995	44.26092658		Anaerobic	Multiple	Mesophilic	No	No	Bacteria	0.580721624
+Desulfovibrio desulfuricans G20	207559	0.56080405	0.557	0.123214742	0.112513135	44.72973122		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.578361346
+Desulfovibrio magneticus RS 1	573370	0.593910804	0.634	0.250130539	0.085080762	38.62869544		Anaerobic				Yes	Bacteria	0.626743259
+Desulfovibrio salexigens DSM 2638	526222	0.523139482	0.506	0.194859613	0.159021261	49.88334899		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.470927518
+Desulfovibrio vulgaris  Miyazaki F 	883	0.622718539	0.63	0.160728473	0.018093662	33.02912618		Anaerobic	Multiple	Mesophilic	No	No	Bacteria	0.671089601
+Desulfovibrio vulgaris DP4	391774	0.574807584	0.572	0.173323429	0.127845941	40.98691784		Anaerobic	Multiple	Mesophilic	No	No	Bacteria	0.631570351
+Desulfovibrio vulgaris Hildenborough	882	0.579669045	0.577	0.170044186	0.122312746	40.8935525		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.63278913
+Desulfurivibrio alkaliphilus AHT2 uid49487	589865	0.696348222	0.708	0.105444708	-0.042904299	40.41033044	Mesophilic	Anaerobic	Specialized	Mesophilic		Yes	Bacteria	0.602863098
+Desulfurococcus kamchatkensis 1221n	490899	0.715573566	0.717	0.041334454	0.046225565	51.42781962		Anaerobic	Aquatic	Hyperthermophilic	No	Yes	Archaea	0.453391131
+Diaphorobacter TPSY	535289	0.669347411	0.684	0.149142597	-0.017073639	33.95372041		Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.668339842
+Diaphorobacter TPSY uid29975	535289	0.640011714	0.651	0.153992315	-0.02514192	33.95372041		Facultative	Aquatic	Mesophilic	No	No	Bacteria	0.668339842
+Dichelobacter nodosus VCS1703A	246195	0.671524871	0.6745	0.08008245	-0.000921238	43.79993139		Anaerobic	Host-associated	Mesophilic	Animal	Yes	Bacteria	0.443957566
+Dickeya dadantii Ech586	590409	0.56677769	0.56	0.134646949	0.164571343	46.78409939		Facultative	Multiple	Mesophilic	Plant	No	Bacteria	0.536390756
+Dickeya dadantii Ech703	579405	0.461502612	0.456	0.16687504	0.187732753	45.18305774		Facultative	Multiple	Mesophilic	Plant	Yes	Bacteria	0.550150766
+Dickeya zeae Ech1591	561229	0.460670013	0.45	0.175521673	0.182480257	45.21837041		Facultative			Plant	Yes	Bacteria	0.545172537
+Dictyoglomus thermophilum H 6 12	309799	0.694501444	0.699	0.062206454	0.031818143	40.52438475		Anaerobic	Aquatic	Thermophilic	No	Yes	Bacteria	0.337409891
+Dictyoglomus turgidum DSM 6724	515635	0.692262285	0.696	0.054697856	0.023422123	40.72521376		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.339573498
+Dinoroseobacter shibae DFL 12	398580	0.621733092	0.639	0.165332127	0.106186544	38.56591637		Aerobic		Mesophilic		Yes	Bacteria	0.655246377
+Dyadobacter fermentans DSM 18053	471854	0.549673612	0.543	0.082478082	0.075102771	48.55746297		Aerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.515449949
+Edwardsiella ictaluri 93 146	634503	0.465303626	0.458	0.173974196	0.144628544	41.81339648		Facultative	Aquatic	Mesophilic	Catfish	Yes	Bacteria	0.574366756
+Edwardsiella tarda EIB202	498217	0.462448816	0.455	0.18602697	0.089024163	39.03459153		Facultative	Multiple	Mesophilic	"Fish, Human, Animals"	Yes	Bacteria	0.597067268
+Eggerthella lenta DSM 2243	479437	0.625705632	0.64	0.207271178	0.080580195	35.32671803		Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.642045999
+Ehrlichia canis Jake	269484	0.668710618	0.678	0.098246367	0.019082897	38.48381097			Host-associated		Dog	Yes	Bacteria	0.289577424
+Ehrlichia chaffeensis Arkansas	205920	0.657919903	0.67	0.105796564	0.042049589	39.73419539			Host-associated		"Human, Animal"	Yes	Bacteria	0.301007101
+Ehrlichia ruminantium Gardel	302409	0.673700472	0.68	0.090400023	0.037109078	38.64377005			Host-associated	Mesophilic	Ruminant	No	Bacteria	0.275126007
+Ehrlichia ruminantium str. Welgevonden	254945	0.675428235	0.682	0.088141571	0.029810514	38.71623765			Host-associated	Mesophilic	Ruminant	No	Bacteria	0.274788711
+Ehrlichia ruminantium str. Welgevonden CIRAD	254945	0.675428235	0.682	0.088141571	0.029810514	38.71623765			Host-associated	Mesophilic	Ruminant	No	Bacteria	0.274788711
+Ehrlichia ruminantium Welgevonden	254945	0.672595694	0.678	0.088862462	0.031511859	38.6423433			Host-associated	Mesophilic	Ruminant	Yes	Bacteria	0.274787896
+Ehrlichia ruminantium Welgevonden UPSA	254945	0.672595694	0.678	0.088862462	0.031511859	38.6423433			Host-associated	Mesophilic	Ruminant	No	Bacteria	0.274787896
+Elusimicrobium minutum Pei191	445932	0.674202867	0.674	0.065636027	0.108054642	47.9920172		Anaerobic	Host-associated	Mesophilic		Yes	Bacteria	0.399521284
+Enterobacter 638	399742	0.456317644	0.446	0.185077159	0.204572169	46.33712269			Host-associated			Yes	Bacteria	0.529004091
+Enterobacter cloacae ATCC 13047 uid48363	716541	0.582444187	0.579	0.153386791	0.138279394	44.66070542		Facultative	Multiple	Mesophilic		Yes	Bacteria	0.545839239
+Enterobacter sakazakii ATCC BAA-894	290339	0.443557768	0.435	0.181439593	0.170112359	41.49306681	Non-halophilic	Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.567337346
+Enterococcus faecalis V583	226185	0.535150198	0.528	0.141105914	0.192208278	45.49596227		Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.373811524
+Erwinia amylovora ATCC 49946 uid46943	716540	0.479643347	0.475	0.167239846	0.162776562	46.58917882		Facultative	Host-associated	Mesophilic	Maloid fruit trees	No	Bacteria	0.536143961
+Erwinia amylovora CFBP1430 uid46839	665029	0.482696284	0.477	0.162366243	0.159066587	46.41674932						Yes	Bacteria	0.53577126
+Erwinia billingiae Eb661 uid50547	634500	0.491531784	0.486	0.16582564	0.098368333	43.72923399				Mesophilic		Yes	Bacteria	0.550411297
+Erwinia carotovora atroseptica SCRI1043	218491	0.467198712	0.458	0.155903412	0.202473918	49.09629187	Non-halophilic	Facultative	Multiple	Mesophilic	Plant	Yes	Bacteria	0.509673246
+Erwinia pyrifoliae Ep1 96	634499	0.475854478	0.473	0.164920031	0.155410359	46.41447419		Facultative		Mesophilic	Asian pear	No	Bacteria	0.533866912
+Erwinia pyrifoliae Ep1 96 uid40659	634499	0.475782717	0.473	0.165140984	0.155414411	46.41471993		Facultative		Mesophilic	Asian pear	Yes	Bacteria	0.533812965
+Erwinia tasmaniensis	465817	0.459519409	0.453	0.176150866	0.159175909	46.56890018		Facultative	Host-associated	Mesophilic	No	Yes	Bacteria	0.533906492
+Erythrobacter litoralis HTCC2594	314225	0.572384301	0.58	0.146047258	0.162338968	40.29241629		Aerobic	Aquatic		No	Yes	Bacteria	0.63068512
+Escherichia coli 0127 H6 E2348 69	574521	0.423477713	0.409	0.216007789	0.259011435	47.4174874		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.50519461
+Escherichia coli 536	362663	0.419852948	0.405	0.219496916	0.265898235	47.59493536		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.50517522
+Escherichia coli 55989	585055	0.422356871	0.407	0.217598079	0.261546984	47.46093509		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.50656293
+Escherichia coli APEC O1	405955	0.42388855	0.41	0.208182476	0.25863869	48.18230622		Facultative	Host-associated	Mesophilic	Avian	No	Bacteria	0.50339289
+Escherichia coli B REL606	585056	0.426576657	0.411	0.218228934	0.257728884	47.22257077		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.506666425
+Escherichia coli BL21 DE3	469008	0.429270038	0.413	0.216759392	0.256482136	47.02885557		Facultative	Host-associated	Mesophilic		No	Bacteria	0.508405496
+Escherichia coli BL21 DE3 	469008	0.495717052	0.482	0.189939446	0.219589144	47.02885557		Facultative	Host-associated	Mesophilic		No	Bacteria	0.508405496
+Escherichia coli BW2952	595496	0.423774824	0.407	0.223218291	0.252250711	47.05868014		Facultative	Multiple	Mesophilic		No	Bacteria	0.507906781
+Escherichia coli C ATCC 8739	481805	0.429294748	0.413	0.214615393	0.255365899	46.96224432	Non-halophilic	Facultative	Host-associated	Mesophilic		No	Bacteria	0.508665215
+Escherichia coli CFT073	199310	0.424314286	0.411	0.202416615	0.269064002	47.81032936		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.504775051
+Escherichia coli DH10B	316385	0.426405754	0.41	0.219605839	0.252847059	47.16798656		Facultative	Host-associated	Mesophilic	No	No	Bacteria	0.507813155
+Escherichia coli E24377A	331111	0.424720986	0.41	0.214850137	0.258661964	47.30678512		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.505624288
+Escherichia coli ED1a	585397	0.420761083	0.405	0.213164529	0.263879951	47.5674545		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.507338206
+Escherichia coli HS	331112	0.429454932	0.413	0.215518129	0.254917169	47.03641718		Facultative	Host-associated	Mesophilic		No	Bacteria	0.508196231
+Escherichia coli IAI1	585034	0.426633506	0.41	0.21678625	0.256513184	47.12011636		Facultative	Multiple	Mesophilic		No	Bacteria	0.507936714
+Escherichia coli IAI39	585057	0.420936265	0.405	0.215511069	0.26508915	47.63062018		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.506305256
+Escherichia coli K 12 substr  DH10B	316385	0.426399839	0.41	0.219626257	0.252835874	47.16728529		Facultative	Host-associated	Mesophilic	No	No	Bacteria	0.507813155
+Escherichia coli K 12 substr  MG1655	511145	0.421620266	0.405	0.224304709	0.253081429	47.10419849		Facultative	Host-associated	Mesophilic	No	No	Bacteria	0.508254258
+Escherichia coli K 12 substr  W3110	316407	0.421488092	0.405	0.224824833	0.253608986	47.13702198		Facultative	Host-associated	Mesophilic		No	Bacteria	0.50799577
+Escherichia coli K12	511145	0.421472765	0.405	0.224419838	0.25348882	47.1299583		Facultative	Host-associated	Mesophilic	No	No	Bacteria	0.508254258
+Escherichia coli K12 substr  MG1655	511145	0.421477196	0.405	0.224397812	0.253521598	47.13201329		Facultative	Host-associated	Mesophilic	No	No	Bacteria	0.507896997
+Escherichia coli O103 H2 12009	585395	0.419450601	0.4055	0.217730568	0.26053112	47.39600089		Facultative		Mesophilic	Human	No	Bacteria	0.506340613
+Escherichia coli O111 H  11128	585396	0.416374679	0.402	0.219532895	0.264315937	47.623821		Facultative		Mesophilic	Human	No	Bacteria	0.504363362
+Escherichia coli O157 H7 EC4115	444450	0.419192931	0.404	0.215424359	0.25815161	47.31057969		Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.504077981
+Escherichia coli O157 H7 TW14359	544404	0.416624127	0.403	0.219213481	0.260126486	47.43920506		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.504628618
+Escherichia coli O157H7	386585	0.414095923	0.4	0.223504087	0.263074248	47.47046915		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.50484165
+Escherichia coli O157H7 EDL933	155864	0.414914793	0.401	0.220661474	0.262498352	47.53896468		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.503975058
+Escherichia coli O26 H11 11368	573235	0.417173446	0.404	0.216608776	0.26046049	47.37432561		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.506534782
+Escherichia coli O55 H7 CB9615 uid46655	701177	0.417543351	0.403	0.218944359	0.263051378	47.53778616		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.505030764
+Escherichia coli S88	585035	0.421703191	0.406	0.213417867	0.264994777	47.57622595		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.506450004
+Escherichia coli SE11	409438	0.421302665	0.407	0.219712106	0.262781854	47.43603337	Non-halophilic	Facultative	Host-associated	Mesophilic		No	Bacteria	0.507446041
+Escherichia coli SECEC SMS 3 5	439855	0.42088881	0.406	0.215895088	0.263345303	47.41277619		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.504924764
+Escherichia coli SMS 3 5	439855	0.42088881	0.406	0.215895088	0.263345303	47.41277619		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.504924764
+Escherichia coli UMN026	585056	0.417202617	0.403	0.218903166	0.262604756	47.44683664		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.506562623
+Escherichia coli UTI89	364106	0.416960227	0.403	0.214379569	0.268637929	47.81515432		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.506134687
+Escherichia coli W3110	316407	0.421488092	0.405	0.224824833	0.253608986	47.13702198		Facultative	Host-associated	Mesophilic		No	Bacteria	0.50799577
+Escherichia fergusonii ATCC 35469	585054	0.418634392	0.402	0.219084001	0.274151786	48.42969739		Facultative	Multiple	Mesophilic	"Human, Animal"	Yes	Bacteria	0.499195389
+Eubacterium eligens ATCC 27750	515620	0.554349709	0.538	0.169238823	0.140382989	41.29950624		Anaerobic	Host-associated	Mesophilic		Yes	Bacteria	0.375711003
+Eubacterium rectale ATCC 33656	515619	0.481905895	0.463	0.20335913	0.192406882	46.50454636		Anaerobic				Yes	Bacteria	0.414811787
+Exiguobacterium AT1b	360911	0.445415018	0.425	0.186445247	0.227014748	49.06299487			Specialized	Thermophilic	No	Yes	Bacteria	0.484625629
+Exiguobacterium sibiricum 255 15	262543	0.436311765	0.417	0.193045366	0.187010686	47.48587978		Facultative	Specialized	Psychrophilic		Yes	Bacteria	0.476974703
+Ferroglobus placidus DSM 10642 uid40863	589924	0.66609078	0.672	0.072787767	0.076449644	47.48237683	Mesophilic	Anaerobic	Specialized		No	Yes	Archaea	0.441354098
+Fervidobacterium nodosum Rt17-B1	381764	0.621033374	0.621	0.068211877	0.13292831	44.7599824		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.349893096
+Fibrobacter succinogenes S85	59374	0.528487331	0.51	0.240542214	0.179803168	45.42648907		Anaerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.480518446
+Finegoldia magna ATCC 29328	334413	0.632986153	0.641	0.14715141	0.114798873	39.9164124	Non-halophilic	Anaerobic	Multiple	Mesophilic	Human	Yes	Bacteria	0.320665009
+Flavobacteriaceae bacterium 3519 10	531844	0.489008772	0.479	0.122213137	0.226936694	52.57479781						Yes	Bacteria	0.426927702
+Flavobacterium johnsoniae UW101	376686	0.544508846	0.543	0.15278869	0.167622437	44.38613943	Non-halophilic	Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.341128533
+Flavobacterium psychrophilum JIP02 86	402612	0.612104952	0.609	0.098876423	0.104089908	43.54497683		Aerobic	Aquatic	Psychrophilic	Salmonid fish	Yes	Bacteria	0.325393747
+Francisella philomiragia ATCC 25017	484022	0.62509314	0.626	0.075207876	0.094753137	41.01327663		Aerobic	Multiple	Mesophilic	"Human, Animals"	Yes	Bacteria	0.325653714
+Francisella tularensis FSC 198	393115	0.628972335	0.626	0.069421926	0.078851093	41.29238596		Aerobic	Aquatic	Mesophilic	"Human, Animal"	No	Bacteria	0.322600041
+Francisella tularensis holarctica	119857	0.624695244	0.622	0.072727326	0.074184151	41.2649199		Aerobic	Host-associated	Mesophilic	"Human, Animal"	No	0.321526334	41.2649199
+Francisella tularensis holarctica FTA	458234	0.629675732	0.627	0.070066167	0.075223236	41.29005091		Aerobic	Multiple	Mesophilic	"Human, Animal"	Yes	Bacteria	0.321614631
+Francisella tularensis holarctica FTNF002 00	458234	0.629675732	0.627	0.070066167	0.075223236	41.29005091		Aerobic	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.321614631
+Francisella tularensis holarctica OSU18	393011	0.628836823	0.626	0.071012263	0.077633598	41.39390614		Aerobic	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.321581114
+Francisella tularensis mediasiatica FSC147	441952	0.631128736	0.629	0.070446999	0.080422258	41.32750268		Aerobic	Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.322542117
+Francisella tularensis novicida U112	401614	0.621751707	0.62	0.073525612	0.082478525	41.36337678		Aerobic	Multiple	Mesophilic		No	Bacteria	0.324750227
+Francisella tularensis tularensis	177416	0.629855503	0.627	0.069147688	0.078026798	41.29708305		Aerobic	Aquatic		"Human, Animal"	No	Bacteria	0.322593547
+Francisella tularensis WY96-3418	418136	0.627632639	0.624	0.069395855	0.081460975	41.35642848	Non-halophilic	Aerobic	Host-associated	Mesophilic	Mammal	No	Bacteria	0.322686197
+Frankia alni ACN14a	326424	0.675898075	0.698	0.160720516	0.072278595	33.3393003	Non-halophilic		Host-associated	Mesophilic	No	Yes	Bacteria	0.728280884
+Frankia CcI3	106370	0.646120855	0.658	0.13815977	0.095025791	36.6194063		Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.700788129
+Frankia EAN1pec	298653	0.647769508	0.664	0.173637736	0.08843735	34.86289806		Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.711535974
+Fusobacterium nucleatum	190304	0.738667935	0.739	0.06181313	0.002104718	32.88341467		Anaerobic	Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.271515876
+Gardnerella vaginalis 409 05 uid43211	553190	0.508403794	0.489	0.186177079	0.105524345	44.64256278		Anaerobic			Human	Yes	Bacteria	0.420163532
+Gemmatimonas aurantiaca T 27	379066	0.580919013	0.574	0.140134393	0.179880643	41.78261303		Aerobic		Mesophilic	No	Yes	Bacteria	0.642743614
+Geobacillus C56 T3 uid49467	691437	0.637788595	0.648	0.110341119	0.093000246	45.29092246		Facultative		Mesophilic		Yes	Bacteria	0.524942253
+Geobacillus kaustophilus HTA426	235909	0.608943891	0.621	0.121101037	0.109155451	45.51676096		Aerobic	Aquatic	Thermophilic		Yes	Bacteria	0.519804235
+Geobacillus thermodenitrificans NG80-2	420246	0.629378137	0.638	0.10444478	0.123412248	48.89665621	Non-halophilic	Facultative	Specialized	Thermophilic		Yes	Bacteria	0.488616169
+Geobacillus WCH70	471223	0.583012454	0.585	0.105966437	0.154890324	49.32794432		Facultative		Thermophilic		Yes	Bacteria	0.427982868
+Geobacillus Y412MC10	481743	0.673490447	0.673	0.074408503	0.089765801	49.82656687		Facultative		Thermophilic		Yes	Bacteria	0.512394503
+Geobacillus Y412MC61	544556	0.615655903	0.624	0.109389292	0.102215029	45.31637471		Facultative	Specialized	Thermophilic	No	Yes	Bacteria	0.523346459
+Geobacter bemidjiensis Bem	404380	0.609779282	0.621	0.147772173	0.041247598	40.95150359		Anaerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.602667086
+Geobacter FRC 32	316067	0.752286087	0.755	0.051987035	-0.050189151	49.89651652		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.53471982
+Geobacter lovleyi SZ	398767	0.697702442	0.699	0.072566808	0.007223603	46.35233826	Non-halophilic	Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.547356187
+Geobacter M21	443144	0.608579034	0.622	0.157653372	0.024020383	40.50655774		Anaerobic	Aquatic			Yes	Bacteria	0.604699602
+Geobacter metallireducens GS-15	269799	0.790517094	0.8015	0.0770289	-0.162574265	43.21982326		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.594853836
+Geobacter sulfurreducens	243231	0.713411039	0.722	0.102894964	-0.099873581	42.36678799		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.609372915
+Geobacter uraniumreducens Rf4	351605	0.775086098	0.775	0.032735984	-0.089206607	48.72338693		Microaerophilic	Multiple	Mesophilic		Yes	Bacteria	0.542382316
+Geodermatophilus obscurus DSM 43160 uid43725	526225	0.712046893	0.735	0.137750279	0.056334228	30.28221252		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.739841093
+Gloeobacter violaceus	251221	0.597151254	0.61	0.154227053	0.121752869	42.43495034			Terrestrial	Mesophilic		Yes	Bacteria	0.619978583
+Gluconacetobacter diazotrophicus PAl 5	272568	0.613102611	0.643	0.200961234	0.105318707	36.86534791		Aerobic	Host-associated	Mesophilic	No	No	Bacteria	0.663253244
+Gluconacetobacter diazotrophicus PAl 5 FAPERJ	272568	0.612308533	0.643	0.206521695	0.112609603	37.26270357		Aerobic	Host-associated	Mesophilic	No	No	Bacteria	0.66327582
+Gluconacetobacter diazotrophicus PAl 5 JGI	272568	0.618131209	0.645	0.189556589	0.101179325	36.44490316		Aerobic	Host-associated	Mesophilic	No	No	Bacteria	0.663230179
+Gluconacetobacter diazotrophicus PAl5	272568	0.612308533	0.643	0.206521695	0.112609603	37.26270357		Aerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.66327582
+Gluconobacter oxydans 621H	290633	0.55827542	0.555	0.193343715	0.150286609	42.41677502		Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.608168879
+Gordonia bronchialis DSM 43247	526226	0.600279769	0.604	0.13299099	0.13604306	37.43523353		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.670425511
+Gramella forsetii KT0803	411154	0.6251792	0.623	0.080408863	0.124149958	49.03736064	Non-halophilic	Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.366107625
+Granulobacter bethesdensis CGDNIH1	391165	0.541922974	0.5395	0.169847551	0.179315474	45.42739492	Non-halophilic		Multiple	Mesophilic	Human	Yes	Bacteria	0.590721305
+Haemophilus ducreyi 35000HP	233412	0.552084397	0.552	0.12703979	0.204843323	44.11164823		Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.382204944
+Haemophilus influenzae	71421	0.514473753	0.502	0.149733659	0.201430883	43.68739239		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.381502855
+Haemophilus influenzae 86 028NP	281310	0.512553571	0.501	0.149198419	0.211368267	43.97336207		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.381566892
+Haemophilus influenzae PittEE	374930	0.615679915	0.612	0.103837988	0.15758012	43.43617246	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.38040528
+Haemophilus influenzae PittGG	374931	0.583128511	0.577	0.120074817	0.175947219	43.79141011	Mesophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.380093907
+Haemophilus parasuis SH0165	557723	0.457581289	0.439	0.195241101	0.228445316	46.01029892		Facultative	Host-associated	Mesophilic	Porcine	Yes	Bacteria	0.399931076
+Haemophilus somnus 129PT	205914	0.570004929	0.567	0.105236646	0.146012249	44.63968515		Facultative	Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.371917225
+Haemophilus somnus 2336	228400	0.567811659	0.566	0.10982048	0.154038843	44.75718105		Facultative	Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.373780676
+Hahella chejuensis KCTC 2396	349521	0.62624101	0.623	0.077119564	0.007676164	48.72723133	Mesophilic	Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.538697459
+Halalkalicoccus jeotgali B3 uid50305	795797	0.60206806	0.642	0.202713754	0.109472855	39.09895632	Extreme halophilic					Yes	Archaea	0.625208151
+Haliangium ochraceum DSM 14365	502025	0.72435619	0.749	0.148707406	-0.015641426	33.09640781	Moderate halophilic	Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.694833879
+Haloarcula marismortui ATCC 43049	272569	0.584026549	0.592	0.161205198	0.135887729	43.19652323	Extreme halophilic	Aerobic	Aquatic	Mesophilic	No	Yes	Archaea	0.611188025
+Halobacterium salinarum R1	478009	0.675005575	0.719	0.201337097	0.036876027	37.02874786	Extreme halophilic	Anaerobic	Specialized	Thermophilic	No	Yes	Archaea	0.657105729
+Halobacterium sp	64091	0.67519437	0.718	0.199111721	0.036092193	36.95830116	Extreme halophilic	Facultative	Specialized	Mesophilic	No	No	Archaea	0.659335047
+Haloferax volcanii DS2 uid46845	309800	0.644876316	0.678	0.204567123	0.0514326	34.72135029	Moderate halophilic	Aerobic	Aquatic		No	Yes	Archaea	0.654799023
+Halomicrobium mukohataei DSM 12286	485914	0.667068651	0.687	0.149774677	0.0155182	35.91103713	Extreme halophilic	Facultative	Specialized	Mesophilic	No	Yes	Archaea	0.655307112
+Haloquadratum walsbyi	362976	0.698312984	0.705	0.066570366	0.002134063	50.65381728	Extreme halophilic		Aquatic		No	Yes	Archaea	0.478610954
+Halorhabdus utahensis DSM 12940	519442	0.618016507	0.632	0.163871829	0.099351674	40.38382035	Extreme halophilic	Aerobic	Terrestrial	Mesophilic	No	Yes	Archaea	0.628999662
+Halorhodospira halophila SL1	349124	0.650864422	0.662	0.155943391	0.0499461	35.65579132	Extreme halophilic					Yes	Bacteria	0.679817297
+Halorubrum lacusprofundi ATCC 49239	416348	0.607706076	0.647	0.216328731	0.114352497	38.02990049	Extreme halophilic	Aerobic	Aquatic	Mesophilic	No	Yes	Archaea	0.639719805
+Haloterrigena turkmenica DSM 5511 uid43501	543526	0.632567246	0.659	0.178226336	0.070990006	36.50456976	Moderate halophilic	Aerobic	Specialized		No	Yes	Archaea	0.64264273
+Halothermothrix orenii H 168	373903	0.679554041	0.68	0.051123519	-0.009793199	47.29299577	Moderate halophilic	Anaerobic	Aquatic	Thermophilic	No	Yes	Bacteria	0.37883192
+Halothiobacillus neapolitanus c2	555778	0.723030928	0.726	0.075958411	0.050366696	49.36897235	Mesophilic	Aerobic	Specialized		No	Yes	Bacteria	0.54713642
+Helicobacter acinonychis Sheeba	382638	0.697553664	0.701	0.048721118	-0.011297223	46.75709697	Non-halophilic	Microaerophilic	Host-associated	Mesophilic	Feline	Yes	Bacteria	0.381690152
+Helicobacter hepaticus	235279	0.678581952	0.681	0.062184099	0.043230381	45.663752		Aerobic	Host-associated	Mesophilic	Animal	Yes	Bacteria	0.359312696
+Helicobacter mustelae 12198 uid46647	679897	0.667007137	0.667	0.049190383	0.068726757	49.32470738						Yes	Bacteria	0.424653237
+Helicobacter pylori 26695	85962	0.706890079	0.71	0.042268555	-0.019681397	46.75775446		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.388741625
+Helicobacter pylori B38	592205	0.700866881	0.703	0.040853141	-0.014576676	46.7071676		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.391592115
+Helicobacter pylori B38 uid39685	592205	0.700866881	0.703	0.040853141	-0.014576676	46.7071676		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.391592115
+Helicobacter pylori B8 uid49873	693745	0.701876056	0.705	0.042493935	-0.012229827	46.77516127		Microaerophilic	Host-associated	Mesophilic	Human	No	Bacteria	0.387844496
+Helicobacter pylori G27	563041	0.706265474	0.708	0.043447365	-0.015874796	46.62201641	Non-halophilic	Microaerophilic	Host-associated	Mesophilic		Yes	Bacteria	0.388699307
+Helicobacter pylori HPAG1	357544	0.706001462	0.708	0.040649448	-0.024537064	46.84982675	Non-halophilic	Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.390667582
+Helicobacter pylori J99	85963	0.700815328	0.703	0.041627475	0.007504268	46.93151022		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.391887001
+Helicobacter pylori P12	570508	0.699568391	0.703	0.044617961	0.00459	46.76435223		Microaerophilic	Host-associated	Mesophilic	Human	No	Bacteria	0.387861794
+Helicobacter pylori Shi470	512562	0.70712112	0.71	0.04192825	-0.033828589	46.55312415		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.389147231
+Heliobacterium modesticaldum Ice1	498761	0.570204526	0.573	0.165316875	0.110008883	46.01831433		Anaerobic	Multiple	Thermophilic		Yes	Bacteria	0.569751906
+Herbaspirillum seropedicae SmR1 uid50427	757424	0.600390146	0.612	0.192129237	0.055976501	35.87406316						Yes	Bacteria	0.634045638
+Herminiimonas arsenicoxydans	204773	0.588674411	0.59	0.134567148	0.074485671	45.70061804	Non-halophilic	Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.542949274
+Herpetosiphon aurantiacus ATCC 23779	316274	0.540972289	0.539	0.122540635	0.132129566	45.74335766		Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.508983071
+Hirschia baltica ATCC 49814	582402	0.483987899	0.473	0.121832033	0.192710434	50.72336941		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.451897877
+Hydrogenobacter thermophilus TK 6 uid45927	608538	0.726480769	0.729	0.047841161	0.031271721	48.95517909		Facultative		Thermophilic		Yes	Bacteria	0.440002639
+Hydrogenobaculum Y04AAS1	380749	0.691916898	0.693	0.049345944	-0.002662665	43.45630194		Aerobic	Aquatic	Thermophilic	No	Yes	Bacteria	0.3484701
+Hyperthermus butylicus	415426	0.627265936	0.625	0.086848078	0.105329	49.41932214	Moderate halophilic	Anaerobic	Aquatic	Hyperthermophilic	No	Yes	Archaea	0.537367372
+Hyphomicrobium denitrificans ATCC 51888 uid50325	582899	0.596337334	0.6	0.140370836	0.146319499	42.36497535		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.608124169
+Hyphomonas neptunium ATCC 15444	228405	0.598303825	0.597	0.155939963	0.088231735	41.49510919		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.619302833
+Idiomarina loihiensis L2TR	283942	0.597293082	0.589	0.092477014	0.150817246	51.953		Aerobic	Specialized	Mesophilic		Yes	Bacteria	0.470402399
+Ignicoccus hospitalis KIN4 I	453591	0.639897496	0.646	0.119361198	0.103044884	41.46329734		Anaerobic	Aquatic	Hyperthermophilic		Yes	Archaea	0.565203485
+Jannaschia CCS1	290400	0.601172123	0.607	0.125003203	0.114165678	43.64185069	Mesophilic	Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.622438806
+Janthinobacterium Marseille	375286	0.562594725	0.562	0.153369156	0.092169916	45.62413528			Aquatic	Mesophilic		Yes	Bacteria	0.542341818
+Jonesia denitrificans DSM 20603	471856	0.623235475	0.619	0.110823448	0.129406498	47.25369146		Facultative				Yes	Bacteria	0.584166835
+Kangiella koreensis DSM 16069	523791	0.586413793	0.579	0.098483504	0.17025305	51.52109265	Moderate halophilic	Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.436871006
+Kineococcus radiotolerans SRS30216	266940	0.704410543	0.719	0.13443826	0.050187646	30.15021885		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.742451387
+Klebsiella pneumoniae 342	507522	0.433140726	0.426	0.19119244	0.166946598	42.04446331		Facultative	Host-associated	Mesophilic	No	No	Bacteria	0.568691021
+Klebsiella pneumoniae MGH 78578	272620	0.442514553	0.435	0.185391125	0.153183771	41.52860633		Facultative	Multiple	Mesophilic	"Human, Animal"	Yes	Bacteria	0.571473499
+Klebsiella pneumoniae NTUH K2044	484021	0.440422829	0.433	0.187109031	0.149381366	41.57531492		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.573691974
+Klebsiella variicola At 22 uid42113	640131	0.584754917	0.583	0.139657635	0.108224698	41.25500043						Yes	Bacteria	0.575780914
+Kocuria rhizophila DC2201	378753	0.662967401	0.674	0.139654862	0.038930151	31.00476722		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.711638011
+Kosmotoga olearia TBF 19 5 1	521045	0.678022881	0.676	0.054087078	0.085448902	52.67417681			Aquatic	Mesophilic	No	Yes	Bacteria	0.415459884
+Kribbella flavida DSM 17836 uid43465	479435	0.697032011	0.709	0.142227925	0.029046999	31.67838061		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.705679064
+Kytococcus sedentarius DSM 20547	478801	0.711250853	0.733	0.151716686	0.042330611	31.25928029	Non-halophilic	Aerobic		Mesophilic		Yes	Bacteria	0.716275336
+Lactobacillus acidophilus NCFM	272621	0.513306901	0.495	0.175943974	0.18800406	41.30981719		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.34714581
+Lactobacillus brevis ATCC 367	387344	0.500976081	0.486	0.139469231	0.182119253	50.46668906		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.460582473
+Lactobacillus casei	543734	0.603302441	0.602	0.09211688	0.14212074	51.6901251		Facultative	Specialized	Mesophilic	No	No	Bacteria	0.463356993
+Lactobacillus casei ATCC 334	321967	0.592875209	0.591	0.096632535	0.13820572	51.60254983		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.465751926
+Lactobacillus crispatus ST1 uid48359	748671	0.486795895	0.469	0.200305739	0.236235271	44.63304504						Yes	Bacteria	0.368882829
+Lactobacillus delbrueckii bulgaricus	390333	0.383590599	0.357	0.262659274	0.224981787	43.72206672		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.497190346
+Lactobacillus delbrueckii bulgaricus ATCC BAA-365	321956	0.389821733	0.365	0.253069216	0.214247938	43.91461222		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.496863407
+Lactobacillus fermentum IFO 3956	334390	0.492645833	0.481	0.189934125	0.153432592	45.23126488	Non-halophilic	Facultative	Multiple	Mesophilic		Yes	Bacteria	0.514690635
+Lactobacillus gasseri ATCC 33323	324831	0.52757432	0.508	0.168400685	0.171729817	42.55936812		Facultative	Host-associated	Mesophilic	No	Yes	Bacteria	0.352596127
+Lactobacillus helveticus DPC 4571	405566	0.479993333	0.455	0.244148307	0.225445682	44.16453067	Non-halophilic	Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.370770102
+Lactobacillus johnsonii FI9785	633699	0.529015748	0.513	0.155219665	0.174558795	41.93922703						No	Bacteria	0.344291912
+Lactobacillus johnsonii NCC 533	257314	0.528162373	0.512	0.154567403	0.184422326	42.05211084		Facultative	Host-associated	Mesophilic	No	Yes	Bacteria	0.346112464
+Lactobacillus plantarum	220668	0.450014498	0.438	0.154628642	0.252509371	50.22860602		Facultative	Host-associated	Mesophilic	No	Yes	Bacteria	0.444174848
+Lactobacillus plantarum JDM1	644042	0.44741812	0.435	0.158316036	0.251522503	50.12467172		Microaerophilic		Mesophilic		No	Bacteria	0.446609435
+Lactobacillus reuteri DSM 20016	557436	0.448724118	0.43	0.193444668	0.276852089	47.09808824		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.388726247
+Lactobacillus reuteri F275 JGI	557436	0.480623529	0.468	0.146190267	0.282825011	47.09808824		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.388726247
+Lactobacillus reuteri F275 Kitasato	557433	0.463726891	0.445	0.176322468	0.28087281	47.02804922	Non-halophilic	Facultative	Host-associated	Mesophilic	No	No	Bacteria	0.388787662
+Lactobacillus rhamnosus GG	568703	0.628486715	0.624	0.06947932	0.111164391	51.01782689		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.466900058
+Lactobacillus rhamnosus Lc 705	568704	0.632101231	0.628	0.067430065	0.114757593	51.04207582		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.466753223
+Lactobacillus sakei 23K	314315	0.48198661	0.462	0.207680637	0.231247826	46.36366281		Facultative	Multiple	Mesophilic		Yes	Bacteria	0.412576055
+Lactobacillus salivarius UCC118	362948	0.586778741	0.576	0.150591721	0.125206723	39.35880936		Facultative	Host-associated	Mesophilic		Yes	Bacteria	0.330404686
+Lactococcus lactis	272623	0.438855166	0.422	0.2048476	0.252071347	43.31755858		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.353293831
+Lactococcus lactis cremoris MG1363	416870	0.420925274	0.401	0.222397265	0.260473187	44.51784484	Non-halophilic	Facultative	Multiple	Mesophilic	No	No	Bacteria	0.35745557
+Lactococcus lactis cremoris SK11	272622	0.420733616	0.402	0.214837736	0.264530838	44.8156926		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.357838519
+Lactococcus lactis KF147	684738	0.441138264	0.426	0.201134886	0.24847223	43.14490492						No	Bacteria	0.348743044
+Laribacter hongkongensis HLHK9	557598	0.56873708	0.574	0.197777269	0.081299067	38.08933836		Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.62352315
+Lawsonia intracellularis PHE MN1-00	363253	0.667796339	0.671	0.076001536	0.066423491	40.44334249		Facultative	Host-associated	Mesophilic	Animal	Yes	Bacteria	0.330815805
+Legionella longbeachae NSW150 uid46099	661367	0.611712401	0.612	0.060337162	0.108056177	48.94755607						Yes	Bacteria	0.37113901
+Legionella pneumophila 2300 99 Alcoy uid48801	423212	0.642010018	0.641	0.0564667	0.111330788	50.76760608		Aerobic	Host-associated	Mesophilic	Animal	No	Bacteria	0.38377583
+Legionella pneumophila Corby	400673	0.640233922	0.639	0.056245496	0.103326085	50.80062898		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.384785277
+Legionella pneumophila Lens	297245	0.63672268	0.636	0.057691486	0.11229168	50.79121407		Aerobic	Host-associated	Mesophilic	Animal	No	Bacteria	0.384158327
+Legionella pneumophila Paris	297246	0.640708001	0.64	0.057116568	0.109439429	50.77515899		Aerobic	Host-associated	Mesophilic	Animal	No	Bacteria	0.383392089
+Legionella pneumophila Philadelphia 1	272624	0.637860635	0.638	0.058772431	0.108391276	50.81048121		Aerobic	Host-associated	Mesophilic	Animal	Yes	Bacteria	0.382695269
+Leifsonia xyli xyli CTCB0	281090	0.569436415	0.58	0.169201874	0.143432879	35.93963529		Aerobic	Host-associated	Mesophilic	Plant	Yes	Bacteria	0.676760477
+Leptospira biflexa serovar Patoc  Patoc 1  Ames 	355278	0.68338897	0.683	0.053022061	0.039319668	50.46910738	Non-halophilic	Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.388916427
+Leptospira biflexa serovar Patoc  Patoc 1  Paris 	456481	0.683576632	0.683	0.052494132	0.038982734	50.46992803	Non-halophilic	Aerobic	Multiple	Mesophilic		No	Bacteria	0.388946533
+Leptospira borgpetersenii serovar Hardjo-bovis JB197	355277	0.681201613	0.682	0.052594872	0.038659845	50.91424194	Non-halophilic	Aerobic	Host-associated	Mesophilic	"Cattle, Human"	Yes	Bacteria	0.402440255
+Leptospira borgpetersenii serovar Hardjo-bovis L550	355276	0.68115208	0.682	0.053070371	0.042024713	50.91641499	Non-halophilic	Aerobic	Host-associated	Mesophilic	"Cattle, Human"	No	Bacteria	0.402291124
+Leptospira interrogans serovar Copenhageni	267671	0.694275841	0.697	0.052037494	-0.057396157	46.77308379		Aerobic	Host-associated	Mesophilic	Animal	No	Bacteria	0.350443427
+Leptospira interrogans serovar Lai	189518	0.695169006	0.698	0.050468882	-0.050113737	46.72417677		Aerobic	Host-associated	Mesophilic	Animal	Yes	Bacteria	0.350249269
+Leptothrix cholodnii SP 6	395495	0.699619361	0.713	0.122217449	-0.131274565	31.35070568		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.688996809
+Leptotrichia buccalis DSM 1135	523794	0.618986607	0.619	0.116181577	0.157240902	39.37400198		Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.296456861
+Leuconostoc citreum KM20	349519	0.442581395	0.43	0.173733382	0.251712688	45.79686597	Non-halophilic	Facultative		Mesophilic	No	Yes	Bacteria	0.388694273
+Leuconostoc gasicomitatum LMG 18811 uid50385	762550	0.543234132	0.536	0.11234941	0.177352319	43.84024491						Yes	Bacteria	0.366632379
+Leuconostoc kimchii IMSNU 11154 uid48589	762051	0.54523494	0.539	0.108131606	0.172109488	45.24610515		Facultative		Mesophilic	No	No	Bacteria	0.37909693
+Leuconostoc kimchii IMSNU11154 uid48589	762051	0.54523494	0.539	0.108131606	0.172109488	45.24610515		Facultative		Mesophilic	No	Yes	Bacteria	0.37909693
+Leuconostoc mesenteroides ATCC 8293	203120	0.50695	0.495	0.142493979	0.237921563	46.46213371		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.376686067
+Listeria innocua	272626	0.564521692	0.555	0.133443499	0.199143087	46.65090521		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.373881588
+Listeria monocytogenes	169963	0.564829437	0.555	0.131514718	0.197898483	47.06812304		Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.379810279
+Listeria monocytogenes 08 5923 uid43727	637381	0.567832708	0.559	0.131510076	0.192406925	47.13346662		Facultative			Human	No	Bacteria	0.379649716
+Listeria monocytogenes 4b F2365	265669	0.56251641	0.553	0.133694576	0.202234709	47.25705536		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.380412345
+Listeria monocytogenes HCC23	552536	0.553237805	0.543	0.144264612	0.197591345	47.21630297		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.381936838
+Listeria seeligeri serovar 1 2b SLCC3954 uid46215	683837	0.563002459	0.555	0.130363211	0.190903846	46.68493238						Yes	Bacteria	0.373826331
+Listeria welshimeri serovar 6b SLCC5334	386043	0.587657831	0.581	0.117089609	0.163990371	45.0960506		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.363520164
+Lysinibacillus sphaericus C3 41	444177	0.515038333	0.506	0.122032054	0.238127052	46.72145485		Aerobic	Specialized	Mesophilic	Mosquito	Yes	Bacteria	0.371349401
+Macrococcus caseolyticus JCSC5402	458233	0.481633796	0.467	0.182623528	0.25074992	46.05277899		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.365631154
+Magnetococcus MC-1	156889	0.689003806	0.694	0.078059297	0.023548281	46.97870638		Facultative	Aquatic		No	Yes	Bacteria	0.54167478
+Magnetospirillum magneticum AMB-1	342108	0.615712383	0.631	0.189096094	0.096665127	35.62727701		Microaerophilic	Aquatic	Mesophilic	No	Yes	Bacteria	0.650939429
+Mannheimia succiniciproducens MBEL55E	221988	0.498328244	0.488	0.14776167	0.210660937	46.71630076	Non-halophilic	Anaerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.425379784
+Maricaulis maris MCS10	394221	0.588528522	0.592	0.143599861	0.094801568	41.39536632	Mesophilic	Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.627276343
+Marinobacter aquaeolei VT8	351348	0.564225604	0.561	0.141507721	0.087895214	46.03178747	Moderate halophilic	Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.569270604
+Marinomonas MWYL1	400668	0.485783429	0.476	0.130912973	0.186730816	49.50363634		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.425940682
+Meiothermus ruber DSM 1279 uid46661	504728	0.648428986	0.656	0.121944494	-0.041571846	38.47830362		Aerobic	Specialized	Thermophilic		Yes	Bacteria	0.633843827
+Meiothermus silvanus DSM 9946 uid49485	526227	0.638945249	0.64	0.101415933	0.034560521	41.63257678		Aerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.627153033
+Mesoplasma florum L1	265311	0.665500787	0.656	0.115707248	0.031613776	32.97268031		Facultative	Host-associated	Mesophilic	"Mammal, Insect, Plant"	Yes	Bacteria	0.270204885
+Mesorhizobium BNC1	266779	0.5813048	0.582	0.134032959	0.160841957	45.11183519		Aerobic	Multiple		No	Yes	Bacteria	0.610951768
+Mesorhizobium loti	266835	0.537163395	0.55	0.19618423	0.223230737	40.61976194		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.625079957
+Metallosphaera sedula DSM 5348	399549	0.772382425	0.773	0.031306052	0.020583842	50.49788169		Aerobic	Specialized	Thermophilic	No	Yes	Archaea	0.462253316
+Methanobacterium thermoautotrophicum	187420	0.661535606	0.663	0.082082717	0.050635666	45.75998235		Anaerobic	Specialized	Thermophilic	No	Yes	Archaea	0.495439303
+Methanobrevibacter ruminantium M1 uid45857	634498	0.617712082	0.608	0.116333151	0.130817251	43.24498715		Anaerobic		Mesophilic		Yes	Archaea	0.326409853
+Methanobrevibacter smithii ATCC 35061	420247	0.654508376	0.65	0.09125491	0.09630879	38.80379575		Anaerobic	Multiple	Mesophilic		Yes	Archaea	0.310342334
+Methanocaldococcus fervens AG86	573064	0.602250714	0.598	0.099208229	0.098461348	39.07532286		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.322183896
+Methanocaldococcus FS406 22 uid42499	644281	0.633779237	0.634	0.088055523	0.078263208	38.97533959		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.320391104
+Methanocaldococcus infernus ME uid48803	573063	0.678048875	0.68	0.069365877	0.047932228	39.1629744		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.336185075
+Methanocaldococcus vulcanius M7	579137	0.634208306	0.636	0.076875568	0.08210862	40.37178642		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.315757687
+Methanocella paludicola SANAE	304371	0.569861596	0.583	0.18812131	0.113004188	43.58306939					No	Yes	Archaea	0.549168846
+Methanococcoides burtonii DSM 6242	259564	0.624337713	0.618	0.080607256	0.081438913	50.24782433	Moderate halophilic	Anaerobic	Aquatic	Mesophilic	No	Yes	Archaea	0.407580954
+Methanococcus aeolicus Nankai-3	419665	0.685751668	0.686	0.068632301	0.068139025	40.39352854		Anaerobic	Aquatic	Mesophilic	No	Yes	Archaea	0.300374642
+Methanococcus jannaschii	243232	0.629610447	0.628	0.087171903	0.071691898	38.28073379	Moderate halophilic	Anaerobic	Aquatic	Hyperthermophilic	No	Yes	Archaea	0.312937666
+Methanococcus maripaludis C5	402880	0.551720297	0.536	0.146758967	0.161194676	42.44769121		Anaerobic	Aquatic	Mesophilic	No	No	Archaea	0.329759548
+Methanococcus maripaludis C6	444158	0.55675172	0.544	0.146033416	0.171310714	42.6987561		Anaerobic	Aquatic	Mesophilic	No	No	Archaea	0.334231934
+Methanococcus maripaludis C7	426368	0.555769617	0.541	0.146233789	0.167431204	42.68186692		Anaerobic	Aquatic	Mesophilic		No	Archaea	0.332844247
+Methanococcus maripaludis S2	267377	0.553810078	0.539	0.146891819	0.162590058	42.18109625		Anaerobic	Aquatic	Mesophilic	No	Yes	Archaea	0.331003403
+Methanococcus vannielii SB	406327	0.616663793	0.613	0.082749067	0.085954923	41.88805836	Non-halophilic	Anaerobic	Aquatic	Mesophilic	No	Yes	Archaea	0.313283118
+Methanococcus voltae A3 uid49529	456320	0.590456048	0.577	0.126990793	0.13652983	41.06520753		Anaerobic	Aquatic	Mesophilic		Yes	Archaea	0.28594594
+Methanocorpusculum labreanum Z	410358	0.571550125	0.5635	0.130706621	0.098452396	49.07458083	Non-halophilic	Anaerobic	Aquatic	Mesophilic	No	Yes	Archaea	0.500065929
+Methanoculleus marisnigri JR1	368407	0.694722172	0.715	0.127509983	-0.046439251	39.1200292		Anaerobic	Aquatic	Mesophilic	No	Yes	Archaea	0.620630363
+Methanohalobium evestigatum Z 7303 uid49857	644295	0.692345603	0.695	0.050348754	0.017021059	47.51573824	Extreme halophilic	Anaerobic	Specialized	Thermophilic	No	Yes	Archaea	0.364249582
+Methanohalophilus mahii DSM 5219 uid47313	547558	0.694876657	0.695	0.046077546	0.020506405	51.44542421	Moderate halophilic	Anaerobic	Specialized	Mesophilic		Yes	Archaea	0.426182057
+Methanopyrus kandleri	190192	0.647613402	0.644	0.13815678	0.081105057	44.72130219	Moderate halophilic	Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.611591716
+Methanosaeta thermophila PT	349307	0.709929642	0.717	0.074876415	0.016785871	47.47779544		Anaerobic		Thermophilic		Yes	Archaea	0.535452795
+Methanosarcina acetivorans	188937	0.640379597	0.646	0.086073619	0.052027112	51.41101184		Anaerobic	Aquatic	Mesophilic	No	Yes	Archaea	0.426808905
+Methanosarcina barkeri fusaro	269797	0.711680435	0.714	0.053317641	0.017965643	51.14523913		Anaerobic	Multiple	Mesophilic	No	Yes	Archaea	0.39233644
+Methanosarcina mazei	192952	0.65782004	0.663	0.080709387	0.062530916	50.40180563		Anaerobic	Multiple	Mesophilic	No	Yes	Archaea	0.41481332
+Methanosphaera stadtmanae	339860	0.747226251	0.749	0.079234914	0.00065033	34.39691661		Anaerobic	Host-associated	Mesophilic		Yes	Archaea	0.276337089
+Methanospirillum hungatei JF-1	323259	0.66521323	0.669	0.077695642	0.065190172	50.8504708		Anaerobic	Multiple	Mesophilic	No	Yes	Archaea	0.45149035
+Methylacidiphilum infernorum V4	481448	0.733551392	0.737	0.04370899	0.006104579	53.17045236		Aerobic	Specialized	Thermophilic		Yes	Bacteria	0.454827744
+Methylibium petroleiphilum PM1	420662	0.673238026	0.696	0.167160146	0.022224476	32.91179487		Facultative	Aquatic	Mesophilic		Yes	Bacteria	0.687818971
+Methylobacillus flagellatus KT	265072	0.628943352	0.629	0.102664559	0.014151256	46.76423958		Aerobic	Specialized	Mesophilic		Yes	Bacteria	0.557190822
+Methylobacterium 4 46	426117	0.646497602	0.685	0.199958802	0.137680919	32.61834224		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.715024832
+Methylobacterium chloromethanicum CM4	440085	0.587713385	0.6	0.180694449	0.161489437	35.60525068		Aerobic	Terrestrial	Mesophilic		Yes	Bacteria	0.680792987
+Methylobacterium dichloromethanicum	661410	0.58278967	0.597	0.183303181	0.160675423	35.66498921		Aerobic	Terrestrial	Mesophilic		Yes	Bacteria	0.679964617
+Methylobacterium extorquens AM1	272630	0.591795999	0.6	0.165022849	0.151481819	35.21512625		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.684844482
+Methylobacterium extorquens DM4	661410	0.58278967	0.597	0.183303181	0.160675423	35.66498921		Aerobic	Terrestrial	Mesophilic		No	Bacteria	0.679964617
+Methylobacterium extorquens PA1	419610	0.590218059	0.604	0.179065815	0.154048167	35.43644217		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.681838603
+Methylobacterium nodulans ORS 2060	460265	0.586484375	0.62	0.230835155	0.186949473	35.88692567		Aerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.684438165
+Methylobacterium populi BJ001	441620	0.592750694	0.604	0.169450831	0.158166501	34.04657936	Non-halophilic	Aerobic		Mesophilic		Yes	Bacteria	0.693602681
+Methylobacterium radiotolerans JCM 2831	426355	0.635995342	0.655	0.166936704	0.134326775	32.3521014	Non-halophilic	Aerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.710353944
+Methylocella silvestris BL2	395965	0.592140127	0.603	0.143844705	0.163305663	40.9142513		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.630833622
+Methylococcus capsulatus Bath	243233	0.739225175	0.749	0.093362508	-0.081101064	40.30696013		Aerobic	Multiple	Thermophilic	No	Yes	Bacteria	0.635845922
+Methylotenera 301 uid49469	666681	0.622035491	0.615	0.095059983	0.162270426	49.07248752						Yes	Bacteria	0.426351307
+Methylotenera mobilis JLW8	583345	0.553202123	0.539	0.125990586	0.200010076	48.8240323		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.455101921
+Methylovorus SIP3 4	582744	0.587320122	0.5835	0.124915518	0.023914153	44.63752553		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.546090583
+Micrococcus luteus NCTC 2665	465515	0.650476145	0.656	0.168994352	0.086721698	29.95187023		Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.729952497
+Microcystis aeruginosa NIES 843	449447	0.644625899	0.651	0.088751817	0.042858594	49.65834982		Aerobic	Aquatic	Mesophilic	"Animal, Human"	Yes	Bacteria	0.423306311
+Mobiluncus curtisii ATCC 43063 uid49695	548479	0.575724405	0.579	0.136995441	0.15474517	50.28760179		Anaerobic		Mesophilic		Yes	Bacteria	0.554132813
+Moorella thermoacetica ATCC 39073	264732	0.695200451	0.704	0.086001604	-0.011794982	46.51851016		Anaerobic	Aquatic	Thermophilic		Yes	Bacteria	0.557915371
+Moraxella catarrhalis RH4 uid48809	749219	0.583329428	0.578	0.099331269	0.166804474	47.80169538		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.416715952
+Mycobacterium abscessus ATCC 19977	561007	0.519255199	0.515	0.143333182	0.220190663	42.21724328		Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.641481146
+Mycobacterium avium 104	243243	0.636295662	0.653	0.153272143	0.104013831	34.3199462		Aerobic	Host-associated	Mesophilic	Mammal	Yes	Bacteria	0.689880962
+Mycobacterium avium paratuberculosis	262316	0.647731748	0.663	0.148160019	0.078056336	34.1417243		Aerobic	Multiple	Mesophilic	Mammal	No	Bacteria	0.692986079
+Mycobacterium bovis	233413	0.606282555	0.609	0.105690312	0.099839225	41.8698355		Aerobic	Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.656329824
+Mycobacterium bovis BCG Pasteur 1173P2	410289	0.605976904	0.609	0.106369956	0.099557395	41.8828749	Non-halophilic	Aerobic	Host-associated	Mesophilic	Bovine	No	Bacteria	0.656360398
+Mycobacterium bovis BCG Tokyo 172	561275	0.606622595	0.61	0.105782228	0.09799512	41.85293898	Non-halophilic	Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.656430171
+Mycobacterium gilvum PYR-GCK	350054	0.58859928	0.603	0.157401176	0.138414348	36.65484236				Mesophilic		Yes	Bacteria	0.677441057
+Mycobacterium JLS	164757	0.602223244	0.616	0.147604707	0.127667077	35.67975561	Non-halophilic		Multiple	Mesophilic	No	Yes	Bacteria	0.683564234
+Mycobacterium KMS	189918	0.598212732	0.615	0.156931866	0.129964355	35.895472	Non-halophilic		Multiple	Mesophilic	No	Yes	Bacteria	0.682281346
+Mycobacterium leprae	272631	0.62498283	0.628	0.071020249	0.092177672	49.18666552	Non-halophilic	Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.577967464
+Mycobacterium leprae Br4923	561304	0.624976632	0.628	0.07102193	0.092580854	49.19789141	Non-halophilic	Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.577975251
+Mycobacterium marinum M	216594	0.574824916	0.578	0.117622298	0.139405129	41.18288426		Aerobic	Multiple	Mesophilic	"Fish, Human"	Yes	Bacteria	0.657340892
+Mycobacterium MCS	164756	0.606450075	0.62	0.146764961	0.119713805	35.61869612	Non-halophilic			Mesophilic	No	Yes	Bacteria	0.683863909
+Mycobacterium smegmatis MC2 155	246196	0.58796527	0.596	0.1461604	0.129259494	36.46576357		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.674028066
+Mycobacterium tuberculosis CDC1551	83331	0.601723521	0.605	0.109637109	0.105615158	42.18248033		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.656093951
+Mycobacterium tuberculosis F11	336982	0.606304654	0.608	0.105751622	0.102157586	41.96244183		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.656178246
+Mycobacterium tuberculosis H37Ra	419947	0.60566307	0.607	0.104571448	0.101707457	41.92378878	Non-halophilic	Aerobic	Host-associated		Human	No	Bacteria	0.656125134
+Mycobacterium tuberculosis H37Rv	83332	0.606346779	0.608	0.104354553	0.100660499	41.88054277		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.656141223
+Mycobacterium tuberculosis KZN 1435	478434	0.604744261	0.607	0.106702107	0.10332591	42.01131785		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.656141647
+Mycobacterium ulcerans Agy99	362242	0.582692754	0.583	0.109584892	0.128759237	41.18761525	Non-halophilic	Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.653915826
+Mycobacterium vanbaalenii PYR-1	350058	0.582958473	0.592	0.144124223	0.136639664	36.49290334		Aerobic		Mesophilic		Yes	Bacteria	0.677931226
+Mycoplasma agalactiae PG2	347257	0.616361795	0.611	0.099241257	0.095680352	38.76055137		Facultative	Host-associated	Psychrophilic	"Sheep, Goat"	Yes	Bacteria	0.297070562
+Mycoplasma arthritidis 158L3 1	243272	0.645095986	0.642	0.079737849	0.105174967	42.57160733	Non-halophilic	Facultative	Host-associated	Mesophilic	Rodent	Yes	Bacteria	0.307094983
+Mycoplasma capricolum ATCC 27343	340047	0.714237154	0.721	0.084183295	0.009828116	30.75133597	Non-halophilic	Facultative	Host-associated	Mesophilic	Ruminant	Yes	Bacteria	0.237704488
+Mycoplasma conjunctivae HRC 581 uid32285	572263	0.653098305	0.652	0.074022586	0.079654963	39.38110508		Microaerophilic	Host-associated	Mesophilic	"Sheep, Goats"	No	Bacteria	0.285387233
+Mycoplasma crocodyli MP145 uid47087	512564	0.6721563	0.668	0.078030115	0.046839712	35.56476874		Facultative	Host-associated	Mesophilic		Yes	Bacteria	0.269540192
+Mycoplasma gallisepticum	710127	0.632847795	0.628	0.092568967	0.071604436	41.04956899	Non-halophilic	Facultative	Host-associated	Mesophilic	Avian	Yes	Bacteria	0.314698855
+Mycoplasma genitalium	243273	0.713466814	0.715	0.050763148	-0.079113435	41.40705973	Non-halophilic	Facultative	Host-associated	Mesophilic	"Human, Animal, Insect"	No	Bacteria	0.316891235
+Mycoplasma hyopneumoniae 232	295358	0.683145367	0.683	0.045556017	-0.003539853	43.01333067	Non-halophilic	Facultative	Host-associated	Mesophilic	Swine	Yes	Bacteria	0.285611554
+Mycoplasma hyopneumoniae 7448	262722	0.688009756	0.688	0.044553982	-0.009180015	42.92416423	Non-halophilic	Facultative	Host-associated	Mesophilic	Swine	No	Bacteria	0.28488858
+Mycoplasma hyopneumoniae J	262719	0.687898858	0.688	0.045596299	-0.010012149	42.93819576	Non-halophilic	Facultative	Host-associated	Mesophilic	Swine	No	Bacteria	0.285222391
+Mycoplasma mobile 163K	267748	0.699656566	0.701	0.073022965	0.009733568	33.21900168	Non-halophilic	Facultative	Host-associated	Mesophilic	Fish	Yes	Bacteria	0.249512598
+Mycoplasma mycoides	272632	0.70461236	0.718	0.105399714	0.019964061	31.18452809	Non-halophilic	Facultative	Host-associated	Mesophilic	Cattle	Yes	Bacteria	0.239656087
+Mycoplasma penetrans	272633	0.706941667	0.7115	0.075614313	0.023982938	33.07049479	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.257175411
+Mycoplasma pneumoniae	272634	0.668699849	0.672	0.062921974	0.045216653	49.506	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.400080108
+Mycoplasma pulmonis	272635	0.695354196	0.695	0.061432669	0.04395633	35.34198009	Non-halophilic	Facultative	Host-associated	Mesophilic	Rodent	Yes	Bacteria	0.266365384
+Mycoplasma synoviae 53	262723	0.704630894	0.711	0.084249363	0.025800514	36.88602602	Non-halophilic	Facultative	Host-associated	Mesophilic	Chicken	Yes	Bacteria	0.284951643
+Myxococcus xanthus DK 1622	246197	0.636800352	0.647	0.17570222	0.086512106	35.09070684		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.688912393
+Nakamurella multipartita DSM 44233	479431	0.658806285	0.681	0.157893398	0.066485715	31.88078354			Terrestrial	Mesophilic	No	Yes	Bacteria	0.709164632
+Nanoarchaeum equitans	228908	0.693508264	0.698	0.055925776	0.051649171	41.45977893		Anaerobic	Host-associated	Hyperthermophilic	No	No	Archaea	0.315595302
+Natranaerobius thermophilus JW NM WN LF	457570	0.712855988	0.715	0.048799095	-0.049486346	47.08039546	Moderate halophilic		Specialized	Thermophilic	No	Yes	Bacteria	0.363089477
+Natrialba magadii ATCC 43099 uid46245	547559	0.584969244	0.598	0.176535947	0.117729642	41.21492048	Extreme halophilic	Aerobic	Specialized	Mesophilic		Yes	Archaea	0.610501789
+Natronomonas pharaonis	348780	0.589302411	0.594	0.140232613	0.127316127	40.62952186	Moderate halophilic	Aerobic	Aquatic			Yes	Archaea	0.631196685
+Nautilia profundicola AmH	598659	0.600714377	0.595	0.148007016	0.172783538	42.52834185		Anaerobic	Multiple	Mesophilic		Yes	Bacteria	0.335075314
+Neisseria gonorrhoeae FA 1090	242231	0.536169856	0.531	0.150390403	0.105574635	43.41254725		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.526896517
+Neisseria gonorrhoeae NCCP11945	521006	0.541021972	0.535	0.169123102	0.126047538	43.73544802		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.523648386
+Neisseria meningitidis	662598	0.545342525	0.541	0.141000959	0.10377501	43.26837439						No	Bacteria	0.519471681
+Neisseria meningitidis 053442	374833	0.535969715	0.528	0.140939058	0.110932278	43.50306532		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.517003217
+Neisseria meningitidis alpha14	662598	0.545342525	0.541	0.141000959	0.10377501	43.26837439						No	Bacteria	0.519471681
+Neisseria meningitidis FAM18	272831	0.546522887	0.538	0.13593307	0.107628885	43.40639319		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.516236507
+Neisseria meningitidis MC58	122586	0.534321614	0.526	0.143220788	0.115087223	43.33979481		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.515278389
+Neisseria meningitidis Z2491	122587	0.541873072	0.5345	0.137103472	0.104467681	43.08643357		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.518091417
+Neorickettsia risticii Illinois	434131	0.64174893	0.642	0.055812714	0.07442838	52.75760342			Host-associated	Mesophilic	Horse	Yes	Bacteria	0.41271306
+Neorickettsia sennetsu Miyayama	222891	0.638820961	0.64	0.0564572	0.062033206	52.98123726			Multiple		Human	Yes	Bacteria	0.410843463
+Nitratiruptor SB155-2	387092	0.633012238	0.628	0.064281568	0.131154428	51.19817657		Anaerobic	Specialized	Thermophilic		Yes	Bacteria	0.396886254
+Nitrobacter hamburgensis X14	323097	0.575729645	0.585	0.17058253	0.174494427	42.94437761		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.616173091
+Nitrobacter winogradskyi Nb-255	323098	0.610035231	0.617	0.137322525	0.132928168	42.29357794		Facultative	Terrestrial	Mesophilic	No	Yes	Bacteria	0.620490092
+Nitrosococcus halophilus Nc4 uid46803	472759	0.773092746	0.775	0.033257988	-0.041211953	52.57232354						Yes	Bacteria	0.516058824
+Nitrosococcus oceani ATCC 19707	323261	0.750754778	0.753	0.038511692	-0.057357281	53.21538803	Mesophilic		Aquatic			Yes	Bacteria	0.503419114
+Nitrosococcus watsoni C 113 uid50331	105559	0.783246698	0.786	0.035705619	-0.009275446	53.13557731						Yes	Bacteria	0.501378478
+Nitrosomonas europaea	228410	0.705381498	0.708	0.052669947	0.020524675	51.17213965		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.507181837
+Nitrosomonas eutropha C71	335283	0.644968531	0.649	0.079720273	0.049527669	52.55889336			Multiple			Yes	Bacteria	0.485409932
+Nitrosopumilus maritimus SCM1	436308	0.667668575	0.672	0.083981036	0.050803378	39.62996056		Aerobic	Aquatic	Mesophilic	No	Yes	Archaea	0.34167508
+Nitrosospira multiformis ATCC 25196	323848	0.733438563	0.736	0.051500527	0.015388564	52.43117736		Aerobic	Terrestrial	Mesophilic		Yes	Bacteria	0.538771342
+Nocardia farcinica IFM10152	247156	0.614062488	0.625	0.161475834	0.103636487	32.9110247	Non-halophilic	Aerobic	Multiple	Mesophilic	"Human, Animal"	Yes	Bacteria	0.706923207
+Nocardioides JS614	196162	0.668630779	0.693	0.158621305	0.105245687	31.90769394	Non-halophilic	Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.714404427
+Nocardiopsis dassonvillei DSM 43111 uid49483	446468	0.690451836	0.702	0.130547219	0.037885919	30.18083774	Non-halophilic		Multiple			Yes	Bacteria	0.727297583
+Nostoc punctiforme PCC 73102	63737	0.738497822	0.739	0.040482958	0.003896158	51.54729172		Aerobic	Multiple		No	Yes	Bacteria	0.413545205
+Nostoc sp	103690	0.700090702	0.701	0.048266984	0.014510843	50.67673037		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.412683316
+Novosphingobium aromaticivorans DSM 12444	279238	0.532345544	0.532	0.197743131	0.174689776	38.15359732		Aerobic	Multiple		No	Yes	Bacteria	0.651125808
+Oceanobacillus iheyensis	221109	0.592892914	0.591	0.090798506	0.152258694	45.46113338	Moderate halophilic	Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.356813114
+Ochrobactrum anthropi ATCC 49188	439375	0.530613683	0.523	0.15450208	0.228108763	46.57577738	Non-halophilic		Terrestrial	Mesophilic	Human	Yes	Bacteria	0.561250127
+Oenococcus oeni PSU-1	203123	0.626175355	0.625	0.06667572	0.10342627	49.56893771		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.378888828
+Oligotropha carboxidovorans OM5	504832	0.582485547	0.591	0.16647773	0.151916195	39.99971452			Multiple	Mesophilic	No	Yes	Bacteria	0.623994795
+Onion yellows phytoplasma	262768	0.687440476	0.688	0.077895758	-0.036114982	38.34989881		Aerobic	Host-associated	Mesophilic	Onion	Yes	Bacteria	0.277599406
+Opitutus terrae PB90 1	452637	0.587456542	0.591	0.140865757	0.107085791	39.25877336		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.653411396
+Orientia tsutsugamushi Boryong	357244	0.640745079	0.646	0.081130633	0.059583565	40.41173031			Host-associated		Human	Yes	Bacteria	0.305310498
+Orientia tsutsugamushi Ikeda	334380	0.624435575	0.627	0.090588	0.077697077	41.40772973	Non-halophilic		Host-associated	Mesophilic	Human	No	Bacteria	0.305137863
+Paenibacillus JDR 2	324057	0.617356517	0.609	0.103130832	0.144053668	50.04361633		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.502781377
+Pantoea ananatis LMG 20103 uid46807	706191	0.456521449	0.448	0.160645699	0.19822775	47.03224146		Facultative	Multiple	Mesophilic	Plants	Yes	Bacteria	0.536871005
+Parabacteroides distasonis ATCC 8503	435591	0.521448285	0.513	0.143846294	0.122197898	49.90100576		Anaerobic	Host-associated	Mesophilic	Mammal	Yes	Bacteria	0.450595765
+Parachlamydia sp UWE25	264201	0.657592836	0.662	0.058205957	0.023480295	45.88598209			Host-associated	Mesophilic	Animal	Yes	Bacteria	0.347175438
+Paracoccus denitrificans PD1222	318586	0.581544039	0.598	0.177651962	0.132460723	35.76457155		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.667993012
+Parvibaculum lavamentivorans DS-1	402881	0.650088296	0.657	0.154985841	0.091637083	40.74072133		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.623280954
+Pasteurella multocida	272843	0.505949527	0.498	0.126449703	0.187637519	45.60428233		Facultative	Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.404048838
+Pectobacterium carotovorum PC1	561230	0.46219017	0.45	0.171844821	0.197062761	47.72150772						Yes	Bacteria	0.519317537
+Pectobacterium wasabiae WPP163	561231	0.469373722	0.459	0.159186453	0.201021034	48.97439417	Non-halophilic		Multiple	Mesophilic	plants	Yes	Bacteria	0.504773996
+Pediococcus pentosaceus ATCC 25745	278197	0.537834939	0.528	0.153017755	0.23199714	46.09066924		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.373578289
+Pedobacter heparinus DSM 2366	485917	0.588464016	0.585	0.083106047	0.145801428	51.49399899		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.420488863
+Pelobacter carbinolicus	338963	0.682445507	0.688	0.097425774	0.012336947	47.44608302		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.551137472
+Pelobacter propionicus DSM 2379	338966	0.767141778	0.771	0.055769289	-0.120726974	43.00945206	Non-halophilic	Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.584830796
+Pelodictyon luteolum DSM 273	319225	0.646192727	0.652	0.1130357	0.022675539	45.42689351		Anaerobic	Multiple	Mesophilic	No	No	Bacteria	0.573300457
+Pelodictyon phaeoclathratiforme BU 1	324925	0.705885801	0.709	0.050744944	-0.009829001	51.9986383		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.48077587
+Pelotomaculum thermopropionicum SI	370438	0.594486635	0.601	0.13751688	0.129216338	46.97859748	Non-halophilic	Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.52961104
+Persephonella marina EX H1	123214	0.644175728	0.646	0.080452177	0.089703254	40.68257825		Microaerophilic	Aquatic	Thermophilic	No	Yes	Bacteria	0.370805115
+Petrotoga mobilis SJ95	403833	0.699012907	0.7	0.050717493	0.015507196	45.24790236	Mesophilic	Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.341231906
+Phenylobacterium zucineum HLK1	450851	0.65828249	0.681	0.16154706	0.065854541	31.17810114		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.711013189
+Photobacterium profundum SS9	298386	0.451273587	0.437	0.174866593	0.227560026	49.50749931	Non-halophilic	Facultative	Multiple	Psychrophilic	No	Yes	Bacteria	0.41733984
+Photorhabdus asymbiotica	291112	0.48524389	0.478	0.135630141	0.181486262	49.87323245		Facultative	Host-associated	Mesophilic		Yes	Bacteria	0.421431261
+Photorhabdus luminescens	243265	0.468466796	0.46	0.142792656	0.199092102	50.24603345		Facultative	Host-associated	Mesophilic	Insect	Yes	Bacteria	0.428253571
+Picrophilus torridus DSM 9790	263820	0.678015703	0.679	0.054874023	0.007131001	42.94933191		Aerobic	Specialized	Thermophilic		Yes	Archaea	0.359704249
+Pirellula sp	243090	0.599487669	0.602	0.111270856	0.122990216	50.16371278		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.554032873
+Pirellula staleyi DSM 6068 uid43209	530564	0.642366302	0.641	0.107333614	0.094962178	47.90805166		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.574646973
+Planctomyces limnophilus DSM 3776 uid48643	521674	0.712546966	0.713	0.059811035	0.064968359	51.82303166		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.536844573
+Polaromonas JS666	296591	0.613054314	0.625	0.156787	0.035433591	41.38020059	Non-halophilic	Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.619746024
+Polaromonas naphthalenivorans CJ2	365044	0.639079243	0.654	0.15702293	-0.030156788	39.95367731		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.616795527
+Polynucleobacter necessarius asymbioticus QLW P1DMWA 1	312153	0.578840654	0.5685	0.118697289	0.143932903	51.54076456		Aerobic	Aquatic	Mesophilic		No	Bacteria	0.448341043
+Polynucleobacter necessarius STIR1	452638	0.606116926	0.597	0.121015816	0.114633728	50.44815781		Aerobic	Host-associated	Mesophilic		No	Bacteria	0.455573933
+Polynucleobacter QLW-P1DMWA-1	312153	0.57783095	0.569	0.118555211	0.136831586	51.54076456		Aerobic	Aquatic	Mesophilic		Yes	Bacteria	0.448341043
+Porphyromonas gingivalis ATCC 33277	431947	0.64336779	0.636	0.074857794	0.060694241	52.9619703		Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.483592836
+Porphyromonas gingivalis W83	242619	0.642166667	0.636	0.076749452	0.058562992	52.89318155	Non-halophilic	Anaerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.482879278
+Prevotella ruminicola 23 uid47507	264731	0.530587566	0.5175	0.185010603	0.158018894	45.88968082		Anaerobic	Host-associated		No	Yes	Bacteria	0.47685533
+Prochlorococcus marinus AS9601	146891	0.718541353	0.717	0.047049373	-0.044900664	40.22602461			Aquatic	Mesophilic	No	No	Bacteria	0.313215393
+Prochlorococcus marinus CCMP1375	167539	0.695178954	0.696	0.045460749	-0.040622386	44.55138673			Aquatic	Mesophilic		No	Bacteria	0.364421386
+Prochlorococcus marinus MED4	59919	0.713236389	0.713	0.048702626	-0.038476098	39.56124604			Aquatic	Mesophilic		No	Bacteria	0.307991604
+Prochlorococcus marinus MIT 9211	93059	0.707409152	0.708	0.04294226	-0.040832283	46.57928869			Aquatic	Mesophilic	No	No	Bacteria	0.380095366
+Prochlorococcus marinus MIT 9215	93060	0.718109562	0.718	0.04918409	-0.053877281	40.24244954	Non-halophilic		Aquatic	Mesophilic	No	No	Bacteria	0.311450491
+Prochlorococcus marinus MIT 9301	167546	0.716808713	0.717	0.046183408	-0.032532649	40.40458475			Aquatic	Mesophilic		No	Bacteria	0.313398856
+Prochlorococcus marinus MIT 9303	59922	0.637207212	0.638	0.08866172	0.064210957	52.09245337			Aquatic	Mesophilic	No	No	Bacteria	0.500075857
+Prochlorococcus marinus MIT 9312	74546	0.711355955	0.712	0.050199117	-0.041841099	40.20220758			Aquatic	Mesophilic		No	Bacteria	0.312104933
+Prochlorococcus marinus MIT 9515	167542	0.699023891	0.7	0.050835424	-0.036490542	40.07538703			Aquatic		No	No	Bacteria	0.307941785
+Prochlorococcus marinus MIT9313	74547	0.633668721	0.63	0.082911429	0.072647263	52.32173138			Aquatic	Mesophilic		Yes	Bacteria	0.507397738
+Prochlorococcus marinus NATL1A	167555	0.716110318	0.716	0.046121964	-0.078162593	43.59228618			Aquatic	Mesophilic	No	No	Bacteria	0.34979308
+Prochlorococcus marinus NATL2A	59920	0.724752142	0.725	0.046172543	-0.086620556	43.72542452			Aquatic	Mesophilic		No	Bacteria	0.351230317
+Propionibacterium acnes KPA171202	267747	0.514123692	0.508	0.158415218	0.263593832	47.97810799	Non-halophilic	Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.600107411
+Propionibacterium acnes SK137 uid48071	553199	0.521752598	0.514	0.151765934	0.250631727	47.54257496		Anaerobic		Mesophilic		No	Bacteria	0.60103938
+Prosthecochloris aestuarii DSM 271	290512	0.706948002	0.708	0.060942608	0.025685258	51.12965046			Aquatic	Mesophilic	No	Yes	Bacteria	0.501051093
+Prosthecochloris vibrioformis DSM 265	290318	0.736185819	0.738	0.061133353	0.001767535	49.02357274	Mesophilic	Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.529917259
+Proteus mirabilis	529507	0.47069475	0.461	0.144550534	0.153542493	46.34734188	Non-halophilic	Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.388758493
+Pseudoalteromonas atlantica T6c	342610	0.536859047	0.529	0.102690869	0.210933673	52.83086941		Aerobic	Aquatic	Mesophilic	Shellfish	Yes	Bacteria	0.446160935
+Pseudoalteromonas haloplanktis TAC125	326442	0.525205153	0.515	0.120511218	0.143268163	46.24497488	Mesophilic	Aerobic	Aquatic	Psychrophilic	No	Yes	Bacteria	0.400916611
+Pseudomonas aeruginosa	208964	0.610350991	0.619	0.157699618	-0.031152296	32.72190339		Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.66555733
+Pseudomonas aeruginosa LESB58	557722	0.602164321	0.612	0.167574019	-0.015938966	33.1652442		Aerobic	Multiple	Mesophilic	Human	Yes	Bacteria	0.662973811
+Pseudomonas aeruginosa PA7	381754	0.617575563	0.629	0.167967538	-0.034782441	32.76938945		Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.664494344
+Pseudomonas aeruginosa UCBPP-PA14	208963	0.601217383	0.612	0.173562623	-0.013626068	33.13999195		Aerobic	Multiple	Mesophilic	"Human, Animal, Plant"	No	Bacteria	0.662923163
+Pseudomonas entomophila L48	384676	0.583844835	0.587	0.203094373	-0.008740865	34.98235362			Multiple		Insect	Yes	Bacteria	0.641597241
+Pseudomonas fluorescens Pf0 1	205922	0.558947803	0.555	0.184839674	0.063667503	39.31899512		Aerobic	Multiple	Mesophilic	No	No	Bacteria	0.60520952
+Pseudomonas fluorescens Pf-5	220664	0.576327929	0.576	0.146986439	-0.031453064	36.12172455		Aerobic	Multiple	Mesophilic	No	No	Bacteria	0.633049291
+Pseudomonas fluorescens PfO-1	205922	0.558629873	0.554	0.185397304	0.064031407	39.33422283		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.605209978
+Pseudomonas fluorescens SBW25	216595	0.561252821	0.563	0.175708677	0.065293901	41.09854691	Non-halophilic	Aerobic	Multiple	Mesophilic		No	Bacteria	0.600672978
+Pseudomonas mendocina ymp	399739	0.61170112	0.619	0.174295714	0.022962981	34.32230331	Non-halophilic	Aerobic	Multiple		Human	Yes	Bacteria	0.646761448
+Pseudomonas putida F1	351746	0.54684938	0.545	0.198605555	0.082817121	38.67642211	Non-halophilic	Aerobic	Multiple	Mesophilic	No	No	Bacteria	0.618619341
+Pseudomonas putida GB 1	76869	0.551934979	0.552	0.205682605	0.062518533	37.95981557	Non-halophilic	Aerobic	Multiple	Mesophilic	No	No	Bacteria	0.61942245
+Pseudomonas putida KT2440	160488	0.540584166	0.538	0.206173967	0.088058232	38.96684799		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.615240907
+Pseudomonas putida W619	390235	0.539128562	0.537	0.198692559	0.107314292	39.67474541	Non-halophilic	Aerobic	Multiple	Mesophilic	No	No	Bacteria	0.614355951
+Pseudomonas stutzeri A1501	379731	0.617205444	0.626	0.163444385	0.032511259	37.05363962		Aerobic	Host-associated	Mesophilic		Yes	Bacteria	0.638784977
+Pseudomonas syringae phaseolicola 1448A	264730	0.546506762	0.547	0.165372471	0.122858367	44.68085651		Aerobic	Multiple	Mesophilic	Plant	No	Bacteria	0.579132943
+Pseudomonas syringae pv B728a	205918	0.560109964	0.562	0.16045317	0.092301105	42.81954835		Aerobic	Multiple	Mesophilic	Plant	No	Bacteria	0.592328008
+Pseudomonas syringae tomato DC3000	223283	0.553939957	0.557	0.165624466	0.111873257	43.96834466		Aerobic	Multiple	Mesophilic	Plant	Yes	Bacteria	0.583391912
+Psychrobacter arcticum 273-4	259536	0.583763811	0.577	0.101253512	0.1378449	48.69339078			Specialized	Psychrophilic	No	Yes	Bacteria	0.428002253
+Psychrobacter cryohalolentis K5	335284	0.594207683	0.59	0.08696966	0.138874596	48.73783537	Moderate halophilic		Multiple	Psychrophilic		Yes	Bacteria	0.422377307
+Psychrobacter PRwf-1	349106	0.510201162	0.496	0.144624641	0.195847069	49.08902861		Aerobic	Aquatic	Mesophilic		Yes	Bacteria	0.44841036
+Psychromonas ingrahamii 37	357804	0.541820529	0.537	0.096423959	0.198585449	49.83157929		Anaerobic	Aquatic	Psychrophilic	No	Yes	Bacteria	0.400862751
+Pyrobaculum aerophilum	178306	0.754178672	0.755	0.039484817	0.002365839	51.3854986		Facultative	Aquatic	Hyperthermophilic	No	Yes	Archaea	0.513625176
+Pyrobaculum arsenaticum DSM 13514	340102	0.711244145	0.714	0.069855449	-0.006363212	48.62853911		Anaerobic	Aquatic	Hyperthermophilic	No	Yes	Archaea	0.550508798
+Pyrobaculum calidifontis JCM 11548	410359	0.707156315	0.714	0.079502022	0.005783967	46.12247981		Facultative	Specialized	Hyperthermophilic	No	Yes	Archaea	0.571508272
+Pyrobaculum islandicum DSM 4184	384616	0.741387802	0.748	0.052346124	-0.017347949	50.28467261		Anaerobic	Specialized	Thermophilic	No	Yes	Archaea	0.495990477
+Pyrococcus abyssi	272844	0.64744405	0.649	0.084058299	0.102261856	48.07395027		Anaerobic	Aquatic	Hyperthermophilic	No	Yes	Archaea	0.447114096
+Pyrococcus furiosus	186497	0.668878591	0.671	0.066509655	0.089263148	47.72855664		Anaerobic	Aquatic	Hyperthermophilic	No	Yes	Archaea	0.407698967
+Pyrococcus horikoshii	70601	0.675801838	0.68	0.061576273	0.033567069	48.51987708		Anaerobic	Aquatic	Hyperthermophilic	No	Yes	Archaea	0.418789707
+Ralstonia eutropha H16	381666	0.589343534	0.604	0.192368052	0.084475939	34.94040409	Non-halophilic	Facultative	Specialized	Mesophilic		Yes	Bacteria	0.663374762
+Ralstonia eutropha JMP134	264198	0.543357025	0.545	0.193980088	0.139642581	37.94139083	Non-halophilic	Facultative	Multiple	Mesophilic		No	Bacteria	0.644333996
+Ralstonia metallidurans CH34	266264	0.529674621	0.53	0.204920986	0.161570663	39.51346156		Facultative	Specialized	Mesophilic	No	No	Bacteria	0.635309905
+Ralstonia pickettii 12D	428406	0.565672022	0.575	0.195384381	0.10600878	39.20163781		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.632990922
+Ralstonia pickettii 12J	402626	0.58600178	0.592	0.174702796	0.07349541	38.48095438	Non-halophilic	Aerobic	Multiple	Mesophilic		No	Bacteria	0.636483756
+Ralstonia solanacearum	267608	0.614086393	0.635	0.193033072	0.038416148	34.32804687		Aerobic	Multiple	Mesophilic	Plant	Yes	Bacteria	0.669754301
+Ralstonia solanacearum CFBP2957 uid50545	859656	0.635765115	0.652	0.172732736	0.022760205	34.06847151						No	Bacteria	0.664586299
+Ralstonia solanacearum PSI07 uid50539	859657	0.611271808	0.633	0.197577803	0.048086929	35.14844042						No	Bacteria	0.663228747
+Renibacterium salmoninarum ATCC 33209	288705	0.466237525	0.455	0.14138322	0.261315396	52.74732236		Facultative	Host-associated	Mesophilic	Salmonid fish	Yes	Bacteria	0.562713256
+Rhizobium etli CFN 42	347834	0.529930533	0.538	0.192117019	0.1880241	41.982112		Aerobic	Host-associated	Mesophilic	No	No	Bacteria	0.610283286
+Rhizobium etli CIAT 652	491916	0.540295847	0.55	0.192368482	0.190504976	41.20988313		Aerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.613098259
+Rhizobium leguminosarum bv  trifolii WSM1325	395491	0.548763942	0.554	0.177765287	0.169055991	41.79489231		Aerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.607699766
+Rhizobium leguminosarum bv  trifolii WSM2304	395492	0.552230229	0.559	0.174274114	0.165450102	40.88702054		Aerobic	Host-associated	Mesophilic	No	No	Bacteria	0.611779326
+Rhizobium leguminosarum bv viciae 3841	216596	0.550294277	0.557	0.180640279	0.174526312	41.92111883		Aerobic	Host-associated	Mesophilic	No	No	Bacteria	0.608620815
+Rhizobium NGR234	394	0.534627485	0.542	0.194240459	0.185004079	41.15009767		Aerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.624201599
+Rhodobacter capsulatus SB 1003 uid47509	272942	0.594642252	0.593	0.114840798	0.116007848	36.3807842		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.665585808
+Rhodobacter capsulatus SB1003 uid47509	272942	0.594642252	0.593	0.114840798	0.116007848	36.3807842		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.665585808
+Rhodobacter sphaeroides 2 4 1	272943	0.623638861	0.641	0.164784556	0.107607221	34.82798016		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.687891393
+Rhodobacter sphaeroides ATCC 17025	349102	0.597745078	0.61	0.161843297	0.13171893	35.56959187		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.682296982
+Rhodobacter sphaeroides ATCC 17029	349101	0.636500652	0.645	0.137471086	0.085858315	34.34950483		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.689808615
+Rhodobacter sphaeroides KD131	557760	0.638716009	0.646	0.130572947	0.089940523	34.13578864	Non-halophilic	Facultative	Multiple	Mesophilic		No	Bacteria	0.690916292
+Rhodococcus erythropolis PR4	234621	0.531524295	0.522	0.167891049	0.197859183	43.77696911		Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.623083072
+Rhodococcus jostii RHA1	101510	0.558947919	0.57	0.182792463	0.15476633	38.24779489	Non-halophilic	Aerobic	Terrestrial	Mesophilic		No	Bacteria	0.669813476
+Rhodococcus opacus B4	632772	0.596510714	0.6	0.140817934	0.097082783	36.02921457		Aerobic				No	Bacteria	0.678947994
+Rhodococcus opacus B4 uid13791	632772	0.586411539	0.593	0.153042868	0.110209192	36.56040519		Aerobic				No	Bacteria	0.676210554
+Rhodococcus opacus B4 uid36573	632772	0.586503972	0.593	0.152893602	0.110114984	36.55653853		Aerobic				Yes	Bacteria	0.676237758
+Rhodococcus RHA1	101510	0.558947919	0.57	0.182792463	0.15476633	38.24779489	Non-halophilic	Aerobic	Terrestrial	Mesophilic		Yes	Bacteria	0.669813476
+Rhodoferax ferrireducens T118	338969	0.712140389	0.721	0.097034348	-0.054137963	44.09936861		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.595960307
+Rhodopseudomonas palustris BisA53	316055	0.611415307	0.633	0.173097378	0.131353201	37.88804758		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.64442664
+Rhodopseudomonas palustris BisB18	316056	0.640814325	0.664	0.157783749	0.094149489	37.23687295		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.649572059
+Rhodopseudomonas palustris BisB5	316057	0.626859151	0.642	0.161033484	0.120435995	37.1813643		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.648077541
+Rhodopseudomonas palustris CGA009	258594	0.594446337	0.604	0.17481664	0.137319892	36.60604324		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.650310737
+Rhodopseudomonas palustris HaA2	316058	0.646579842	0.663	0.155134928	0.092593095	35.34006704		Facultative	Multiple	Mesophilic	No	No	Bacteria	0.660383753
+Rhodopseudomonas palustris TIE 1	395960	0.589852791	0.603	0.183140182	0.140196169	36.7053202		Facultative		Mesophilic		No	Bacteria	0.648598086
+Rhodospirillum centenum SW	414684	0.649269698	0.66	0.139320431	0.059140158	32.30026207		Facultative	Aquatic	Mesophilic		Yes	Bacteria	0.70461272
+Rhodospirillum rubrum ATCC 11170	269796	0.631303656	0.639	0.131698512	0.061273128	37.51111555		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.653787299
+Rhodothermus marinus DSM 4252	518766	0.649435109	0.668	0.142526958	0.052395212	38.04012003	Moderate halophilic	Aerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.643039008
+Rickettsia africae ESF 5	347255	0.635636569	0.634	0.076201	0.092592276	43.43858691		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.324097708
+Rickettsia akari Hartford	293614	0.647154846	0.647	0.070730916	0.101039802	43.5162565		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.323347359
+Rickettsia bellii OSU 85-389	391896	0.6415754	0.641	0.090782205	0.122302752	42.18577843						No	Bacteria	0.316282097
+Rickettsia bellii RML369-C	336407	0.640505967	0.641	0.089850572	0.120768801	42.15833652			Host-associated			Yes	Bacteria	0.316458574
+Rickettsia canadensis McKiel	293613	0.663022339	0.66	0.067113831	0.084148776	42.32311958		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.310539485
+Rickettsia conorii	272944	0.631518668	0.632	0.084242543	0.098038975	43.67460444		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.324388081
+Rickettsia felis URRWXCal2	315456	0.637881317	0.636	0.080074705	0.092726429	43.2222902			Host-associated		"Human, Feline"	Yes	Bacteria	0.325134195
+Rickettsia massiliae MTU5	416276	0.640577605	0.64	0.07589391	0.098603924	43.7496541		Aerobic	Host-associated	Mesophilic		Yes	Bacteria	0.325340943
+Rickettsia peacockii Rustic	562019	0.634170388	0.632	0.082853701	0.095067295	43.56701058		Aerobic	Host-associated	Mesophilic		Yes	Bacteria	0.326032894
+Rickettsia prowazekii	272947	0.646659326	0.645	0.066135518	0.102363038	40.30198575		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.290002996
+Rickettsia rickettsii Iowa	452659	0.635369492	0.634	0.077282258	0.103047918	43.60628362		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.324467838
+Rickettsia rickettsii Sheila Smith	392021	0.628954955	0.628	0.080752077	0.103444897	43.48048874		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.324674209
+Rickettsia typhi wilmington	257363	0.653492063	0.651	0.065627078	0.082838559	40.26802381		Aerobic	Host-associated	Mesophilic	"Human, Rodent"	Yes	Bacteria	0.289194023
+Robiginitalea biformata HTCC2501	313596	0.658460257	0.674	0.111397628	-0.013167385	45.08426866	Mesophilic	Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.552932925
+Roseiflexus castenholzii DSM 13941	383372	0.641679666	0.648	0.089810881	0.077842029	46.00755776		Facultative	Aquatic	Thermophilic	No	Yes	Bacteria	0.606900776
+Roseiflexus RS-1	357808	0.652313384	0.66	0.091753535	0.079680025	45.82743308		Facultative	Specialized	Thermophilic		Yes	Bacteria	0.60387345
+Roseobacter denitrificans OCh 114	375451	0.623184032	0.626	0.101928688	0.074556027	46.45994777			Multiple	Mesophilic	No	Yes	Bacteria	0.588800328
+Rubrobacter xylanophilus DSM 9941	266117	0.740925398	0.773	0.149066228	0.046141227	33.10073076		Aerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.70476584
+Ruegeria pomeroyi DSS 3	246200	0.552128173	0.555	0.161193675	0.124367052	38.18120557		Aerobic	Aquatic		No	Yes	Bacteria	0.64069638
+Saccharomonospora viridis DSM 43017	471857	0.618915964	0.617	0.10823698	0.078570387	37.92984289			Multiple	Thermophilic	Human	Yes	Bacteria	0.673151363
+Saccharophagus degradans 2-40	203122	0.552011622	0.546	0.095964645	0.116605769	49.42129583		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.45826076
+Saccharopolyspora erythraea NRRL 2338	405948	0.653884746	0.669	0.14614545	0.061708052	31.69936857		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.711459605
+Salinibacter ruber DSM 13855	309807	0.701480798	0.718	0.134379076	0.003102316	38.38145369	Extreme halophilic	Aerobic	Specialized	Mesophilic	No	Yes	Bacteria	0.661348224
+Salinispora arenicola CNS-205	391037	0.610772646	0.619	0.139757025	0.119784926	36.10121664		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.695185281
+Salinispora tropica CNB-440	369723	0.611981101	0.62	0.1403974	0.120832084	36.40048429	Mesophilic	Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.694610088
+Salmonella enterica arizonae serovar 62 z4 z23  	41514	0.430008264	0.418	0.174527003	0.243249744	47.48410051		Facultative	Host-associated	Mesophilic	"Human, Animal"	No	0.513767388	47.48410051
+Salmonella enterica Choleraesuis	321314	0.407978041	0.395	0.201272147	0.250801743	47.0949282		Facultative	Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.521324838
+Salmonella enterica Paratypi ATCC 9150	295319	0.42548059	0.412	0.199260849	0.235538386	46.53552542		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.521643521
+Salmonella enterica serovar Agona SL483	454166	0.420891148	0.408	0.197351592	0.239637678	46.63736464		Facultative	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.519951462
+Salmonella enterica serovar Dublin CT 02021853	439851	0.421361586	0.408	0.195663098	0.239961793	46.60743468		Facultative	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.521258642
+Salmonella enterica serovar Enteritidis P125109	550537	0.417981554	0.405	0.202911459	0.242213089	46.64572227		Facultative	Specialized	Mesophilic	"Human, Animals"	No	Bacteria	0.521673132
+Salmonella enterica serovar Gallinarum 287 91	550538	0.419708402	0.406	0.203327082	0.238235878	46.53974212		Facultative	Multiple	Mesophilic	Poultry	No	Bacteria	0.522045542
+Salmonella enterica serovar Heidelberg SL476	454169	0.42161005	0.409	0.196157295	0.239476747	46.75028417		Facultative	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.520561893
+Salmonella enterica serovar Newport SL254	423368	0.422159911	0.409	0.194588896	0.243841216	46.90900025		Facultative	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.522312853
+Salmonella enterica serovar Paratyphi A AKU 12601	554290	0.422040437	0.41	0.202402614	0.234267714	46.57932131		Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.521836738
+Salmonella enterica serovar Paratyphi B SPB7	272994	0.42702735	0.413	0.182435831	0.253850027	46.86895052		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.521097527
+Salmonella enterica serovar Paratyphi C RKS4594	476213	0.405909692	0.39	0.210894211	0.241492782	46.78417578		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.521698912
+Salmonella enterica serovar Schwarzengrund CVM19633	439843	0.424656759	0.411	0.192719308	0.238607812	46.67008426		Facultative	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.522110282
+Salmonella enterica serovar Typhi Ty2	209261	0.411441008	0.398	0.210112852	0.242778057	46.82204106		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.520516909
+Salmonella typhi	220341	0.408726644	0.3965	0.211018088	0.249671365	47.26171663		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.518701571
+Salmonella typhi Ty2	209261	0.41143763	0.398	0.210111743	0.242783255	46.82236019		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.520516909
+Salmonella typhimurium LT2	99287	0.417406303	0.404	0.201514896	0.242621399	46.73226215		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.522387032
+Sanguibacter keddieii DSM 10542 uid40845	446469	0.729988822	0.742	0.114933487	0.003597339	30.85550817		Facultative	Host-associated	Mesophilic		Yes	Bacteria	0.718865062
+Sebaldella termitidis ATCC 33386	526218	0.630116133	0.625	0.088112401	0.093827233	41.45124897		Anaerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.333756812
+Segniliparus rotundus DSM 44985 uid49049	640132	0.608788265	0.613	0.119864319	0.130920539	39.32906633		Aerobic		Mesophilic		Yes	Bacteria	0.667912895
+Serratia proteamaculans 568	399741	0.487318441	0.481	0.174019837	0.121506659	44.1487304	Non-halophilic	Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.550238306
+Shewanella amazonensis SB2B	326297	0.427110006	0.408	0.20016398	0.213141898	47.59448771		Facultative	Multiple	Mesophilic		Yes	Bacteria	0.535863889
+Shewanella ANA-3	94122	0.423780596	0.407	0.172809619	0.220990443	49.99231051		Facultative	Multiple	Mesophilic		Yes	Bacteria	0.479282427
+Shewanella baltica OS155	325240	0.48096715	0.468	0.132083996	0.201442636	50.55639976		Facultative	Aquatic	Mesophilic		No	Bacteria	0.462289178
+Shewanella baltica OS185	402882	0.48406998	0.4715	0.13003359	0.197572782	50.33281034		Facultative	Aquatic	Mesophilic	No	No	Bacteria	0.462721183
+Shewanella baltica OS195	399599	0.482113727	0.47	0.129293897	0.199395683	50.47962727		Facultative	Aquatic	Mesophilic		No	Bacteria	0.461744693
+Shewanella baltica OS223	407976	0.483809322	0.471	0.130416967	0.198457676	50.44088634		Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.462660136
+Shewanella denitrificans OS217	318161	0.501685281	0.492	0.113505361	0.196446745	51.27389777		Facultative	Aquatic	Mesophilic		Yes	Bacteria	0.451491738
+Shewanella frigidimarina NCIMB 400	318167	0.541340618	0.532	0.111899106	0.13840651	48.44125986		Facultative	Multiple	Mesophilic		Yes	Bacteria	0.415840687
+Shewanella halifaxensis HAW EB4	458817	0.489188959	0.475	0.142694608	0.220807733	51.94416587		Facultative		Psychrophilic		Yes	Bacteria	0.445908745
+Shewanella loihica PV-4	323850	0.420396399	0.404	0.171552256	0.091733426	45.1269144		Facultative	Multiple	Mesophilic		Yes	Bacteria	0.536669973
+Shewanella MR-4	60480	0.432100872	0.415	0.173434284	0.215570928	49.73752345		Facultative	Multiple	Mesophilic		Yes	Bacteria	0.478944654
+Shewanella MR-7	60481	0.432982592	0.416	0.169664505	0.216152898	49.81654258		Facultative	Aquatic	Mesophilic		Yes	Bacteria	0.478593005
+Shewanella oneidensis	211586	0.449643922	0.436	0.145934184	0.217568643	50.69530983		Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.458892959
+Shewanella pealeana ATCC 700345	398579	0.485080918	0.468	0.152018414	0.227343021	51.86484548		Facultative		Mesophilic	No	Yes	Bacteria	0.446619543
+Shewanella piezotolerans WP3	225849	0.493232299	0.481	0.125316136	0.225262922	52.33079413		Facultative	Specialized	Mesophilic	No	Yes	Bacteria	0.432917889
+Shewanella putrefaciens CN-32	319224	0.488536871	0.48	0.118857279	0.200411645	50.87547102		Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.44451625
+Shewanella sediminis HAW-EB3	425104	0.459501905	0.447	0.144327657	0.232031143	53.93371167	Mesophilic	Facultative	Aquatic	Psychrophilic	No	Yes	Bacteria	0.460778763
+Shewanella violacea DSS12 uid47085	637905	0.496357339	0.485	0.121790553	0.210716055	53.16715915		Facultative	Specialized	Psychrophilic	No	Yes	Bacteria	0.44716368
+Shewanella W3-18-1	351745	0.487434048	0.478	0.11912466	0.202236602	50.93249008		Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.446332709
+Shewanella woodyi ATCC 51908	392500	0.487404232	0.477	0.116609804	0.226165846	52.4931296	Non-halophilic	Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.437009922
+Shigella boydii CDC 3083 94	344609	0.414333952	0.397	0.229547949	0.260743546	47.51102361	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.510270158
+Shigella boydii Sb227	300268	0.41846111	0.4	0.224034312	0.260304788	47.53535307	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.511091096
+Shigella dysenteriae	300267	0.421183024	0.401	0.218664804	0.272260076	48.27165385	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.50968699
+Shigella flexneri 2a	198214	0.403615482	0.386	0.243282383	0.266750581	47.97387065		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.506544152
+Shigella flexneri 2a 2457T	198215	0.419026637	0.4	0.22692609	0.258772439	47.36379578		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.509059806
+Shigella flexneri 5 8401	373384	0.419241214	0.402	0.225349401	0.251429622	47.61016933		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.509177393
+Shigella sonnei Ss046	300269	0.410787103	0.393	0.232986411	0.254798326	47.20643908	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.507665198
+Sideroxydans lithotrophicus ES 1 uid46801	580332	0.665975318	0.675	0.13029309	0.030109793	43.45448242			Aquatic	Mesophilic	No	Yes	Bacteria	0.575417425
+Silicibacter pomeroyi DSS-3	246200	0.552128173	0.555	0.161193675	0.124367052	38.18120557		Aerobic	Aquatic		No	No	Bacteria	0.64069638
+Silicibacter TM1040	292414	0.497830105	0.49	0.179576653	0.226720251	45.11648284			Multiple		No	Yes	Bacteria	0.600563738
+Sinorhizobium medicae WSM419	366394	0.536192356	0.537	0.151493822	0.191784896	43.72400196	Non-halophilic	Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.611498134
+Sinorhizobium meliloti	266834	0.539704458	0.545	0.175919344	0.191227219	41.91807915		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.621741403
+Slackia heliotrinireducens DSM 20476	471855	0.582307845	0.583	0.191418267	0.122321756	39.39080406		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.602115994
+Sodalis glossinidius morsitans	343509	0.526909399	0.527	0.148603831	0.17824793	46.82926884	Non-halophilic	Microaerophilic	Host-associated	Mesophilic	No	Yes	Bacteria	0.545049484
+Solibacter usitatus Ellin6076	234267	0.616049987	0.627	0.117941088	0.050985556	41.59763905	Non-halophilic	Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.619024568
+Sorangium cellulosum  So ce 56 	448385	0.676194237	0.695	0.151839347	0.065166155	33.20075126		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.713757384
+Sphaerobacter thermophilus DSM 20745	479434	0.718320968	0.728	0.096820304	0.02279393	36.08690255					No	Yes	Bacteria	0.681093825
+Sphingobium japonicum UT26S uid47077	452662	0.524685019	0.535	0.210350868	0.183384219	37.96013843		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.648499772
+Sphingomonas wittichii RW1	392499	0.625274229	0.65	0.18126605	0.115939868	34.00824478		Aerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.679011659
+Sphingopyxis alaskensis RB2256	317655	0.58718541	0.605	0.163677507	0.160637386	38.07591489		Aerobic	Aquatic			Yes	Bacteria	0.654581169
+Spirosoma linguale DSM 74 uid43413	504472	0.660684535	0.664	0.079071122	0.064346344	51.30300158			Multiple	Mesophilic	No	Yes	Bacteria	0.501489414
+Stackebrandtia nassauensis DSM 44728 uid46663	446470	0.645190038	0.665	0.160964879	0.040670444	33.40409677		Aerobic				Yes	Bacteria	0.68133935
+Staphylococcus aureus aureus MRSA252	282458	0.543595911	0.529	0.152217706	0.189941366	40.8643458		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.328071648
+Staphylococcus aureus aureus MSSA476	282459	0.558057862	0.544	0.141900316	0.184141408	40.72722217		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.32817518
+Staphylococcus aureus COL	93062	0.552346975	0.538	0.145188376	0.187655877	40.76204804		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.328131586
+Staphylococcus aureus JH1	359787	0.559111577	0.547	0.142916363	0.191431589	41.04202391		Facultative	Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.329163795
+Staphylococcus aureus JH9	359786	0.559436897	0.548	0.142716653	0.190791002	41.02371782		Facultative	Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.329151018
+Staphylococcus aureus Mu3	418127	0.5497676	0.538	0.148158206	0.193615529	41.01724258	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.328776655
+Staphylococcus aureus Mu50	158878	0.54954679	0.537	0.147946434	0.193622833	41.01881452		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.328436829
+Staphylococcus aureus MW2	196620	0.55007477	0.536	0.145674355	0.186970223	40.7334202		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.328295861
+Staphylococcus aureus N315	158879	0.551161625	0.539	0.147444901	0.190768667	40.8876331		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.328075073
+Staphylococcus aureus NCTC 8325	93061	0.559542869	0.546	0.140158972	0.190877867	40.92895907		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.328682621
+Staphylococcus aureus Newman	426430	0.561061895	0.548	0.138677814	0.182893758	41.03758063					"Human, Animal"	No	Bacteria	0.328882555
+Staphylococcus aureus RF122	273036	0.563394379	0.552	0.139974872	0.180612031	40.84336038		Facultative	Host-associated	Mesophilic	"Human, Animal"	No	Bacteria	0.327787361
+Staphylococcus aureus USA300	367830	0.55687639	0.543	0.14212858	0.186254367	40.76607699						No	Bacteria	0.326905273
+Staphylococcus aureus USA300 FPR3757	451515	0.556868691	0.543	0.142112134	0.186254332	40.76607528	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.326905273
+Staphylococcus aureus USA300 TCH1516	451516	0.576399285	0.566	0.125899567	0.181425176	40.87556141		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.327311683
+Staphylococcus carnosus TM300	396513	0.56382785	0.547	0.163622063	0.195233001	41.96686616		Facultative		Mesophilic		Yes	Bacteria	0.346327164
+Staphylococcus epidermidis ATCC 12228	176280	0.571188862	0.565	0.121356583	0.173835353	41.44811671		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.320459406
+Staphylococcus epidermidis RP62A	176279	0.573068236	0.566	0.123499069	0.169928408	41.33534839		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.321490332
+Staphylococcus haemolyticus	279808	0.525402998	0.507	0.177644039	0.210397996	41.03453483		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.327808957
+Staphylococcus lugdunensis HKU09 01 uid46233	698737	0.634770559	0.63	0.088070381	0.124677476	42.60751386		Aerobic	Host-associated	Mesophilic		Yes	Bacteria	0.338681355
+Staphylococcus saprophyticus	342451	0.563138371	0.554	0.13242723	0.187861845	41.62683614		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.331859394
+Staphylothermus hellenicus DSM 12710 uid45893	591019	0.694063082	0.696	0.045893216	0.018200983	46.33777563	Mesophilic	Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.36838302
+Staphylothermus marinus F1	399550	0.689103203	0.692	0.05047249	0.014521218	45.10217936		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.357265431
+Starkeya novella DSM 506 uid48815	639283	0.697514859	0.717	0.150672827	0.067963362	33.56228851						Yes	Bacteria	0.6788473
+Stenotrophomonas maltophilia K279a	522373	0.552500978	0.559	0.247831692	0.156496954	33.90672947		Aerobic	Multiple	Mesophilic	Human	No	Bacteria	0.663240452
+Stenotrophomonas maltophilia R551 3	391008	0.583368978	0.585	0.20045524	0.124060511	33.19110561	Non-halophilic	Aerobic	Multiple	Mesophilic		Yes	Bacteria	0.662999028
+Streptobacillus moniliformis DSM 12112	519441	0.744211538	0.746	0.076036357	0.005041925	32.46428308		Microaerophilic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.262797021
+Streptococcus agalactiae 2603	208435	0.489107045	0.481	0.152403247	0.248433659	44.26461879		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.356466122
+Streptococcus agalactiae A909	205921	0.495399779	0.488	0.151189765	0.249854452	44.18542137		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.35622432
+Streptococcus agalactiae NEM316	211110	0.488421834	0.481	0.155094072	0.248962521	44.41799099		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.356274178
+Streptococcus dysgalactiae equisimilis GGS 124	486410	0.410797165	0.393	0.207195727	0.313896124	48.76689967			Host-associated	Mesophilic	Human	Yes	Bacteria	0.395771338
+Streptococcus equi 4047	553482	0.419652542	0.406	0.181745315	0.271740182	49.8290113		Facultative	Host-associated	Mesophilic	Equine	No	Bacteria	0.412824958
+Streptococcus equi zooepidemicus	40041	0.424230906	0.41	0.179971295	0.264673289	49.82536886		Facultative	Host-associated	Mesophilic	"Animals, Human"	No	Bacteria	0.415324104
+Streptococcus equi zooepidemicus MGCS10565	552526	0.449069393	0.437	0.164584176	0.266761242	50.05462949		Facultative	Host-associated	Mesophilic	"Animals, Human"	Yes	Bacteria	0.418396963
+Streptococcus gallolyticus UCN34 uid46061	637909	0.462102398	0.439	0.202225788	0.281291005	43.63542757		Facultative		Mesophilic		Yes	Bacteria	0.376361334
+Streptococcus gordonii Challis substr CH1	467705	0.413797826	0.4	0.224899776	0.310879114	49.60064348		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.40506778
+Streptococcus mitis B6 uid46097	365659	0.383810674	0.357	0.273464653	0.324904988	47.75466236		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.399791578
+Streptococcus mutans	210007	0.522247929	0.519	0.125374339	0.216468781	45.56091716		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.368250168
+Streptococcus mutans NN2025 uid46353	511691	0.565674584	0.563	0.09595824	0.171501449	45.56133432		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.368465827
+Streptococcus pneumoniae 70585	488221	0.401140045	0.379	0.236047318	0.327197237	47.70888076		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.397255985
+Streptococcus pneumoniae ATCC 700669	561276	0.389648758	0.364	0.253854298	0.323250816	47.46128018	Non-halophilic	Facultative	Multiple	Mesophilic		No	Bacteria	0.394885912
+Streptococcus pneumoniae CGSP14	516950	0.396777838	0.371	0.245792666	0.30962906	47.75487118		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.394622392
+Streptococcus pneumoniae D39	373153	0.390147741	0.363	0.260814865	0.322708505	47.40016911		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.397059794
+Streptococcus pneumoniae G54	512566	0.391032202	0.364	0.253560425	0.322597673	47.66067855		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.396539702
+Streptococcus pneumoniae Hungary19A 6	487214	0.404748173	0.383	0.232323926	0.326596652	47.65200056		Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.396308983
+Streptococcus pneumoniae JJA	488222	0.402834013	0.379	0.238574287	0.326602113	47.68705882		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.397438111
+Streptococcus pneumoniae P1031	488223	0.387995865	0.361	0.260062488	0.328399516	47.63678618		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.397458286
+Streptococcus pneumoniae R6	171101	0.387799071	0.362	0.258640688	0.325915175	47.63791231		Facultative	Multiple	Mesophilic		No	Bacteria	0.397159836
+Streptococcus pneumoniae Taiwan19F 14	487213	0.388780502	0.361	0.260704248	0.329670119	47.77025957		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.39767005
+Streptococcus pneumoniae TCH8431 19A uid49735	525381	0.410699205	0.384	0.242442962	0.302680066	47.89487968		Facultative		Mesophilic		No	Bacteria	0.398354153
+Streptococcus pneumoniae TIGR4	170187	0.389270712	0.3615	0.258797939	0.321368153	47.427007		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.396972569
+Streptococcus pyogenes M1 GAS	160490	0.415811133	0.398	0.207777152	0.305841169	47.30185355	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.385134533
+Streptococcus pyogenes Manfredo	160491	0.417822979	0.4	0.207106504	0.303708393	47.32974215	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.3862848
+Streptococcus pyogenes MGAS10270	370552	0.415458795	0.398	0.202642202	0.302667798	47.42653075	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.384298836
+Streptococcus pyogenes MGAS10394	286636	0.415056329	0.398	0.206582255	0.306659979	47.64636203	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.386851359
+Streptococcus pyogenes MGAS10750	370554	0.41428693	0.397	0.204111686	0.303892176	47.43712097	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.383159251
+Streptococcus pyogenes MGAS2096	370553	0.422301669	0.406	0.205489546	0.299439286	47.6044525	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.387291673
+Streptococcus pyogenes MGAS315	198466	0.41731015	0.4	0.205033477	0.305659263	47.5955188	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.385926806
+Streptococcus pyogenes MGAS5005	293653	0.41205829	0.394	0.211360544	0.306794802	47.34161205	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.385343591
+Streptococcus pyogenes MGAS6180	319701	0.416933926	0.399	0.204967536	0.298311601	47.34713596	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.383532017
+Streptococcus pyogenes MGAS8232	186103	0.418058191	0.402	0.20510621	0.301906044	47.3957685	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.385466199
+Streptococcus pyogenes MGAS9429	370551	0.416591743	0.398	0.206369431	0.303520696	47.42810092	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.385380189
+Streptococcus pyogenes NZ131	471876	0.42526532	0.407	0.199666487	0.297574662	47.37260067		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.385699038
+Streptococcus pyogenes SSI-1	193567	0.411830476	0.394	0.208370858	0.307737001	47.53737397	Non-halophilic	Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.385502633
+Streptococcus sanguinis SK36	388919	0.398410306	0.384	0.192295611	0.328007576	51.21629898		Facultative	Host-associated	Mesophilic	Human	Yes	Bacteria	0.434002181
+Streptococcus suis 05ZYH33	391295	0.365148046	0.341	0.266717302	0.305183723	49.3584689	Non-halophilic	Facultative	Multiple	Mesophilic	"Swine, Human"	No	Bacteria	0.411096837
+Streptococcus suis 98HAH33	391296	0.360480109	0.335	0.277106316	0.314858706	49.33258801	Non-halophilic	Facultative	Specialized	Mesophilic	"Swine, Human"	Yes	Bacteria	0.411133665
+Streptococcus suis BM407	568814	0.399722857	0.381	0.228223788	0.341082707	49.13116		Facultative	Multiple	Mesophilic	"Swine, Human"	No	Bacteria	0.410123327
+Streptococcus suis P1 7	218494	0.397840826	0.379	0.236806437	0.341513734	49.06696051	Non-halophilic	Facultative	Multiple	Mesophilic	"Human, Swine"	No	Bacteria	0.412995127
+Streptococcus suis SC84	568813	0.39674356	0.378	0.234429495	0.342365914	49.14202342		Facultative	Multiple	Mesophilic	"Swine, Human"	No	Bacteria	0.411068191
+Streptococcus thermophilus CNRZ1066	299768	0.400954897	0.3735	0.258134744	0.301277177	45.76766559		Anaerobic	Multiple	Thermophilic	No	No	Bacteria	0.390814408
+Streptococcus thermophilus LMD-9	322159	0.416537743	0.391	0.235164383	0.302137828	45.52495255	Non-halophilic	Facultative	Multiple	Mesophilic	No	No	Bacteria	0.390689623
+Streptococcus thermophilus LMG 18311	264199	0.404131254	0.377	0.255195359	0.299358907	45.71700845		Anaerobic	Multiple	Thermophilic	No	Yes	Bacteria	0.390916639
+Streptococcus uberis 0140J	218495	0.462443813	0.445	0.196046652	0.26796498	45.39494192		Facultative	Multiple	Mesophilic	Cattle	Yes	Bacteria	0.366318065
+Streptomyces avermitilis	227882	0.606871507	0.609	0.174321377	0.0688371	33.24323845		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.707013513
+Streptomyces griseus NBRC 13350	455632	0.663481777	0.665	0.136736068	0.040373858	31.65125377		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.722274079
+Streptomyces scabiei 87 22 uid46531	680198	0.662461625	0.664	0.140384343	0.064707847	32.21738675		Aerobic	Terrestrial	Mesophilic	Plant	Yes	Bacteria	0.714528321
+Streptosporangium roseum DSM 43021	479432	0.69370104	0.708	0.130493411	0.018134527	32.71712802		Aerobic	Terrestrial	Mesophilic	No	Yes	Bacteria	0.708631009
+Sulfolobus acidocaldarius DSM 639	330779	0.675909182	0.681	0.082296856	0.082361742	46.76781786		Aerobic	Specialized	Thermophilic	No	Yes	Archaea	0.367075943
+Sulfolobus islandicus L D 8 5 uid43679	425944	0.684318998	0.69	0.072995185	0.045650958	44.92488852		Aerobic	Specialized	Hyperthermophilic	No	No	Archaea	0.352625683
+Sulfolobus islandicus L S 2 15	429572	0.674171908	0.679	0.069698882	0.0534241	44.86466247		Aerobic	Specialized	Hyperthermophilic	No	No	Archaea	0.351110197
+Sulfolobus islandicus M 14 25	427317	0.672303293	0.677	0.070052559	0.053989103	44.80283449		Aerobic	Specialized	Hyperthermophilic	No	No	Archaea	0.350995005
+Sulfolobus islandicus M 16 27	427318	0.673356199	0.677	0.070082409	0.049548473	44.69907797	Non-halophilic	Aerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.350097051
+Sulfolobus islandicus M 16 4	426118	0.670049915	0.675	0.072817036	0.057452217	44.89246886	Non-halophilic	Aerobic	Specialized	Hyperthermophilic	No	No	Archaea	0.350022635
+Sulfolobus islandicus Y G 57 14	439386	0.66593817	0.674	0.081141999	0.055618568	44.93888871				Hyperthermophilic	No	No	Archaea	0.353853618
+Sulfolobus islandicus Y N 15 51	419942	0.66964998	0.675	0.075468828	0.052368192	44.77880016	Non-halophilic		Specialized	Hyperthermophilic	No	No	Archaea	0.353054046
+Sulfolobus solfataricus	273057	0.654085005	0.67	0.109381327	0.058010957	45.33721999		Aerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.357871765
+Sulfolobus tokodaii	273063	0.655800469	0.672	0.114600192	0.095175583	41.56771557		Aerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.327867161
+Sulfurihydrogenibium azorense Az Fu1	204536	0.683031517	0.683	0.060352176	0.04896991	39.75375772	Non-halophilic	Microaerophilic	Aquatic	Thermophilic	No	Yes	Bacteria	0.32752932
+Sulfurihydrogenibium YO3AOP1	436114	0.713113973	0.712	0.052393575	0.017904884	39.37230908		Facultative	Specialized	Thermophilic	No	Yes	Bacteria	0.32027445
+Sulfurospirillum deleyianum DSM 6946	525898	0.601499513	0.598	0.090243556	0.130024989	47.50002096		Microaerophilic	Aquatic	Mesophilic	No	Yes	Bacteria	0.389698272
+Sulfurovum NBC37-1	387093	0.519667695	0.51	0.113325103	0.215527538	51.293342		Facultative	Specialized	Mesophilic	No	Yes	Bacteria	0.438714862
+Symbiobacterium thermophilum IAM14863	292459	0.677459325	0.698	0.155932276	0.041568161	33.59228869	Non-halophilic	Microaerophilic	Terrestrial	Thermophilic	No	Yes	Bacteria	0.686684043
+Synechococcus CC9311	64471	0.64682275	0.648	0.088334691	0.069455883	52.25571859			Aquatic	Mesophilic	No	Yes	Bacteria	0.524473405
+Synechococcus CC9605	110662	0.528753312	0.535	0.185435939	0.174033019	44.74243582			Aquatic	Mesophilic	No	Yes	Bacteria	0.592176397
+Synechococcus CC9902	316279	0.596150713	0.601	0.117674779	0.112963804	51.16239868			Aquatic	Mesophilic	No	Yes	Bacteria	0.541644816
+Synechococcus elongatus PCC 6301	269084	0.660276039	0.662	0.094597826	0.086494299	50.22876254	Non-halophilic		Aquatic	Mesophilic	No	Yes	Bacteria	0.554843292
+Synechococcus elongatus PCC 7942	1140	0.660129854	0.663	0.098560611	0.087039291	50.198319			Aquatic	Mesophilic		No	Bacteria	0.554263641
+Synechococcus PCC 7002	32049	0.674187633	0.673	0.066285246	0.063314822	49.81911802			Aquatic	Mesophilic	No	Yes	Bacteria	0.491870373
+Synechococcus RCC307	316278	0.552300881	0.552	0.143260996	0.14472633	42.35471282			Aquatic	Mesophilic		Yes	Bacteria	0.608435026
+Synechococcus sp WH8102	84588	0.537027365	0.548	0.1991051	0.16905241	44.66384369			Aquatic	Mesophilic	No	Yes	Bacteria	0.594126012
+Synechococcus WH 7803	32051	0.592856142	0.592	0.127711153	0.113652951	45.35632555			Aquatic	Mesophilic		Yes	Bacteria	0.602360392
+Synechocystis PCC6803	1148	0.665532565	0.674	0.088690147	0.059029771	49.91381801			Aquatic	Mesophilic	No	Yes	Bacteria	0.473662022
+Syntrophobacter fumaroxidans MPOB	335543	0.67832524	0.687	0.083971082	-0.036426549	45.19314835		Anaerobic	Aquatic	Mesophilic	No	Yes	Bacteria	0.59948728
+Syntrophomonas wolfei Goettingen	335541	0.69621048	0.697	0.038688022	0.040744989	52.21233259		Anaerobic	Multiple		No	Yes	Bacteria	0.448659234
+Syntrophothermus lipocalidus DSM 12680 uid49527	643648	0.815445717	0.816	0.025940489	-0.026898771	55.26446066		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.509893958
+Syntrophus aciditrophicus SB	56780	0.696315267	0.696	0.04768653	-0.022010371	50.48135382		Anaerobic	Multiple	Mesophilic		Yes	Bacteria	0.514600384
+Teredinibacter turnerae T7901	377629	0.55862753	0.555	0.110290619	0.161430425	51.74469339		Aerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.508906908
+Thauera MZ1T	85643	0.66386515	0.689	0.181642111	0.005019434	32.81504278		Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.682991423
+Thermanaerovibrio acidaminovorans DSM 6589	525903	0.701747826	0.717	0.12582383	-0.062482792	35.35234596		Anaerobic	Terrestrial	Thermophilic	No	Yes	Bacteria	0.637925662
+Thermincola JR uid48823	635013	0.759457418	0.76	0.030686217	0.005900009	53.23721426		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.458824558
+Thermoanaerobacter italicus Ab9 uid46241	580331	0.71760597	0.723	0.066598735	-0.01722734	43.5120209		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Bacteria	0.34145009
+Thermoanaerobacter mathranii A3 uid49481	583358	0.716146952	0.722	0.066757419	-0.000812508	43.7007754		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.343201399
+Thermoanaerobacter pseudethanolicus ATCC 33223	340099	0.698544545	0.7065	0.079854012	0.003320361	43.427002		Anaerobic	Aquatic	Thermophilic	No	Yes	Bacteria	0.345127594
+Thermoanaerobacter tengcongensis	273068	0.754896064	0.757	0.046423484	-0.018686704	46.40727908		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Bacteria	0.375709115
+Thermoanaerobacter X514	399726	0.699928331	0.71	0.07957675	0.004699413	43.51981337		Anaerobic		Thermophilic	No	Yes	Bacteria	0.345186649
+Thermobaculum terrenum ATCC BAA 798	525904	0.659334873	0.673	0.077270442	-0.065835108	48.35776174		Aerobic	Specialized	Hyperthermophilic	No	Yes	Bacteria	0.535073242
+Thermobifida fusca YX	269800	0.623513551	0.631	0.136330128	0.053691408	36.6830072		Aerobic	Multiple	Thermophilic	Human	Yes	Bacteria	0.675028533
+Thermobispora bispora DSM 43833 uid48999	469371	0.772601041	0.794	0.110954883	-0.035576686	30.9802725		Aerobic	Terrestrial	Thermophilic	No	Yes	Bacteria	0.724291738
+Thermococcus gammatolerans EJ3	593117	0.519967341	0.523	0.186618659	0.202299891	44.91116952	Mesophilic	Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.535614866
+Thermococcus kodakaraensis KOD1	69014	0.459680459	0.455	0.24235345	0.26588918	45.96354636	Mesophilic	Anaerobic	Specialized	Hyperthermophilic		Yes	Archaea	0.519954882
+Thermococcus onnurineus NA1	523850	0.475139989	0.466	0.204455427	0.263949478	46.72431096		Anaerobic	Terrestrial	Hyperthermophilic	No	Yes	Archaea	0.512727003
+Thermococcus sibiricus MM 739	604354	0.665266474	0.669	0.076675236	0.099218231	49.32462428		Anaerobic		Hyperthermophilic		Yes	Archaea	0.402012677
+Thermocrinis albus DSM 14484 uid46231	638303	0.689543236	0.694	0.058959392	0.037480428	48.76426709		Aerobic		Thermophilic		Yes	Bacteria	0.469305474
+Thermodesulfovibrio yellowstonii DSM 11347	289376	0.699816428	0.706	0.066526177	0.048347417	40.69968964			Specialized	Thermophilic	No	Yes	Bacteria	0.341289039
+Thermofilum pendens Hrk 5	368408	0.76566746	0.769	0.069706217	-0.17405805	44.19326829		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.576461363
+Thermomicrobium roseum DSM 5159	309801	0.716689871	0.72	0.074366525	-0.003665269	43.74660734		Aerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.642847605
+Thermomonospora curvata DSM 43183	471852	0.701454113	0.72	0.139242627	0.038434511	30.68788896		Aerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.716420205
+Thermoplasma acidophilum	273075	0.745268755	0.752	0.064594648	0.037843155	49.9816555		Facultative	Specialized	Thermophilic	No	Yes	Archaea	0.45994392
+Thermoplasma volcanium	273116	0.739566618	0.742	0.040828737	0.019845116	51.79881332		Facultative	Specialized	Thermophilic	No	Yes	Archaea	0.39918501
+Thermoproteus neutrophilus V24Sta	444157	0.68636153	0.692	0.095303575	-0.021829651	42.29825377		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.599106238
+Thermosipho africanus TCF52B	484019	0.680144977	0.682	0.061631241	0.047646711	38.96043151		Anaerobic	Specialized	Thermophilic	No	Yes	Bacteria	0.308107923
+Thermosipho melanesiensis BI429	391009	0.705817488	0.708	0.055162668	0.028395069	40.45751291		Anaerobic		Thermophilic		Yes	Bacteria	0.313998574
+Thermosphaera aggregans DSM 11486 uid48993	633148	0.70868595	0.706	0.059246586	0.06276021	52.70473967		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Archaea	0.467343412
+Thermosynechococcus elongatus	197221	0.665684521	0.671	0.07366824	0.047261088	49.51634135			Specialized	Thermophilic	No	Yes	Bacteria	0.539179299
+Thermotoga lettingae TMO	416591	0.717830491	0.719	0.034359981	-0.01016749	49.14772661		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Bacteria	0.386970331
+Thermotoga maritima	243274	0.719451917	0.722	0.060224675	0.032112342	49.32688378		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Bacteria	0.46247726
+Thermotoga naphthophila RKU 10	590168	0.73762149	0.74	0.057095112	0.013030863	49.31059096		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Bacteria	0.461407552
+Thermotoga neapolitana DSM 4359	309803	0.737780861	0.742	0.069986166	0.064450994	48.9795923		Microaerophilic	Specialized	Hyperthermophilic		Yes	Bacteria	0.469424195
+Thermotoga petrophila RKU-1	390874	0.707777711	0.709	0.05875037	0.031545654	49.32266265		Anaerobic	Aquatic	Hyperthermophilic	No	Yes	Bacteria	0.461011752
+Thermotoga RQ2	126740	0.706153756	0.708	0.060564279	0.032768375	49.26927406		Anaerobic	Specialized	Hyperthermophilic	No	Yes	Bacteria	0.461776765
+Thermus thermophilus HB27	262724	0.685828417	0.703	0.127580943	0.055731425	32.05806146		Aerobic	Specialized	Thermophilic		No	Bacteria	0.694072617
+Thermus thermophilus HB8	300852	0.687060904	0.703	0.125500438	0.053171693	32.00134332		Aerobic	Specialized	Thermophilic		Yes	Bacteria	0.694962168
+Thioalkalivibrio HL EbGR7	396588	0.617929535	0.634	0.196930915	0.078638438	34.51236548	Moderate halophilic	Aerobic	Specialized	Mesophilic	No	Yes	Bacteria	0.650629778
+Thioalkalivibrio K90mix uid46181	396595	0.654656418	0.663	0.144824171	0.071527979	37.30205035	Mesophilic		Specialized		No	Yes	Bacteria	0.655392395
+Thiobacillus denitrificans ATCC 25259	292415	0.673604971	0.69	0.141581827	0.046352098	36.46345583		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.66067223
+Thiomicrospira crunogena XCL-2	317025	0.538750365	0.53	0.103378757	0.209682918	50.12726764		Microaerophilic	Aquatic	Mesophilic	No	Yes	Bacteria	0.431299722
+Thiomicrospira denitrificans ATCC 33889	326298	0.600022645	0.596	0.099278355	0.1084083	42.36345548		Anaerobic		Mesophilic	No	Yes	Bacteria	0.344619568
+Thiomonas intermedia K12 uid48825	75379	0.684563624	0.695	0.114361578	-0.010334409	39.74644329		Aerobic	Aquatic	Mesophilic		Yes	Bacteria	0.638262959
+Tolumonas auensis DSM 9187	595494	0.453138339	0.437	0.198246034	0.184792314	46.72510949		Facultative	Aquatic	Mesophilic	No	Yes	Bacteria	0.490270193
+Treponema denticola ATCC 35405	243275	0.699350493	0.699	0.05861095	0.001839646	49.47642814		Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.378737557
+Treponema pallidum	243276	0.658789989	0.664	0.066341056	0.062917371	52.80554407		Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.527751805
+Treponema pallidum SS14	455434	0.669293217	0.674	0.065029273	0.056462528	52.82679431		Anaerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.527824945
+Trichodesmium erythraeum IMS101	203124	0.686837191	0.69	0.074728307	-0.044136419	43.98438401		Aerobic	Aquatic		No	Yes	Bacteria	0.341433565
+Tropheryma whipplei TW08 27	218496	0.674599451	0.675	0.050906164	0.029143241	54.68224143		Aerobic	Host-associated	Mesophilic	Human	No	Bacteria	0.463140081
+Tropheryma whipplei Twist	203267	0.678121585	0.679	0.049627418	0.031271233	54.87032787		Aerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.463319972
+Truepera radiovictrix DSM 17093 uid49533	649638	0.706286873	0.726	0.119019598	0.002909614	35.06663864						Yes	Bacteria	0.681390125
+Tsukamurella paurometabola DSM 20162 uid48829	521096	0.602022014	0.6035	0.154033055	0.143881994	35.70576822			Terrestrial	Mesophilic	Human	Yes	Bacteria	0.683989237
+uncultured methanogenic archaeon RC-I	351160	0.54206819	0.551	0.181573908	0.154145307	44.72559657	Non-halophilic		Host-associated	Mesophilic	No	Yes	Archaea	0.546029518
+uncultured Termite group 1 bacterium phylotype Rs D17	471821	0.717459198	0.721	0.049856485	-0.001877823	46.24350069						Yes	Bacteria	0.351841856
+Ureaplasma parvum serovar 3 ATCC 27815	505682	0.674959927	0.678	0.076728531	0.062635256	34.26162842		Facultative	Host-associated	Mesophilic	"Human, Animal"	Yes	Bacteria	0.254965218
+Ureaplasma urealyticum	273119	0.673806452	0.677	0.077404015	0.062017761	34.28795699		Facultative	Host-associated	Mesophilic	Animal	No	Bacteria	0.25499688
+Ureaplasma urealyticum serovar 10 ATCC 33699	565575	0.682015517	0.685	0.088176239	0.050810788	33.68631552		Facultative	Host-associated	Mesophilic	Human	No	Bacteria	0.257742333
+Variovorax paradoxus S110	543728	0.641602383	0.656	0.147452123	-0.002219553	33.00495081		Aerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.675362402
+Veillonella parvula DSM 2008	479436	0.601056992	0.585	0.163092832	0.152994343	44.11996886		Anaerobic	Host-associated	Mesophilic	Human	Yes	Bacteria	0.386292752
+Verminephrobacter eiseniae EF01-2	391735	0.621833587	0.641	0.160347111	0.03588004	38.00398979	Non-halophilic		Host-associated	Mesophilic	No	Yes	Bacteria	0.652419112
+Vibrio cholerae	243277	0.372747528	0.355	0.207468963	0.290500639	49.88181799		Facultative	Aquatic	Mesophilic	"Human, Primate"	Yes	Bacteria	0.474875583
+Vibrio cholerae M66 2	579112	0.371793726	0.354	0.208687077	0.290786988	49.7833872		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.476204427
+Vibrio cholerae MJ 1236	593588	0.413749775	0.396	0.17837044	0.271063408	49.85572004		Facultative	Aquatic	Mesophilic	Human	No	Bacteria	0.473197796
+Vibrio cholerae O395	345073	0.415357015	0.399	0.177363656	0.275028027	49.80830499		Facultative	Aquatic	Mesophilic	"Human, Primate"	No	Bacteria	0.47539868
+Vibrio Ex25	150340	0.607222305	0.59	0.11935652	0.207423206	50.74641474		Facultative	Aquatic			Yes	Bacteria	0.449035719
+Vibrio fischeri ES114	312309	0.444685105	0.422	0.217538221	0.214418539	44.41788418	Non-halophilic	Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.383463532
+Vibrio fischeri MJ11	388396	0.445455943	0.422	0.212990121	0.212344163	44.43528109	Non-halophilic	Facultative	Multiple	Mesophilic	No	No	Bacteria	0.382019597
+Vibrio harveyi ATCC BAA-1116	338187	0.362076985	0.33	0.300226939	0.33800613	50.61568623	Moderate halophilic	Facultative	Aquatic	Mesophilic	Vertebrate and invertebrate aquatic organisms	Yes	Bacteria	0.454205309
+Vibrio parahaemolyticus	223926	0.369385965	0.341	0.273426843	0.326180036	50.0093975		Facultative	Aquatic	Mesophilic	Human	Yes	Bacteria	0.453732357
+Vibrio splendidus LGP32	575788	0.509049057	0.485	0.17955351	0.253320776	50.48851925		Facultative	Aquatic	Mesophilic	"Fish, Shellfish"	Yes	Bacteria	0.439085611
+Vibrio vulnificus CMCP6	216895	0.349877546	0.329	0.231822641	0.330025718	50.72612687		Facultative	Aquatic	Mesophilic	Human	No	Bacteria	0.466907506
+Vibrio vulnificus YJ016	196600	0.357080596	0.338	0.22294947	0.326470227	50.79853604		Facultative	Aquatic	Mesophilic	Human	Yes	Bacteria	0.466810809
+Waddlia chondrophila WSU 86 1044 uid49531	716544	0.721369151	0.722	0.033014389	0.019948868	53.50155979						Yes	Bacteria	0.437350632
+Wigglesworthia brevipalpis	36870	0.741581756	0.744	0.057028067	-0.002760152	32.62397246			Host-associated	Mesophilic	No	Yes	Bacteria	0.224751211
+Wolbachia endosymbiont of Brugia malayi TRS	292805	0.642504451	0.639	0.063380366	0.110613601	46.69193769	Non-halophilic		Host-associated	Mesophilic		No	Bacteria	0.341791009
+Wolbachia endosymbiont of Culex quinquefasciatus Pel	570417	0.619243772	0.6205	0.074711779	0.132625851	45.13586477		Aerobic	Host-associated	Mesophilic	No	Yes	Bacteria	0.341925517
+Wolbachia endosymbiont of Drosophila melanogaster	163164	0.626954498	0.625	0.065603291	0.125823507	46.24562151			Host-associated	Mesophilic	No	No	Bacteria	0.352348432
+Wolbachia wRi	66084	0.623791304	0.622	0.062718311	0.127032656	46.24869469						Yes	Bacteria	0.351646376
+Wolinella succinogenes	273121	0.659351053	0.658	0.073715779	0.037698676	49.20422684		Microaerophilic	Host-associated	Mesophilic	No	Yes	Bacteria	0.484580082
+Xanthobacter autotrophicus Py2	78245	0.640836677	0.659	0.173130638	0.109678669	35.40632708		Facultative	Multiple	Mesophilic	No	Yes	Bacteria	0.6734512
+Xanthomonas campestris	190485	0.604892698	0.619	0.188465427	0.088710481	36.77322425		Aerobic	Host-associated	Mesophilic	Plant	No	Bacteria	0.650550842
+Xanthomonas campestris 8004	314565	0.605408673	0.619	0.186121781	0.088472732	36.63919158		Aerobic	Host-associated	Mesophilic	Plant	No	Bacteria	0.649570339
+Xanthomonas campestris ATCC 33913	190485	0.612658556	0.624	0.177959303	0.074875796	36.40924825		Aerobic	Host-associated	Mesophilic	Plant	No	Bacteria	0.650685595
+Xanthomonas campestris B100	509169	0.598393071	0.615	0.194923056	0.096738651	37.1236827						Yes	Bacteria	0.650416164
+Xanthomonas campestris vesicatoria 85-10	316273	0.574284038	0.582	0.184018199	0.127482601	37.95254883		Aerobic	Host-associated	Mesophilic	Plant	No	Bacteria	0.64556363
+Xanthomonas citri	190486	0.576467089	0.589	0.191524257	0.12647313	37.86882594		Aerobic	Host-associated	Mesophilic	Plant	Yes	Bacteria	0.647117188
+Xanthomonas oryzae KACC10331	291331	0.561875516	0.561	0.178662513	0.13897662	39.08210851		Aerobic	Host-associated	Mesophilic	Rice	No	Bacteria	0.636932885
+Xanthomonas oryzae MAFF 311018	342109	0.56539692	0.569	0.183351864	0.138262151	39.06234973		Aerobic	Host-associated	Mesophilic	Rice	No	Bacteria	0.637012909
+Xanthomonas oryzae PXO99A	360094	0.585051414	0.586	0.164799863	0.115131885	38.25739871		Aerobic	Host-associated	Mesophilic	Rice	Yes	Bacteria	0.63634051
+Xenorhabdus bovienii SS 2004 uid46345	406818	0.432224761	0.421	0.166295359	0.239340101	51.23667799		Facultative	Host-associated	Mesophilic	Insect	Yes	Bacteria	0.449676228
+Xenorhabdus nematophila ATCC 19061 uid49133	406817	0.432923099	0.422	0.16461032	0.23598561	50.88551988		Facultative	Host-associated	Mesophilic		Yes	Bacteria	0.442145612
+Xylanimonas cellulosilytica DSM 15894	446471	0.677401639	0.686	0.136414105	0.080325173	30.94496091		Aerobic	Specialized			Yes	Bacteria	0.724520408
+Xylella fastidiosa	160492	0.533952335	0.532	0.117272175	0.099726458	48.35053298		Aerobic	Host-associated	Mesophilic	Plant	No	Bacteria	0.526172985
+Xylella fastidiosa M12	405440	0.541147142	0.541	0.116224093	0.083212512	48.33360385	Non-halophilic	Aerobic	Host-associated	Mesophilic	Citrus	No	Bacteria	0.51917475
+Xylella fastidiosa M23	405441	0.534863175	0.535	0.119121685	0.097496905	48.49541101		Aerobic	Host-associated	Mesophilic		Yes	Bacteria	0.517187927
+Xylella fastidiosa Temecula1	183190	0.53172352	0.531	0.120990826	0.103703321	48.53190766		Aerobic	Host-associated	Mesophilic	Plant	No	Bacteria	0.517774442
+Yersinia enterocolitica 8081	393305	0.478381144	0.466	0.157826482	0.200246398	50.34326242		Facultative	Multiple	Mesophilic	"Human, Animal"	Yes	Bacteria	0.472226184
+Yersinia pestis Angola	349746	0.47951134	0.468	0.144236038	0.198518848	50.99071163		Facultative	Multiple	Mesophilic	"Human, Rodent"	No	Bacteria	0.476132139
+Yersinia pestis Antiqua	360102	0.476642765	0.468	0.142352529	0.191815098	50.92275328	Non-halophilic	Facultative	Multiple	Mesophilic	"Human, Animal"	Yes	Bacteria	0.477050663
+Yersinia pestis biovar Mediaevails	229193	0.479703551	0.47	0.145253475	0.191754919	51.03311093		Facultative	Multiple	Mesophilic	"Human, Rodent"	No	Bacteria	0.476698429
+Yersinia pestis biovar Microtus 91001	229193	0.475282842	0.465	0.146720618	0.198949309	51.02613522		Facultative	Multiple	Mesophilic	"Human, Rodent"	No	Bacteria	0.476698429
+Yersinia pestis CO92	214092	0.476233251	0.466	0.145459386	0.196361839	50.86385945		Facultative	Multiple	Mesophilic	"Human, Rodent"	No	Bacteria	0.476422584
+Yersinia pestis KIM	187410	0.475619703	0.466	0.145355998	0.199559555	51.06481095		Facultative	Multiple	Mesophilic	"Human, Rodent"	No	Bacteria	0.476953131
+Yersinia pestis KIM 10	187410	0.475619703	0.466	0.145355998	0.199559555	51.06481095		Facultative	Multiple	Mesophilic	"Human, Rodent"	No	Bacteria	0.476953131
+Yersinia pestis KIM 10 uid288	187410	0.475619703	0.466	0.145355998	0.199559555	51.06481095		Facultative	Multiple	Mesophilic	"Human, Rodent"	No	Bacteria	0.476953131
+Yersinia pestis Nepal516	377628	0.477791463	0.468	0.144108217	0.191094348	50.86288608		Facultative	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.476350358
+Yersinia pestis Pestoides F	386656	0.477794837	0.467	0.143312368	0.191718173	50.84216946	Non-halophilic	Facultative	Multiple	Mesophilic	"Human, Rodent"	No	Bacteria	0.477287107
+Yersinia pestis Z176003 uid47317	637386	0.48232521	0.473	0.142952396	0.193329116	50.85050014						No	Bacteria	0.476804292
+Yersinia pseudotuberculosis IP 31758	349747	0.473421095	0.462	0.146163412	0.199442097	50.99937332		Facultative	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.472277782
+Yersinia pseudotuberculosis IP32953	273123	0.474945187	0.464	0.145017365	0.196590737	50.88243905		Facultative	Multiple	Mesophilic	"Human, Animal"	No	Bacteria	0.475504338
+Yersinia pseudotuberculosis PB1 	502801	0.474439868	0.464	0.145547324	0.190218552	50.78997254		Facultative	Multiple	Mesophilic	Human	Yes	Bacteria	0.474872472
+Yersinia pseudotuberculosis YPIII	502800	0.475539612	0.465	0.144459876	0.191827909	50.86080083		Facultative	Multiple	Mesophilic	Human	No	Bacteria	0.475303773
+Zunongwangia profunda SM A87 uid48073	655815	0.65352959	0.656	0.069376177	0.122103314	49.12714933		Aerobic	Aquatic	Mesophilic		Yes	Bacteria	0.36218453
+Zymomonas mobilis NCIMB 11163	622759	0.555587689	0.547	0.121567886	0.143867593	49.61179907		Facultative				No	Bacteria	0.466436101
+Zymomonas mobilis ZM4	264203	0.545219001	0.537	0.132104265	0.150568791	49.79632758		Anaerobic	Multiple	Mesophilic	No	Yes	Bacteria	0.463280559

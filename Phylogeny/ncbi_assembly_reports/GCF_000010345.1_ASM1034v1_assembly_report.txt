@@ -1,0 +1,27 @@
+# Assembly name:  ASM1034v1
+# Organism name:  Sulfurovum sp. NBC37-1 (e-proteobacteria)
+# Infraspecific name:  strain=NBC37-1
+# Taxid:          387093
+# BioSample:      SAMD00060915
+# BioProject:     PRJDA18965
+# Submitter:      Japan Agency for Marine-Earth Science and Technology
+# Date:           2007-07-11
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000010345.1
+# RefSeq assembly accession: GCF_000010345.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000010355.1	GCF_000010355.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AP009179.1	assembled-molecule	na	Chromosome	AP009179.1	=	NC_009663.1	Primary Assembly	2562277	na

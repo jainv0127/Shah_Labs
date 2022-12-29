@@ -1,0 +1,38 @@
+# Assembly name:  ASM1810v1
+# Organism name:  Acaryochloris marina MBIC11017 (cyanobacteria)
+# Infraspecific name:  strain=MBIC11017
+# Taxid:          329726
+# BioSample:      SAMN02604308
+# BioProject:     PRJNA12997
+# Submitter:      Washington University
+# Date:           2007-10-16
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000018105.1
+# RefSeq assembly accession: GCF_000018105.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000018115.1	GCF_000018115.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000828.1	assembled-molecule	na	Chromosome	CP000828.1	=	NC_009925.1	Primary Assembly	6503724	na
+pREB1	assembled-molecule	pREB1	Plasmid	CP000838.1	=	NC_009926.1	Primary Assembly	374161	na
+pREB2	assembled-molecule	pREB2	Plasmid	CP000839.1	=	NC_009927.1	Primary Assembly	356087	na
+pREB3	assembled-molecule	pREB3	Plasmid	CP000840.1	=	NC_009928.1	Primary Assembly	273121	na
+pREB4	assembled-molecule	pREB4	Plasmid	CP000841.1	=	NC_009929.1	Primary Assembly	226680	na
+pREB5	assembled-molecule	pREB5	Plasmid	CP000842.1	=	NC_009930.1	Primary Assembly	177162	na
+pREB6	assembled-molecule	pREB6	Plasmid	CP000843.1	=	NC_009931.1	Primary Assembly	172728	na
+pREB7	assembled-molecule	pREB7	Plasmid	CP000844.1	=	NC_009932.1	Primary Assembly	155110	na
+pREB8	assembled-molecule	pREB8	Plasmid	CP000845.1	=	NC_009933.1	Primary Assembly	120693	na
+pREB9	assembled-molecule	pREB9	Plasmid	CP000846.1	=	NC_009934.1	Primary Assembly	2133	na

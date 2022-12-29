@@ -1,0 +1,29 @@
+# Assembly name:  ASM930v1
+# Organism name:  Helicobacter acinonychis str. Sheeba (e-proteobacteria)
+# Infraspecific name:  strain=Sheeba
+# Taxid:          382638
+# BioSample:      SAMEA3138199
+# BioProject:     PRJNA17251
+# Submitter:      Penn State Univ.
+# Date:           2006-06-28
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000009305.1
+# RefSeq assembly accession: GCF_000009305.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000009315.1	GCF_000009315.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AM260522.1	assembled-molecule	na	Chromosome	AM260522.1	=	NC_008229.1	Primary Assembly	1553927	na
+pHac1	assembled-molecule	pHac1	Plasmid	AM260523.1	=	NC_008230.1	Primary Assembly	3661	na

@@ -1,0 +1,29 @@
+# Assembly name:  ASM918v1
+# Organism name:  Haloquadratum walsbyi DSM 16790 (euryarchaeotes)
+# Infraspecific name:  strain=DSM 16790 = HBSQ001
+# Taxid:          362976
+# BioSample:      SAMEA3138195
+# BioProject:     PRJNA17185
+# Submitter:      Max Planck Institute
+# Date:           2006-06-22
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000009185.1
+# RefSeq assembly accession: GCF_000009185.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000009195.1	GCF_000009195.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AM180088.1	assembled-molecule	na	Chromosome	AM180088.1	=	NC_008212.1	Primary Assembly	3132494	na
+PL47	assembled-molecule	PL47	Plasmid	AM180089.1	=	NC_008213.1	Primary Assembly	46867	na

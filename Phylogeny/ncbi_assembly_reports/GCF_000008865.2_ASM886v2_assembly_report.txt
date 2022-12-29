@@ -1,0 +1,30 @@
+# Assembly name:  ASM886v2
+# Organism name:  Escherichia coli O157:H7 str. Sakai (E. coli)
+# Infraspecific name:  strain=Sakai substr. RIMD 0509952
+# Taxid:          386585
+# BioSample:      SAMN01911278
+# BioProject:     PRJNA226
+# Submitter:      GIRC
+# Date:           2018-06-08
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# RefSeq category: Reference Genome
+# GenBank assembly accession: GCA_000008865.2
+# RefSeq assembly accession: GCF_000008865.2
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000008875.2	GCF_000008875.2	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+BA000007.3	assembled-molecule	na	Chromosome	BA000007.3	=	NC_002695.2	Primary Assembly	5498578	na
+pOSAK1	assembled-molecule	pOSAK1	Plasmid	AB011548.2	=	NC_002127.1	Primary Assembly	3306	na
+pO157	assembled-molecule	pO157	Plasmid	AB011549.2	=	NC_002128.1	Primary Assembly	92721	na

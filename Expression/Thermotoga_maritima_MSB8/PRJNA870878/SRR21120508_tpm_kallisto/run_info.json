@@ -1,0 +1,13 @@
+{
+	"n_targets": 1845,
+	"n_bootstraps": 0,
+	"n_processed": 11337425,
+	"n_pseudoaligned": 1809733,
+	"n_unique": 1804074,
+	"p_pseudoaligned": 16.0,
+	"p_unique": 15.9,
+	"kallisto_version": "0.46.2",
+	"index_version": 10,
+	"start_time": "Thu Dec 29 11:25:59 2022",
+	"call": "kallisto quant -i index/tmaritime_msb8.idx -o SRR21120508_tpm_kallisto --bias --single -l 200 -s 25 -t 8 SRR21120508_trimmed.fastq"
+}

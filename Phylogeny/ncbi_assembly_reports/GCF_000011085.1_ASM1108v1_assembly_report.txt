@@ -1,0 +1,37 @@
+# Assembly name:  ASM1108v1
+# Organism name:  Haloarcula marismortui ATCC 43049 (euryarchaeotes)
+# Infraspecific name:  strain=ATCC 43049
+# Taxid:          272569
+# BioSample:      SAMN02603385
+# BioProject:     PRJNA105
+# Submitter:      Institute for Systems Biology
+# Date:           2004-11-02
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000011085.1
+# RefSeq assembly accession: GCF_000011085.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000011095.1	GCF_000011095.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+I	assembled-molecule	I	Chromosome	AY596297.1	=	NC_006396.1	Primary Assembly	3131724	na
+II	assembled-molecule	II	Chromosome	AY596298.1	=	NC_006397.1	Primary Assembly	288050	na
+pNG100	assembled-molecule	pNG100	Plasmid	AY596290.1	=	NC_006389.1	Primary Assembly	33303	na
+pNG200	assembled-molecule	pNG200	Plasmid	AY596291.1	=	NC_006390.1	Primary Assembly	33452	na
+pNG300	assembled-molecule	pNG300	Plasmid	AY596292.1	=	NC_006391.1	Primary Assembly	39521	na
+pNG400	assembled-molecule	pNG400	Plasmid	AY596293.1	=	NC_006392.1	Primary Assembly	50060	na
+pNG500	assembled-molecule	pNG500	Plasmid	AY596294.1	=	NC_006393.1	Primary Assembly	132678	na
+pNG600	assembled-molecule	pNG600	Plasmid	AY596295.1	=	NC_006394.1	Primary Assembly	155300	na
+pNG700	assembled-molecule	pNG700	Plasmid	AY596296.1	=	NC_006395.1	Primary Assembly	410554	na

@@ -1,0 +1,30 @@
+# Assembly name:  ASM1398v1
+# Organism name:  Sphingopyxis alaskensis RB2256 (a-proteobacteria)
+# Infraspecific name:  strain=RB2256
+# Taxid:          317655
+# BioSample:      SAMN02598319
+# BioProject:     PRJNA13907
+# Submitter:      DOE Joint Genome Institute
+# Date:           2006-05-18
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000013985.1
+# RefSeq assembly accession: GCF_000013985.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000013995.1	GCF_000013995.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000356.1	assembled-molecule	na	Chromosome	CP000356.1	=	NC_008048.1	Primary Assembly	3345170	na
+F plasmid	assembled-molecule	F plasmid	Plasmid	CP000357.1	=	NC_008036.1	Primary Assembly	28543	na

@@ -1,0 +1,30 @@
+# Assembly name:  ASM980v1
+# Organism name:  Nocardia farcinica IFM 10152 (high G+C Gram-positive bacteria)
+# Infraspecific name:  strain=IFM 10152
+# Taxid:          247156
+# BioSample:      SAMD00061069
+# BioProject:     PRJNA13117
+# Submitter:      Department of Bioactive Molecules, National Institute of Infectious Diseases
+# Date:           2004-10-08
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000009805.1
+# RefSeq assembly accession: GCF_000009805.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000009815.1	GCF_000009815.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AP006618.1	assembled-molecule	na	Chromosome	AP006618.1	=	NC_006361.1	Primary Assembly	6021225	na
+pNF1	assembled-molecule	pNF1	Plasmid	AP006619.1	=	NC_006362.1	Primary Assembly	184026	na
+pNF2	assembled-molecule	pNF2	Plasmid	AP006620.1	=	NC_006363.1	Primary Assembly	87093	na

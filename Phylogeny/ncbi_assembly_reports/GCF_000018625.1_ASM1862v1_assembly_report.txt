@@ -1,0 +1,27 @@
+# Assembly name:  ASM1862v1
+# Organism name:  Salmonella enterica subsp. arizonae serovar 62:z4,z23:- (enterobacteria)
+# Infraspecific name:  strain=RSK2980
+# Taxid:          41514
+# BioSample:      SAMN02604141
+# BioProject:     PRJNA13030
+# Submitter:      The Salmonella enterica serovar Arizonae Genome Sequencing Project
+# Date:           2007-11-21
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000018625.1
+# RefSeq assembly accession: GCF_000018625.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000018635.1	GCF_000018635.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000880.1	assembled-molecule	na	Chromosome	CP000880.1	=	NC_010067.1	Primary Assembly	4600800	na

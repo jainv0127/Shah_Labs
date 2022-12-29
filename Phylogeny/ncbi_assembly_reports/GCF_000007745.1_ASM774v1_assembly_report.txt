@@ -1,0 +1,29 @@
+# Assembly name:  ASM774v1
+# Organism name:  [Mannheimia] succiniciproducens MBEL55E (g-proteobacteria)
+# Infraspecific name:  strain=MBEL55E
+# Taxid:          221988
+# BioSample:      SAMN02603473
+# BioProject:     PRJNA13068
+# Submitter:      Korea Advanced Institute of Science and Technology, Republic of Korea, Yuseong-gu
+# Date:           2004-09-17
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000007745.1
+# RefSeq assembly accession: GCF_000007745.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000007755.1	GCF_000007755.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AE016827.1	assembled-molecule	na	Chromosome	AE016827.1	=	NC_006300.1	Primary Assembly	2314078	na

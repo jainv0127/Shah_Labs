@@ -1,0 +1,28 @@
+# Assembly name:  ASM1146v1
+# Organism name:  Prochlorococcus marinus subsp. pastoris str. CCMP1986 (cyanobacteria)
+# Infraspecific name:  strain=MED4
+# Taxid:          59919
+# BioSample:      SAMEA3138209
+# BioProject:     PRJNA213
+# Submitter:      DOE Joint Genome Institute
+# Date:           2003-08-18
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# GenBank assembly accession: GCA_000011465.1
+# RefSeq assembly accession: GCF_000011465.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000011475.1	GCF_000011475.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+BX548174.1	assembled-molecule	na	Chromosome	BX548174.1	=	NC_005072.1	Primary Assembly	1657990	na

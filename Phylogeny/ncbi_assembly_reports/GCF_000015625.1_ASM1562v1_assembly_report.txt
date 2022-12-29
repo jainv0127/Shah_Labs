@@ -1,0 +1,28 @@
+# Assembly name:  ASM1562v1
+# Organism name:  Burkholderia mallei NCTC 10247 (b-proteobacteria)
+# Infraspecific name:  strain=NCTC 10247
+# Taxid:          320389
+# BioSample:      SAMN02604033
+# BioProject:     PRJNA13946
+# Submitter:      TIGR
+# Date:           2007-02-27
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000015625.1
+# RefSeq assembly accession: GCF_000015625.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000015635.1	GCF_000015635.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+I	assembled-molecule	I	Chromosome	CP000548.1	=	NC_009080.1	Primary Assembly	3495687	na
+II	assembled-molecule	II	Chromosome	CP000547.1	=	NC_009079.1	Primary Assembly	2352693	na

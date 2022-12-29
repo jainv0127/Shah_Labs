@@ -1,0 +1,34 @@
+# Assembly name:  ASM1290v2
+# Organism name:  Cereibacter sphaeroides 2.4.1 (a-proteobacteria)
+# Infraspecific name:  strain=2.4.1
+# Taxid:          272943
+# BioSample:      SAMN02598537
+# BioProject:     PRJNA56
+# Submitter:      DOE Joint Genome Institute
+# Date:           2013-10-23
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Chromosome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# GenBank assembly accession: GCA_000012905.2
+# RefSeq assembly accession: GCF_000012905.2
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000012915.2	GCF_000012915.2	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+1	assembled-molecule	1	Chromosome	CP000143.2	=	NC_007493.2	Primary Assembly	3188524	na
+2	assembled-molecule	2	Chromosome	CP000144.2	=	NC_007494.2	Primary Assembly	943018	na
+A	assembled-molecule	A	Plasmid	DQ232586.1	=	NC_009007.1	Primary Assembly	114045	na
+B	assembled-molecule	B	Plasmid	CP000145.2	=	NC_007488.2	Primary Assembly	114179	na
+C	assembled-molecule	C	Plasmid	CP000146.1	=	NC_007489.1	Primary Assembly	105284	na
+D	assembled-molecule	D	Plasmid	CP000147.2	=	NC_007490.2	Primary Assembly	100827	na
+E	assembled-molecule	E	Plasmid	DQ232587.1	=	NC_009008.1	Primary Assembly	37100	na

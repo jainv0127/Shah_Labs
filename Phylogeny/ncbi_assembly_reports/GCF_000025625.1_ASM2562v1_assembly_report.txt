@@ -1,0 +1,32 @@
+# Assembly name:  ASM2562v1
+# Organism name:  Natrialba magadii ATCC 43099 (euryarchaeotes)
+# Infraspecific name:  strain=ATCC 43099
+# Taxid:          547559
+# BioSample:      SAMN02598473
+# BioProject:     PRJNA30691
+# Submitter:      US DOE Joint Genome Institute (JGI-PGF)
+# Date:           2010-02-24
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000025625.1
+# RefSeq assembly accession: GCF_000025625.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000025635.1	GCF_000025635.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP001932.1	assembled-molecule	na	Chromosome	CP001932.1	=	NC_013922.1	Primary Assembly	3751858	na
+pNMAG01	assembled-molecule	pNMAG01	Plasmid	CP001933.1	=	NC_013923.1	Primary Assembly	378348	na
+pNMAG02	assembled-molecule	pNMAG02	Plasmid	CP001934.1	=	NC_013924.1	Primary Assembly	254950	na
+pNMAG03	assembled-molecule	pNMAG03	Plasmid	CP001935.1	=	NC_013925.1	Primary Assembly	58487	na

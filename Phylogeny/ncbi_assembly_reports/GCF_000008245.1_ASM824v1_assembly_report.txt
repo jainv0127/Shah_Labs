@@ -1,0 +1,27 @@
+# Assembly name:  ASM824v1
+# Organism name:  Mycoplasmopsis synoviae 53 (mycoplasmas)
+# Infraspecific name:  strain=53
+# Taxid:          262723
+# BioSample:      SAMN02603527
+# BioProject:     PRJNA10676
+# Submitter:      LNCC - Laboratorio Nacional de Computacao Cientifica
+# Date:           2005-08-05
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000008245.1
+# RefSeq assembly accession: GCF_000008245.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000008255.1	GCF_000008255.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AE017245.1	assembled-molecule	na	Chromosome	AE017245.1	=	NC_007294.1	Primary Assembly	799476	na

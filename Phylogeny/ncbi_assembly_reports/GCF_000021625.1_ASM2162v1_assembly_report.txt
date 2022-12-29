@@ -1,0 +1,28 @@
+# Assembly name:  ASM2162v1
+# Organism name:  Vibrio cholerae O395 (g-proteobacteria)
+# Infraspecific name:  strain=O395
+# Taxid:          345073
+# BioSample:      SAMN02603898
+# BioProject:     PRJNA32853
+# Submitter:      TEDA School of Biological Sciences and Biotechnology
+# Date:           2009-04-20
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000021625.1
+# RefSeq assembly accession: GCF_000021625.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000021635.1	GCF_000021635.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+I	assembled-molecule	I	Chromosome	CP001235.1	=	NC_012582.1	Primary Assembly	3024078	na
+II	assembled-molecule	II	Chromosome	CP001236.1	=	NC_012583.1	Primary Assembly	1111222	na

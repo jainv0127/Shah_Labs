@@ -1,0 +1,28 @@
+# Assembly name:  ASM1890v1
+# Organism name:  Brucella suis ATCC 23445 (a-proteobacteria)
+# Infraspecific name:  strain=ATCC 23445
+# Taxid:          470137
+# BioSample:      SAMN02604298
+# BioProject:     PRJNA20371
+# Submitter:      Virginia Bioinformatics Institute (VBI)
+# Date:           2007-12-20
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000018905.1
+# RefSeq assembly accession: GCF_000018905.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000018915.1	GCF_000018915.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+I	assembled-molecule	I	Chromosome	CP000911.1	=	NC_010169.1	Primary Assembly	1923763	na
+II	assembled-molecule	II	Chromosome	CP000912.1	=	NC_010167.1	Primary Assembly	1400844	na

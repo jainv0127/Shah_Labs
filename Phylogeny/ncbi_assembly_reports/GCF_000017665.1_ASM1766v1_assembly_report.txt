@@ -1,0 +1,29 @@
+# Assembly name:  ASM1766v1
+# Organism name:  Cronobacter sakazakii ATCC BAA-894 (enterobacteria)
+# Infraspecific name:  strain=ATCC BAA-894
+# Taxid:          290339
+# BioSample:      SAMN02603913
+# BioProject:     PRJNA12720
+# Submitter:      The Enterobacter sakazakii Genome Sequencing Project
+# Date:           2007-08-28
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000017665.1
+# RefSeq assembly accession: GCF_000017665.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000017675.1	GCF_000017675.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000783.1	assembled-molecule	na	Chromosome	CP000783.1	=	NC_009778.1	Primary Assembly	4368373	na
+pESA2	assembled-molecule	pESA2	Plasmid	CP000784.1	=	NC_009779.1	Primary Assembly	31208	na
+pESA3	assembled-molecule	pESA3	Plasmid	CP000785.1	=	NC_009780.1	Primary Assembly	131196	na

@@ -1,0 +1,33 @@
+# Assembly name:  ASM1948v1
+# Organism name:  Synechococcus sp. PCC 7002 (cyanobacteria)
+# Infraspecific name:  strain=PCC 7002; ATCC 27264
+# Taxid:          32049
+# BioSample:      SAMN01081740
+# BioProject:     PRJNA28247
+# Submitter:      Penn State University
+# Date:           2008-03-14
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000019485.1
+# RefSeq assembly accession: GCF_000019485.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000019495.1	GCF_000019495.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000951.1	assembled-molecule	na	Chromosome	CP000951.1	=	NC_010475.1	Primary Assembly	3008047	na
+pAQ1	assembled-molecule	pAQ1	Plasmid	CP000952.1	=	NC_010476.1	Primary Assembly	4809	na
+pAQ3	assembled-molecule	pAQ3	Plasmid	CP000953.1	=	NC_010477.1	Primary Assembly	16103	na
+pAQ4	assembled-molecule	pAQ4	Plasmid	CP000954.1	=	NC_010478.1	Primary Assembly	31972	na
+pAQ5	assembled-molecule	pAQ5	Plasmid	CP000955.1	=	NC_010479.1	Primary Assembly	38515	na
+pAQ6	assembled-molecule	pAQ6	Plasmid	CP000956.1	=	NC_010480.1	Primary Assembly	124030	na
+pAQ7	assembled-molecule	pAQ7	Plasmid	CP000957.1	=	NC_010474.1	Primary Assembly	186459	na

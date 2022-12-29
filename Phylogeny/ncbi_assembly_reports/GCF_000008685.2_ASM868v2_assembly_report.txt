@@ -1,0 +1,49 @@
+# Assembly name:  ASM868v2
+# Organism name:  Borreliella burgdorferi B31 (Lyme disease spirochete)
+# Infraspecific name:  strain=B31
+# Taxid:          224326
+# BioSample:      SAMN02603966
+# BioProject:     PRJNA3
+# Submitter:      TIGR
+# Date:           2011-11-09
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# GenBank assembly accession: GCA_000008685.2
+# RefSeq assembly accession: GCF_000008685.2
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000008695.2	GCF_000008695.2	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AE000783.1	assembled-molecule	na	Chromosome	AE000783.1	=	NC_001318.1	Primary Assembly	910724	na
+lp5	assembled-molecule	lp5	Plasmid	AE001583.1	=	NC_000957.1	Primary Assembly	5228	na
+cp9	assembled-molecule	cp9	Plasmid	AE000791.1	=	NC_001904.1	Primary Assembly	9386	na
+lp17	assembled-molecule	lp17	Plasmid	AE000793.2	=	NC_001849.2	Primary Assembly	16821	na
+lp21	assembled-molecule	lp21	Plasmid	AE001582.2	=	NC_000955.2	Primary Assembly	18777	na
+lp25	assembled-molecule	lp25	Plasmid	AE000785.1	=	NC_001850.1	Primary Assembly	24177	na
+cp26	assembled-molecule	cp26	Plasmid	AE000792.1	=	NC_001903.1	Primary Assembly	26498	na
+lp28-1	assembled-molecule	lp28-1	Plasmid	AE000794.2	=	NC_001851.2	Primary Assembly	28155	na
+lp28-2	assembled-molecule	lp28-2	Plasmid	AE000786.1	=	NC_001852.1	Primary Assembly	29766	na
+lp28-3	assembled-molecule	lp28-3	Plasmid	AE000784.1	=	NC_001853.1	Primary Assembly	28601	na
+lp28-4	assembled-molecule	lp28-4	Plasmid	AE000789.1	=	NC_001854.1	Primary Assembly	27323	na
+cp32-1	assembled-molecule	cp32-1	Plasmid	AE001575.1	=	NC_000948.1	Primary Assembly	30750	na
+cp32-3	assembled-molecule	cp32-3	Plasmid	AE001576.1	=	NC_000949.1	Primary Assembly	30223	na
+cp32-4	assembled-molecule	cp32-4	Plasmid	AE001577.1	=	NC_000950.1	Primary Assembly	30299	na
+cp32-6	assembled-molecule	cp32-6	Plasmid	AE001578.1	=	NC_000951.1	Primary Assembly	29838	na
+cp32-7	assembled-molecule	cp32-7	Plasmid	AE001579.1	=	NC_000952.1	Primary Assembly	30800	na
+cp32-8	assembled-molecule	cp32-8	Plasmid	AE001580.1	=	NC_000953.1	Primary Assembly	30885	na
+cp32-9	assembled-molecule	cp32-9	Plasmid	AE001581.1	=	NC_000954.1	Primary Assembly	30651	na
+lp36	assembled-molecule	lp36	Plasmid	AE000788.1	=	NC_001855.1	Primary Assembly	36849	na
+lp38	assembled-molecule	lp38	Plasmid	AE000787.1	=	NC_001856.1	Primary Assembly	38829	na
+lp54	assembled-molecule	lp54	Plasmid	AE000790.2	=	NC_001857.2	Primary Assembly	53657	na
+lp56	assembled-molecule	lp56	Plasmid	AE001584.1	=	NC_000956.1	Primary Assembly	52971	na

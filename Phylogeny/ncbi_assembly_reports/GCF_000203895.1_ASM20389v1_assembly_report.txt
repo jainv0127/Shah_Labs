@@ -1,0 +1,30 @@
+# Assembly name:  ASM20389v1
+# Organism name:  Paracoccus denitrificans PD1222 (a-proteobacteria)
+# Infraspecific name:  strain=PD1222
+# Taxid:          318586
+# BioSample:      SAMN02598290
+# BioProject:     PRJNA13020
+# Submitter:      DOE Joint Genome Institute
+# Date:           2006-12-13
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000203895.1
+# RefSeq assembly accession: GCF_000203895.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000203905.1	GCF_000203905.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+1	assembled-molecule	1	Chromosome	CP000489.1	=	NC_008686.1	Primary Assembly	2852282	na
+2	assembled-molecule	2	Chromosome	CP000490.1	=	NC_008687.1	Primary Assembly	1730097	na
+Plasmid1	assembled-molecule	1	Plasmid	CP000491.1	=	NC_008688.1	Primary Assembly	653815	na

@@ -1,0 +1,29 @@
+# Assembly name:  ASM18821v1
+# Organism name:  Acinetobacter baumannii 1656-2 (g-proteobacteria)
+# Infraspecific name:  strain=1656-2
+# Taxid:          696749
+# BioSample:      SAMN02603494
+# BioProject:     PRJNA42153
+# Submitter:      Kyungpook National University
+# Date:           2011-02-08
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000188215.1
+# RefSeq assembly accession: GCF_000188215.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000188225.1	GCF_000188225.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP001921.1	assembled-molecule	na	Chromosome	CP001921.1	=	NC_017162.1	Primary Assembly	3940614	na
+ABKp1	assembled-molecule	ABKp1	Plasmid	CP001922.1	=	NC_017163.1	Primary Assembly	74451	na
+ABKp2	assembled-molecule	ABKp2	Plasmid	CP001923.1	=	NC_017164.1	Primary Assembly	8041	na

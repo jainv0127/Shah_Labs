@@ -1,0 +1,28 @@
+# Assembly name:  ASM1254v1
+# Organism name:  Methanosphaera stadtmanae DSM 3091 (euryarchaeotes)
+# Infraspecific name:  strain=DSM 3091
+# Taxid:          339860
+# BioSample:      SAMN02604180
+# BioProject:     PRJNA15579
+# Submitter:      University of Goettingen
+# Date:           2006-01-05
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# GenBank assembly accession: GCA_000012545.1
+# RefSeq assembly accession: GCF_000012545.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000012555.1	GCF_000012555.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000102.1	assembled-molecule	na	Chromosome	CP000102.1	=	NC_007681.1	Primary Assembly	1767403	na

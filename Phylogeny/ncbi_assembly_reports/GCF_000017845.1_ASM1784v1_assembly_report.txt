@@ -1,0 +1,34 @@
+# Assembly name:  ASM1784v1
+# Organism name:  Crocosphaera subtropica ATCC 51142 (cyanobacteria)
+# Infraspecific name:  strain=ATCC 51142
+# Taxid:          43989
+# BioSample:      SAMN02604312
+# BioProject:     PRJNA20319
+# Submitter:      Washington University (WashU)
+# Date:           2008-04-01
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000017845.1
+# RefSeq assembly accession: GCF_000017845.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000017855.1	GCF_000017855.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+circular	assembled-molecule	circular	Chromosome	CP000806.1	=	NC_010546.1	Primary Assembly	4934271	na
+linear	assembled-molecule	linear	Chromosome	CP000807.1	=	NC_010547.1	Primary Assembly	429701	na
+A	assembled-molecule	A	Plasmid	CP000808.1	=	NC_010539.1	Primary Assembly	39620	na
+B	assembled-molecule	B	Plasmid	CP000809.1	=	NC_010541.1	Primary Assembly	31856	na
+D	assembled-molecule	D	Plasmid	CP000811.1	=	NC_010543.1	Primary Assembly	10244	na
+C	assembled-molecule	pC	Plasmid	CP000810.1	=	NC_010542.1	Primary Assembly	14685	na

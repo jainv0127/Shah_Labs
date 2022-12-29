@@ -1,0 +1,31 @@
+# Assembly name:  ASM46443v1
+# Organism name:  Vibrio campbellii ATCC BAA-1116 (g-proteobacteria)
+# Infraspecific name:  strain=ATCC BAA-1116
+# Taxid:          2902295
+# BioSample:      SAMN02603672
+# BioProject:     PRJNA210229
+# Submitter:      Naval Research Laboratory
+# Date:           2013-09-04
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Assembly method: Newbler v. 2008
+# Sequencing technology: Sanger dideoxy sequencing; 454
+# GenBank assembly accession: GCA_000464435.1
+# RefSeq assembly accession: GCF_000464435.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000464445.1	GCF_000464445.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+I	assembled-molecule	I	Chromosome	CP006605.1	=	NC_022269.1	Primary Assembly	3746887	na
+II	assembled-molecule	II	Chromosome	CP006606.1	=	NC_022270.1	Primary Assembly	2195939	na
+unnamed	assembled-molecule	unnamed	Plasmid	CP006607.1	=	NC_022271.1	Primary Assembly	89003	na

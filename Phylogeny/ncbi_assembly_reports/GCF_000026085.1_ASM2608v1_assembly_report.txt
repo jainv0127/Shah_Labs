@@ -1,0 +1,29 @@
+# Assembly name:  ASM2608v1
+# Organism name:  Pseudoalteromonas translucida (g-proteobacteria)
+# Infraspecific name:  strain=TAC125
+# Taxid:          166935
+# BioSample:      SAMEA3138224
+# BioProject:     PRJNA15713
+# Submitter:      CNRS
+# Date:           2005-10-03
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000026085.1
+# RefSeq assembly accession: GCF_000026085.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000026095.1	GCF_000026095.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+I	assembled-molecule	I	Chromosome	CR954246.1	=	NC_007481.1	Primary Assembly	3214944	na
+II	assembled-molecule	II	Chromosome	CR954247.1	=	NC_007482.1	Primary Assembly	635328	na

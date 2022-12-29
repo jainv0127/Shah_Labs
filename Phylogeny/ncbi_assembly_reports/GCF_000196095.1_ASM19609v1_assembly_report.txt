@@ -1,0 +1,29 @@
+# Assembly name:  ASM19609v1
+# Organism name:  Vibrio parahaemolyticus RIMD 2210633 (g-proteobacteria)
+# Infraspecific name:  strain=O3:K6 substr. RIMD 2210633
+# Taxid:          223926
+# BioSample:      SAMD00058707
+# BioProject:     PRJNA360
+# Submitter:      Osaka Univ.
+# Date:           2004-05-11
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000196095.1
+# RefSeq assembly accession: GCF_000196095.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000196105.1	GCF_000196105.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+1	assembled-molecule	1	Chromosome	BA000031.2	=	NC_004603.1	Primary Assembly	3288558	na
+2	assembled-molecule	2	Chromosome	BA000032.2	=	NC_004605.1	Primary Assembly	1877212	na

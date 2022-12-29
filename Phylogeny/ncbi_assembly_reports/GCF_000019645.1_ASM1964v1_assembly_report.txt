@@ -1,0 +1,31 @@
+# Assembly name:  ASM1964v1
+# Organism name:  Escherichia coli SMS-3-5 (E. coli)
+# Infraspecific name:  strain=SMS-3-5
+# Taxid:          439855
+# BioSample:      SAMN02604066
+# BioProject:     PRJNA19469
+# Submitter:      TIGR
+# Date:           2008-03-20
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000019645.1
+# RefSeq assembly accession: GCF_000019645.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000019655.1	GCF_000019655.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000970.1	assembled-molecule	na	Chromosome	CP000970.1	=	NC_010498.1	Primary Assembly	5068389	na
+pSMS35_130	assembled-molecule	pSMS35_130	Plasmid	CP000971.1	=	NC_010488.1	Primary Assembly	130440	na
+pSMS35_3	assembled-molecule	pSMS35_3	Plasmid	CP000974.1	=	NC_010487.1	Primary Assembly	3565	na
+pSMS35_4	assembled-molecule	pSMS35_4	Plasmid	CP000973.1	=	NC_010486.1	Primary Assembly	4074	na
+pSMS35_8	assembled-molecule	pSMS35_8	Plasmid	CP000972.1	=	NC_010485.1	Primary Assembly	8909	na

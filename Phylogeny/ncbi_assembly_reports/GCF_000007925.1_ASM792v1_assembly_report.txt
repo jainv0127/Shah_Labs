@@ -1,0 +1,29 @@
+# Assembly name:  ASM792v1
+# Organism name:  Prochlorococcus marinus subsp. marinus str. CCMP1375 (cyanobacteria)
+# Infraspecific name:  strain=CCMP1375; SS120
+# Taxid:          167539
+# BioSample:      SAMN02603142
+# BioProject:     PRJNA419
+# Submitter:      CNRS
+# Date:           2003-07-25
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000007925.1
+# RefSeq assembly accession: GCF_000007925.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000007935.1	GCF_000007935.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AE017126.1	assembled-molecule	na	Chromosome	AE017126.1	=	NC_005042.1	Primary Assembly	1751080	na

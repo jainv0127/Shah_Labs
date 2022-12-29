@@ -1,0 +1,29 @@
+# Assembly name:  ASM1276v1
+# Organism name:  Mycoplasma capricolum subsp. capricolum ATCC 27343 (mycoplasmas)
+# Infraspecific name:  strain=ATCC 27343
+# Taxid:          340047
+# BioSample:      SAMN02603434
+# BioProject:     PRJNA16208
+# Submitter:      J. Craig Venter Institute
+# Date:           2005-12-06
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000012765.1
+# RefSeq assembly accession: GCF_000012765.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000012775.1	GCF_000012775.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000123.1	assembled-molecule	na	Chromosome	CP000123.1	=	NC_007633.1	Primary Assembly	1010023	na

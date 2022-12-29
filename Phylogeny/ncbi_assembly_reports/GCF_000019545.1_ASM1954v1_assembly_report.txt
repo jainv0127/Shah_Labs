@@ -1,0 +1,28 @@
+# Assembly name:  ASM1954v1
+# Organism name:  Clostridium botulinum A3 str. Loch Maree (firmicutes)
+# Infraspecific name:  strain=Loch Maree
+# Taxid:          498214
+# BioSample:      SAMN02603536
+# BioProject:     PRJNA28507
+# Submitter:      Los Alamos National Laboratory
+# Date:           2008-03-05
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000019545.1
+# RefSeq assembly accession: GCF_000019545.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000019555.1	GCF_000019555.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000962.1	assembled-molecule	na	Chromosome	CP000962.1	=	NC_010520.1	Primary Assembly	3992906	na
+pCLK	assembled-molecule	pCLK	Plasmid	CP000963.1	=	NC_010418.1	Primary Assembly	266785	na

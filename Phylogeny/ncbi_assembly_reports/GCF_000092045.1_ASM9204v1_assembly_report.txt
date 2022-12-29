@@ -1,0 +1,34 @@
+# Assembly name:  ASM9204v1
+# Organism name:  Rhizobium etli CFN 42 (a-proteobacteria)
+# Infraspecific name:  strain=CFN 42
+# Taxid:          347834
+# BioSample:      SAMN02603106
+# BioProject:     PRJNA13932
+# Submitter:      Centro de Ciencias Genomicas, Universidad Nacional Autonoma de Mexico
+# Date:           2006-03-06
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# GenBank assembly accession: GCA_000092045.1
+# RefSeq assembly accession: GCF_000092045.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000092055.1	GCF_000092055.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000133.1	assembled-molecule	na	Chromosome	CP000133.1	=	NC_007761.1	Primary Assembly	4381608	na
+p42a	assembled-molecule	p42a	Plasmid	CP000134.1	=	NC_007762.1	Primary Assembly	194229	na
+p42b	assembled-molecule	p42b	Plasmid	CP000135.1	=	NC_007763.1	Primary Assembly	184338	na
+p42c	assembled-molecule	p42c	Plasmid	CP000136.1	=	NC_007764.1	Primary Assembly	250948	na
+symbiotic plasmid p42d	assembled-molecule	p42d	Plasmid	U80928.5	=	NC_004041.2	Primary Assembly	371254	na
+p42e	assembled-molecule	p42e	Plasmid	CP000137.1	=	NC_007765.1	Primary Assembly	505334	na
+p42f	assembled-molecule	p42f	Plasmid	CP000138.1	=	NC_007766.1	Primary Assembly	642517	na

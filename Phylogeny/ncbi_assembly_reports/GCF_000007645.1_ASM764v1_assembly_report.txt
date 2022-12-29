@@ -1,0 +1,33 @@
+# Assembly name:  ASM764v1
+# Organism name:  Staphylococcus epidermidis ATCC 12228 (firmicutes)
+# Infraspecific name:  strain=ATCC 12228
+# Taxid:          176280
+# BioSample:      SAMN02603126
+# BioProject:     PRJNA279
+# Submitter:      Chinese National HGC, Shanghai
+# Date:           2002-12-20
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000007645.1
+# RefSeq assembly accession: GCF_000007645.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000007655.1	GCF_000007655.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AE015929.1	assembled-molecule	na	Chromosome	AE015929.1	=	NC_004461.1	Primary Assembly	2499279	na
+pSE-12228-01	assembled-molecule	pSE-12228-01	Plasmid	AE015930.1	=	NC_005008.1	Primary Assembly	4439	na
+pSE-12228-02	assembled-molecule	pSE-12228-02	Plasmid	AE015931.1	=	NC_005007.1	Primary Assembly	4679	na
+pSE-12228-03	assembled-molecule	pSE-12228-03	Plasmid	AE015932.1	=	NC_005006.1	Primary Assembly	8007	na
+pSE-12228-04	assembled-molecule	pSE-12228-04	Plasmid	AE015933.1	=	NC_005005.1	Primary Assembly	17261	na
+pSE-12228-05	assembled-molecule	pSE-12228-05	Plasmid	AE015934.1	=	NC_005004.1	Primary Assembly	24365	na
+pSE-12228-06	assembled-molecule	pSE-12228-06	Plasmid	AE015935.1	=	NC_005003.1	Primary Assembly	6585	na

@@ -1,0 +1,29 @@
+# Assembly name:  ASM974v1
+# Organism name:  Vibrio vulnificus YJ016 (g-proteobacteria)
+# Infraspecific name:  strain=YJ016
+# Taxid:          196600
+# BioSample:      SAMD00061075
+# BioProject:     PRJNA1430
+# Submitter:      NHRI, Taiwan
+# Date:           2003-10-03
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000009745.1
+# RefSeq assembly accession: GCF_000009745.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000009755.1	GCF_000009755.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+I	assembled-molecule	I	Chromosome	BA000037.2	=	NC_005139.1	Primary Assembly	3354505	na
+II	assembled-molecule	II	Chromosome	BA000038.2	=	NC_005140.1	Primary Assembly	1857073	na
+pYJ016	assembled-molecule	pYJ016	Plasmid	AP005352.1	=	NC_005128.1	Primary Assembly	48508	na

@@ -1,0 +1,27 @@
+# Assembly name:  ASM726v1
+# Organism name:  Streptococcus agalactiae 2603V/R (firmicutes)
+# Infraspecific name:  strain=2603V/R
+# Taxid:          208435
+# BioSample:      SAMN02604013
+# BioProject:     PRJNA330
+# Submitter:      TIGR
+# Date:           2002-08-28
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000007265.1
+# RefSeq assembly accession: GCF_000007265.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000007275.1	GCF_000007275.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AE009948.1	assembled-molecule	na	Chromosome	AE009948.1	=	NC_004116.1	Primary Assembly	2160267	na

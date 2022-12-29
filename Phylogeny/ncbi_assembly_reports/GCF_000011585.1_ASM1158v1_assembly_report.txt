@@ -1,0 +1,27 @@
+# Assembly name:  ASM1158v1
+# Organism name:  Methanococcus maripaludis S2 (euryarchaeotes)
+# Infraspecific name:  strain=S2
+# Taxid:          267377
+# BioSample:      SAMEA3138215
+# BioProject:     PRJNA10632
+# Submitter:      University of Washington
+# Date:           2004-03-04
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000011585.1
+# RefSeq assembly accession: GCF_000011585.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000011595.1	GCF_000011595.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+BX950229.1	assembled-molecule	na	Chromosome	BX950229.1	=	NC_005791.1	Primary Assembly	1661137	na

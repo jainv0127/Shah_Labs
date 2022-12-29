@@ -1,0 +1,28 @@
+# Assembly name:  ASM1450v1
+# Organism name:  Pediococcus pentosaceus ATCC 25745 (firmicutes)
+# Infraspecific name:  strain=ATCC 25745
+# Taxid:          278197
+# BioSample:      SAMN02598525
+# BioProject:     PRJNA398
+# Submitter:      US DOE Joint Genome Institute (JGI), The Lactic Acid Bacteria Genome Consortium and Fidelity Systems Inc.
+# Date:           2006-10-13
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000014505.1
+# RefSeq assembly accession: GCF_000014505.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000014515.1	GCF_000014515.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000422.1	assembled-molecule	na	Chromosome	CP000422.1	=	NC_008525.1	Primary Assembly	1832387	na

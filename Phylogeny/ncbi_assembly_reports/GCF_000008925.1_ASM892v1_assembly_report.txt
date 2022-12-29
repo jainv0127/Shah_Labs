@@ -1,0 +1,30 @@
+# Assembly name:  ASM892v1
+# Organism name:  Ligilactobacillus salivarius UCC118 (firmicutes)
+# Infraspecific name:  strain=UCC118
+# Taxid:          362948
+# BioSample:      SAMN02604111
+# BioProject:     PRJNA13280
+# Submitter:      University College Cork
+# Date:           2006-03-30
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000008925.1
+# RefSeq assembly accession: GCF_000008925.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000008935.1	GCF_000008935.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000233.1	assembled-molecule	na	Chromosome	CP000233.1	=	NC_007929.1	Primary Assembly	1827111	na
+pMP118	assembled-molecule	pMP118	Plasmid	CP000234.1	=	NC_007930.1	Primary Assembly	242436	na
+pSF118-20	assembled-molecule	pSF118-20	Plasmid	AF488831.1	=	NC_006529.1	Primary Assembly	20417	na
+pSF118-44	assembled-molecule	pSF118-44	Plasmid	AF488832.1	=	NC_006530.1	Primary Assembly	44013	na

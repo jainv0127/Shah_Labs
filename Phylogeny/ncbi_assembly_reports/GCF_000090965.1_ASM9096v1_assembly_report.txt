@@ -1,0 +1,28 @@
+# Assembly name:  ASM9096v1
+# Organism name:  Buchnera aphidicola BCc (enterobacteria)
+# Infraspecific name:  strain=BCc
+# Taxid:          372461
+# BioSample:      SAMN02604290
+# BioProject:     PRJNA16372
+# Submitter:      Valencia Univ.
+# Date:           2006-10-18
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000090965.1
+# RefSeq assembly accession: GCF_000090965.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000090975.1	GCF_000090975.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000263.1	assembled-molecule	na	Chromosome	CP000263.1	=	NC_008513.1	Primary Assembly	416380	na
+pLeu-BCc	assembled-molecule	pLeu-BCc	Plasmid	AY438025.1	=	NC_011878.1	Primary Assembly	6054	na

@@ -1,0 +1,27 @@
+# Assembly name:  ASM786v1
+# Organism name:  Mycobacterium avium subsp. paratuberculosis K-10 (high G+C Gram-positive bacteria)
+# Infraspecific name:  strain=K-10
+# Taxid:          262316
+# BioSample:      SAMN02604086
+# BioProject:     PRJNA91
+# Submitter:      Univ. Minnesota
+# Date:           2004-01-30
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000007865.1
+# RefSeq assembly accession: GCF_000007865.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000007875.1	GCF_000007875.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AE016958.1	assembled-molecule	na	Chromosome	AE016958.1	=	NC_002944.2	Primary Assembly	4829781	na

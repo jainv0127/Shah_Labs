@@ -1,0 +1,31 @@
+# Assembly name:  ASM9154v1
+# Organism name:  Thermus thermophilus HB8 (bacteria)
+# Infraspecific name:  strain=HB8
+# Taxid:          300852
+# BioSample:      SAMD00061070
+# BioProject:     PRJNA13202
+# Submitter:      National Institute of Advanced Industrial Science and Technology, Japan
+# Date:           2004-11-15
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000091545.1
+# RefSeq assembly accession: GCF_000091545.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000091555.1	GCF_000091555.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+1	assembled-molecule	na	Chromosome	AP008226.1	=	NC_006461.1	Primary Assembly	1849742	na
+pTT8	assembled-molecule	pTT8	Plasmid	AP008228.1	=	NC_006463.1	Primary Assembly	9322	na
+pTT27	assembled-molecule	pTT27	Plasmid	AP008227.1	=	NC_006462.1	Primary Assembly	256992	na

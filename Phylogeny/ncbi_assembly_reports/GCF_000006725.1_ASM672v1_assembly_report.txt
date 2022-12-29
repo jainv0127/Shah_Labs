@@ -1,0 +1,29 @@
+# Assembly name:  ASM672v1
+# Organism name:  Xylella fastidiosa 9a5c (g-proteobacteria)
+# Infraspecific name:  strain=9a5c
+# Taxid:          160492
+# BioSample:      SAMN02603773
+# BioProject:     PRJNA271
+# Submitter:      Sao Paulo state (Brazil) Consortium
+# Date:           2004-06-04
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000006725.1
+# RefSeq assembly accession: GCF_000006725.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000006735.1	GCF_000006735.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AE003849.1	assembled-molecule	na	Chromosome	AE003849.1	=	NC_002488.3	Primary Assembly	2679306	na
+pXF1.3	assembled-molecule	pXF1.3	Plasmid	AE003850.3	=	NC_002489.3	Primary Assembly	1286	na
+pXF51	assembled-molecule	pXF51	Plasmid	AE003851.1	=	NC_002490.1	Primary Assembly	51158	na

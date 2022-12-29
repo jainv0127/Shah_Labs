@@ -1,0 +1,28 @@
+# Assembly name:  ASM964v1
+# Organism name:  Staphylococcus aureus subsp. aureus N315 (firmicutes)
+# Infraspecific name:  strain=N315
+# Taxid:          158879
+# BioSample:      SAMD00061099
+# BioProject:     PRJNA264
+# Submitter:      Juntendo Univ.
+# Date:           2004-05-11
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000009645.1
+# RefSeq assembly accession: GCF_000009645.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000009655.1	GCF_000009655.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+BA000018.3	assembled-molecule	na	Chromosome	BA000018.3	=	NC_002745.2	Primary Assembly	2814816	na
+pN315	assembled-molecule	pN315	Plasmid	AP003139.1	=	NC_003140.1	Primary Assembly	24653	na

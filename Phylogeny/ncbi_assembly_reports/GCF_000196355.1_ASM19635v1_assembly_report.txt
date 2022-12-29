@@ -1,0 +1,32 @@
+# Assembly name:  ASM19635v1
+# Organism name:  Nitrosospira multiformis ATCC 25196 (b-proteobacteria)
+# Infraspecific name:  strain=ATCC 25196
+# Taxid:          323848
+# BioSample:      SAMN02598322
+# BioProject:     PRJNA13912
+# Submitter:      DOE Joint Genome Institute
+# Date:           2005-11-15
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000196355.1
+# RefSeq assembly accession: GCF_000196355.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000196365.1	GCF_000196365.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000103.1	assembled-molecule	na	Chromosome	CP000103.1	=	NC_007614.1	Primary Assembly	3184243	na
+1	assembled-molecule	1	Plasmid	CP000104.1	=	NC_007615.1	Primary Assembly	18871	na
+2	assembled-molecule	2	Plasmid	CP000105.1	=	NC_007616.1	Primary Assembly	17036	na
+3	assembled-molecule	3	Plasmid	CP000106.1	=	NC_007617.1	Primary Assembly	14159	na

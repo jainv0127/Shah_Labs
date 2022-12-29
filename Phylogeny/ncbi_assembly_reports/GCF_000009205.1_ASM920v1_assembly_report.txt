@@ -1,0 +1,29 @@
+# Assembly name:  ASM920v1
+# Organism name:  Clostridioides difficile 630 (firmicutes)
+# Infraspecific name:  strain=630
+# Taxid:          272563
+# BioSample:      SAMEA1705932
+# BioProject:     PRJNA78
+# Submitter:      Sanger Institute
+# Date:           2006-9-20
+# Assembly type:  n/a
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# RefSeq category: Reference Genome
+# GenBank assembly accession: GCA_000009205.1
+# RefSeq assembly accession: GCF_000009205.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000009215.1	GCF_000009215.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+ANONYMOUS	assembled-molecule	na	Chromosome	AM180355.1	=	NC_009089.1	Primary Assembly	4290252	na
+pCD630	assembled-molecule	pCD630	Plasmid	AM180356.1	=	NC_008226.1	Primary Assembly	7881	na

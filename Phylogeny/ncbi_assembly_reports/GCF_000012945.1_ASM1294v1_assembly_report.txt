@@ -1,0 +1,31 @@
+# Assembly name:  ASM1294v1
+# Organism name:  Burkholderia lata (b-proteobacteria)
+# Infraspecific name:  strain=383
+# Taxid:          482957
+# BioSample:      SAMN02598262
+# BioProject:     PRJNA10695
+# Submitter:      DOE Joint Genome Institute
+# Date:           2005-10-20
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000012945.1
+# RefSeq assembly accession: GCF_000012945.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000012955.1	GCF_000012955.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+1	assembled-molecule	1	Chromosome	CP000151.1	=	NC_007510.1	Primary Assembly	3694126	na
+2	assembled-molecule	2	Chromosome	CP000152.1	=	NC_007511.1	Primary Assembly	3587082	na
+3	assembled-molecule	3	Chromosome	CP000150.1	=	NC_007509.1	Primary Assembly	1395069	na

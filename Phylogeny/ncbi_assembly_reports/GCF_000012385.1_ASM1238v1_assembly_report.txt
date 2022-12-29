@@ -1,0 +1,28 @@
+# Assembly name:  ASM1238v1
+# Organism name:  Rickettsia bellii RML369-C (a-proteobacteria)
+# Infraspecific name:  strain=RML369-C
+# Taxid:          336407
+# BioSample:      SAMN02603144
+# BioProject:     PRJNA13996
+# Submitter:      CNRS
+# Date:           2006-04-05
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# GenBank assembly accession: GCA_000012385.1
+# RefSeq assembly accession: GCF_000012385.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000012395.1	GCF_000012395.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000087.1	assembled-molecule	na	Chromosome	CP000087.1	=	NC_007940.1	Primary Assembly	1522076	na

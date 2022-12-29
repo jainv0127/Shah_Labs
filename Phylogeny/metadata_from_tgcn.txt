@@ -1,0 +1,616 @@
+Organism Name	GenBank Accession	Superkingdom	Temperature Range	Pathogenic	Oxygen Requirement	Salinity	Habitat	Average tAI									
+Acaryochloris marina MBIC11017	CP000828	Bacteria	Mesophilic	No	Aerobic		Aquatic	0.4599575									
+Acholeplasma laidlawii PG 8A	CP000896	Bacteria	Mesophilic		Facultative	Non-halophilic	Specialized	0.3955801									
+Acidothermus cellulolyticus 11B	CP000481	Bacteria	Thermophilic	No	Aerobic		Aquatic	0.7149595									
+Acidovorax avenae citrulli AAC00-1	CP000512	Bacteria	Mesophilic	Fruit	Aerobic	Non-halophilic	Multiple	0.4269779									
+Acidovorax JS42	CP000539	Bacteria	Mesophilic	No	Aerobic		Terrestrial	0.3931645									
+Aciduliprofundum boonei T469 uid43333	CP001941	Archaea	Thermophilic	No	Anaerobic	Mesophilic	Specialized	0.605103									
+Acinetobacter baumannii 1656-2	CP001921	Bacteria	Mesophilic	Human	Aerobic		Aquatic	0.2122									
+Acinetobacter baumannii ATCC 17978	CP000521	Bacteria	Mesophilic	Human	Aerobic		Multiple	0.2518077									
+Acinetobacter baumannii AYE	CU459141	Bacteria	Mesophilic	Human	Aerobic		Aquatic	0.2158493									
+Acinetobacter baumannii SDF	CU468230	Bacteria	Mesophilic	Human	Aerobic	Non-halophilic	Aquatic	0.2132439									
+Acinetobacter sp ADP1	CR543861	Bacteria	Mesophilic	Human	Aerobic	Non-halophilic	Multiple	0.2266677									
+Actinobacillus pleuropneumoniae L20	CP000569	Bacteria	Mesophilic	Porcine	Facultative	Non-halophilic	Host-associated	0.363621									
+Actinobacillus pleuropneumoniae serovar 3 JL03	CP000687	Bacteria		Porcine	Facultative	Mesophilic	Host-associated	0.290757									
+Actinobacillus succinogenes 130Z	CP000746	Bacteria	Mesophilic	No		Non-halophilic	Host-associated	0.3338829									
+Aeromonas hydrophila ATCC 7966	CP000462	Bacteria	Mesophilic	Animal	Facultative		Multiple	0.278931									
+Aeromonas salmonicida A449	CP000644	Bacteria	Mesophilic	Fish	Facultative		Aquatic	0.3265073									
+Aeropyrum pernix	BA000002	Archaea	Hyperthermophilic	No	Aerobic	Mesophilic	Specialized	0.4015915									
+Alcanivorax borkumensis SK2	AM286690	Bacteria	Mesophilic	No	Aerobic	Moderate halophilic	Aquatic	0.4123278									
+Alkalilimnicola ehrlichei MLHE-1	CP000453	Bacteria		No	Facultative		Aquatic	0.550214									
+Alkaliphilus oremlandii OhILAs	CP000853	Bacteria	Mesophilic	No	Anaerobic		Aquatic	0.3866602									
+Anabaena variabilis ATCC 29413	CP000117	Bacteria		No	Aerobic		Multiple	0.2092423									
+Anaeromyxobacter dehalogenans 2CP 1	CP001359	Bacteria	Mesophilic	No	Facultative		Terrestrial	0.5754971									
+Anaeromyxobacter Fw109-5	CP000769	Bacteria		No	Anaerobic		Terrestrial	0.2385592									
+Anaeromyxobacter K	CP001131	Bacteria	Mesophilic	No	Anaerobic	Non-halophilic	Terrestrial	0.5084417									
+Anaplasma marginale St Maries	CP000030	Bacteria		Cattle	Aerobic		Host-associated	0.5310032									
+Anaplasma phagocytophilum HZ	CP000235	Bacteria	Mesophilic	"Human, Animal"	Aerobic		Host-associated	0.5057299									
+Aquifex aeolicus	AE000657	Bacteria	Hyperthermophilic	No	Aerobic		Specialized	0.4082397									
+Archaeoglobus fulgidus	AE000782	Archaea	Hyperthermophilic	No	Anaerobic		Aquatic	0.6904137									
+Archaeoglobus profundus DSM 5631 uid43493	CP001857	Archaea	Hyperthermophilic	No	Anaerobic		Specialized	0.3849534									
+Arcobacter butzleri RM4018	CP000361	Bacteria	Mesophilic	Human	Aerobic		Multiple	0.2894808									
+Arthrobacter aurescens TC1	CP000474	Bacteria	Mesophilic	No	Aerobic	Non-halophilic	Terrestrial	0.3966626									
+Aster yellows witches-broom phytoplasma AYWB	CP000061	Bacteria	Mesophilic	Plant	Aerobic		Host-associated	0.3879517									
+Azoarcus BH72	AM406670	Bacteria	Mesophilic	No	Microaerophilic		Host-associated	0.33812									
+Azoarcus sp EbN1	AP012304	Bacteria	Mesophilic	No	Facultative	Non-halophilic	Terrestrial	0.3082962									
+Azorhizobium caulinodans ORS 571	AP009384	Bacteria					Host-associated	0.4198447									
+Bacillus amyloliquefaciens FZB42	CP000560	Bacteria	Mesophilic	No	Aerobic		Terrestrial	0.3146893									
+Bacillus anthracis Ames	AE016879	Bacteria	Mesophilic	Animal	Facultative		Multiple	0.3049325									
+Bacillus anthracis Ames 0581	AE017334	Bacteria	Mesophilic	Animal	Facultative		Terrestrial	0.3052453									
+Bacillus anthracis str Sterne	AE017225	Bacteria	Mesophilic	Animal	Facultative		Multiple	0.3043252									
+Bacillus cereus ATCC 10987	AE017194	Bacteria	Mesophilic	Human	Aerobic		Terrestrial	0.3154977									
+Bacillus cereus ATCC14579	AE016877	Bacteria	Mesophilic	Human	Aerobic		Terrestrial	0.348003									
+Bacillus cereus ZK	CP000001	Bacteria	Mesophilic	"Human, Animal"	Aerobic		Terrestrial	0.3301841									
+Bacillus halodurans	BA000004	Bacteria	Mesophilic	No	Facultative		Multiple	0.3070831									
+Bacillus licheniformis ATCC 14580	CP000002	Bacteria	Mesophilic	Human	Facultative		Terrestrial	0.2691911									
+Bacillus licheniformis DSM 13	AE017333	Bacteria	Mesophilic	Human	Facultative		Terrestrial	0.2691818									
+Bacillus pumilus SAFR-032	CP000813	Bacteria	Mesophilic	No	Aerobic		Terrestrial	0.2493983									
+Bacillus thuringiensis Al Hakam	CP000485	Bacteria	Mesophilic	Insect	Facultative		Multiple	0.3447601									
+Bacillus thuringiensis konkukian	AE017355	Bacteria	Mesophilic	Insect	Facultative		Multiple	0.3454662									
+Bacillus weihenstephanensis KBAB4	CP000903	Bacteria	Mesophilic	Human	Aerobic	Non-halophilic	Terrestrial	0.3461335									
+Bacteroides fragilis NCTC 9434	CR626927	Bacteria	Mesophilic	Human	Anaerobic		Host-associated	0.2367709									
+Bacteroides thetaiotaomicron VPI-5482	AE015928	Bacteria	Mesophilic	Mammal	Anaerobic		Host-associated	0.2821955									
+Bacteroides vulgatus ATCC 8482	CP000139	Bacteria	Mesophilic	Mammal	Anaerobic		Host-associated	0.2205206									
+Bartonella bacilliformis KC583	CP000524	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.3935385									
+Bartonella henselae Houston-1	BX897699	Bacteria	Mesophilic	"Human, Animal"	Aerobic		Host-associated	0.3819385									
+Bartonella quintana Toulouse	BX897700	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.3819719									
+Bartonella tribocorum CIP 105476	AM260525	Bacteria	Mesophilic	Rat	Aerobic		Host-associated	0.3810355									
+Bdellovibrio bacteriovorus	CP002930	Bacteria	Mesophilic	Gram-negative bacteria	Aerobic		Multiple	0.3813655									
+Bifidobacterium adolescentis ATCC 15703	AP009256	Bacteria	Mesophilic	No	Anaerobic	Non-halophilic	Host-associated	0.4155698									
+Bifidobacterium longum	AE014295	Bacteria	Mesophilic	No	Anaerobic	Non-halophilic	Host-associated	0.4375529									
+Bordetella avium 197N	AM167904	Bacteria		Animal	Aerobic		Host-associated	0.4284511									
+Bordetella petrii	AM902716	Bacteria	Mesophilic	No	Anaerobic		Aquatic	0.3781446									
+Borrelia afzelii PKo	CP000395	Bacteria	Mesophilic	Human	Aerobic	Non-halophilic	Host-associated	0.3641721									
+Borrelia burgdorferi	AE000783	Bacteria	Mesophilic	Human	Microaerophilic		Host-associated	0.3621078									
+Borrelia garinii PBi	CP000013	Bacteria	Mesophilic	Human			Host-associated	0.3619784									
+Bradyrhizobium BTAi1	CP000494	Bacteria	Mesophilic		Aerobic		Host-associated	0.5601008									
+Bradyrhizobium japonicum	BA000040	Bacteria	Mesophilic	No	Aerobic		Host-associated	0.3359806									
+Bradyrhizobium ORS278	CU234118	Bacteria	Mesophilic	No			Host-associated	0.494517									
+Brucella melitensis M28	CP002459	Bacteria	Mesophilic	"Human, Animal"	Aerobic		Host-associated	0.3924047									
+Brucella melitensis ATCC 23457	CP001488	Bacteria	Mesophilic	"Human, Animal"	Facultative		Host-associated	0.3903679									
+Brucella ovis	CP000708	Bacteria	Mesophilic	Sheep	Facultative		Host-associated	0.3676171									
+Brucella suis 1330	CP002997	Bacteria	Mesophilic	"Human, Animal"	Aerobic		Host-associated	0.3882912									
+Brucella suis ATCC 23445	CP000911	Bacteria	Mesophilic	"Human, Animal"	Aerobic		Host-associated	0.3760878									
+Buchnera aphidicola Cc Cinara cedri	CP000263	Bacteria	Mesophilic	No			Host-associated	0.6480525									
+Buchnera aphidicola Sg	AE013218	Bacteria	Mesophilic	No			Host-associated	0.6454799									
+Buchnera sp	BA000003	Bacteria	Mesophilic	No			Host-associated	0.6439683									
+Burkholderia 383	CP000152	Bacteria		Human	Facultative		Multiple	0.3322719									
+Burkholderia ambifaria MC40 6	CP001025	Bacteria	Mesophilic	Human		Non-halophilic	Multiple	0.3347083									
+Burkholderia cepacia AMMD	CP003774	Bacteria	Mesophilic		Facultative		Multiple	0.3674675									
+Burkholderia mallei ATCC 23344	CP000010	Bacteria	Mesophilic	"Human, Animal"			Host-associated	0.3270717									
+Burkholderia mallei NCTC 10229	CP000546	Bacteria	Mesophilic	"Human, Animal"			Host-associated	0.3303292									
+Burkholderia mallei NCTC 10247	CP000548	Bacteria	Mesophilic	"Human, Animal"			Host-associated	0.31266									
+Burkholderia mallei SAVP1	CP000526	Bacteria	Mesophilic	"Human, Animal"			Host-associated	0.2415184									
+Burkholderia pseudomallei 1106a	CP000572	Bacteria	Mesophilic	Animal	Aerobic		Terrestrial	0.3511736									
+Burkholderia pseudomallei 1710b	CP000124	Bacteria	Mesophilic	Animal	Aerobic		Terrestrial	0.3509364									
+Burkholderia pseudomallei 668	CP000570	Bacteria	Mesophilic	Animal	Aerobic		Terrestrial	0.3567708									
+Burkholderia pseudomallei K96243	BX571965	Bacteria	Mesophilic	Animal	Aerobic		Terrestrial	0.3829868									
+Burkholderia thailandensis E264	CP000086	Bacteria	Mesophilic		Aerobic		Terrestrial	0.3737706									
+Burkholderia vietnamiensis G4	CP000614	Bacteria		Human	Facultative		Multiple	0.3297116									
+Burkholderia xenovorans LB400	CP000270	Bacteria	Mesophilic	"Human, Plants"	Aerobic		Multiple	0.2132819									
+Caldicellulosiruptor saccharolyticus DSM 8903	CP000679	Bacteria	Thermophilic	No	Anaerobic		Specialized	0.3958774									
+Caldivirga maquilingensis IC-167	CP000852	Archaea	Hyperthermophilic	No	Microaerophilic		Specialized	0.3210427									
+Campylobacter concisus 13826	CP000792	Bacteria	Mesophilic	Human	Microaerophilic		Host-associated	0.3037233									
+Campylobacter curvus 525 92	CP000767	Bacteria	Mesophilic	Human	Microaerophilic		Host-associated	0.2960584									
+Campylobacter fetus 82-40	CP000487	Bacteria		"Human, Animal"	Microaerophilic		Host-associated	0.3792585									
+Campylobacter hominis ATCC BAA-381	CP000776	Bacteria	Mesophilic	No	Anaerobic		Host-associated	0.2937422									
+Campylobacter jejuni	AL111168	Bacteria	Mesophilic	Human	Microaerophilic		Multiple	0.3041609									
+Campylobacter jejuni 81116	CP000814	Bacteria	Mesophilic	Human	Microaerophilic		Multiple	0.3044388									
+Campylobacter jejuni 81-176	CP000538	Bacteria	Mesophilic	Human	Microaerophilic		Multiple	0.2645965									
+Campylobacter jejuni doylei 269 97	CP000768	Bacteria	Mesophilic	Human	Microaerophilic	Non-halophilic	Multiple	0.3063309									
+Campylobacter jejuni RM1221	CP000025	Bacteria	Mesophilic	Human	Microaerophilic		Multiple	0.3038651									
+Candidatus Azobacteroides pseudotrichonymphae genomovar  CFP2	AP010656	Bacteria	Mesophilic	No			Specialized	0.3607941									
+Candidatus Blochmannia floridanus	BX248583	Bacteria	Mesophilic	No			Specialized	0.3242132									
+Candidatus Carsonella ruddii PV	AP009180	Bacteria		No			Specialized	0.6426803									
+Candidatus Desulfococcus oleovorans Hxd3	CP000859	Bacteria	Mesophilic	No	Anaerobic		Aquatic	0.4283623									
+Candidatus Desulforudis audaxviator MP104C	CP000860	Bacteria		No			Specialized	0.4944226									
+Candidatus Korarchaeum cryptofilum OPF8	CP000968	Archaea	Thermophilic		Anaerobic		Specialized	0.6559272									
+Candidatus Pelagibacter ubique HTCC1062	CP000084	Bacteria	Mesophilic		Aerobic		Aquatic	0.5345361									
+Carboxydothermus hydrogenoformans Z-2901	CP000141	Bacteria	Hyperthermophilic	No	Anaerobic		Aquatic	0.3258619									
+Caulobacter crescentus	AE005673	Bacteria	Mesophilic	No	Aerobic		Aquatic	0.5458464									
+Chlamydia muridarum	AE002160	Bacteria	Mesophilic	"Human, Animal"			Host-associated	0.5436653									
+Chlamydia trachomatis 434 Bu	AM884176	Bacteria	Mesophilic	Human			Host-associated	0.5461505									
+Chlamydia trachomatis A HAR-13	CP000051	Bacteria	Mesophilic	Human			Host-associated	0.5463272									
+Chlamydia trachomatis D UW 3 CX	AE001273	Bacteria	Mesophilic	Human			Host-associated	0.5461395									
+Chlamydia trachomatis L2b UCH 1 proctitis	AM884177	Bacteria	Mesophilic	Human			Host-associated	0.5462519									
+Chlamydophila abortus S26 3	CR848038	Bacteria	Mesophilic	"Human, Animal"			Host-associated	0.5489093									
+Chlamydophila caviae	AE015925	Bacteria	Mesophilic	"Human, Animal"			Host-associated	0.5467286									
+Chlamydophila felis Fe C-56	AP006861	Bacteria	Mesophilic	"Human, Animal"			Host-associated	0.5473907									
+Chlorobium chlorochromatii CaD3	CP000108	Bacteria	Mesophilic	No	Anaerobic		Aquatic	0.6112564									
+Chlorobium phaeobacteroides DSM 266	CP000492	Bacteria	Mesophilic	No	Facultative	Mesophilic	Aquatic	0.4379382									
+Chloroflexus aurantiacus J 10 fl	CP000909	Bacteria	Thermophilic	No	Anaerobic		Specialized	0.482233									
+Chromobacterium violaceum	AE016825	Bacteria	Mesophilic	Human	Facultative		Multiple	0.2987615									
+Citrobacter koseri ATCC BAA-895	CP000822	Bacteria	Mesophilic	"Human, Animal"			Multiple	0.3422665									
+Clavibacter michiganensis NCPPB 382	AM711867	Bacteria	Mesophilic	Tomato	Aerobic		Multiple	0.523166									
+Clavibacter michiganensis sepedonicus	AM849034	Bacteria	Mesophilic	Plant	Aerobic		Multiple	0.5174265									
+Clostridium acetobutylicum	AE001437	Bacteria	Mesophilic	No	Anaerobic	Non-halophilic	Multiple	0.3969185									
+Clostridium botulinum A ATCC 3502	AM412317	Bacteria	Mesophilic	Human	Anaerobic	Non-halophilic	Multiple	0.3312271									
+Clostridium botulinum A ATCC 19397	CP000726	Bacteria	Mesophilic	Human	Anaerobic		Multiple	0.3304225									
+Clostridium botulinum A Hall	CP000727	Bacteria	Mesophilic	Human	Anaerobic		Multiple	0.3296957									
+Clostridium botulinum A3 Loch Maree	CP000962	Bacteria	Mesophilic	Human	Anaerobic		Multiple	0.3368112									
+Clostridium botulinum B Eklund 17B	CP001056	Bacteria	Mesophilic	No	Anaerobic		Multiple	0.3575653									
+Clostridium botulinum B1 Okra	CP000939	Bacteria	Mesophilic	Human	Anaerobic		Multiple	0.3370234									
+Clostridium botulinum F Langeland	CP000728	Bacteria	Mesophilic	Human	Anaerobic		Multiple	0.3379737									
+Clostridium difficile 630	AM180355	Bacteria	Mesophilic	Human	Anaerobic	Non-halophilic	Multiple	0.32836									
+Clostridium kluyveri DSM 555	CP000673	Bacteria	Mesophilic	No	Anaerobic	Non-halophilic	Aquatic	0.3034889									
+Clostridium novyi NT	CP000382	Bacteria			Anaerobic		Terrestrial	0.2963204									
+Clostridium perfringens	BA000016	Bacteria	Mesophilic	"Human, Animal"	Anaerobic	Non-halophilic	Multiple	0.2947119									
+Clostridium perfringens ATCC 13124	CP000246	Bacteria	Mesophilic	"Human, Animal"	Anaerobic	Non-halophilic	Multiple	0.2517915									
+Clostridium phytofermentans ISDg	CP000885	Bacteria	Mesophilic	No	Anaerobic		Terrestrial	0.4106892									
+Clostridium tetani E88	AE015927	Bacteria	Mesophilic	Human	Anaerobic	Non-halophilic	Multiple	0.3488337									
+Clostridium thermocellum ATCC 27405	CP000568	Bacteria	Thermophilic	No	Anaerobic		Multiple	0.3650724									
+Colwellia psychrerythraea 34H	CP000083	Bacteria	Psychrophilic	No	Facultative		Specialized	0.2343776									
+Corynebacterium diphtheriae	CP003207	Bacteria	Mesophilic	Human	Aerobic		Multiple	0.3454886									
+Corynebacterium efficiens YS-314	BA000035	Bacteria	Mesophilic	No	Facultative		Multiple	0.3813396									
+Corynebacterium glutamicum ATCC 13032 Bielefeld	BX927147	Bacteria	Mesophilic	No	Facultative		Multiple	0.3790789									
+Corynebacterium glutamicum ATCC 13032 Kitasato	BA000036	Bacteria	Mesophilic	No	Facultative		Multiple	0.3779495									
+Corynebacterium glutamicum R	AP009044	Bacteria	Mesophilic		Facultative		Multiple	0.3673619									
+Corynebacterium jeikeium K411	CR931997	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Multiple	0.3727811									
+Corynebacterium urealyticum DSM 7109	AM942444	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.4108302									
+Coxiella burnetii	AE016828	Bacteria	Mesophilic	"Animal, Human"	Facultative		Multiple	0.4107575									
+Coxiella burnetii Dugway 7E9-12	CP000733	Bacteria	Mesophilic	"Animal, Human"	Facultative		Host-associated	0.3147371									
+Coxiella burnetii RSA 331	CP000890	Bacteria	Mesophilic	"Animal, Human"	Facultative		Multiple	0.410222									
+Cyanobacteria bacterium Yellowstone A-Prime	CP000239	Bacteria	Thermophilic	No	Facultative		Specialized	0.441664									
+Cyanobacteria bacterium Yellowstone B-Prime	CP000240	Bacteria	Thermophilic	No	Facultative		Specialized	0.4289459									
+Cyanothece ATCC 51142	CP000806	Bacteria	Mesophilic	No	Facultative		Aquatic	0.3668013									
+Cytophaga hutchinsonii ATCC 33406	CP000383	Bacteria	Mesophilic	No	Aerobic		Multiple	0.4490695									
+Dechloromonas aromatica RCB	CP000089	Bacteria		No	Facultative		Multiple	0.3573452									
+Dehalococcoides CBDB1	AJ965256	Bacteria	Mesophilic	No	Anaerobic	Mesophilic	Multiple	0.4258317									
+Dehalococcoides ethenogenes 195	CP000027	Bacteria	Mesophilic	No	Anaerobic	Mesophilic	Multiple	0.3022588									
+Deinococcus geothermalis DSM 11300	CP000359	Bacteria	Mesophilic	No	Aerobic		Aquatic	0.3739969									
+Deinococcus radiodurans	AE000513	Bacteria	Mesophilic	No	Aerobic		Terrestrial	0.373025									
+Delftia acidovorans SPH-1	CP000884	Bacteria	Mesophilic		Aerobic	Non-halophilic	Multiple	0.4160129									
+Desulfitobacterium hafniense Y51	AP008230	Bacteria	Mesophilic		Anaerobic		Specialized	0.3114777									
+Desulfotalea psychrophila LSv54	CR522870	Bacteria	Psychrophilic	No	Anaerobic		Specialized	0.2148502									
+Desulfotomaculum reducens MI-1	CP000612	Bacteria	Mesophilic	No	Anaerobic	Moderate halophilic	Aquatic	0.3506194									
+Desulfovibrio desulfuricans G20	CP000112	Bacteria	Mesophilic	No	Anaerobic		Multiple	0.3786484									
+Desulfovibrio vulgaris DP4	CP000527	Bacteria	Mesophilic	No	Anaerobic		Multiple	0.31187									
+Desulfovibrio vulgaris Hildenborough	AE017285	Bacteria	Mesophilic	No	Anaerobic		Multiple	0.306261									
+Desulfurococcus kamchatkensis 1221n	CP001140	Archaea	Hyperthermophilic	No	Anaerobic		Aquatic	0.4316317									
+Dichelobacter nodosus VCS1703A	CP000513	Bacteria	Mesophilic	Animal	Anaerobic		Host-associated	0.3123301									
+Ehrlichia canis Jake	CP000107	Bacteria		Dog			Host-associated	0.5189386									
+Ehrlichia chaffeensis Arkansas	CP000236	Bacteria		"Human, Animal"			Host-associated	0.5143488									
+Ehrlichia ruminantium Gardel	CR925677	Bacteria	Mesophilic	Ruminant			Host-associated	0.5118264									
+Ehrlichia ruminantium str. Welgevonden	CR767821	Bacteria	Mesophilic	Ruminant			Host-associated	0.5131536									
+Ehrlichia ruminantium str. Welgevonden CIRAD	CR925678	Bacteria	Mesophilic	Ruminant			Host-associated	0.3408073									
+Enterobacter 638	CP000653	Bacteria					Host-associated	0.3636182									
+Enterobacter sakazakii ATCC BAA-894	CP000783	Bacteria	Mesophilic	Human	Anaerobic	Non-halophilic	Host-associated	0.3727193									
+Enterococcus faecalis V583	AE016830	Bacteria	Mesophilic	Human	Facultative		Multiple	0.3732944									
+Erythrobacter litoralis HTCC2594	CP000157	Bacteria		No	Aerobic		Aquatic	0.6495916									
+Escherichia coli 536	CP000247	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2703679									
+Escherichia coli APEC O1	CP000468	Bacteria	Mesophilic	Avian	Facultative		Host-associated	0.2840092									
+Escherichia coli C ATCC 8739	CP000946	Bacteria	Mesophilic		Facultative	Non-halophilic	Host-associated	0.3085469									
+Escherichia coli CFT073	AE014075	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2895572									
+Escherichia coli HS	CP000802	Bacteria	Mesophilic		Facultative		Host-associated	0.3054238									
+Escherichia coli K12 subst MG1655	U00096	Bacteria	Mesophilic	No	Facultative		Host-associated	0.3090019									
+Escherichia coli O157H7	BA000007	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2376937									
+Escherichia coli O157H7 EDL933	AE005174	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2311687									
+Escherichia coli SECEC SMS 3 5	CP000970	Bacteria	Mesophilic	No	Facultative		Multiple	0.2593345									
+Escherichia coli UTI89	CP000243	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3106678									
+Exiguobacterium sibiricum 255 15	CP001022	Bacteria	Psychrophilic		Facultative		Specialized	0.3878009									
+Ferroglobus placidus DSM 10642 uid40863	CP001899	Archaea		No	Anaerobic	Mesophilic	Specialized	0.3915477									
+Fervidobacterium nodosum Rt17-B1	CP000771	Bacteria	Thermophilic	No	Anaerobic		Specialized	0.369706									
+Finegoldia magna ATCC 29328	AP008971	Bacteria	Mesophilic	Human	Anaerobic	Non-halophilic	Multiple	0.4249371									
+Francisella philomiragia ATCC 25017	CP000937	Bacteria	Mesophilic	"Human, Animals"	Aerobic		Multiple	0.2746764									
+Francisella tularensis FSC 198	AM286280	Bacteria	Mesophilic	"Human, Animal"	Aerobic		Aquatic	0.254148									
+Francisella tularensis holarctica FTNF002 00	CP000803	Bacteria	Mesophilic	"Human, Animal"	Aerobic		Multiple	0.2547948									
+Francisella tularensis mediasiatica FSC147	CP000915	Bacteria	Mesophilic	"Human, Animal"	Aerobic		Host-associated	0.255573									
+Francisella tularensis novicida U112	CP000439	Bacteria	Mesophilic		Aerobic		Multiple	0.2552035									
+Francisella tularensis tularensis	AJ749949	Bacteria		"Human, Animal"	Aerobic		Aquatic	0.2541456									
+Frankia alni ACN14a	CT573213	Bacteria	Mesophilic	No		Non-halophilic	Host-associated	0.4394948									
+Frankia CcI3	CP000249	Bacteria	Mesophilic		Aerobic		Multiple	0.5020354									
+Frankia EAN1pec	CP000820	Bacteria	Mesophilic		Aerobic		Multiple	0.3452506									
+Fusobacterium nucleatum	AE009951	Bacteria	Mesophilic	"Human, Animal"	Anaerobic		Host-associated	0.3977549									
+Geobacillus kaustophilus HTA426	BA000043	Bacteria	Thermophilic		Aerobic		Aquatic	0.3789897									
+Geobacillus thermodenitrificans NG80-2	CP000557	Bacteria	Thermophilic		Facultative	Non-halophilic	Specialized	0.3848287									
+Geobacter lovleyi SZ	CP001089	Bacteria	Mesophilic	No	Anaerobic	Non-halophilic	Multiple	0.4354253									
+Geobacter metallireducens GS-15	CP000148	Bacteria	Mesophilic	No	Anaerobic		Aquatic	0.4345691									
+Geobacter sulfurreducens	AE017180	Bacteria	Mesophilic	No	Anaerobic		Multiple	0.4345709									
+Geobacter uraniumreducens Rf4	CP000698	Bacteria	Mesophilic		Microaerophilic		Multiple	0.3411127									
+Gloeobacter violaceus	BA000045	Bacteria	Mesophilic				Terrestrial	0.7261189									
+Gluconobacter oxydans 621H	CP000009	Bacteria	Mesophilic		Aerobic		Multiple	0.2909318									
+Gramella forsetii KT0803	CU207366	Bacteria	Mesophilic		Aerobic	Non-halophilic	Multiple	0.296998									
+Granulobacter bethesdensis CGDNIH1	CP000394	Bacteria	Mesophilic	Human		Non-halophilic	Multiple	0.348889									
+Haemophilus ducreyi 35000HP	AE017143	Bacteria	Mesophilic	Human	Anaerobic		Host-associated	0.3359859									
+Haemophilus influenzae	L42023	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3247564									
+Haemophilus influenzae 86 028NP	CP000057	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3338217									
+Haemophilus influenzae PittEE	CP000671	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.3276096									
+Haemophilus influenzae PittGG	CP000672	Bacteria	Mesophilic	Human	Facultative	Mesophilic	Host-associated	0.3321092									
+Hahella chejuensis KCTC 2396	CP000155	Bacteria	Mesophilic	No	Facultative	Mesophilic	Aquatic	0.2591888									
+Haloarcula marismortui ATCC 43049	AY596297	Archaea	Mesophilic	No	Aerobic	Extreme halophilic	Aquatic	0.4815553									
+Halobacterium salinarum R1	AM774415	Archaea	Thermophilic	No	Anaerobic	Extreme halophilic	Specialized	0.4740413									
+Halobacterium sp	AE004437	Archaea	Mesophilic	No	Facultative	Extreme halophilic	Specialized	0.4739385									
+Haloferax volcanii DS2 uid46845	CP001956	Archaea		No	Aerobic	Moderate halophilic	Aquatic	0.6512333									
+Halomicrobium mukohataei DSM 12286	CP001688	Archaea	Mesophilic	No	Facultative	Extreme halophilic	Specialized	0.5586671									
+Haloquadratum walsbyi	AM180088	Archaea		No		Extreme halophilic	Aquatic	0.4346707									
+Halorhabdus utahensis DSM 12940	CP001687	Archaea	Mesophilic	No	Aerobic	Extreme halophilic	Terrestrial	0.7743347									
+Haloterrigena turkmenica DSM 5511 uid43501	CP001860	Archaea		No	Aerobic	Moderate halophilic	Specialized	0.3860959									
+Helicobacter acinonychis Sheeba	AM260522	Bacteria	Mesophilic	Feline	Microaerophilic	Non-halophilic	Host-associated	0.3735984									
+Helicobacter hepaticus	AE017125	Bacteria	Mesophilic	Animal	Aerobic		Host-associated	0.3692848									
+Helicobacter pylori 26695	CP003904	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.3736733									
+Helicobacter pylori G27	CP001173	Bacteria	Mesophilic		Microaerophilic	Non-halophilic	Host-associated	0.3732107									
+Helicobacter pylori HPAG1	CP000241	Bacteria	Mesophilic	Human	Aerobic	Non-halophilic	Host-associated	0.3738248									
+Helicobacter pylori J99	AE001439	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.3740885									
+Heliobacterium modesticaldum Ice1	CP000930	Bacteria	Thermophilic		Anaerobic		Multiple	0.3518995									
+Herminiimonas arsenicoxydans	CU207211	Bacteria	Mesophilic	No	Anaerobic	Non-halophilic	Aquatic	0.394366									
+Herpetosiphon aurantiacus ATCC 23779	CP000875	Bacteria	Mesophilic		Aerobic		Multiple	0.345243									
+Hydrogenobaculum Y04AAS1	CP001130	Bacteria	Thermophilic	No	Aerobic		Aquatic	0.3658278									
+Hyperthermus butylicus	CP000493	Archaea	Hyperthermophilic	No	Anaerobic	Moderate halophilic	Aquatic	0.3864779									
+Hyphomonas neptunium ATCC 15444	CP000158	Bacteria	Mesophilic	No	Aerobic		Aquatic	0.4146864									
+Idiomarina loihiensis L2TR	AE017340	Bacteria	Mesophilic		Aerobic		Specialized	0.2791466									
+Ignicoccus hospitalis KIN4 I	CP000816	Archaea	Hyperthermophilic		Anaerobic		Aquatic	0.4385642									
+Jannaschia CCS1	CP000264	Bacteria	Mesophilic	No	Aerobic	Mesophilic	Aquatic	0.424114									
+Janthinobacterium Marseille	CP000269	Bacteria	Mesophilic				Aquatic	0.4758571									
+Kineococcus radiotolerans SRS30216	CP000750	Bacteria	Mesophilic	No	Aerobic		Multiple	0.4841514									
+Klebsiella pneumoniae MGH 78578	CP000647	Bacteria	Mesophilic	"Human, Animal"	Facultative		Multiple	0.3230872									
+Lactobacillus acidophilus NCFM	CP000033	Bacteria	Mesophilic	No	Facultative		Multiple	0.4479535									
+Lactobacillus brevis ATCC 367	CP000416	Bacteria	Mesophilic	No	Facultative		Multiple	0.4914796									
+Lactobacillus casei	FM177140	Bacteria	Mesophilic	No	Facultative		Specialized	0.4438375									
+Lactobacillus casei ATCC 334	CP000423	Bacteria	Mesophilic	No	Facultative		Multiple	0.4436574									
+Lactobacillus delbrueckii bulgaricus	CR954253	Bacteria	Mesophilic	No	Facultative		Multiple	0.3917832									
+Lactobacillus delbrueckii bulgaricus ATCC BAA-365	CP000412	Bacteria	Mesophilic	No	Facultative		Multiple	0.387262									
+Lactobacillus fermentum IFO 3956	AP008937	Bacteria	Mesophilic		Facultative	Non-halophilic	Multiple	0.4499236									
+Lactobacillus gasseri ATCC 33323	CP000413	Bacteria	Mesophilic	No	Facultative		Host-associated	0.3439931									
+Lactobacillus helveticus DPC 4571	CP000517	Bacteria	Mesophilic	No	Facultative	Non-halophilic	Multiple	0.4577336									
+Lactobacillus johnsonii NCC 533	AE017198	Bacteria	Mesophilic	No	Facultative		Host-associated	0.4501572									
+Lactobacillus plantarum	AL935263	Bacteria	Mesophilic	No	Facultative		Host-associated	0.2965203									
+Lactobacillus sakei 23K	CR936503	Bacteria	Mesophilic		Facultative		Multiple	0.4829984									
+Lactobacillus salivarius UCC118	CP000233	Bacteria	Mesophilic		Facultative		Host-associated	0.4426161									
+Lactococcus lactis	AE005176	Bacteria	Mesophilic	No	Facultative		Multiple	0.2243433									
+Lactococcus lactis cremoris MG1363	AM406671	Bacteria	Mesophilic	No	Facultative	Non-halophilic	Multiple	0.2211975									
+Lactococcus lactis cremoris SK11	CP000425	Bacteria	Mesophilic	No	Facultative		Multiple	0.2177238									
+Legionella pneumophila Corby	CP000675	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.4484784									
+Legionella pneumophila Lens	CR628337	Bacteria	Mesophilic	Animal	Aerobic		Host-associated	0.4188289									
+Legionella pneumophila Paris	CR628336	Bacteria	Mesophilic	Animal	Aerobic		Host-associated	0.4368079									
+Legionella pneumophila Philadelphia 1	AE017354	Bacteria	Mesophilic	Animal	Aerobic		Host-associated	0.3614854									
+Leifsonia xyli xyli CTCB0	AE016822	Bacteria	Mesophilic	Plant	Aerobic		Host-associated	0.5852418									
+Leptospira borgpetersenii serovar Hardjo-bovis JB197	CP000350	Bacteria	Mesophilic	"Cattle, Human"	Aerobic	Non-halophilic	Host-associated	0.5196644									
+Leptospira borgpetersenii serovar Hardjo-bovis L550	CP000348	Bacteria	Mesophilic	"Cattle, Human"	Aerobic	Non-halophilic	Host-associated	0.5198747									
+Leptospira interrogans serovar Copenhageni	AE016823	Bacteria	Mesophilic	Animal	Aerobic		Host-associated	0.5207568									
+Leptospira interrogans serovar Lai	AE010300	Bacteria	Mesophilic	Animal	Aerobic		Host-associated	0.5219722									
+Leptothrix cholodnii SP 6	CP001013	Bacteria	Mesophilic	No	Aerobic		Aquatic	0.3879657									
+Leuconostoc mesenteroides ATCC 8293	CP000414	Bacteria	Mesophilic	No	Facultative		Multiple	0.3771612									
+Listeria monocytogenes 4b F2365	AE017262	Bacteria	Mesophilic	Human	Facultative		Multiple	0.3928319									
+Listeria monocytogenes HCC23	CP001175	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3943434									
+Listeria welshimeri serovar 6b SLCC5334	AM263198	Bacteria	Mesophilic	No	Facultative		Multiple	0.3832253									
+Lysinibacillus sphaericus C3 41	CP000817	Bacteria	Mesophilic	Mosquito	Aerobic		Specialized	0.2520194									
+Magnetococcus MC-1	CP000471	Bacteria		No	Facultative		Aquatic	0.4283861									
+Magnetospirillum magneticum AMB-1	AP007255	Bacteria	Mesophilic	No	Microaerophilic		Aquatic	0.4706624									
+Mannheimia succiniciproducens MBEL55E	AE016827	Bacteria	Mesophilic	No	Anaerobic	Non-halophilic	Host-associated	0.3324557									
+Maricaulis maris MCS10	CP000449	Bacteria	Mesophilic	No	Facultative	Mesophilic	Aquatic	0.45754									
+Marinobacter aquaeolei VT8	CP000514	Bacteria	Mesophilic	No	Facultative	Moderate halophilic	Aquatic	0.3460974									
+Marinomonas MWYL1	CP000749	Bacteria	Mesophilic	No	Aerobic		Aquatic	0.2212272									
+Mesoplasma florum L1	AE017263	Bacteria	Mesophilic	"Mammal, Insect, Plant"	Facultative		Host-associated	0.3884101									
+Mesorhizobium BNC1	CP000390	Bacteria		No	Aerobic		Multiple	0.4779448									
+Mesorhizobium loti	BA000012	Bacteria	Mesophilic	No	Aerobic		Multiple	0.5251807									
+Metallosphaera sedula DSM 5348	CP000682	Archaea	Thermophilic	No	Aerobic		Specialized	0.3816241									
+Methanobacterium thermoautotrophicum	AE000666	Archaea	Thermophilic	No	Anaerobic		Specialized	0.3646143									
+Methanobrevibacter smithii ATCC 35061	CP000678	Archaea	Mesophilic		Anaerobic		Multiple	0.3600996									
+Methanocaldococcus fervens AG86	CP001696	Archaea	Hyperthermophilic	No	Anaerobic		Specialized	0.3541076									
+Methanocaldococcus FS406 22 uid42499	CP001901	Archaea	Hyperthermophilic	No	Anaerobic		Specialized	0.351618									
+Methanocaldococcus infernus ME uid48803	CP002009	Archaea	Hyperthermophilic	No	Anaerobic		Specialized	0.3390782									
+Methanocaldococcus vulcanius M7	CP001787	Archaea	Hyperthermophilic	No	Anaerobic		Specialized	0.3630771									
+Methanococcoides burtonii DSM 6242	CP000300	Archaea	Mesophilic	No	Anaerobic	Moderate halophilic	Aquatic	0.2991737									
+Methanococcus aeolicus Nankai-3	CP000743	Archaea	Mesophilic	No	Anaerobic		Aquatic	0.4019379									
+Methanococcus jannaschii	L77117	Archaea	Hyperthermophilic	No	Anaerobic	Moderate halophilic	Aquatic	0.3528059									
+Methanococcus maripaludis C5	CP000609	Archaea	Mesophilic	No	Anaerobic		Aquatic	0.4200201									
+Methanococcus maripaludis C6	CP000867	Archaea	Mesophilic	No	Anaerobic		Aquatic	0.4195195									
+Methanococcus maripaludis C7	CP000745	Archaea	Mesophilic		Anaerobic		Aquatic	0.4184015									
+Methanococcus maripaludis S2	BX950229	Archaea	Mesophilic	No	Anaerobic		Aquatic	0.4202538									
+Methanococcus vannielii SB	CP000742	Archaea	Mesophilic	No	Anaerobic	Non-halophilic	Aquatic	0.4081867									
+Methanocorpusculum labreanum Z	CP000559	Archaea	Mesophilic	No	Anaerobic	Non-halophilic	Aquatic	0.2626732									
+Methanoculleus marisnigri JR1	CP000562	Archaea	Mesophilic	No	Anaerobic		Aquatic	0.5546474									
+Methanohalobium evestigatum Z 7303 uid49857	CP002069	Archaea	Thermophilic	No	Anaerobic	Extreme halophilic	Specialized	0.2724101									
+Methanohalophilus mahii DSM 5219 uid47313	CP001994	Archaea	Mesophilic		Anaerobic	Moderate halophilic	Specialized	0.176502									
+Methanopyrus kandleri	AE009439	Archaea	Hyperthermophilic	No	Anaerobic	Moderate halophilic	Specialized	0.3275973									
+Methanosarcina acetivorans	AE010299	Archaea	Mesophilic	No	Anaerobic		Aquatic	0.3741717									
+Methanosarcina barkeri fusaro	CP000099	Archaea	Mesophilic	No	Anaerobic		Multiple	0.2791673									
+Methanosarcina mazei	AE008384	Archaea	Mesophilic	No	Anaerobic		Multiple	0.36548									
+Methanosphaera stadtmanae	CP000102	Archaea	Mesophilic		Anaerobic		Host-associated	0.2898039									
+Methanospirillum hungatei JF-1	CP000254	Archaea	Mesophilic	No	Anaerobic		Multiple	0.2376034									
+Methylibium petroleiphilum PM1	CP000555	Bacteria	Mesophilic		Facultative		Aquatic	0.5846701									
+Methylobacillus flagellatus KT	CP000284	Bacteria	Mesophilic		Aerobic		Specialized	0.4892565									
+Methylobacterium 4 46	CP000943	Bacteria	Mesophilic	No	Facultative		Multiple	0.3250095									
+Methylobacterium extorquens PA1	CP000908	Bacteria	Mesophilic	No	Facultative		Multiple	0.2378067									
+Methylobacterium radiotolerans JCM 2831	CP001001	Bacteria	Mesophilic	No	Aerobic	Non-halophilic	Host-associated	0.3136272									
+Methylococcus capsulatus Bath	AE017282	Bacteria	Thermophilic	No	Aerobic		Multiple	0.5016937									
+Microcystis aeruginosa NIES 843	AP009552	Bacteria	Mesophilic	"Animal, Human"	Aerobic		Aquatic	0.3762381									
+Moorella thermoacetica ATCC 39073	CP000232	Bacteria	Thermophilic		Anaerobic		Aquatic	0.5311042									
+Mycobacterium avium 104	CP000479	Bacteria	Mesophilic	Mammal	Aerobic		Host-associated	0.5129325									
+Mycobacterium avium paratuberculosis	AE016958	Bacteria	Mesophilic	Mammal	Aerobic		Multiple	0.4412155									
+Mycobacterium bovis BCG Pasteur 1173P2	AM408590	Bacteria	Mesophilic	Bovine	Aerobic	Non-halophilic	Host-associated	0.4314507									
+Mycobacterium JLS	CP000580	Bacteria	Mesophilic	No		Non-halophilic	Multiple	0.4423046									
+Mycobacterium KMS	CP000518	Bacteria	Mesophilic	No		Non-halophilic	Multiple	0.442803									
+Mycobacterium marinum M	CP000854	Bacteria	Mesophilic	"Fish, Human"	Aerobic		Multiple	0.4889927									
+Mycobacterium smegmatis MC2 155	CP001663	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.5055463									
+Mycobacterium tuberculosis CDC1551	AE000516	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.407892									
+Mycobacterium tuberculosis F11	CP000717	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.4116792									
+Mycobacterium tuberculosis H37Ra	CP000611	Bacteria		Human	Aerobic	Non-halophilic	Host-associated	0.411343									
+Mycobacterium tuberculosis H37Rv	CP003248	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.7153578									
+Mycobacterium ulcerans Agy99	CP000325	Bacteria	Mesophilic	Human	Aerobic	Non-halophilic	Host-associated	0.7229535									
+Mycoplasma agalactiae PG2	CU179680	Bacteria	Psychrophilic	"Sheep, Goat"	Facultative		Host-associated	0.5641627									
+Mycoplasma capricolum ATCC 27343	CP000123	Bacteria	Mesophilic	Ruminant	Facultative	Non-halophilic	Host-associated	0.3955081									
+Mycoplasma gallisepticum	AE015450	Bacteria	Mesophilic	Avian	Facultative	Non-halophilic	Host-associated	0.3814429									
+Mycoplasma genitalium	L43967	Bacteria	Mesophilic	"Human, Animal, Insect"	Facultative	Non-halophilic	Host-associated	0.5730248									
+Mycoplasma hyopneumoniae 232	AE017332	Bacteria	Mesophilic	Swine	Facultative	Non-halophilic	Host-associated	0.3517425									
+Mycoplasma hyopneumoniae 7448	AE017244	Bacteria	Mesophilic	Swine	Facultative	Non-halophilic	Host-associated	0.3525117									
+Mycoplasma hyopneumoniae J	AE017243	Bacteria	Mesophilic	Swine	Facultative	Non-halophilic	Host-associated	0.3518803									
+Mycoplasma mobile 163K	AE017308	Bacteria	Mesophilic	Fish	Facultative	Non-halophilic	Host-associated	0.5367728									
+Mycoplasma mycoides	BX293980	Bacteria	Mesophilic	Cattle	Facultative	Non-halophilic	Host-associated	0.39566									
+Mycoplasma penetrans	BA000026	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.5640727									
+Mycoplasma pneumoniae	U00089	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.3326658									
+Mycoplasma synoviae 53	AE017245	Bacteria	Mesophilic	Chicken	Facultative	Non-halophilic	Host-associated	0.4050125									
+Myxococcus xanthus DK 1622	CP000113	Bacteria	Mesophilic	No	Aerobic		Terrestrial	0.3127924									
+Nanoarchaeum equitans	AE017199	Archaea	Hyperthermophilic	No	Anaerobic		Host-associated	0.3123298									
+Natrialba magadii ATCC 43099 uid46245	CP001932	Archaea	Mesophilic		Aerobic	Extreme halophilic	Specialized	0.3771515									
+Natronomonas pharaonis	CR936257	Archaea			Aerobic	Moderate halophilic	Aquatic	0.4982604									
+Neisseria gonorrhoeae FA 1090	AE004969	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.3171453									
+Neisseria meningitidis 053442	CP000381	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.2702384									
+Neisseria meningitidis FAM18	AM421808	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.2708056									
+Neisseria meningitidis MC58	AE002098	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.3321189									
+Neisseria meningitidis Z2491	AL157959	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.27055									
+Neorickettsia sennetsu Miyayama	CP000237	Bacteria		Human			Multiple	0.4865179									
+Nitratiruptor SB155-2	AP009178	Bacteria	Thermophilic		Anaerobic		Specialized	0.3107068									
+Nitrobacter hamburgensis X14	CP000319	Bacteria	Mesophilic	No	Aerobic		Terrestrial	0.337857									
+Nitrobacter winogradskyi Nb-255	CP000115	Bacteria	Mesophilic	No	Facultative		Terrestrial	0.5029853									
+Nitrosococcus oceani ATCC 19707	CP000127	Bacteria				Mesophilic	Aquatic	0.3569609									
+Nitrosomonas europaea	AL954747	Bacteria	Mesophilic	No	Aerobic		Multiple	0.5773401									
+Nitrosomonas eutropha C71	CP000450	Bacteria					Multiple	0.3796176									
+Nitrosopumilus maritimus SCM1	CP000866	Archaea	Mesophilic	No	Aerobic		Aquatic	0.6123508									
+Nitrosospira multiformis ATCC 25196	CP000103	Bacteria	Mesophilic		Aerobic		Terrestrial	0.6226536									
+Nocardia farcinica IFM10152	AP006618	Bacteria	Mesophilic	"Human, Animal"	Aerobic	Non-halophilic	Multiple	0.5029048									
+Nocardioides JS614	CP000509	Bacteria	Mesophilic	No	Aerobic	Non-halophilic	Terrestrial	0.5218084									
+Nostoc sp	BA000019	Bacteria	Mesophilic	No	Aerobic		Multiple	0.2616993									
+Novosphingobium aromaticivorans DSM 12444	CP000248	Bacteria		No	Aerobic		Multiple	0.4211623									
+Oceanobacillus iheyensis	BA000028	Bacteria	Mesophilic	No	Aerobic	Moderate halophilic	Multiple	0.3644699									
+Ochrobactrum anthropi ATCC 49188	CP000758	Bacteria	Mesophilic	Human		Non-halophilic	Terrestrial	0.2863007									
+Oenococcus oeni PSU-1	CP000411	Bacteria	Mesophilic	No	Facultative		Multiple	0.4219074									
+Onion yellows phytoplasma	AP006628	Bacteria	Mesophilic	Onion	Aerobic		Host-associated	0.3896418									
+Opitutus terrae PB90 1	CP001032	Bacteria	Mesophilic	No	Anaerobic		Aquatic	0.5331001									
+Orientia tsutsugamushi Boryong	AM494475	Bacteria		Human			Host-associated	0.4898482									
+Parabacteroides distasonis ATCC 8503	CP000140	Bacteria	Mesophilic	Mammal	Anaerobic		Host-associated	0.2269211									
+Paracoccus denitrificans PD1222	CP000489	Bacteria	Mesophilic	No	Aerobic		Multiple	0.3672588									
+Parvibaculum lavamentivorans DS-1	CP000774	Bacteria	Mesophilic	No	Aerobic		Multiple	0.419168									
+Pasteurella multocida	AE004439	Bacteria	Mesophilic	"Human, Animal"	Facultative		Host-associated	0.322824									
+Pediococcus pentosaceus ATCC 25745	CP000422	Bacteria	Mesophilic	No	Facultative		Multiple	0.3809985									
+Pelobacter carbinolicus	CP000142	Bacteria	Mesophilic	No	Anaerobic		Aquatic	0.3286432									
+Pelobacter propionicus DSM 2379	CP000482	Bacteria	Mesophilic	No	Anaerobic	Non-halophilic	Multiple	0.2731188									
+Pelotomaculum thermopropionicum SI	AP009389	Bacteria	Thermophilic	No	Anaerobic	Non-halophilic	Specialized	0.4633109									
+Petrotoga mobilis SJ95	CP000879	Bacteria	Thermophilic	No	Anaerobic	Mesophilic	Specialized	0.4131541									
+Picrophilus torridus DSM 9790	AE017261	Archaea	Thermophilic		Aerobic		Specialized	0.3908529									
+Polaromonas JS666	CP000316	Bacteria	Mesophilic	No	Aerobic	Non-halophilic	Multiple	0.3938697									
+Polaromonas naphthalenivorans CJ2	CP000529	Bacteria	Mesophilic	No	Aerobic		Aquatic	0.5339811									
+Polynucleobacter necessarius STIR1	CP001010	Bacteria	Mesophilic		Aerobic		Host-associated	0.5329778									
+Polynucleobacter QLW-P1DMWA-1	CP000655	Bacteria	Mesophilic		Aerobic		Aquatic	0.3547197									
+Porphyromonas gingivalis W83	AE015924	Bacteria	Mesophilic	Human	Anaerobic	Non-halophilic	Host-associated	0.260076									
+Prochlorococcus marinus AS9601	CP000551	Bacteria	Mesophilic	No			Aquatic	0.2441803									
+Prochlorococcus marinus CCMP1375	AE017126	Bacteria	Mesophilic				Aquatic	0.4161331									
+Prochlorococcus marinus MED4	BX548174	Bacteria	Mesophilic				Aquatic	0.3559438									
+Prochlorococcus marinus MIT 9211	CP000878	Bacteria	Mesophilic	No			Aquatic	0.3567468									
+Prochlorococcus marinus MIT 9215	CP000825	Bacteria	Mesophilic	No		Non-halophilic	Aquatic	0.2447013									
+Prochlorococcus marinus MIT 9301	CP000576	Bacteria	Mesophilic				Aquatic	0.3579339									
+Prochlorococcus marinus MIT 9303	CP000554	Bacteria	Mesophilic	No			Aquatic	0.3412536									
+Prochlorococcus marinus MIT 9312	CP000111	Bacteria	Mesophilic				Aquatic	0.1476838									
+Prochlorococcus marinus MIT 9515	CP000552	Bacteria		No			Aquatic	0.5310382									
+Prochlorococcus marinus MIT9313	BX548175	Bacteria	Mesophilic				Aquatic	0.3911107									
+Prochlorococcus marinus NATL1A	CP000553	Bacteria	Mesophilic	No			Aquatic	0.533229									
+Prochlorococcus marinus NATL2A	CP000095	Bacteria	Mesophilic				Aquatic	0.3040235									
+Propionibacterium acnes KPA171202	AE017283	Bacteria	Mesophilic	Human	Anaerobic	Non-halophilic	Host-associated	0.6701412									
+Prosthecochloris vibrioformis DSM 265	CP000607	Bacteria	Mesophilic	No	Facultative	Mesophilic	Aquatic	0.6649184									
+Pseudoalteromonas atlantica T6c	CP000388	Bacteria	Mesophilic	Shellfish	Aerobic		Aquatic	0.2408063									
+Pseudoalteromonas haloplanktis TAC125	CR954246	Bacteria	Psychrophilic	No	Aerobic	Mesophilic	Aquatic	0.1941546									
+Pseudomonas aeruginosa	AE004091	Bacteria	Mesophilic	Human	Aerobic		Multiple	0.3597364									
+Pseudomonas aeruginosa PA7	CP000744	Bacteria	Mesophilic	Human	Aerobic		Multiple	0.3644306									
+Pseudomonas aeruginosa UCBPP-PA14	CP000438	Bacteria	Mesophilic	"Human, Animal, Plant"	Aerobic		Multiple	0.365									
+Pseudomonas entomophila L48	CT573326	Bacteria		Insect			Multiple	0.2467532									
+Pseudomonas fluorescens Pf-5	CP000076	Bacteria	Mesophilic	No	Aerobic		Multiple	0.2647996									
+Pseudomonas fluorescens PfO-1	CP000094	Bacteria	Mesophilic	No	Aerobic		Multiple	0.2659879									
+Pseudomonas mendocina ymp	CP000680	Bacteria		Human	Aerobic	Non-halophilic	Multiple	0.3028921									
+Pseudomonas putida F1	CP000712	Bacteria	Mesophilic	No	Aerobic	Non-halophilic	Multiple	0.3446866									
+Pseudomonas putida GB 1	CP000926	Bacteria	Mesophilic	No	Aerobic	Non-halophilic	Multiple	0.3424006									
+Pseudomonas putida KT2440	AE015451	Bacteria	Mesophilic	No	Aerobic		Multiple	0.3373363									
+Pseudomonas putida W619	CP000949	Bacteria	Mesophilic	No	Aerobic	Non-halophilic	Multiple	0.3354424									
+Pseudomonas stutzeri A1501	CP000304	Bacteria	Mesophilic		Aerobic		Host-associated	0.330696									
+Pseudomonas syringae pv B728a	CP000075	Bacteria	Mesophilic	Plant	Aerobic		Multiple	0.2763537									
+Pseudomonas syringae tomato DC3000	AE016853	Bacteria	Mesophilic	Plant	Aerobic		Multiple	0.2556155									
+Psychrobacter arcticum 273-4	CP000082	Bacteria	Psychrophilic	No			Specialized	0.2503092									
+Psychrobacter cryohalolentis K5	CP000323	Bacteria	Psychrophilic			Moderate halophilic	Multiple	0.250726									
+Psychrobacter PRwf-1	CP000713	Bacteria	Mesophilic		Aerobic		Aquatic	0.2297986									
+Psychromonas ingrahamii 37	CP000510	Bacteria	Psychrophilic	No	Anaerobic		Aquatic	0.2302108									
+Pyrobaculum aerophilum	AE009441	Archaea	Hyperthermophilic	No	Facultative		Aquatic	0.6965584									
+Pyrobaculum arsenaticum DSM 13514	CP000660	Archaea	Hyperthermophilic	No	Anaerobic		Aquatic	0.7222034									
+Pyrobaculum calidifontis JCM 11548	CP000561	Archaea	Hyperthermophilic	No	Facultative		Specialized	0.7370653									
+Pyrobaculum islandicum DSM 4184	CP000504	Archaea	Thermophilic	No	Anaerobic		Specialized	0.6672419									
+Pyrococcus abyssi	AL096836	Archaea	Hyperthermophilic	No	Anaerobic		Aquatic	0.6421959									
+Pyrococcus furiosus	AE009950	Archaea	Hyperthermophilic	No	Anaerobic		Aquatic	0.6275618									
+Pyrococcus horikoshii	BA000001	Archaea	Hyperthermophilic	No	Anaerobic		Aquatic	0.6258189									
+Ralstonia solanacearum	AL646052	Bacteria	Mesophilic	Plant	Aerobic		Multiple	0.3427436									
+Rhizobium etli CFN 42	CP000133	Bacteria	Mesophilic	No	Aerobic		Host-associated	0.3495351									
+Rhizobium leguminosarum bv viciae 3841	AM236080	Bacteria	Mesophilic	No	Aerobic		Host-associated	0.3565067									
+Rhodobacter sphaeroides 2 4 1	CP000143	Bacteria	Mesophilic	No	Facultative		Multiple	0.3786188									
+Rhodobacter sphaeroides ATCC 17025	CP000661	Bacteria	Mesophilic	No	Facultative		Multiple	0.2852302									
+Rhodobacter sphaeroides ATCC 17029	CP000577	Bacteria	Mesophilic	No	Facultative		Multiple	0.2884956									
+Rhodococcus RHA1	CP000431	Bacteria	Mesophilic		Aerobic	Non-halophilic	Terrestrial	0.4611381									
+Rhodoferax ferrireducens T118	CP000267	Bacteria	Mesophilic	No	Facultative		Multiple	0.3193337									
+Rhodopseudomonas palustris BisA53	CP000463	Bacteria	Mesophilic	No	Facultative		Multiple	0.5445732									
+Rhodopseudomonas palustris BisB18	CP000301	Bacteria	Mesophilic	No	Facultative		Multiple	0.4870007									
+Rhodopseudomonas palustris BisB5	CP000283	Bacteria	Mesophilic	No	Facultative		Multiple	0.3795791									
+Rhodopseudomonas palustris HaA2	CP000250	Bacteria	Mesophilic	No	Facultative		Multiple	0.4724275									
+Rhodospirillum rubrum ATCC 11170	CP000230	Bacteria	Mesophilic	No	Facultative		Multiple	0.2938039									
+Rickettsia akari Hartford	CP000847	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.4881188									
+Rickettsia bellii RML369-C	CP000087	Bacteria					Host-associated	0.3411239									
+Rickettsia canadensis McKiel	CP000409	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.4868352									
+Rickettsia conorii	AE006914	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.4883227									
+Rickettsia felis URRWXCal2	CP000053	Bacteria		"Human, Feline"			Host-associated	0.486492									
+Rickettsia massiliae MTU5	CP000683	Bacteria	Mesophilic		Aerobic		Host-associated	0.4879572									
+Rickettsia rickettsii Iowa	CP000766	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.3290838									
+Rickettsia rickettsii Sheila Smith	CP000848	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.3301342									
+Rickettsia typhi wilmington	AE017197	Bacteria	Mesophilic	"Human, Rodent"	Aerobic		Host-associated	0.4850817									
+Roseiflexus castenholzii DSM 13941	CP000804	Bacteria	Thermophilic	No	Facultative		Aquatic	0.5045624									
+Roseiflexus RS-1	CP000686	Bacteria	Thermophilic		Facultative		Specialized	0.5171608									
+Roseobacter denitrificans OCh 114	CP000362	Bacteria	Mesophilic	No			Multiple	0.5424917									
+Rubrobacter xylanophilus DSM 9941	CP000386	Bacteria	Thermophilic	No	Aerobic		Specialized	0.7933413									
+Saccharophagus degradans 2-40	CP000282	Bacteria	Mesophilic	No	Aerobic		Aquatic	0.4083683									
+Saccharopolyspora erythraea NRRL 2338	AM420293	Bacteria	Mesophilic	No	Aerobic		Terrestrial	0.5013724									
+Salinibacter ruber DSM 13855	CP000159	Bacteria	Mesophilic	No	Aerobic	Extreme halophilic	Specialized	0.7952379									
+Salinispora arenicola CNS-205	CP000850	Bacteria	Mesophilic	No	Aerobic		Aquatic	0.3378187									
+Salinispora tropica CNB-440	CP000667	Bacteria	Mesophilic	No	Aerobic	Mesophilic	Aquatic	0.339118									
+Salmonella enterica arizonae serovar 62 z4 z23  	CP000880	Bacteria	Mesophilic	"Human, Animal"	Facultative		Host-associated	0.3567233									
+Salmonella enterica Choleraesuis	AE017220	Bacteria	Mesophilic	"Human, Animal"	Facultative		Host-associated	0.3631502									
+Salmonella enterica Paratypi ATCC 9150	CP000026	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3505747									
+Salmonella enterica serovar Paratyphi B SPB7	CP000886	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.351851									
+Salmonella typhi	AL513382	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3371634									
+Salmonella typhi Ty2	AE014613	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3891953									
+Salmonella typhimurium LT2	AE006468	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3576117									
+Serratia proteamaculans 568	CP000826	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Multiple	0.3713793									
+Shewanella amazonensis SB2B	CP000507	Bacteria	Mesophilic		Facultative		Multiple	0.2761051									
+Shewanella ANA-3	CP000469	Bacteria	Mesophilic		Facultative		Multiple	0.2438061									
+Shewanella baltica OS155	CP000563	Bacteria	Mesophilic		Facultative		Aquatic	0.233582									
+Shewanella baltica OS185	CP000753	Bacteria	Mesophilic	No	Facultative		Aquatic	0.2747553									
+Shewanella baltica OS195	CP000891	Bacteria	Mesophilic		Facultative		Aquatic	0.2161274									
+Shewanella denitrificans OS217	CP000302	Bacteria	Mesophilic		Facultative		Aquatic	0.2712353									
+Shewanella frigidimarina NCIMB 400	CP000447	Bacteria	Mesophilic		Facultative		Multiple	0.3293508									
+Shewanella loihica PV-4	CP000606	Bacteria	Mesophilic		Facultative		Multiple	0.2727875									
+Shewanella MR-4	CP000446	Bacteria	Mesophilic		Facultative		Multiple	0.2296706									
+Shewanella MR-7	CP000444	Bacteria	Mesophilic		Facultative		Aquatic	0.2389561									
+Shewanella oneidensis	AE014299	Bacteria	Mesophilic	Human	Facultative		Multiple	0.2358521									
+Shewanella putrefaciens CN-32	CP000681	Bacteria	Mesophilic	Human	Facultative		Multiple	0.2993352									
+Shewanella sediminis HAW-EB3	CP000821	Bacteria	Psychrophilic	No	Facultative	Mesophilic	Aquatic	0.2225464									
+Shewanella W3-18-1	CP000503	Bacteria	Mesophilic	Human	Facultative		Multiple	0.2948798									
+Shewanella woodyi ATCC 51908	CP000961	Bacteria	Mesophilic	No	Facultative	Non-halophilic	Multiple	0.191399									
+Shigella boydii CDC 3083 94	CP001063	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.2693574									
+Shigella boydii Sb227	CP000036	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.3662973									
+Shigella dysenteriae	CP000034	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.3876907									
+Shigella flexneri 2a 301	AE005674	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2924907									
+Shigella flexneri 2a 2457T	AE014073	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3810227									
+Shigella sonnei Ss046	CP000038	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.300092									
+Sinorhizobium medicae WSM419	CP000738	Bacteria	Mesophilic	No	Aerobic	Non-halophilic	Multiple	0.3716433									
+Sinorhizobium meliloti	AL591688	Bacteria	Mesophilic	No	Aerobic		Multiple	0.3737736									
+Sodalis glossinidius morsitans	AP008232	Bacteria	Mesophilic	No	Microaerophilic	Non-halophilic	Host-associated	0.3673141									
+Solibacter usitatus Ellin6076	CP000473	Bacteria	Mesophilic	No	Aerobic	Non-halophilic	Terrestrial	0.4765964									
+Sphingomonas wittichii RW1	CP000699	Bacteria	Mesophilic	No	Aerobic		Aquatic	0.5107821									
+Sphingopyxis alaskensis RB2256	CP000356	Bacteria			Aerobic		Aquatic	0.441478									
+Staphylococcus aureus aureus MRSA252	BX571856	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3735787									
+Staphylococcus aureus aureus MSSA476	BX571857	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.374703									
+Staphylococcus aureus COL	CP000046	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3147009									
+Staphylococcus aureus JH1	CP000736	Bacteria	Mesophilic	"Human, Animal"	Facultative		Host-associated	0.3021271									
+Staphylococcus aureus JH9	CP000703	Bacteria	Mesophilic	"Human, Animal"	Facultative		Host-associated	0.2883146									
+Staphylococcus aureus Mu3	AP009324	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.3014695									
+Staphylococcus aureus Mu50	BA000017	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3013745									
+Staphylococcus aureus MW2	BA000033	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3017704									
+Staphylococcus aureus N315	BA000018	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3147467									
+Staphylococcus aureus NCTC 8325	CP000253	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2986662									
+Staphylococcus aureus RF122	AJ938182	Bacteria	Mesophilic	"Human, Animal"	Facultative		Host-associated	0.3840431									
+Staphylococcus aureus USA300 TCH1516	CP000730	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3004509									
+Staphylococcus epidermidis ATCC 12228	AE015929	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2909556									
+Staphylococcus epidermidis RP62A	CP000029	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2921518									
+Staphylococcus haemolyticus	AP006716	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2995529									
+Staphylococcus saprophyticus	AP008934	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.2978619									
+Streptococcus agalactiae 2603	AE009948	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2584505									
+Streptococcus agalactiae A909	CP000114	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2599704									
+Streptococcus gordonii Challis substr CH1	CP000725	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3276324									
+Streptococcus mutans	AE014133	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.2791244									
+Streptococcus pneumoniae CGSP14	CP001033	Bacteria	Mesophilic	Human	Facultative		Multiple	0.2668693									
+Streptococcus pneumoniae D39	CP000410	Bacteria	Mesophilic	Human	Facultative		Multiple	0.2691881									
+Streptococcus pneumoniae Hungary19A 6	CP000936	Bacteria	Mesophilic	Human	Facultative		Multiple	0.2680328									
+Streptococcus pneumoniae R6	AE007317	Bacteria	Mesophilic		Facultative		Multiple	0.2671621									
+Streptococcus pneumoniae TIGR4	AE005672	Bacteria	Mesophilic	Human	Facultative		Multiple	0.2671848									
+Streptococcus pyogenes M1 GAS	AE004092	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.2295985									
+Streptococcus pyogenes Manfredo	AM295007	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.255141									
+Streptococcus pyogenes MGAS10270	CP000260	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.2533667									
+Streptococcus pyogenes MGAS10394	CP000003	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.2537218									
+Streptococcus pyogenes MGAS10750	CP000262	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.2532707									
+Streptococcus pyogenes MGAS2096	CP000261	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.2544367									
+Streptococcus pyogenes MGAS315	AE014074	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.2557322									
+Streptococcus pyogenes MGAS5005	CP000017	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.2536512									
+Streptococcus pyogenes MGAS6180	CP000056	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.252983									
+Streptococcus pyogenes MGAS8232	AE009949	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.260338									
+Streptococcus pyogenes MGAS9429	CP000259	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.2556628									
+Streptococcus pyogenes SSI-1	BA000034	Bacteria	Mesophilic	Human	Facultative	Non-halophilic	Host-associated	0.2578057									
+Streptococcus sanguinis SK36	CP000387	Bacteria	Mesophilic	Human	Facultative		Host-associated	0.3346662									
+Streptococcus suis 05ZYH33	CP000407	Bacteria	Mesophilic	"Swine, Human"	Facultative	Non-halophilic	Multiple	0.3163889									
+Streptococcus suis 98HAH33	CP000408	Bacteria	Mesophilic	"Swine, Human"	Facultative	Non-halophilic	Specialized	0.3160071									
+Streptococcus thermophilus CNRZ1066	CP000024	Bacteria	Thermophilic	No	Anaerobic		Multiple	0.2504004									
+Streptococcus thermophilus LMD-9	CP000419	Bacteria	Mesophilic	No	Facultative	Non-halophilic	Multiple	0.2530026									
+Streptococcus thermophilus LMG 18311	CP000023	Bacteria	Thermophilic	No	Anaerobic		Multiple	0.2512967									
+Streptomyces avermitilis	BA000030	Bacteria	Mesophilic	No	Aerobic		Multiple	0.3677647									
+Streptomyces griseus NBRC 13350	AP009493	Bacteria	Mesophilic	No	Aerobic		Multiple	0.498326									
+Sulfolobus acidocaldarius DSM 639	CP000077	Archaea	Thermophilic	No	Aerobic		Specialized	0.2502076									
+Sulfolobus islandicus L D 8 5 uid43679	CP001731	Archaea	Hyperthermophilic	No	Aerobic		Specialized	0.3421134									
+Sulfolobus islandicus L S 2 15	CP001399	Archaea	Hyperthermophilic	No	Aerobic		Specialized	0.3417033									
+Sulfolobus islandicus M 14 25	CP001400	Archaea	Hyperthermophilic	No	Aerobic		Specialized	0.3370284									
+Sulfolobus islandicus M 16 27	CP001401	Archaea	Hyperthermophilic	No	Aerobic	Non-halophilic	Specialized	0.5869997									
+Sulfolobus islandicus M 16 4	CP001402	Archaea	Hyperthermophilic	No	Aerobic	Non-halophilic	Specialized	0.5888594									
+Sulfolobus islandicus Y N 15 51	CP001404	Archaea	Hyperthermophilic	No		Non-halophilic	Specialized	0.5897223									
+Sulfolobus solfataricus	AE006641	Archaea	Hyperthermophilic	No	Aerobic		Specialized	0.4019665									
+Sulfolobus tokodaii	BA000023	Archaea	Hyperthermophilic	No	Aerobic		Specialized	0.5770842									
+Sulfurihydrogenibium YO3AOP1	CP001080	Bacteria	Thermophilic	No	Facultative		Specialized	0.2893841									
+Sulfurovum NBC37-1	AP009179	Bacteria	Mesophilic	No	Facultative		Specialized	0.3114543									
+Symbiobacterium thermophilum IAM14863	AP006840	Bacteria	Thermophilic	No	Microaerophilic	Non-halophilic	Terrestrial	0.626813									
+Synechococcus CC9311	CP000435	Bacteria	Mesophilic	No			Aquatic	0.4001158									
+Synechococcus CC9605	CP000110	Bacteria	Mesophilic	No			Aquatic	0.2253772									
+Synechococcus CC9902	CP000097	Bacteria	Mesophilic	No			Aquatic	0.4171893									
+Synechococcus elongatus PCC 6301	AP008231	Bacteria	Mesophilic	No		Non-halophilic	Aquatic	0.4179743									
+Synechococcus elongatus PCC 7942	CP000100	Bacteria	Mesophilic				Aquatic	0.4176713									
+Synechococcus PCC 7002	CP000951	Bacteria	Mesophilic	No			Aquatic	0.409465									
+Synechococcus RCC307	CT978603	Bacteria	Mesophilic				Aquatic	0.6315651									
+Synechococcus WH 7803	CT971583	Bacteria	Mesophilic				Aquatic	0.3677315									
+Synechocystis PCC6803	BA000022	Bacteria	Mesophilic	No			Aquatic	0.3962909									
+Syntrophobacter fumaroxidans MPOB	CP000478	Bacteria	Mesophilic	No	Anaerobic		Aquatic	0.4759206									
+Syntrophomonas wolfei Goettingen	CP000448	Bacteria		No	Anaerobic		Multiple	0.3622285									
+Syntrophus aciditrophicus SB	CP000252	Bacteria	Mesophilic		Anaerobic		Multiple	0.4821898									
+Thermoanaerobacter pseudethanolicus ATCC 33223	CP000924	Bacteria	Thermophilic	No	Anaerobic		Aquatic	0.3539184									
+Thermobifida fusca YX	CP000088	Bacteria	Thermophilic	Human	Aerobic		Multiple	0.3952638									
+Thermococcus gammatolerans EJ3	CP001398	Archaea	Hyperthermophilic	No	Anaerobic	Mesophilic	Specialized	0.40472									
+Thermococcus kodakaraensis KOD1	AP006878	Archaea	Hyperthermophilic		Anaerobic	Mesophilic	Specialized	0.4082829									
+Thermococcus onnurineus NA1	CP000855	Archaea	Hyperthermophilic	No	Anaerobic		Terrestrial	0.6866741									
+Thermoplasma acidophilum	AL139299	Archaea	Thermophilic	No	Facultative		Specialized	0.6342447									
+Thermoplasma volcanium	BA000011	Archaea	Thermophilic	No	Facultative		Specialized	0.601141									
+Thermoproteus neutrophilus V24Sta	CP001014	Archaea	Hyperthermophilic	No	Anaerobic		Specialized	0.7546166									
+Thermosynechococcus elongatus	BA000039	Bacteria	Thermophilic	No			Specialized	0.5915429									
+Thermotoga lettingae TMO	CP000812	Bacteria	Hyperthermophilic	No	Anaerobic		Specialized	0.6058493									
+Thermotoga maritima	AE000512	Bacteria	Hyperthermophilic	No	Anaerobic		Specialized	0.4565735									
+Thermotoga petrophila RKU-1	CP000702	Bacteria	Hyperthermophilic	No	Anaerobic		Aquatic	0.6742209									
+Thermus thermophilus HB27	AE017221	Bacteria	Thermophilic		Aerobic		Specialized	0.3436699									
+Thermus thermophilus HB8	AP008226	Bacteria	Thermophilic		Aerobic		Specialized	0.4892625									
+Thiobacillus denitrificans ATCC 25259	CP000116	Bacteria	Mesophilic	No	Facultative		Multiple	0.4682535									
+Thiomicrospira crunogena XCL-2	CP000109	Bacteria	Mesophilic	No	Microaerophilic		Aquatic	0.2932932									
+Treponema denticola ATCC 35405	AE017226	Bacteria	Mesophilic	Human	Anaerobic		Host-associated	0.5943168									
+Treponema pallidum	AE000520	Bacteria	Mesophilic	Human	Anaerobic		Host-associated	0.6725617									
+Trichodesmium erythraeum IMS101	CP000393	Bacteria		No	Aerobic		Aquatic	0.354671									
+Tropheryma whipplei Twist	AE014184	Bacteria	Mesophilic	Human	Aerobic		Host-associated	0.298284									
+uncultured methanogenic archaeon RC-I	AM114193	Archaea	Mesophilic	No		Non-halophilic	Host-associated	0.2224658									
+Ureaplasma parvum serovar 3 ATCC 27815	CP000942	Bacteria	Mesophilic	"Human, Animal"	Facultative		Host-associated	0.566157									
+Ureaplasma urealyticum	AF222894	Bacteria	Mesophilic	Animal	Facultative		Host-associated	0.5657484									
+Verminephrobacter eiseniae EF01-2	CP000542	Bacteria	Mesophilic	No		Non-halophilic	Host-associated	0.3291078									
+Vibrio cholerae	AE003852	Bacteria	Mesophilic	"Human, Primate"	Facultative		Aquatic	0.31664									
+Vibrio cholerae O395	CP001235	Bacteria	Mesophilic	"Human, Primate"	Facultative		Aquatic	0.3121512									
+Vibrio harveyi ATCC BAA-1116	CP006605	Bacteria	Mesophilic	Vertebrate and invertebrate aquatic organisms	Facultative	Moderate halophilic	Aquatic	0.2060253									
+Vibrio parahaemolyticus	BA000031	Bacteria	Mesophilic	Human	Facultative		Aquatic	0.223825									
+Vibrio vulnificus CMCP6	AE016795	Bacteria	Mesophilic	Human	Facultative		Aquatic	0.3194582									
+Vibrio vulnificus YJ016	BA000037	Bacteria	Mesophilic	Human	Facultative		Aquatic	0.2836837									
+Wigglesworthia brevipalpis	BA000021	Bacteria	Mesophilic	No			Host-associated	0.3449979									
+Wolbachia endosymbiont of Brugia malayi TRS	AE017321	Bacteria	Mesophilic			Non-halophilic	Host-associated	0.5017904									
+Wolbachia endosymbiont of Drosophila melanogaster	AE017196	Bacteria	Mesophilic	No			Host-associated	0.5080761									
+Xanthobacter autotrophicus Py2	CP000781	Bacteria	Mesophilic	No	Facultative		Multiple	0.3497377									
+Xanthomonas campestris ATCC 33913	AE008922	Bacteria	Mesophilic	Plant	Aerobic		Host-associated	0.5807066									
+Xanthomonas campestris 8004	CP000050	Bacteria	Mesophilic	Plant	Aerobic		Host-associated	0.5795788									
+Xanthomonas campestris vesicatoria 85-10	AM039952	Bacteria	Mesophilic	Plant	Aerobic		Host-associated	0.5128334									
+Xanthomonas citri	AE008923	Bacteria	Mesophilic	Plant	Aerobic		Host-associated	0.4493479									
+Xanthomonas oryzae KACC10331	AE013598	Bacteria	Mesophilic	Rice	Aerobic		Host-associated	0.549997									
+Xanthomonas oryzae MAFF 311018	AP008229	Bacteria	Mesophilic	Rice	Aerobic		Host-associated	0.5605999									
+Xylella fastidiosa	AE003849	Bacteria	Mesophilic	Plant	Aerobic		Host-associated	0.3332766									
+Xylella fastidiosa M12	CP000941	Bacteria	Mesophilic	Citrus	Aerobic	Non-halophilic	Host-associated	0.3383289									
+Xylella fastidiosa M23	CP001011	Bacteria	Mesophilic		Aerobic		Host-associated	0.329662									
+Xylella fastidiosa Temecula1	AE009442	Bacteria	Mesophilic	Plant	Aerobic		Host-associated	0.4896959									
+Yersinia enterocolitica 8081	AM286415	Bacteria	Mesophilic	"Human, Animal"	Facultative		Multiple	0.2719109									
+Yersinia pestis Angola	CP000901	Bacteria	Mesophilic	"Human, Rodent"	Facultative		Multiple	0.3493683									
+Yersinia pestis Antiqua	CP000308	Bacteria	Mesophilic	"Human, Animal"	Facultative	Non-halophilic	Multiple	0.3655044									
+Yersinia pestis biovar Mediaevails	AE017042	Bacteria	Mesophilic	"Human, Rodent"	Facultative		Multiple	0.3612931									
+Yersinia pestis CO92	AL590842	Bacteria	Mesophilic	"Human, Rodent"	Facultative		Multiple	0.3542969									
+Yersinia pestis Nepal516	CP000305	Bacteria	Mesophilic	"Human, Animal"	Facultative		Multiple	0.293408									
+Yersinia pestis Pestoides F	CP000668	Bacteria	Mesophilic	"Human, Rodent"	Facultative	Non-halophilic	Multiple	0.2812681									
+Yersinia pseudotuberculosis IP 31758	CP000720	Bacteria	Mesophilic	"Human, Animal"	Facultative		Multiple	0.1907996									
+Yersinia pseudotuberculosis IP32953	BX936398	Bacteria	Mesophilic	"Human, Animal"	Facultative		Multiple	0.2143461									
+Yersinia pseudotuberculosis YPIII	CP000950	Bacteria	Mesophilic	Human	Facultative		Multiple	0.2422234									
+Zymomonas mobilis ZM4	AE008692	Bacteria	Mesophilic	No	Anaerobic		Multiple	0.3043276									

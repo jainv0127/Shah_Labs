@@ -1,0 +1,29 @@
+# Assembly name:  ASM1678v1
+# Organism name:  Thermotoga petrophila RKU-1 (thermotogales)
+# Infraspecific name:  strain=RKU-1
+# Taxid:          390874
+# BioSample:      SAMN02598377
+# BioProject:     PRJNA17089
+# Submitter:      US DOE Joint Genome Institute
+# Date:           2007-05-18
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000016785.1
+# RefSeq assembly accession: GCF_000016785.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000016795.1	GCF_000016795.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000702.1	assembled-molecule	na	Chromosome	CP000702.1	=	NC_009486.1	Primary Assembly	1823511	na

@@ -1,0 +1,29 @@
+# Assembly name:  ASM1694v1
+# Organism name:  Yersinia pseudotuberculosis IP 31758 (enterobacteria)
+# Infraspecific name:  strain=IP 31758
+# Taxid:          349747
+# BioSample:      SAMN02604043
+# BioProject:     PRJNA16070
+# Submitter:      TIGR
+# Date:           2007-07-23
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000016945.1
+# RefSeq assembly accession: GCF_000016945.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000016955.1	GCF_000016955.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CP000720.1	assembled-molecule	na	Chromosome	CP000720.1	=	NC_009708.1	Primary Assembly	4723306	na
+plasmid_59kb	assembled-molecule	p_59kb	Plasmid	CP000718.1	=	NC_009704.1	Primary Assembly	58679	na
+plasmid_153kb	assembled-molecule	p_153kb	Plasmid	CP000719.1	=	NC_009705.1	Primary Assembly	153140	na

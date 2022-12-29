@@ -1,0 +1,30 @@
+# Assembly name:  ASM19593v2
+# Organism name:  Pyrococcus abyssi GE5 (euryarchaeotes)
+# Infraspecific name:  strain=Orsay
+# Taxid:          272844
+# BioSample:      SAMEA3283067
+# BioProject:     PRJNA179
+# Submitter:      Genoscope
+# Date:           2003-05-06
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# Relation to type material: assembly from type material
+# RefSeq category: Representative Genome
+# GenBank assembly accession: GCA_000195935.2
+# RefSeq assembly accession: GCF_000195935.2
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000195945.2	GCF_000195945.2	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+AL096836.1	assembled-molecule	na	Chromosome	AL096836.1	=	NC_000868.1	Primary Assembly	1765118	na
+pGT5	assembled-molecule	pGT5	Plasmid	U49503.1	=	NC_001773.1	Primary Assembly	3444	na
