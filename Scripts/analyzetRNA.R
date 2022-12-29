@@ -9,6 +9,7 @@
  
 library(tidyverse)
 library(stringr)
+library(parallel)
 #library(argparse)
 
 # 
@@ -224,7 +225,7 @@ EquationThree <- function(codon, cognates, pseudo.cognates, input, aa){
     }
   }
   
-  rc = 10.992*rc
+  #rc = 10.992*rc
   return(rc)
   
 }
@@ -247,7 +248,7 @@ EquationFour <- function(codon, nearcognates, input, aa){
       }
     }
   }
-  rn = 10.992*rn
+  #rn = 10.992*rn
   return(rn)
 }
 
@@ -341,6 +342,11 @@ calculateElongationMetrics <- function(input.file,target.dir="tGCN/",output.dir=
     merge.df[i, "Rc"] <- EquationThree(row$Codon, row$Cognate, row$Pseudo.cognate, input, row$AA)
     merge.df[i, "Rn"] <- EquationFour(row$Codon, row$Near.cognate, input, row$AA)
   }
+  
+  merge.df[,"R.total"] <- merge.df[,"Rc"] + merge.df[,"Rn"]
+  a <- 12.5 * sum(1/merge.df[,"R.total"])/length(merge.df[,"R.total"])
+  merge.df[ "Rc"] <- a * merge.df[,"Rc"]
+  merge.df[ "Rn"] <- a * merge.df[,"Rn"]
   merge.df['eN'] <- 0.003146/(merge.df$Rc + merge.df$Rn +0.003146)
   merge.df['eM'] <- merge.df$Rn/(merge.df$Rc + merge.df$Rn +0.003146)
   
@@ -348,10 +354,11 @@ calculateElongationMetrics <- function(input.file,target.dir="tGCN/",output.dir=
 }
 
 
-input <- "ecoli_tRNA_2010.tsv"
-calculateElongationMetrics(input)
+# input <- "ecoli_tRNA_2010.tsv"
+# calculateElongationMetrics(input)
 
 
 
-#tgcn.files <- list.files("tGCN/",recursive=F,full.names = F)
-#rates <- lapply(tgcn.files,calculateElongationMetrics)
+tgcn.files <- list.files("tGCN/",recursive=T,full.names = F)
+rates <- mclapply(tgcn.files,calculateElongationMetrics,mc.cores = 48)
+
