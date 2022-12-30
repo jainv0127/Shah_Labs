@@ -531,7 +531,7 @@ parseNCBIAssemblyReport <- function(file)
   return(report.list %>% as.data.frame())
 }
 
-files <- list.files("Phylogeny/ncbi-genomes-2022-12-27/",pattern = "GCF_*",full.names = T)
+files <- list.files("Phylogeny/ncbi_assembly_reports/",pattern = "GCF_*",full.names = T)
 assembly <- lapply(files,parseNCBIAssemblyReport) %>% bind_rows()
 
 meta.file <- read_tsv("Phylogeny/metadata_from_tgcn.txt") %>% 
@@ -555,6 +555,7 @@ assembly <- assembly %>%
   filter(!is.na(GC))
 ```
 
+### Phylogeny from doi:10.1038/s41467-019-13443-4
 
 ```{r}
 library(ape)
@@ -587,7 +588,20 @@ tree.filt<-force.ultrametric(tree.filt) ## default method
 is.ultrametric(tree.filt)
 tree.filt <- multi2di(tree.filt)
 ```
+### Phylogeny from MicrobesOnline
 
+Constructed from 49 COGs that are single-copy in most bacteria and archaea.
+Sequences were aligned with MUSCLE and topology was estimated from FastTree2.
+Branch-lengths are in amino acid substitutions, so we will likely need to convert this to a 
+
+```{r}
+tree <- read.tree("Phylogeny/microbesOnline_phy.nwk")
+missing.species <- tree$tip[which(!as.numeric(tree$tip.label) %in% assembly$taxid)]
+tree.filt <- drop.tip(tree,missing.species)
+p <- ggtree(tree.filt) + theme_tree2()
+p
+mcc
+```
 
 
 
@@ -911,9 +925,15 @@ In addition, our analysis would benefit from controlling for the effects of grow
 
 # Codon usage bias of individual species
 
-Previous work suggests systematic differences in the strength of natural selection acting on synonymous codon usage bias across psychrophiles, mesophiles, and thermophiles.
-A prominent hypothesis is that selection for translation efficiency due to the increased
+Previous work suggests systematic differences in the strength of natural selection acting on synonymous codon usage bias (CUB) across psychrophiles, mesophiles, and thermophiles.
+As with hypotheses related to the tRNA pool, multiple studies concluded that natural selection acting on codon usage is weaker in thermophiles due to the higher temperatures increasing the rates of chemical and kinetic reactions.
+On the other hand, some studies have concluded selection on codon usage may be stronger in psychrophiles than in thermophiles and mesophiles due to the slower temperatures, creating a strong selective pressure for translation efficiency.
+However, these studies primarily relied on heuristic measures of CUB, such as the effecitve number of codons.
+Here, we will use more heuristic 
 
+
+As a starting point, we selected three bacteria, each representing a different temperature class: Escherichia coli K12 MG1655 (mesophilic), Thermotoga maritima MSB8 (thermophilic), and Pseudoalteromonas translucida TAC125 (psychrophilic).
+These bacteria were chosen because they have similar genome-wide GC contents (0.4 -- 0.5).
 ```{r}
 
 getCodons <- function(sequence)
@@ -980,8 +1000,6 @@ l <- lm(Average.Err ~ Species.factor,data=species.df)
 anova(l)
 summary(l)
 ```
-Although differences are small, we 
-
 
 
 
@@ -990,7 +1008,7 @@ Although differences are small, we
 
 ecoli.phi <- read_csv("ROC/K_1/Escherichia_coli/run_2/Parameter_est/gene_expression.txt")
 ptrans.phi <- read_csv("ROC/K_1/Pseudoalteromonas_translucida/run_2/Parameter_est/gene_expression.txt")
-tmaritima.phi <- read_csv("ROC/K_3_allUnique/Thermotoga_maritima/run_1/Parameter_est/gene_expression.txt")
+tmaritima.phi <- read_csv("ROC/K_1/Thermotoga_maritima/run_2/Parameter_est/gene_expression.txt")
 
 ptrans.tpm <- read_tsv("Expression/Pseudoalteromonas_translucida_TAC125/PRJNA886636/SRR21786405_tpm_kallisto/abundance.tsv") %>%
   filter(tpm > 0) %>%
