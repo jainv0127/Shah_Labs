@@ -400,13 +400,17 @@ tgcn.summary.codon <- tgcn %>%
 
 ```
 
-```{r}
+```{r fig.width= 5, fig.height= 5}
+library(cowplot)
+library(patchwork)
+
+
 d.tgcn.plot <- ggplot(tgcn.summary,aes(x=Diversity.tGCN,fill=Temperature)) +
   geom_histogram(aes(y = stat(density*width)),color="black") +
   theme_cowplot() +
   ylab("Relative Density") +
   xlab("tRNA Diversity") +
-  ggtitle("Diversity of tRNA represented")
+  ggtitle("Diversity of tRNA represented") + theme(aspect.ratio = 1)
 d.tgcn.plot
 
 t.tgcn.plot <- ggplot(tgcn.summary,aes(x=Total.tGCN,fill=Temperature)) +
@@ -414,11 +418,14 @@ t.tgcn.plot <- ggplot(tgcn.summary,aes(x=Total.tGCN,fill=Temperature)) +
   theme_cowplot() +
   ylab("Relative Density") +
   xlab("Total tGCN") +
-  ggtitle("Total number of tRNA genes")
+  ggtitle("Total number of tRNA genes") + theme(aspect.ratio = 1)
 t.tgcn.plot
 
-comb.plot <- plot_grid(d.tgcn.plot,t.tgcn.plot,labels = c("A","B"))
+comb.plot <- (d.tgcn.plot | t.tgcn.plot) + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
+
 comb.plot
+
+ggsave(plot=comb.plot,filename = "figures/fig1.png", height = 7, width = 15)
 ```
 
 
@@ -465,19 +472,24 @@ rates.summary.codon <- rates %>%
 d.tgcn.plot <- ggplot(rates.summary,aes(x=Median.Rc,fill=Temperature)) +
   geom_histogram(aes(y = stat(density*width)),color="black") +
   theme_cowplot() +
+  scale_x_log10() +
   ylab("Relative Density") +
-  xlab("Median Elongation Rate") 
+  xlab("Median Elongation Rate") + theme(aspect.ratio = 1) + ggtitle("Median Elongation Rate Across Bacteria")
 d.tgcn.plot
 
 t.tgcn.plot <- ggplot(rates.summary,aes(x=Median.eM,fill=Temperature)) +
   geom_histogram(aes(y = stat(density*width)),color="black") +
   theme_cowplot() +
   ylab("Relative Density") +
-  xlab("Median Missense Error Rate")
+  xlab("Median Missense Error Rate") + theme(aspect.ratio = 1) + ggtitle("Median Missense Error Rate Across Bacteria")
 t.tgcn.plot
 
-comb.plot <- plot_grid(d.tgcn.plot,t.tgcn.plot,labels = c("A","B"))
-comb.plot
+
+comb.plot <- (d.tgcn.plot | t.tgcn.plot) + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
+
+
+ggsave(plot=comb.plot,filename = "figures/fig2.png", height = 7, width = 15)
+
 ```
 
 # Set up phylogeny
@@ -531,7 +543,7 @@ parseNCBIAssemblyReport <- function(file)
   return(report.list %>% as.data.frame())
 }
 
-files <- list.files("Phylogeny/ncbi-genomes-2022-12-27/",pattern = "GCF_*",full.names = T)
+files <- list.files("Phylogeny/ncbi_assembly_reports",pattern = "GCF_*",full.names = T)
 assembly <- lapply(files,parseNCBIAssemblyReport) %>% bind_rows()
 
 meta.file <- read_tsv("Phylogeny/metadata_from_tgcn.txt") %>% 
@@ -593,6 +605,7 @@ tree.filt <- multi2di(tree.filt)
 
 
 ```{r fig.width=7,fig.height=9}
+library(ggtree)
 treeTraitPlot <- function(tree.plot,trait.df,trait.name,panel.name,significance = NULL,xlim=c(-1,1),color.col = "Temperature")
 {
   if (!is.null(significance))
@@ -607,6 +620,24 @@ treeTraitPlot <- function(tree.plot,trait.df,trait.name,panel.name,significance 
     scale_linetype_manual(values=c("Significant"=1,"Not Significant"=2))
   return(trait.plot)
 }
+
+tgcn.summary.order <- tgcn.summary  %>%
+  left_join(assembly,by="Species") %>%
+  ungroup() %>%
+  filter(Species %in% tree.filt$tip.label) %>%
+  filter(!(Temperature == "Mesophile" & Species == "Shewanella loihica PV-4")) %>% ## Need to double check this.
+  dplyr::slice(match(tree.filt$tip.label,Species)) %>%
+  column_to_rownames("Species") %>%
+  as.data.frame()
+
+rates.summary.order <- rates.summary  %>%
+  left_join(assembly,by="Species") %>%
+  ungroup() %>%
+  filter(Species %in% tree.filt$tip.label) %>%
+  filter(!(Temperature == "Mesophile" & Species == "Shewanella loihica PV-4")) %>% ## I think this is an error in one of the metadata files. Need to double check this.
+  dplyr::slice(match(tree.filt$tip.label,Species)) %>%
+  column_to_rownames("Species") %>%
+  as.data.frame()
 
 tree.plot <- ggtree(tree.filt)
 tree.data <- tgcn.summary.order %>%
@@ -624,6 +655,7 @@ p <- p +theme_tree2() +
   scale_color_viridis_d()
 p
 
+ggsave(plot=p,filename = "figures/fig3.png", height = 10, width = 9)
 
 
 ```
@@ -631,6 +663,9 @@ p
 ## Impact of GC content evolution on tRNA pool
 
 ```{r}
+library(phytools)
+library(nlme)
+library(cowplot)
 modelFitToEquation <- function(model.fit)
 {
   summ.model <- summary(model.fit)
@@ -702,10 +737,14 @@ gc.em <- ggplot(tree.data,aes(x=GC,y=Median.eM,color=Temperature)) +
 gc.em
 
 ```
-```{r fig.width=9.5,fig.height=3}
+```{r fig.width=21,fig.height=7}
+library(patchwork)
 comb.plot <- (gc.d.tgcn | em.d.tgcn | gc.em)
 comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
 comb.plot
+
+ggsave(plot=comb.plot,filename = "figures/fig4.png", height = 7, width = 21)
+
 ```
 
 
@@ -819,14 +858,6 @@ Future work will incorporate more complex phylogenetic models of trait evolution
 ### Differences in tRNA pool diversity 
 ```{r}
 
-tgcn.summary.order <- tgcn.summary  %>%
-  left_join(assembly,by="Species") %>%
-  ungroup() %>%
-  filter(Species %in% tree.filt$tip.label) %>%
-  filter(!(Temperature == "Mesophile" & Species == "Shewanella loihica PV-4")) %>% ## Need to double check this.
-  dplyr::slice(match(tree.filt$tip.label,Species)) %>%
-  column_to_rownames("Species") %>%
-  as.data.frame()
 
 temp.vs.div <- gls(Diversity.tGCN ~ Temperature,data=tgcn.summary.order,correlation=corBrownian(1,tree.filt))
 
@@ -845,14 +876,6 @@ Based on the estimates of the slope, when controlling for the effects of GC cont
 Based on the relationship between increased tRNA diversity and increased missense error rates, we next test if extremophiles significantly differ from mesophiles in terms of the average missense error rates. 
 
 ```{r}
-rates.summary.order <- rates.summary  %>%
-  left_join(assembly,by="Species") %>%
-  ungroup() %>%
-  filter(Species %in% tree.filt$tip.label) %>%
-  filter(!(Temperature == "Mesophile" & Species == "Shewanella loihica PV-4")) %>% ## I think this is an error in one of the metadata files. Need to double check this.
-  dplyr::slice(match(tree.filt$tip.label,Species)) %>%
-  column_to_rownames("Species") %>%
-  as.data.frame()
 
 temp.vs.err <- gls(Median.eM ~ Temperature,data=rates.summary.order,correlation=corBrownian(1,tree.filt))
 
@@ -881,6 +904,7 @@ anova(temp.vs.err,temp.vs.err.w.gc)
 summary(temp.vs.err.w.gc)
 
 ```
+AT ending codon do^^
 
 Based on these results, although thermophiles tend to have more diverse tRNA pools relative to mesophiles and psychrophiles, this increased diversity would not necessarily lead to an increased missense error rate.
 
@@ -915,7 +939,7 @@ Previous work suggests systematic differences in the strength of natural selecti
 A prominent hypothesis is that selection for translation efficiency due to the increased
 
 ```{r}
-
+library(Biostrings)
 getCodons <- function(sequence)
 {
   return(as.character(Biostrings::codons(sequence)))
@@ -961,7 +985,7 @@ species.df <- list(`Thermotoga maritima` = therm.err,
 ```
 
 
-```{r fig.height=3}
+```{r fig.height=15}
 
 error.box <- ggplot(species.df,aes(x=Species,y=Average.Err)) +
   geom_violin(aes(fill=Temperature),color="black") +
@@ -980,7 +1004,7 @@ l <- lm(Average.Err ~ Species.factor,data=species.df)
 anova(l)
 summary(l)
 ```
-Although differences are small, we 
+Although differences are small, thermophile higher probability 
 
 
 
@@ -990,7 +1014,7 @@ Although differences are small, we
 
 ecoli.phi <- read_csv("ROC/K_1/Escherichia_coli/run_2/Parameter_est/gene_expression.txt")
 ptrans.phi <- read_csv("ROC/K_1/Pseudoalteromonas_translucida/run_2/Parameter_est/gene_expression.txt")
-tmaritima.phi <- read_csv("ROC/K_3_allUnique/Thermotoga_maritima/run_1/Parameter_est/gene_expression.txt")
+tmaritima.phi <- read_csv("ROC/K_1/Thermotoga_maritima/run_1/Parameter_est/gene_expression.txt")
 
 ptrans.tpm <- read_tsv("Expression/Pseudoalteromonas_translucida_TAC125/PRJNA886636/SRR21786405_tpm_kallisto/abundance.tsv") %>%
   filter(tpm > 0) %>%
@@ -1006,6 +1030,8 @@ tmaritima.tpm <- read_tsv("Expression/Thermotoga_maritima_MSB8/PRJNA870878/SRR21
 
 
 ```{r}
+#thermo
+library(ggpubr)
 tmaritima <- tmaritima.phi %>% 
   inner_join(tmaritima.tpm,by=c("GeneID"="target_id")) %>%
   inner_join(therm.err,by="GeneID")
@@ -1038,6 +1064,7 @@ p
 ```
 
 ```{r}
+#psycro
 ptrans <- ptrans.phi %>% 
   inner_join(ptrans.tpm,by=c("GeneID"="target_id")) %>%
   inner_join(psychro.err,by="GeneID")
@@ -1067,3 +1094,12 @@ p <- ggplot(ptrans,aes(x=tpm,y=Average.Err)) +
 p
 
 ```
+
+Future work
+apply piple to quanitiify selection across wide range bacteria
+look into tRNA variations between thermo, psycro, and meso
+expand analysis to include more species by generating new phylogenetic tree that includes currently missing species
+  current tree from another paper
+
+
+
