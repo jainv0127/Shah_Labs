@@ -1046,7 +1046,8 @@ species.df <- list(`Thermotoga maritima` = therm.err,
                 `Escherichia coli K12 subst MG1655` = meso.err,
                 `Pseudoalteromonas haloplanktis TAC125` = psychro.err) %>%
   bind_rows(.id="Species") %>%
-  left_join(tgcn.summary,by="Species")
+  left_join(tgcn.summary,by="Species") %>%
+  mutate(Species = ifelse(Species == "Pseudoalteromonas haloplanktis TAC125","Pseudoalteromonas translucida TAC125",Species))
 
 ```
 
@@ -1092,7 +1093,7 @@ p <- ggplot(cds.df.freq,aes(x=tpm,y=Freq)) +
 
 ```
 
-```{r fig.height=15}
+```{r fig.height=7}
 
 error.box <- ggplot(species.df,aes(x=Species,y=Average.Err)) +
   geom_violin(aes(fill=Temperature),color="black") +
@@ -1100,16 +1101,18 @@ error.box <- ggplot(species.df,aes(x=Species,y=Average.Err)) +
   theme_cowplot() +
   theme(axis.text.x = element_text(angle = 45,vjust = 1,hjust=1),
         aspect.ratio=1) +
-  ggtitle("Distribution of Average Missense Error Probability") +
+  ggtitle("Distribution of Average Missense\nError Probability") +
   ylab("Average Missense Error Probablitiy\nper Gene") 
 error.box
 
 species.df <- species.df %>%
-  mutate(Species.factor = factor(Species,levels=c("Thermotoga maritima","Escherichia coli K12 subst MG1655","Pseudoalteromonas haloplanktis TAC125")))
+  mutate(Species.factor = factor(Species,levels=c("Thermotoga maritima","Escherichia coli K12 subst MG1655","Pseudoalteromonas translucida TAC125")))
 
 l <- lm(Average.Err ~ Species.factor,data=species.df)
 anova(l)
 summary(l)
+
+ggsave2("figures/gene_error_violin_plot.png",plot=error.box,width=8,height=8)
 ```
 Although differences are small, thermophile higher probability 
 
@@ -1338,7 +1341,7 @@ tmaritima.k.3.comp <- ggplot(tmaritima.k.3,aes(x=tpm,y=Mean)) +
   xlab("Empirical Expression Level (TPM)") +
   ylab("CUB-based Predicted Expression Level") +
   theme_cowplot() +
-  ggtitle("T. maritima: ROC-SEMPPR Prediction\nvs. Empirical RNA-seq") +
+  ggtitle("T. maritima: ROC-SEMPPR\nvs. Empirical Gene Expression") +
   theme(aspect.ratio=1)
 
 tmaritima.k.3.comp
