@@ -46,3 +46,7 @@ vignettes/*.pdf
 **/R_objects
 **/R_objects/parameter.Rda
 **/R_objects/mcmc.Rda
+
+# FASTQ
+**/*.fastq
+**/*.fastq.gz
