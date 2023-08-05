@@ -271,8 +271,18 @@ t.tgcn.plot <- ggplot(tgcn.summary,aes(x=Total.tGCN,fill=Temperature)) +
   ggtitle("Total number of tRNA genes")
 t.tgcn.plot
 
-comb.plot <- plot_grid(d.tgcn.plot,t.tgcn.plot,labels = c("A","B"))
+comb.plot <- plot_grid(tree, d.tgcn.plot,t.tgcn.plot,labels = c("A","B", "C"))
 comb.plot
+
+```
+```{r fig.width=9,fig.height=7}
+library(patchwork)
+library(ggplot2)
+comb.plot <- (d.tgcn.plot | t.tgcn.plot)
+comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
+comb.plot
+
+
 ```
 
 
@@ -425,7 +435,7 @@ tree.filt <- multi2di(tree.filt)
 
 
 ```{r}
-tree <- read.tree("Phylogeny/AgashiPhyloFiltered.nwk")
+tree <- read.tree("Phylogeny/DatedAgashiPhyloFiltered.nwk")
 plot(tree)
 which("Clostridium_saccharolyticum_WM1" == tree$tip.label)
 
@@ -477,8 +487,10 @@ rates = rates%>%filter(!Species %in% missingSpecies)
 
 
 
-```{r fig.width=7,fig.height=15}
+```{r fig.width=25,fig.height=25}
 library(ggtree)
+library(patchwork)
+
 treeTraitPlot <- function(tree.plot,trait.df,trait.name,panel.name,significance = NULL,xlim=c(-1,1),color.col = "Temperature")
 {
   if (!is.null(significance))
@@ -508,6 +520,9 @@ p <- p +theme_tree2() +
   scale_color_viridis_d()
 p
 
+comb.plot <- plot_grid(p , d.tgcn.plot , tree, t.tgcn.plot,labels = c("A","B","", "C"), ncol = 2)
+comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
+comb.plot
 
 
 ```
@@ -718,10 +733,10 @@ tgcn.summary.order <- tgcn.summary  %>%
   column_to_rownames("Species") %>%
   as.data.frame()
 
-temp.vs.div <- gls(Diversity.tGCN ~ Temperature,data=tree.data,correlation=corBrownian(1,tree.filt))
-temp.vs.gc <- gls(Diversity.tGCN ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt))
+temp.vs.div <- gls(Diversity.tGCN ~ Temperature,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
+temp.vs.gc <- gls(Diversity.tGCN ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
 
-temp.vs.div.w.gc <- gls(Diversity.tGCN ~ Temperature + GC,data=tree.data,correlation=corBrownian(1,tree.filt))
+temp.vs.div.w.gc <- gls(Diversity.tGCN ~ Temperature + GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
 
 anova(temp.vs.div,temp.vs.gc, temp.vs.div.w.gc)
 
@@ -745,10 +760,10 @@ rates.summary.order <- rates.summary  %>%
   column_to_rownames("Species") %>%
   as.data.frame()
 
-temp.vs.err <- gls(Median.eM ~ Temperature,data=tree.data,correlation=corBrownian(1,tree.filt))
-temp.vs.gc <- gls(Median.eM ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt))
+temp.vs.err <- gls(Median.eM ~ Temperature,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
+temp.vs.gc <- gls(Median.eM ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
 
-temp.vs.err.w.gc <- gls(Median.eM ~ Temperature + GC,data=tree.data,correlation=corBrownian(1,tree.filt))
+temp.vs.err.w.gc <- gls(Median.eM ~ Temperature + GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
 
 anova(temp.vs.err,temp.vs.gc,temp.vs.err.w.gc)
 
@@ -764,9 +779,9 @@ We note that excluding AT-ending codons does not change the results of this regr
 
 ```{r}
 
-temp.vs.err <- gls(Median.eM ~ Temperature,data=rates.summary.codon.order.yes,correlation=corBrownian(1,tree.filt))
+temp.vs.err <- gls(Median.eM ~ Temperature,data=rates.summary.codon.order.yes,correlation=corBrownian(1,tree.filt), method = "ML")
 
-temp.vs.err.w.gc <- gls(Median.eM ~ Temperature + GC,data=rates.summary.codon.order.yes,correlation=corBrownian(1,tree.filt))
+temp.vs.err.w.gc <- gls(Median.eM ~ Temperature + GC,data=rates.summary.codon.order.yes,correlation=corBrownian(1,tree.filt), method = "ML")
 
 anova(temp.vs.err,temp.vs.err.w.gc)
 
@@ -785,9 +800,9 @@ Similarly, the higher temperature environments of thermophiles allow for rapid d
 
 
 ```{r}
-temp.vs.total <- gls(Total.tGCN ~ Temperature,data=tree.data,correlation=corBrownian(1,tree.filt))
-temp.vs.gc <- gls(Total.tGCN ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt))
-temp.vs.total.w.gc <- gls(Total.tGCN ~ Temperature + GC,data=tree.data,correlation=corBrownian(1,tree.filt))
+temp.vs.total <- gls(Total.tGCN ~ Temperature,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
+temp.vs.gc <- gls(Total.tGCN ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
+temp.vs.total.w.gc <- gls(Total.tGCN ~ Temperature + GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
 
 anova(temp.vs.total,temp.vs.gc, temp.vs.total.w.gc)
 
