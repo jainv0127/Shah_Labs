@@ -795,9 +795,10 @@ gc.em <- ggplot(tree.data,aes(x=GC,y=Median.eM,color=Temperature)) +
 gc.em
 
 ```
-```{r fig.width=21,fig.height=7}
+
+```{r fig.width=6,fig.height=3}
 library(patchwork)
-comb.plot <- (gc.d.tgcn | em.d.tgcn | gc.em)
+comb.plot <- (gc.d.tgcn | em.d.tgcn)
 comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
 comb.plot
 
@@ -905,6 +906,14 @@ gc.em.no <- ggplot(rates.summary.codon.order.no, aes(x=GC,y=Median.eM,color=Temp
 gc.em.no
 
 ```
+```{r fig.width=6,fig.height=3}
+comb.plot <- (gc.d.tgcn.yes | gc.d.tgcn.no)
+comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
+comb.plot
+
+```
+
+
 ## Comparing across different environments
 
 First, we will examine if there are significant differences in tRNA diversity and total tGCN across environments while controlling for the phylogeny using a phylogenetic regression.
