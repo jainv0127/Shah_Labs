@@ -1,13 +1,9 @@
 library(tidyverse)
 library(Biostrings)
-bacteria <- read_tsv("tGCN bacteria list.txt",skip = 1)
-classification <- read_tsv("classification.txt",skip=1)
-
-bacteria <- bacteria %>% 
-  dplyr::rename(Organism_Name = `Organism Name`) # The ` is because of the space in the column name. We'll get rid of them. 
+bacteria <- read_tsv("bacteriatgcn_2023_03_29.tsv")
+classification <- read_tsv("bacteriaClassification_2023_03_29.tsv")
 
 classification <- classification %>% 
-  dplyr::rename(Organism_Name = `Organism Name`, Temperature_Range = `Temperature Range`) %>%
   dplyr::select(Organism_Name, Temperature_Range) %>% # this just gets the columns of interest
   filter(!is.na(Temperature_Range)) %>%
   mutate(Temperature_Range = ifelse(Temperature_Range == "Hyperthermophilic","Thermophilic",Temperature_Range))
@@ -21,11 +17,12 @@ bacteria.tgcn.long <- bacteria.tgcn %>%
 
 
 bacteria.tgcn.long <- bacteria.tgcn.long %>% 
-  mutate(Codon = as.character(reverseComplement(DNAStringSet(Codon))),
+  mutate(Codon = as.character(Biostrings::reverseComplement(DNAStringSet(Codon))),
           AA = as.character(translate(DNAStringSet(Codon),no.init.codon = T))
          ) %>% 
   filter(!Codon %in% c("TAG","TAA","TGA")) %>% # Remove stop codons 
-  mutate(AA = ifelse(Codon %in% c("AGC","AGT"),"Z",AA))
+  mutate(AA = ifelse(Codon %in% c("AGC","AGT"),"Z",AA),
+         Organism_Name = str_replace_all(Organism_Name,"/","_"))
 
 bacteria.tgcn.long.split <- bacteria.tgcn.long %>% 
   group_by(Organism_Name) %>% 
@@ -46,6 +43,5 @@ lapply(bacteria.tgcn.long.split, function(x) {
   }
   x <- x %>% 
     dplyr::select(Codon,tRNA,AA)
-  write_tsv(x,file.path("tGCN",type,species))
+  write_tsv(x,file.path("tGCN_New",type,species))
 })
- 
