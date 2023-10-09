@@ -232,7 +232,7 @@ EquationFour <- function(codon, nearcognates, input, aa){
   return(rn)
 }
 
-calculateElongationMetrics <- function(input.file,target.dir="tGCN_New/",output.dir="Rates_Updated/")
+calculateElongationMetrics <- function(input.file,target.dir="tGCN_new/",output.dir="Rates_Updated/")
 {
   input <- read_tsv(file = file.path(target.dir,input.file))
   if (!dir.exists(output.dir)){
@@ -329,18 +329,14 @@ calculateElongationMetrics <- function(input.file,target.dir="tGCN_New/",output.
 }
 
 
-tgcn.files <- list.files("tGCN_New/Thermophile/",recursive=F,full.names = F)
+tgcn.files <- list.files("../tGCN_new/Thermophile/",recursive=F,full.names = F)
+rates <- lapply(tgcn.files,calculateElongationMetrics, output.dir = "../Rates_Updated/Thermophile", target.dir = "../tGCN_new/Thermophile/")
 
+tgcn.files <- list.files("../tGCN_new/Psychrophile/",recursive=F,full.names = F)
+rates <- lapply(tgcn.files,calculateElongationMetrics, output.dir = "../Rates_Updated/Psychrophile", target.dir = "../tGCN_new/Psychrophile/")
 
-rates <- lapply(tgcn.files,calculateElongationMetrics, output.dir = "Rates_Updated/Thermophile", target.dir = "tGCN_New/Thermophile/")
-
-
-
-tgcn.files <- list.files("tGCN_New/Psychrophile/",recursive=F,full.names = F)
-rates <- lapply(tgcn.files,calculateElongationMetrics, output.dir = "Rates_Updated/Psychrophile", target.dir = "tGCN_New/Psychrophile/")
-
-tgcn.files <- list.files("tGCN_New/Mesophile/",recursive=F,full.names = F)
-rates <- lapply(tgcn.files,calculateElongationMetrics, output.dir = "Rates_Updated/Mesophile", target.dir = "tGCN_New/Mesophile/")
+tgcn.files <- list.files("../tGCN_new/Mesophile/",recursive=F,full.names = F)
+rates <- lapply(tgcn.files,calculateElongationMetrics, output.dir = "../Rates_Updated/Mesophile", target.dir = "../tGCN_new/Mesophile/")
 
 
 
