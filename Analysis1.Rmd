@@ -13,214 +13,13 @@ library(ggpubr)
 library(Biostrings)
 library(nlme)
 library(ape)
+library(ggtree)
+library(patchwork)
 ```
-
-```{r}
-
-bacteria <- read_tsv("tGCN bacteria list.txt",skip = 1) 
-# you may not need to skip the first, depends on how you saved your TSV file, want to make sure Organism Name is one of the column names
-classification <- read_tsv("classification.txt",skip=1) 
-# you may not need to skip the first, depends on how you saved your TSV file, want to make sure Organism Name is one of the column names
-
-complementRules <- function(nucleotide)
-{
-  if (nucleotide == "A")
-  {
-    return("T")
-  } else if (nucleotide == "C"){
-    return("G")
-  } else if(nucleotide == "G"){
-    return("C")
-  } else if (nucleotide == "T"){
-    return("A")
-  }
-}
-
-## Here is a function you can use to get the reverse complement of a codon 
-reverseComplement <- function(seq)
-{
-  seq.split <- unlist(strsplit(seq,split=""))
-  reverse <- rev(seq.split)
-  trna <- unlist(lapply(reverse,complementRules))
-  trna <- paste(trna,collapse='')
-  return(trna)
-}
-
-bacteria <- bacteria %>%
-  dplyr::rename(Organism_Name = `Organism Name`) # The ` is because of the space in the column name. We'll get rid of them.
-
-classification <- classification %>%
-  dplyr::rename(Organism_Name = `Organism Name`, Temperature_Range = `Temperature Range`) %>%
-  dplyr::select(Organism_Name, Temperature_Range) %>% # this just gets the columns of interest
-  filter(!is.na(Temperature_Range)) %>%
-  mutate(Temperature_Range = ifelse(Temperature_Range == "Hyperthermophilic","Thermophilic",Temperature_Range))
- 
-
-bacteria.tgcn <- bacteria %>%
-  inner_join(classification, by="Organism_Name")
-
-bacteria.tgcn.long <- bacteria.tgcn %>%
-  pivot_longer(c(-Organism_Name,-Temperature_Range), names_to="Codon",values_to = "tRNA")
-
-
-bacteria.tgcn.long <- bacteria.tgcn.long %>%
-  mutate(Codon = as.character(Biostrings::reverseComplement(DNAStringSet(Codon))),
-          AA = as.character(translate(DNAStringSet(Codon)))
-         ) %>%
-  filter(!Codon %in% c("TAG","TAA","TGA")) # Remove stop codons
-
-bacteria.tgcn.long.split <- bacteria.tgcn.long %>%
-  group_by(Organism_Name) %>%
-  group_split()
-
-lapply(bacteria.tgcn.long.split, function(x) {
-  species <- paste0(unname(unlist(x[1,"Organism_Name"])),".tsv")
-  type <- unname(unlist(x[1,"Temperature_Range"]))
-  if (type == "Mesophilic")
-  {
-    type <- "Mesophile"
-  } else if (type == "Thermophilic") {
-    type <- "Thermophile"
-  } else if (type == "Psychrophilic") {
-    type <- "Psychrophile"
-  } else {
-    print(species)
-  }
-  x <- x %>%
-    dplyr::select(Codon,tRNA,AA)
-  write_tsv(x,file.path("tGCN",type,species))
-})
- 
-
-```
-
 
 
 ```{r}
-
-
-tgcn.files <- list.files("tGCN" , recursive = TRUE, full.names = TRUE)
-rates.files <- list.files("Rates" , recursive = TRUE, full.names = TRUE)
-
-names(tgcn.files) <- tgcn.files
-tgcn.df <- lapply(tgcn.files, read_tsv) %>% bind_rows(.id = "file")
-
-tgcn.df <- tgcn.df %>% separate(file, sep = "/",into = c("x", "type", "species"))
-
-tgcn.df = mutate(tgcn.df, present = ifelse(tRNA == 0,0,1))
-tgcn.df %>% group_by(type) %>% summarise(total_tRNACopy = sum(tRNA), tRNA_Diversity = sum(present))
-tgcn.sum <- tgcn.df %>% group_by(type, species) %>% summarise(total_tRNACopy = sum(tRNA), tRNA_Diversity = sum(present))
-
-tgcnhist <- ggplot(tgcn.sum, aes(x = tRNA_Diversity, fill = type)) + geom_histogram()  #+ theme_cowplot() + theme(aspect.ratio = 1) + stat_cor(method= "spearman")
-tgcnhist
-
-#similar hist with total tRNA`
-tgcnhisttotal <- ggplot(tgcn.sum, aes(x = total_tRNACopy, fill = type)) + geom_histogram() #+ theme_cowplot() + theme(aspect.ratio = 1) + stat_cor(method= "spearman")
-tgcnhisttotal
-
-
-
-#create separate file for each species
-#add amino acid for each codon
-  #look into biostreams or stackoverflow
-#eM and Rc
-
-#names(tgcn) <- as.matrix(tgcn[1, ])
-#tgcn <- 0
-#tgcn[] <- lapply(tgcn, function(x) type.convert(as.character(x)))
-
-#tgcn %>% pivot_longer(c(-`Organism Name`),names_to="Codon",values_to="tRNA") %>% dplyr::rename(Specie =`Organism Name`)
-
-#for (`Organism Name` in tgcn) {
- # write.tsv(data["Organism Name" == `Organism Name`,], file = paste0("", ppt, ".csv"))
-#}
-
-```
-
-```{r}
-
-
-psyc <- list.files("Rates/Psychrophile" , recursive = TRUE, full.names = TRUE)
-names(psyc) <- psyc
-psyc <- lapply(psyc, read_tsv) %>% bind_rows(.id = "file")
-psyc <- psyc %>% separate(file, sep = "/",into = c("x", "type", "species"))
-
-ther <- list.files("Rates/Thermophile" , recursive = TRUE, full.names = TRUE)
-names(ther) <- ther
-ther <- lapply(ther, read_tsv) %>% bind_rows(.id = "file")
-ther <- ther %>% separate(file, sep = "/",into = c("x", "type", "species"))
-
-meso <- list.files("Rates/Mesophile" , recursive = TRUE, full.names = TRUE)
-names(meso) <- meso
-meso <- lapply(meso, read_tsv) %>% bind_rows(.id = "file")
-meso <- meso %>% separate(file, sep = "/",into = c("x", "type", "species"))
-
-
-#sum(key$tRNA)
-
-#df <- mutate(key, present = ifelse(tRNA == 0,0,1))
-#sum(df$present)
-
-mean(psyc$Rc)
-mean(psyc$eM)
-median(psyc$Rc)
-median(psyc$eM)
-
-mean(ther$Rc)
-mean(ther$eM)
-median(ther$Rc)
-median(ther$eM)
-
-
-mean(meso$Rc)
-mean(meso$eM)
-median(meso$Rc)
-median(meso$eM)
-
-Classification <- c("Psycrophile", "Thermophile", "Mesophile")
-mean_eM <- c(mean(psyc$eM),mean(ther$eM),mean(meso$eM))
-median_eM <- c(median(psyc$eM), median(ther$eM), median(meso$eM))
-mean_Rc <- c(mean(psyc$Rc), mean(ther$Rc), mean(meso$Rc))
-median_Rc <- c(median(psyc$Rc), median(ther$Rc), median(meso$Rc))
-
-names(m) <- "Missense error mean"
-names(e) <- "Missense error median"
-names(mm) <- "Elongation error mean"
-names(ee) <- "Elongation error median"
-
-dff <- data.frame(Classification, mean_eM, median_eM, mean_Rc, median_Rc)
-dff
-```
-
-
-```{r all pysc vs all therm}
-
-psyc <- list.files("Rates/Psychrophile" , recursive = TRUE, full.names = TRUE)
-names(psyc) <- psyc
-psyc <- lapply(psyc, read_tsv) %>% bind_rows(.id = "file")
-psyc <- psyc %>% separate(file, sep = "/",into = c("x", "type", "species"))
-
-ther <- list.files("Rates/Thermophile" , recursive = TRUE, full.names = TRUE)
-names(ther) <- ther
-ther <- lapply(ther, read_tsv) %>% bind_rows(.id = "file")
-ther <- ther %>% separate(file, sep = "/",into = c("x", "type", "species"))
-
-
-combine <- psyc %>% left_join(ther,by=c("AA","Codon"),suffix = c("_psyc", "_ther"))
-p <- ggplot(combine, aes(x=Rc_psyc,y=Rc_ther)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Elongation Rates \n psyc") + ylab("Elongation Rates \n ther") + theme_cowplot() + theme(aspect.ratio = 1) + stat_cor(method= "spearman")
-
-p
-
-
-g <- ggplot(combine, aes(x=eM_psyc,y=eM_ther)) + geom_point() + geom_abline(intercept = 0,slope = 1) + xlab("Missense Error Rates \n psyc") + ylab("Missense Error Rates \n ther") + theme_cowplot() + theme(aspect.ratio = 1) + stat_cor(method= "spearman")
-
-g
-```
-
-
-
-```{r}
-files.list <- list.files("tGCN_New",recursive = T,full.names = T)
+files.list <- list.files("tGCN_new",recursive = T,full.names = T)
 names(files.list) <- files.list
 
 
@@ -228,17 +27,19 @@ tgcn <- lapply(files.list,read_tsv,col_types=cols()) %>%
   bind_rows(.id="File_path")
 
 tgcn <- tgcn %>% 
-  separate(File_path,into=c("Rates_Updated","Temperature","Species"),sep = "/")
+  separate(File_path,into=c("tGCN_new","Temperature","Species"),sep = "/")
 
-tgcn = tgcn%>%mutate(Species = str_replace_all(Species," ", "_"))
-tgcn = tgcn%>%mutate(Species = str_replace_all(Species,"\\[", ""))
-tgcn = tgcn%>%mutate(Species = str_replace_all(Species,"\\]", ""))
+tgcn <- tgcn %>% 
+  mutate(Species = str_replace_all(Species," ", "_")) %>%
+  mutate(Species = str_replace_all(Species,"\\[", "")) %>%
+  mutate(Species = str_replace_all(Species,"\\]", ""))
 
 
 tgcn <- tgcn %>%
   dplyr::select(Temperature,Species,Codon,AA,tRNA) %>%
   mutate(Species = str_remove(Species,".tsv"),
          Present = ifelse(tRNA > 0,1,0))
+
 tgcn.summary <- tgcn %>% 
   group_by(Temperature,Species) %>%
   summarize(Total.tGCN = sum(tRNA),
@@ -254,43 +55,13 @@ tgcn.summary.codon <- tgcn %>%
 
 ```
 
-```{r fig.width=9,fig.height=7}
-d.tgcn.plot <- ggplot(tgcn.summary,aes(x=Diversity.tGCN,fill=Temperature)) +
-  geom_histogram(aes(y = stat(density*width)),color="black") +
-  theme_cowplot() +
-  ylab("Relative Density") +
-  xlab("tRNA Diversity") +
-  ggtitle("Diversity of tRNA represented")
-d.tgcn.plot
-
-t.tgcn.plot <- ggplot(tgcn.summary,aes(x=Total.tGCN,fill=Temperature)) +
-  geom_histogram(aes(y = stat(density*width)),color="black") +
-  theme_cowplot() +
-  ylab("Relative Density") +
-  xlab("Total tGCN") +
-  ggtitle("Total number of tRNA genes")
-t.tgcn.plot
-
-comb.plot <- plot_grid(tree, d.tgcn.plot,t.tgcn.plot,labels = c("A","B", "C"))
-comb.plot
-
-```
-
-```{r fig.width=9,fig.height=7}
-library(patchwork)
-library(ggplot2)
-comb.plot <- (d.tgcn.plot | t.tgcn.plot)
-comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
-comb.plot
 
 
-```
 
 
 ```{r}
 files.list <- list.files("Rates_Updated",recursive = T,full.names = T)
 names(files.list) <- files.list
-
 
 rates <- lapply(files.list,read_tsv,col_types=cols()) %>%
   bind_rows(.id="File_path")
@@ -303,146 +74,10 @@ rates <- rates %>%
   dplyr::select(Temperature,Species,Codon,AA,Rc,eM) %>%
   mutate(Species = str_remove(Species,".tsv"))
   
-
-
-```
-
-```{r}
-d.tgcn.plot <- ggplot(rates.summary,aes(x=Median.Rc,fill=Temperature)) +
-  geom_histogram(aes(y = stat(density*width)),color="black") +
-  theme_cowplot() +
-  ylab("Relative Density") +
-  xlab("Median Elongation Rate") 
-d.tgcn.plot
-
-t.tgcn.plot <- ggplot(rates.summary,aes(x=Median.eM,fill=Temperature)) +
-  geom_histogram(aes(y = stat(density*width)),color="black") +
-  theme_cowplot() +
-  ylab("Relative Density") +
-  xlab("Median Missense Error Rate")
-t.tgcn.plot
-
-comb.plot <- plot_grid(d.tgcn.plot,t.tgcn.plot,labels = c("A","B"))
-comb.plot
-```
-
-# Set up phylogeny
-tGCN were pulled from https://doi.org/10.1007/s00438-021-01771-4.
-Phylogeny of bacteria pulled from https://github.com/biocore/wol. 
-Species names not necessarily the same between the two publications, so need to map them based on something like the NCBI taxon id.
-
-```{r}
-
-parseNCBIAssemblyReport <- function(file)
-{
-  report <- readLines(file)
-  report.list <- list(Species = NA,
-                      taxid = NA,
-                      Genbank = NA)
-  next.line <- FALSE
-  target <- NA
-  for (i in 1:length(report))
-  {
-    species <- trimws(str_extract(report[i],"(?<=Organism name:)[A-Za-z0-9 \\-/]+"))
-    taxid <- as.numeric(str_match(report[i],"(?<=Taxid:)\\s+\\d+"))
-    seq.name <- str_detect(report[i],"Sequence-Name")
-    if (!is.na(species))
-    {
-      report.list[["Species"]] <- species
-    } 
-    if (!is.na(taxid))
-    {
-      report.list[["taxid"]] <- taxid
-    } 
-    if (seq.name)
-    {
-      next.line <- TRUE
-      target <- i + 1
-    }
-    if (i == target && next.line)
-    {
-      tmp <- unlist(str_split(report[i],"\t"))
-      if (tmp[1] == "I" || tmp[1] == "1")
-      {
-        acc <-  str_remove(tmp[5],"\\.[0-9]+")
-        report.list[["Genbank"]] <- acc
-      } else {
-        acc <-  str_remove(tmp[1],"\\.[0-9]+")
-        report.list[["Genbank"]] <- acc
-      }
-      
-      
-    }
-  }
-  return(report.list %>% as.data.frame())
-}
-
-files <- list.files("Phylogeny/ncbi_assembly_reports",pattern = "GCF_*",full.names = T)
-assembly <- lapply(files,parseNCBIAssemblyReport) %>% bind_rows()
-
-meta.file <- read_tsv("Phylogeny/metadata_from_tgcn.txt") %>% 
-  dplyr::select(`Organism Name`,`GenBank Accession`,Superkingdom) %>%
-  dplyr::rename(Species = `Organism Name`,Genbank = `GenBank Accession`)
-
-assembly <- assembly %>% 
-  left_join(meta.file,by="Genbank") %>%
-  filter(Superkingdom == "Bacteria") %>%
-  dplyr::select(taxid,Species.y) %>%
-  dplyr::rename(Species = Species.y) %>%
-  as_tibble()
-  
-
-gc <- read_tsv("Phylogeny/botzman_metadata.txt") %>%
-  dplyr::rename(taxid=`Tax ID`,GC=`GC content (%)`) %>%
-  dplyr::select(taxid,GC)
-
-assembly <- assembly %>% 
-  left_join(gc,by="taxid") %>%
-  filter(!is.na(GC))
-```
-
-
-```{r}
-library(ape)
-library(phytools)
-library(phangorn)
-
-tree <- read.tree("Phylogeny/astral.cons.ultra.e5p50.nwk")
-
-meta <- read_tsv("Phylogeny/metadata.tsv") %>% 
-  dplyr::rename(GenomeID=`#genome`)
-species.used <- assembly %>%
-  inner_join(meta,by="taxid") %>%
-  filter(!duplicated(.[["GenomeID"]]) & !duplicated(.[["Species"]]))
-
-missing.species <- meta %>%
-  filter(!GenomeID %in% species.used$GenomeID)
-
-tree.filt <- drop.tip(tree,missing.species$GenomeID)
-
-species <- species.used$Species
-names(species) <- species.used$GenomeID
-
-tree.filt$tip.label <- unname(species[tree.filt$tip.label])
-
-
-still.missing <- tree.filt$tip.label[which(!tree.filt$tip.label %in% tgcn.summary$Species)]
-
-tree.filt <- drop.tip(tree.filt,still.missing)
-tree.filt<-force.ultrametric(tree.filt) ## default method
-is.ultrametric(tree.filt)
-tree.filt <- multi2di(tree.filt)
-```
-
-
-```{r}
-tree <- read.tree("Phylogeny/DatedAgashiPhyloFiltered.nwk")
-plot(tree)
-which("Clostridium_saccharolyticum_WM1" == tree$tip.label)
-
-rates = rates%>%mutate(Species = str_replace_all(Species," ", "_"))
-rates = rates%>%mutate(Species = str_replace_all(Species,"\\[", ""))
-rates = rates%>%mutate(Species = str_replace_all(Species,"\\]", ""))
+rates <- rates %>% 
+  mutate(Species = str_replace_all(Species," ", "_")) %>%
+  mutate(Species = str_replace_all(Species,"\\[", "")) %>%
+  mutate(Species = str_replace_all(Species,"\\]", ""))
 
 rates.summary <- rates %>% 
     group_by(Temperature,Species) %>%
@@ -453,44 +88,62 @@ rates.summary <- rates %>%
               Max.Rc = max(Rc),
               Max.eM = max(eM))
   
-  rates.summary.codon <- rates %>% 
-    separate(Codon,into=c("N1","N2","N3"),sep= c(1, 2, 3)) %>%
-    mutate(GC3.codon=ifelse(N3 %in% c("G","C"),"yes","no")) %>%
-    group_by(Temperature,Species,GC3.codon) %>%
-    summarize(Mean.Rc = mean(Rc),
-              Mean.eM = mean(eM),
-              Median.Rc = median(Rc),
-              Median.eM = median(eM),
-              Max.Rc = max(Rc),
-              Max.eM = max(eM))
-#use above on tRNA and plot GC content and tRNA diversity(diversity of GC ending or AT ending)
-  
-which(!tree$tip.label %in% unique(tgcn$Species))
-tree.filt = tree
+rates.summary.codon <- rates %>% 
+  separate(Codon,into=c("N1","N2","N3"),sep= c(1, 2, 3)) %>%
+  mutate(GC3.codon=ifelse(N3 %in% c("G","C"),"yes","no")) %>%
+  group_by(Temperature,Species,GC3.codon) %>%
+  summarize(Mean.Rc = mean(Rc),
+            Mean.eM = mean(eM),
+            Median.Rc = median(Rc),
+            Median.eM = median(eM),
+            Max.Rc = max(Rc),
+            Max.eM = max(eM))
+
 ```
+
+
+# Set up phylogeny
+
+
 ```{r}
-gc <- read_tsv("Phylogeny/diwan_agashe_bacteria_gc_content.tsv")
+tree <- read.tree("Phylogeny/DatedAgashiPhyloFiltered_corrected.nwk")
+plot(tree)
 
-gc <- gc%>%dplyr::rename(Species = ncbi_name)
-gc = gc%>%mutate(Species = str_replace_all(Species,"/", "_"))
+```
 
-gc = gc%>%mutate(Species = str_replace_all(Species," ", "_"))
-gc = gc%>%mutate(Species = str_replace_all(Species,"\\[", ""))
-gc = gc%>%mutate(Species = str_replace_all(Species,"\\]", ""))
-gc = gc%>%filter(Species %in% tree.filt$tip.label)
-missingSpecies <- tgcn%>%filter(!Species %in% gc$Species)%>%dplyr::select(Species)%>%unique()%>%deframe()
-tree.filt = drop.tip(tree.filt,missingSpecies)
-tgcn = tgcn%>%filter(!Species %in% missingSpecies)
-rates = rates%>%filter(!Species %in% missingSpecies)
+
+
+
+```{r}
+gc <- read_tsv("Phylogeny/targetBacteriaForLargerAnyl.tsv")
+gc <- gc %>%
+  dplyr::rename(Species = `#Organism Name`,OGT=Temperature,GC=`GC%`) %>%
+  mutate(GC = GC/100) %>%
+  mutate(Species = str_replace_all(Species,"/", "_")) %>%
+  mutate(Species = str_replace_all(Species," ", "_")) %>%
+  mutate(Species = str_replace_all(Species,"\\[", "")) %>%
+  mutate(Species = str_replace_all(Species,"\\]", "")) %>%
+  filter(Species %in% tree$tip.label)
+
+missingSpecies <- tgcn %>%
+  filter(!Species %in% gc$Species) %>%
+  dplyr::select(Species) %>%
+  unique() %>%
+  deframe()
+tree <- drop.tip(tree,missingSpecies)
+
+tgcn <- tgcn %>%
+  filter(!Species %in% missingSpecies)
+rates <- rates %>%
+  filter(!Species %in% missingSpecies)
 
 
 ```
 
 
 
-```{r fig.width=25,fig.height=25}
-library(ggtree)
-library(patchwork)
+```{r fig.width=7,fig.height=7}
+
 
 treeTraitPlot <- function(tree.plot,trait.df,trait.name,panel.name,significance = NULL,xlim=c(-1,1),color.col = "Temperature")
 {
@@ -506,22 +159,56 @@ treeTraitPlot <- function(tree.plot,trait.df,trait.name,panel.name,significance 
     scale_linetype_manual(values=c("Significant"=1,"Not Significant"=2))
   return(trait.plot)
 }
-tgcn.summary.gc = gc%>%left_join(tgcn.summary,by = "Species")
+tgcn.summary.gc <- gc %>%
+  left_join(tgcn.summary,by = "Species")
+
+tree.data <- tgcn.summary.gc %>%
+  left_join(rates.summary, by=c("Species","Temperature")) %>%
+  #mutate(Temperature = ifelse(OGT <= 25,"Psychrophile",Temperature)) %>% 
+  #filter(habitat!="Environmental")  %>% 
+  relocate(Species)
+  
+
+still.missing <- tree$tip.label[which(!tree$tip.label %in% tree.data$Species)]
+tree.filt <- drop.tip(tree,still.missing)
 tree.plot <- ggtree(tree.filt)
-tree.data <- tgcn.summary.gc%>%relocate(Species)%>%
-left_join(rates.summary, by=c("Species","Temperature"))
+tree.data <- tree.data %>%
+  dplyr::slice(match(tree.filt$tip.label,Species))
+rownames(tree.data) <- tree.data$Species
+
+
 
 p <- treeTraitPlot(tree.plot,trait.df=tree.data,trait.name = "GC",panel.name = "Genome-wide GC%",xlim=c(0,1),color.col="Temperature")
 p <- treeTraitPlot(p,trait.df=tree.data,trait.name = "Total.tGCN",panel.name = "Total tGCN",xlim=c(0,1),color.col="Temperature")
 p <- treeTraitPlot(p,trait.df=tree.data,trait.name = "Diversity.tGCN",panel.name = "tRNA Diversity",xlim=c(0,1),color.col="Temperature")
 
+d.tgcn.plot <- ggplot(tree.data,aes(x=Diversity.tGCN,fill=Temperature)) +
+  geom_histogram(aes(y = stat(density*width)),color="black",position = "identity",alpha=0.5) +
+  theme_cowplot() +
+  ylab("Relative Density") +
+  xlab("tRNA Diversity") +
+  ggtitle("Diversity of tRNA represented") +
+  scale_fill_viridis_d() 
+
+d.tgcn.plot
+
+t.tgcn.plot <- ggplot(tree.data,aes(x=Total.tGCN,fill=Temperature)) +
+  geom_histogram(aes(y = stat(density*width)),color="black",position = "identity",alpha=0.5) +
+  theme_cowplot() +
+  ylab("Relative Density") +
+  xlab("Total tGCN") +
+  ggtitle("Total number of tRNA genes") +
+  scale_fill_viridis_d()
+
+
+
+
 p <- p +theme_tree2() +
   theme(legend.title = element_text(size=16),legend.text = element_text(size=14)) +
   ggtitle("Variation in GC% and tRNA Pool Across Bacteria") +
   scale_color_viridis_d()
-p
 
-comb.plot <- plot_grid(p , d.tgcn.plot , tree, t.tgcn.plot,labels = c("A","B","", "C"), ncol = 2)
+comb.plot <- p | (d.tgcn.plot /  t.tgcn.plot)
 comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
 comb.plot
 
@@ -534,15 +221,16 @@ comb.plot
 modelFitToEquation <- function(model.fit)
 {
   summ.model <- summary(model.fit)
-  sig <- summ.model$tTable
-  if (sig[2,"p-value"] < 0.05)
+  #sig <- summ.model$tTable
+  sig <- summ.model$coefficients
+  if (sig[2,"p.value"] < 0.05)
   {
     slope.term <- paste0(format(unname(coef(model.fit)[2]),digits=2),"*")
   } else
   {
     slope.term <- paste0(format(unname(coef(model.fit)[2]),digits=2),"")
   }
-  if (sig[1,"p-value"] < 0.05)
+  if (sig[1,"p.value"] < 0.05)
   {
     intercept.term <- paste0(format(unname(coef(model.fit)[1]),digits=2),"*")
   } else
@@ -557,16 +245,25 @@ modelFitToEquation <- function(model.fit)
 }
 
 
-gc.d.tgcn.fit <- gls(Diversity.tGCN ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt))
+gc.d.tgcn.fit.bm <- phylolm(Diversity.tGCN ~ GC,data=tree.data,phy=tree.filt,model="BM")
+gc.d.tgcn.fit.ou <- phylolm(Diversity.tGCN ~ GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+models <- list(gc.d.tgcn.fit.bm,gc.d.tgcn.fit.ou)
+model.comp <-c(gc.d.tgcn.fit.bm$aic,gc.d.tgcn.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+model.comp - best.model$aic
+
+
 gc.d.tgcn <- ggplot(tree.data,aes(x=GC,y=Diversity.tGCN,color=Temperature)) +
   geom_point() +
   xlab("Genome-wide GC%") +
   ylab("tRNA Diversity") +
-  geom_abline(intercept=gc.d.tgcn.fit$coefficients[1],slope=gc.d.tgcn.fit$coefficients[2]) +
-  geom_text(x = 0.6,y=30,label=modelFitToEquation(gc.d.tgcn.fit),parse=T,inherit.aes = F,size=5) +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 0.60,y=30,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
   ggtitle("tRNA Diversity increases with\nGC content") +
   theme_cowplot()+
-  theme(aspect.ratio=1)
+  theme(aspect.ratio=1) +
+  scale_color_viridis_d()
 
 gc.d.tgcn
 ```
@@ -574,42 +271,61 @@ gc.d.tgcn
 
 ```{r}
 
-em.d.tgcn.fit <- gls(Median.eM ~ Diversity.tGCN,data=tree.data,correlation=corBrownian(1,tree.filt))
+em.d.tgcn.fit.bm <- phylolm(Median.eM ~ Diversity.tGCN,data=tree.data,phy=tree.filt,model="BM")
+em.d.tgcn.fit.ou <- phylolm(Median.eM ~ Diversity.tGCN,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+models <- list(em.d.tgcn.fit.bm,em.d.tgcn.fit.ou)
+model.comp <-c(em.d.tgcn.fit.bm$aic,em.d.tgcn.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+model.comp - best.model$aic
+
 em.d.tgcn <- ggplot(tree.data,aes(x=Diversity.tGCN,y=Median.eM,color=Temperature)) +
   geom_point() +
   xlab("tRNA Diversity") +
   ylab("Predicted Median Missense Error Rate\nPer Codon") +
-  geom_abline(intercept=em.d.tgcn.fit$coefficients[1],slope=em.d.tgcn.fit$coefficients[2]) +
-  geom_text(x = 35, y=0.00275,label=modelFitToEquation(em.d.tgcn.fit),parse=T,inherit.aes = F,size=5) +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 32, y=0.00280,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
   ggtitle("Expected missense error rates increase with\ntRNA diversity") +
   theme_cowplot() +
-  theme(aspect.ratio=1)
+  theme(aspect.ratio=1) +
+  scale_color_viridis_d()
 
 em.d.tgcn
 ```
 
 ```{r}
-gc.em.fit <- gls(Median.eM ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt))
+
+gc.em.fit.bm <- phylolm(Median.eM ~ GC,data=tree.data,phy=tree.filt,model="BM")
+gc.em.fit.ou <- phylolm(Median.eM ~ GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+models <- list(gc.em.fit.bm,gc.em.fit.ou)
+model.comp <-c(gc.em.fit.bm$aic,gc.em.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+model.comp
+model.comp - best.model$aic
+
 gc.em <- ggplot(tree.data,aes(x=GC,y=Median.eM,color=Temperature)) +
   geom_point() +
   xlab("Genome-wide GC%") +
   ylab("Predicted Median Missense Error Rate\nPer Codon") +
-  geom_abline(intercept=gc.em.fit$coefficients[1],slope=gc.em.fit$coefficients[2]) +
-  geom_text(x = 0.4, y=0.00275,label=modelFitToEquation(gc.em.fit),parse=T,inherit.aes = F,size=5) +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 0.45, y=0.00275,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
   ggtitle("Expected missense error rates increase with\nGC Content") +
   theme_cowplot() +
-  theme(aspect.ratio=1)
+  theme(aspect.ratio=1) +
+  scale_color_viridis_d()
 
 gc.em
 
 ```
-```{r fig.width=12,fig.height=6}
-library(patchwork)
-comb.plot <- (gc.d.tgcn | em.d.tgcn | gc.em)
+
+
+```{r fig.width=10,fig.height=4}
+
+comb.plot <- gc.d.tgcn | em.d.tgcn | gc.em 
 comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
 comb.plot
 ```
-
 
 
 ```{r}
@@ -654,171 +370,159 @@ rates.summary.codon.order.no <- rates.summary.codon.order %>%
 
 ```{r}
 
-gc.d.tgcn.fit <- gls(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.yes,correlation=corBrownian(1,tree.filt))
+gc.d.tgcn.fit.bm <- phylolm(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.yes,phy=tree.filt,model="BM")
+gc.d.tgcn.fit.ou <- phylolm(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.yes,phy=tree.filt,model="OUrandomRoot")
+# 
+models <- list(gc.d.tgcn.fit.bm,gc.d.tgcn.fit.ou)
+model.comp <-c(gc.d.tgcn.fit.bm$aic,gc.d.tgcn.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+model.comp
+model.comp - best.model$aic
+
 gc.d.tgcn.yes <- ggplot(tgcn.summary.codon.order.yes, aes(x=GC,y=Diversity.tGCN,color=Temperature)) +
   geom_point() +
   xlab("Genome-wide GC%") +
   ylab("tRNA Diversity") +
-  geom_abline(intercept=gc.d.tgcn.fit$coefficients[1],slope=gc.d.tgcn.fit$coefficients[2]) +
-  geom_text(x = 0.6, y=16,label=modelFitToEquation(gc.d.tgcn.fit),parse=T,inherit.aes = F,size=5) +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 0.6, y=16,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
   theme_cowplot() +
   theme(aspect.ratio=1) + 
-  ggtitle("GC content vs. tRNA Diversity\nGC-ending Codons")
+  ggtitle("GC content vs. tRNA Diversity\nGC-ending Codons") +
+  scale_color_viridis_d()
 
 gc.d.tgcn.yes
+```
 
-gc.d.tgcn.fit <- gls(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.no,correlation=corBrownian(1,tree.filt))
+
+```{r}
+gc.d.tgcn.fit.bm <- phylolm(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.no,phy=tree.filt,model="BM")
+gc.d.tgcn.fit.ou <- phylolm(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.no,phy=tree.filt,model="OUrandomRoot")
+# 
+models <- list(gc.d.tgcn.fit.bm,gc.d.tgcn.fit.ou)
+model.comp <-c(gc.d.tgcn.fit.bm$aic,gc.d.tgcn.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+model.comp
+model.comp - best.model$aic
+
 gc.d.tgcn.no <- ggplot(tgcn.summary.codon.order.no, aes(x=GC,y=Diversity.tGCN,color=Temperature)) +
   geom_point() +
   xlab("Genome-wide GC%") +
   ylab("tRNA Diversity") +
-  geom_abline(intercept=gc.d.tgcn.fit$coefficients[1],slope=gc.d.tgcn.fit$coefficients[2]) +
-  geom_text(x = 0.4, y=15.4,label=modelFitToEquation(gc.d.tgcn.fit),parse=T,inherit.aes = F,size=5) +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 0.4, y=15.4,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
   theme_cowplot() +
   theme(aspect.ratio=1) + 
-  ggtitle("GC content vs. tRNA Diversity\nAT-ending Codons")
-
+  ggtitle("GC content vs. tRNA Diversity\nAT-ending Codons") +
+  scale_color_viridis_d()
 gc.d.tgcn.no
 
-
-gc.em.fit <- gls(Median.eM ~ GC,data=rates.summary.codon.order.yes,correlation=corBrownian(1,tree.filt))
-gc.em.yes <- ggplot(rates.summary.codon.order.yes, aes(x=GC,y=Median.eM,color=Temperature)) +
-  geom_point() +
-  xlab("Genome-wide GC%") +
-  ylab("Predicted Median Missense Error Rate\nPer Codon") +
-  geom_abline(intercept=gc.em.fit$coefficients[1],slope=gc.em.fit$coefficients[2]) +
-  geom_text(x = 0.4, y=0.00325,label=modelFitToEquation(gc.em.fit),parse=T,inherit.aes = F,size=5) +
-  theme_cowplot() +
-  theme(aspect.ratio=1) + 
-  ggtitle("GC content vs. Expected Missense Error\nGC-ending Codons")
-
-gc.em.yes
-
-gc.em.fit <- gls(Median.eM ~ GC,data=rates.summary.codon.order.no,correlation=corBrownian(1,tree.filt))
-gc.em.no <- ggplot(rates.summary.codon.order.no, aes(x=GC,y=Median.eM,color=Temperature)) +
-  geom_point() +
-  xlab("Genome-wide GC%") +
-  ylab("Predicted Median Missense Error Rate\nPer Codon") +
-  geom_abline(intercept=gc.em.fit$coefficients[1],slope=gc.em.fit$coefficients[2]) +
-  geom_text(x = 0.4, y=0.0026,label=modelFitToEquation(gc.em.fit),parse=T,inherit.aes = F,size=5) +
-  theme_cowplot() +
-  theme(aspect.ratio=1) + 
-  ggtitle("GC content vs. Expected Missense Error\nAT-ending Codons")
-
-gc.em.no
-
 ```
-## Comparing across different environments
 
-First, we will examine if there are significant differences in tRNA diversity and total tGCN across environments while controlling for the phylogeny using a phylogenetic regression.
-Importantly, we see a clear correlation between GC\% and the overall diversity of species tRNA pool; thus, we will also want to assess the effect of including GC\% as a predictor variable in our linear models to assess if any differences are solely due to differences in GC\% content between temperature classes.
-This will be accomplished using the `gls` function in the `nlme` package.
-For simplicity, we will assume the covariance matrix between species traits is consistent with a Brownian motion model of trait evolution, i.e. the distance between traits, and we will ignore potential interaction effects between predictor variables.
-Future work will incorporate more complex phylogenetic models of trait evolution (e.g. the Ornstein-Uhlenbeck model) and model interaction effects.
-```{r fig.width=10,fig.height=6}
-library(patchwork)
+
+
+
+
+
+```{r fig.width=6.5,fig.height=3}
+
 comb.plot <- (gc.d.tgcn.yes | gc.d.tgcn.no)
 comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
 comb.plot
 ```
 
+
+## Comparing across different environments
+
+
+
 ### Differences in tRNA pool diversity 
-```{r}
-
-tgcn.summary.order <- tgcn.summary  %>%
-  left_join(assembly,by="Species") %>%
-  ungroup() %>%
-  filter(Species %in% tree.filt$tip.label) %>%
-  filter(!(Temperature == "Mesophile" & Species == "Shewanella loihica PV-4")) %>% ## Need to double check this.
-  dplyr::slice(match(tree.filt$tip.label,Species)) %>%
-  column_to_rownames("Species") %>%
-  as.data.frame()
-
-temp.vs.div <- gls(Diversity.tGCN ~ Temperature,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
-temp.vs.gc <- gls(Diversity.tGCN ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
-
-temp.vs.div.w.gc <- gls(Diversity.tGCN ~ Temperature + GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
-
-anova(temp.vs.div,temp.vs.gc, temp.vs.div.w.gc)
-
-```
-Based on the Akaike Information Criterion (AIC), we observe that the phylogenetic model including the effects of GC% on tRNA pool diversity is a better model than without.
-
-```{r}
-summary(temp.vs.div.w.gc)
-```
-
-Based on the estimates of the slope, when controlling for the effects of GC content in our phylogenetic regression, tRNA diversity is, on average, higher in thermophiles ($\beta_{\text{Thermophile}} = 1.638$, $p = 0.0164$) and lower in psychrophiles ($\beta_{\text{Psychrophile}} = -1.450$, $p = 0.0408$) compared to mesophiles.
-Based on the relationship between increased tRNA diversity and increased missense error rates, we next test if extremophiles significantly differ from mesophiles in terms of the average missense error rates. 
-
-```{r}
-rates.summary.order <- rates.summary  %>%
-  left_join(assembly,by="Species") %>%
-  ungroup() %>%
-  filter(Species %in% tree.filt$tip.label) %>%
-  filter(!(Temperature == "Mesophile" & Species == "Shewanella loihica PV-4")) %>% ## I think this is an error in one of the metadata files. Need to double check this.
-  dplyr::slice(match(tree.filt$tip.label,Species)) %>%
-  column_to_rownames("Species") %>%
-  as.data.frame()
-
-temp.vs.err <- gls(Median.eM ~ Temperature,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
-temp.vs.gc <- gls(Median.eM ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
-
-temp.vs.err.w.gc <- gls(Median.eM ~ Temperature + GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
-
-anova(temp.vs.err,temp.vs.gc,temp.vs.err.w.gc)
-
-```
-As before, our results clearly indicate that including the effects of GC\% improve our model fit based on the AIC values.
-
-```{r}
-summary(temp.vs.err.w.gc)
-```
-However, we find no significant difference between the extremophiles and mesophiles in terms of average missense error rates after controlling for the phylogeny and the effects of GC\%.
-We note that excluding AT-ending codons does not change the results of this regression.
 
 
 ```{r}
 
-temp.vs.err <- gls(Median.eM ~ Temperature,data=rates.summary.codon.order.yes,correlation=corBrownian(1,tree.filt), method = "ML")
+temp.vs.div.bm <- phylolm(Diversity.tGCN ~ Temperature,phy=tree.filt,data=tree.data,model="BM")
+div.vs.gc.bm <- phylolm(Diversity.tGCN ~ GC,phy=tree.filt,data=tree.data,model="BM")
+temp.vs.div.w.gc.bm <- phylolm(Diversity.tGCN ~ Temperature + GC,phy=tree.filt,data=tree.data,model="BM")
 
-temp.vs.err.w.gc <- gls(Median.eM ~ Temperature + GC,data=rates.summary.codon.order.yes,correlation=corBrownian(1,tree.filt), method = "ML")
+temp.vs.div.ou <- phylolm(Diversity.tGCN ~ Temperature,phy=tree.filt,data=tree.data,model="OUrandomRoot")
+div.vs.gc.ou <- phylolm(Diversity.tGCN ~ GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+temp.vs.div.w.gc.ou <- phylolm(Diversity.tGCN ~ Temperature + GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
 
-anova(temp.vs.err,temp.vs.err.w.gc)
+model.comp <- c(temp.vs.div.bm$aic,
+            div.vs.gc.bm$aic,
+            temp.vs.div.w.gc.bm$aic,
+            temp.vs.div.ou$aic,
+            div.vs.gc.ou$aic,
+            temp.vs.div.w.gc.ou$aic)
 
-summary(temp.vs.err.w.gc)
+best.model.index <- which.min(model.comp)
+
+model.comp - model.comp[best.model.index]
+```
+
+
+
+```{r}
+summary(temp.vs.div.w.gc.bm)
+```
+
+
+
+```{r}
+temp.vs.err.bm <- phylolm(Median.eM  ~ Temperature,phy=tree.filt,data=tree.data,model="BM")
+err.vs.gc.bm <- phylolm(Median.eM  ~ GC,phy=tree.filt,data=tree.data,model="BM")
+temp.vs.err.w.gc.bm <- phylolm(Median.eM  ~ Temperature + GC,phy=tree.filt,data=tree.data,model="BM")
+
+temp.vs.err.ou <- phylolm(Median.eM  ~ Temperature,phy=tree.filt,data=tree.data,model="OUrandomRoot")
+err.vs.gc.ou <- phylolm(Median.eM  ~ GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+temp.vs.err.w.gc.ou <- phylolm(Median.eM  ~ Temperature + GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+model.comp <- c(temp.vs.err.bm$aic,
+            err.vs.gc.bm$aic,
+            temp.vs.err.w.gc.bm$aic,
+            temp.vs.err.ou$aic,
+            err.vs.gc.ou$aic,
+            temp.vs.err.w.gc.ou$aic)
+
+best.model.index <- which.min(model.comp)
+
+model.comp - model.comp[best.model.index]
 
 ```
 
-Based on these results, although thermophiles tend to have more diverse tRNA pools relative to mesophiles and psychrophiles, this increased diversity would not necessarily lead to an increased missense error rate.
+```{r}
+summary(temp.vs.err.w.gc.ou)
+```
+
 
 ### Differences in total tRNA 
 
-Previous analyses have examined differences in the number of tRNA genes across psychrophiles, mesophiles, and thermophiles, concluding that psychrophiles tend to have more tRNA genes relative to mesophiles while thermophiles tend to have fewer tRNA genes relative to mesophiles.
-This has been interpreted in the context of these extremophiles respective environments.
-As psychrophiles live in colder temperatures, they need to produce more tRNA molecules to compensate for slower diffusion rates.
-Similarly, the higher temperature environments of thermophiles allow for rapid diffusion of molecules, allowing for fewer tRNA molecules and thus the purging of redundant tRNA gene copies via natural selection or genetic drift.
+
+```{r}
+
+temp.vs.total.bm <- phylolm(Total.tGCN ~ Temperature,phy=tree.filt,data=tree.data,model="BM")
+total.vs.gc.bm <- phylolm(Total.tGCN ~ GC,phy=tree.filt,data=tree.data,model="BM")
+temp.vs.total.w.gc.bm <- phylolm(Total.tGCN ~ Temperature + GC,phy=tree.filt,data=tree.data,model="BM")
+
+temp.vs.total.ou <- phylolm(Total.tGCN ~ Temperature,phy=tree.filt,data=tree.data,model="OUrandomRoot")
+total.vs.gc.ou <- phylolm(Total.tGCN ~ GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+temp.vs.total.w.gc.ou <- phylolm(Total.tGCN ~ Temperature + GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+model.comp <- c(temp.vs.total.bm$aic,
+            total.vs.gc.bm$aic,
+            temp.vs.total.w.gc.bm$aic,
+            temp.vs.total.ou$aic,
+            total.vs.gc.ou$aic,
+            temp.vs.total.w.gc.ou$aic)
+
+best.model.index <- which.min(model.comp)
+
+model.comp - model.comp[best.model.index]
+```
 
 
 ```{r}
-temp.vs.total <- gls(Total.tGCN ~ Temperature,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
-temp.vs.gc <- gls(Total.tGCN ~ GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
-temp.vs.total.w.gc <- gls(Total.tGCN ~ Temperature + GC,data=tree.data,correlation=corBrownian(1,tree.filt), method = "ML")
-
-anova(temp.vs.total,temp.vs.gc, temp.vs.total.w.gc)
-
-
+summary(temp.vs.total.w.gc.ou)
 ```
-```{r}
-summary(temp.vs.total.w.gc)
-summary(temp.vs.total)
-
-```
-Based on our phylogenetic regression that controls for GC content, we fail to find any significant differences in the total number of tRNA genes between psychrophiles, thermophiles, and mesophiles, conflicting with previous claims.
-It is unclear if this is due to lack of statistical power (e.g. only 7 psychrophiles and 23 thermophiles are present in the data) or indicates that previous results were due to failure to control for other factors that may impact the evolution of the tRNA pool and/or the phylogeny of the species under consideration.
-In addition, our analysis would benefit from controlling for the effects of growth rate, although previous analysis found no systematic differences in growth rates between the three classes of bacteria. 
 
 
-
-
->>>>>>> bebb5064ee67ededd405cef3e461c0a343a461c3
