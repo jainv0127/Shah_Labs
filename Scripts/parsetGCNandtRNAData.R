@@ -1,6 +1,6 @@
 library(tidyverse)
 library(ape)
-trnagcn <- read_csv("../Data/20161122_int_file_trnagcn_complete.csv")
+trnagcn <- read_csv("../Data/20161122_int_file_trnagcn_complete.csv") # downloaded from https://github.com/gauravdiwan89/me_evolution_project
 temp <- read_csv("../Data/bacteria_ncbi_temperatures_clean.csv")
 trnagcn <- mutate(trnagcn, ncbi_acc = str_remove(ncbi_acc,"\\.[0-9]"))
 temp <- mutate(temp, Assembly = str_remove(Assembly,"\\.[0-9]"))
