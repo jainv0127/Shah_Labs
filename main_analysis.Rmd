@@ -463,7 +463,7 @@ model.comp - model.comp[best.model.index]
 
 
 ```{r}
-summary(temp.vs.div.w.gc.bm)
+summary(temp.vs.div.w.gc.ou)
 ```
 
 
