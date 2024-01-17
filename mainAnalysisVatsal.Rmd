@@ -1,0 +1,619 @@
+---
+title: "Analysis of tRNA Pool"
+author: "Vatsal"
+date: "12/8/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(cowplot)
+library(ggpubr)
+library(Biostrings)
+library(nlme)
+library(ape)
+library(ggtree)
+library(patchwork)
+```
+
+
+```{r}
+files.list <- list.files("tGCN_new",recursive = T,full.names = T)
+names(files.list) <- files.list
+
+
+tgcn <- lapply(files.list,read_tsv,col_types=cols()) %>%
+  bind_rows(.id="File_path")
+
+tgcn <- tgcn %>% 
+  separate(File_path,into=c("tGCN_new","Temperature","Species"),sep = "/")
+
+tgcn <- tgcn %>% 
+  mutate(Species = str_replace_all(Species," ", "_")) %>%
+  mutate(Species = str_replace_all(Species,"\\[", "")) %>%
+  mutate(Species = str_replace_all(Species,"\\]", ""))
+
+
+tgcn <- tgcn %>%
+  dplyr::select(Temperature,Species,Codon,AA,tRNA) %>%
+  mutate(Species = str_remove(Species,".tsv"),
+         Present = ifelse(tRNA > 0,1,0))
+
+tgcn.summary <- tgcn %>% 
+  group_by(Temperature,Species) %>%
+  summarize(Total.tGCN = sum(tRNA),
+            Diversity.tGCN = sum(Present))
+
+tgcn.summary.codon <- tgcn %>% 
+  separate(Codon,into=c("N1","N2","N3"),sep= c(1, 2, 3)) %>%
+  mutate(GC3.codon=ifelse(N3 %in% c("G","C"),"yes","no")) %>%
+  group_by(Temperature,Species,GC3.codon) %>%
+  summarize(Total.tGCN = sum(tRNA),
+            Diversity.tGCN = sum(Present))
+#add GC conent from tgcn.tree and plot GC content and tRNA diversity
+
+```
+
+
+
+
+
+```{r}
+files.list <- list.files("Rates_Updated",recursive = T,full.names = T)
+names(files.list) <- files.list
+
+rates <- lapply(files.list,read_tsv,col_types=cols()) %>%
+  bind_rows(.id="File_path")
+
+rates <- rates %>% 
+  separate(File_path,into=c("Rates_Updated","Temperature","Species"),sep = "/")
+
+
+rates <- rates %>%
+  dplyr::select(Temperature,Species,Codon,AA,Rc,eM) %>%
+  mutate(Species = str_remove(Species,".tsv"))
+  
+rates <- rates %>% 
+  mutate(Species = str_replace_all(Species," ", "_")) %>%
+  mutate(Species = str_replace_all(Species,"\\[", "")) %>%
+  mutate(Species = str_replace_all(Species,"\\]", ""))
+
+rates.summary <- rates %>% 
+    group_by(Temperature,Species) %>%
+    summarize(Mean.Rc = mean(Rc),
+              Mean.eM = mean(eM),
+              Median.Rc = median(Rc),
+              Median.eM = median(eM),
+              Max.Rc = max(Rc),
+              Max.eM = max(eM))
+  
+rates.summary.codon <- rates %>% 
+  separate(Codon,into=c("N1","N2","N3"),sep= c(1, 2, 3)) %>%
+  mutate(GC3.codon=ifelse(N3 %in% c("G","C"),"yes","no")) %>%
+  group_by(Temperature,Species,GC3.codon) %>%
+  summarize(Mean.Rc = mean(Rc),
+            Mean.eM = mean(eM),
+            Median.Rc = median(Rc),
+            Median.eM = median(eM),
+            Max.Rc = max(Rc),
+            Max.eM = max(eM))
+
+```
+
+
+# Set up phylogeny
+
+
+```{r}
+tree <- read.tree("Phylogeny/DatedAgashiPhyloFiltered_corrected.nwk")
+plot(tree)
+
+```
+
+
+
+
+```{r}
+gc <- read_tsv("Phylogeny/targetBacteriaForLargerAnyl.tsv")
+gc <- gc %>%
+  dplyr::rename(Species = `#Organism Name`,OGT=Temperature,GC=`GC%`) %>%
+  mutate(GC = GC/100) %>%
+  mutate(Species = str_replace_all(Species,"/", "_")) %>%
+  mutate(Species = str_replace_all(Species," ", "_")) %>%
+  mutate(Species = str_replace_all(Species,"\\[", "")) %>%
+  mutate(Species = str_replace_all(Species,"\\]", "")) %>%
+  filter(Species %in% tree$tip.label)
+
+missingSpecies <- tgcn %>%
+  filter(!Species %in% gc$Species) %>%
+  dplyr::select(Species) %>%
+  unique() %>%
+  deframe()
+tree <- drop.tip(tree,missingSpecies)
+
+tgcn <- tgcn %>%
+  filter(!Species %in% missingSpecies)
+rates <- rates %>%
+  filter(!Species %in% missingSpecies)
+
+
+```
+
+
+
+```{r fig.width=7,fig.height=7}
+
+
+treeTraitPlot <- function(tree.plot,trait.df,trait.name,panel.name,significance = NULL,xlim=c(-1,1),color.col = "Temperature")
+{
+  if (!is.null(significance))
+  {
+    trait.df$Significance <- ifelse(trait.df[,significance] < 0.05,"Significant","Not Significant")
+    trait.plot <- facet_plot(tree.plot,panel=panel.name,data=trait.df,geom=geom_segment,aes(x=0,xend=!!as.name(trait.name),y=y,yend=y,color=!!as.name(color.col),linetype=Significance))
+  } else{
+    trait.plot <- facet_plot(tree.plot,panel=panel.name,data=trait.df,geom=geom_segment,aes(x=0,xend=!!as.name(trait.name),y=y,yend=y,color=!!as.name(color.col)))
+  }
+   trait.plot <- trait.plot +
+    xlim_expand(xlim, panel.name) +
+    scale_linetype_manual(values=c("Significant"=1,"Not Significant"=2))
+  return(trait.plot)
+}
+tgcn.summary.gc <- gc %>%
+  left_join(tgcn.summary,by = "Species")
+
+tree.data <- tgcn.summary.gc %>%
+  left_join(rates.summary, by=c("Species","Temperature")) %>%
+  #mutate(Temperature = ifelse(OGT <= 25,"Psychrophile",Temperature)) %>% 
+  #filter(habitat!="Environmental")  %>% 
+  relocate(Species)
+  
+
+still.missing <- tree$tip.label[which(!tree$tip.label %in% tree.data$Species)]
+tree.filt <- drop.tip(tree,still.missing)
+tree.plot <- ggtree(tree.filt)
+tree.data <- tree.data %>%
+  dplyr::slice(match(tree.filt$tip.label,Species))
+rownames(tree.data) <- tree.data$Species
+
+
+
+p <- treeTraitPlot(tree.plot,trait.df=tree.data,trait.name = "GC",panel.name = "Genome-wide GC%",xlim=c(0,1),color.col="Temperature")
+p <- treeTraitPlot(p,trait.df=tree.data,trait.name = "Total.tGCN",panel.name = "Total tGCN",xlim=c(0,1),color.col="Temperature")
+p <- treeTraitPlot(p,trait.df=tree.data,trait.name = "Diversity.tGCN",panel.name = "tRNA Diversity",xlim=c(0,1),color.col="Temperature")
+
+d.tgcn.plot <- ggplot(tree.data,aes(x=Diversity.tGCN,fill=Temperature)) +
+  geom_histogram(aes(y = stat(density*width)),color="black",position = "identity",alpha=0.5) +
+  theme_cowplot() +
+  ylab("Relative Density") +
+  xlab("tRNA Diversity") +
+  ggtitle("Diversity of tRNA represented") +
+  scale_fill_viridis_d() 
+
+d.tgcn.plot
+
+t.tgcn.plot <- ggplot(tree.data,aes(x=Total.tGCN,fill=Temperature)) +
+  geom_histogram(aes(y = stat(density*width)),color="black",position = "identity",alpha=0.5) +
+  theme_cowplot() +
+  ylab("Relative Density") +
+  xlab("Total tGCN") +
+  ggtitle("Total number of tRNA genes") +
+  scale_fill_viridis_d()
+
+
+
+
+p <- p +theme_tree2() +
+  theme(legend.title = element_text(size=16),legend.text = element_text(size=14)) +
+  ggtitle("Variation in GC% and tRNA Pool Across Bacteria") +
+  scale_color_viridis_d()
+
+comb.plot <- p | (d.tgcn.plot /  t.tgcn.plot)
+comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
+comb.plot
+
+
+```
+
+## Impact of GC content evolution on tRNA pool
+
+```{r}
+library(phylolm)
+modelFitToEquation <- function(model.fit)
+{
+  summ.model <- summary(model.fit)
+  #sig <- summ.model$tTable
+  sig <- summ.model$coefficients
+  if (sig[2,"p.value"] < 0.05)
+  {
+    slope.term <- paste0(format(unname(coef(model.fit)[2]),digits=2),"*")
+  } else
+  {
+    slope.term <- paste0(format(unname(coef(model.fit)[2]),digits=2),"")
+  }
+  if (sig[1,"p.value"] < 0.05)
+  {
+    intercept.term <- paste0(format(unname(coef(model.fit)[1]),digits=2),"*")
+  } else
+  {
+    intercept.term <- paste0(format(unname(coef(model.fit)[1]),digits=2),"")
+  }
+  eq <- substitute(italic(y) == a + b %.% italic(x),
+                   list(a = intercept.term,
+                        b = slope.term))
+  eq <- as.character(as.expression(eq))
+  return(eq)
+}
+
+
+gc.d.tgcn.fit.bm <- phylolm(Diversity.tGCN ~ GC,data=tree.data,phy=tree.filt,model="BM")
+gc.d.tgcn.fit.ou <- phylolm(Diversity.tGCN ~ GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+models <- list(gc.d.tgcn.fit.bm,gc.d.tgcn.fit.ou)
+model.comp <-c(gc.d.tgcn.fit.bm$aic,gc.d.tgcn.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+model.comp - best.model$aic
+
+gc.d.tgcn <- ggplot(tree.data,aes(x=GC,y=Diversity.tGCN,color=Temperature)) +
+  geom_point() +
+  xlab("Genome-wide GC%") +
+  ylab("tRNA Diversity") +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 0.60,y=30,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
+  ggtitle("tRNA Diversity increases with\nGC content") +
+  theme_cowplot()+
+  theme(aspect.ratio=1) +
+  scale_color_viridis_d()
+
+gc.d.tgcn
+
+
+```
+```{r}
+gc.values <- tree.data$GC
+names(gc.values) <- tree.data$Species
+dtgcn.values <- tree.data$Diversity.tGCN
+names(dtgcn.values) <- tree.data$Species
+y.pic <- pic(x=dtgcn.values, phy=tree.filt)
+x.pic <- pic(x=gc.values,phy=tree.filt)
+
+cor.test(x.pic,y.pic,method="spearman")
+```
+
+
+```{r}
+
+em.d.tgcn.fit.bm <- phylolm(Median.eM ~ Diversity.tGCN,data=tree.data,phy=tree.filt,model="BM")
+em.d.tgcn.fit.ou <- phylolm(Median.eM ~ Diversity.tGCN,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+models <- list(em.d.tgcn.fit.bm,em.d.tgcn.fit.ou)
+model.comp <-c(em.d.tgcn.fit.bm$aic,em.d.tgcn.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+model.comp - best.model$aic
+
+em.d.tgcn <- ggplot(tree.data,aes(x=Diversity.tGCN,y=Median.eM,color=Temperature)) +
+  geom_point() +
+  xlab("tRNA Diversity") +
+  ylab("Predicted Median Missense Error Rate\nPer Codon") +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 32, y=0.00280,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
+  ggtitle("Expected missense error rates increase with\ntRNA diversity") +
+  theme_cowplot() +
+  theme(aspect.ratio=1) +
+  scale_color_viridis_d()
+
+em.d.tgcn
+
+
+
+```
+
+```{r}
+em.values <- tree.data$Median.eM
+names(em.values) <- tree.data$Species
+dtgcn.values <- tree.data$Diversity.tGCN
+names(dtgcn.values) <- tree.data$Species
+x.pic <- pic(x=dtgcn.values, phy=tree.filt)
+y.pic <- pic(x=em.values,phy=tree.filt)
+
+cor.test(x.pic,y.pic,method="spearman")
+```
+
+```{r}
+
+gc.em.fit.bm <- phylolm(Median.eM ~ GC,data=tree.data,phy=tree.filt,model="BM")
+gc.em.fit.ou <- phylolm(Median.eM ~ GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+models <- list(gc.em.fit.bm,gc.em.fit.ou)
+model.comp <-c(gc.em.fit.bm$aic,gc.em.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+summary(best.model)
+model.comp
+model.comp - best.model$aic
+
+gc.em <- ggplot(tree.data,aes(x=GC,y=Median.eM,color=Temperature)) +
+  geom_point() +
+  xlab("Genome-wide GC%") +
+  ylab("Predicted Median Missense Error Rate\nPer Codon") +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 0.45, y=0.00275,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
+  ggtitle("Expected missense error rates increase with\nGC Content") +
+  theme_cowplot() +
+  theme(aspect.ratio=1) +
+  scale_color_viridis_d()
+
+gc.em
+
+```
+```{r}
+gc.values <- tree.data$GC
+names(gc.values) <- tree.data$Species
+em.values <- tree.data$Median.eM
+names(em.values) <- tree.data$Species
+x.pic <- pic(x=gc.values, phy=tree.filt)
+y.pic <- pic(x=em.values,phy=tree.filt)
+
+cor.test(x.pic,y.pic,method="spearman")
+
+```
+
+
+```{r fig.width=10,fig.height=4}
+
+comb.plot <- gc.d.tgcn | em.d.tgcn | gc.em 
+comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
+comb.plot
+```
+
+
+```{r}
+tgcn.summary.codon.order <- gc %>% 
+  left_join(tgcn.summary.codon,by="Species") %>%
+  ungroup() %>%
+  filter(Species %in% tree.filt$tip.label)
+
+tgcn.summary.codon.order.yes <- tgcn.summary.codon.order %>%
+  filter(GC3.codon == "yes") %>%
+  dplyr::slice(match(tree.filt$tip.label,Species)) %>%
+  column_to_rownames("Species") %>%
+  as.data.frame()
+
+tgcn.summary.codon.order.no <- tgcn.summary.codon.order %>%
+  filter(GC3.codon == "no") %>%
+  dplyr::slice(match(tree.filt$tip.label,Species)) %>%
+  column_to_rownames("Species") %>%
+  as.data.frame()
+
+
+rates.summary.codon.order <- gc %>% 
+  left_join(rates.summary.codon,by="Species") %>%
+  ungroup() %>%
+  filter(Species %in% tree.filt$tip.label)
+
+rates.summary.codon.order.yes <- rates.summary.codon.order %>%
+  filter(GC3.codon == "yes") %>%
+  dplyr::slice(match(tree.filt$tip.label,Species)) %>%
+  column_to_rownames("Species") %>%
+  as.data.frame()
+
+rates.summary.codon.order.no <- rates.summary.codon.order %>%
+  filter(GC3.codon == "no") %>%
+  dplyr::slice(match(tree.filt$tip.label,Species)) %>%
+  column_to_rownames("Species") %>%
+  as.data.frame()
+
+```
+
+
+
+```{r}
+# use data=tgcn.summary.codon.order.yes not tree 
+gc.d.tgcn.fit.bm <- phylolm(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.yes,phy=tree.filt,model="BM")
+gc.d.tgcn.fit.ou <- phylolm(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.yes,phy=tree.filt,model="OUrandomRoot")
+# 
+models <- list(gc.d.tgcn.fit.bm,gc.d.tgcn.fit.ou)
+model.comp <-c(gc.d.tgcn.fit.bm$aic,gc.d.tgcn.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+model.comp
+model.comp - best.model$aic
+
+gc.d.tgcn.yes <- ggplot(tgcn.summary.codon.order.yes, aes(x=GC,y=Diversity.tGCN,color=Temperature)) +
+  geom_point() +
+  xlab("Genome-wide GC%") +
+  ylab("tRNA Diversity") +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 0.6, y=16,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
+  theme_cowplot() +
+  theme(aspect.ratio=1) + 
+  ggtitle("GC content vs. tRNA Diversity\nGC-ending Codons") +
+  scale_color_viridis_d()
+
+gc.values <- tgcn.summary.codon.order.yes$GC
+names(gc.values) <- tgcn.summary.codon.order.yes$Species
+em.values <- tgcn.summary.codon.order.yes$Diversity.tGCN
+names(dtgcn.values) <- tgcn.summary.codon.order.yes$Species
+x.pic <- pic(x=gc.values, phy=tree.filt)
+y.pic <- pic(x=em.values,phy=tree.filt)
+
+cor.test(x.pic,y.pic,method="spearman")
+```
+
+
+
+```{r}
+#use tgcn.summary.codon.order.no not tree data
+gc.d.tgcn.fit.bm <- phylolm(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.no,phy=tree.filt,model="BM")
+gc.d.tgcn.fit.ou <- phylolm(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.no,phy=tree.filt,model="OUrandomRoot")
+# 
+models <- list(gc.d.tgcn.fit.bm,gc.d.tgcn.fit.ou)
+model.comp <-c(gc.d.tgcn.fit.bm$aic,gc.d.tgcn.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+model.comp
+model.comp - best.model$aic
+
+gc.d.tgcn.no <- ggplot(tgcn.summary.codon.order.no, aes(x=GC,y=Diversity.tGCN,color=Temperature)) +
+  geom_point() +
+  xlab("Genome-wide GC%") +
+  ylab("tRNA Diversity") +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 0.4, y=15.4,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
+  theme_cowplot() +
+  theme(aspect.ratio=1) + 
+  ggtitle("GC content vs. tRNA Diversity\nAT-ending Codons") +
+  scale_color_viridis_d()
+gc.d.tgcn.no
+
+```
+
+
+```{r}
+gc.values <- tgcn.summary.codon.order.no$GC
+names(gc.values) <- tgcn.summary.codon.order.no$Species
+em.values <- tgcn.summary.codon.order.no$Diversity.tGCN
+names(dtgcn.values) <- tgcn.summary.codon.order.no$Species
+x.pic <- pic(x=gc.values, phy=tree.filt)
+y.pic <- pic(x=em.values,phy=tree.filt)
+
+cor.test(x.pic,y.pic,method="spearman")
+
+```
+
+
+
+
+```{r fig.width=6.5,fig.height=3}
+
+comb.plot <- (gc.d.tgcn.yes | gc.d.tgcn.no)
+comb.plot <- comb.plot + plot_annotation(tag_levels = 'A') + plot_layout(guides = "collect")
+comb.plot
+```
+
+
+## Comparing across different environments
+
+
+
+### Differences in tRNA pool diversity 
+
+
+```{r}
+
+temp.vs.div.bm <- phylolm(Diversity.tGCN ~ Temperature,phy=tree.filt,data=tree.data,model="BM")
+div.vs.gc.bm <- phylolm(Diversity.tGCN ~ GC,phy=tree.filt,data=tree.data,model="BM")
+temp.vs.div.w.gc.bm <- phylolm(Diversity.tGCN ~ Temperature + GC,phy=tree.filt,data=tree.data,model="BM")
+
+temp.vs.div.ou <- phylolm(Diversity.tGCN ~ Temperature,phy=tree.filt,data=tree.data,model="OUrandomRoot")
+div.vs.gc.ou <- phylolm(Diversity.tGCN ~ GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+temp.vs.div.w.gc.ou <- phylolm(Diversity.tGCN ~ Temperature + GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+model.comp <- c(temp.vs.div.bm$aic,
+            div.vs.gc.bm$aic,
+            temp.vs.div.w.gc.bm$aic,
+            temp.vs.div.ou$aic,
+            div.vs.gc.ou$aic,
+            temp.vs.div.w.gc.ou$aic)
+
+best.model.index <- which.min(model.comp)
+
+model.comp - model.comp[best.model.index]
+```
+
+
+
+```{r}
+summary(temp.vs.div.w.gc.ou)
+```
+
+
+
+```{r}
+temp.vs.err.bm <- phylolm(Median.eM  ~ Temperature,phy=tree.filt,data=tree.data,model="BM")
+err.vs.gc.bm <- phylolm(Median.eM  ~ GC,phy=tree.filt,data=tree.data,model="BM")
+temp.vs.err.w.gc.bm <- phylolm(Median.eM  ~ Temperature + GC,phy=tree.filt,data=tree.data,model="BM")
+
+temp.vs.err.ou <- phylolm(Median.eM  ~ Temperature,phy=tree.filt,data=tree.data,model="OUrandomRoot")
+err.vs.gc.ou <- phylolm(Median.eM  ~ GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+temp.vs.err.w.gc.ou <- phylolm(Median.eM  ~ Temperature + GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+model.comp <- c(temp.vs.err.bm$aic,
+            err.vs.gc.bm$aic,
+            temp.vs.err.w.gc.bm$aic,
+            temp.vs.err.ou$aic,
+            err.vs.gc.ou$aic,
+            temp.vs.err.w.gc.ou$aic)
+
+best.model.index <- which.min(model.comp)
+
+model.comp - model.comp[best.model.index]
+
+```
+
+```{r}
+summary(temp.vs.err.w.gc.ou)
+```
+
+
+### Differences in total tRNA 
+
+
+```{r}
+
+temp.vs.total.bm <- phylolm(Total.tGCN ~ Temperature,phy=tree.filt,data=tree.data,model="BM")
+total.vs.gc.bm <- phylolm(Total.tGCN ~ GC,phy=tree.filt,data=tree.data,model="BM")
+temp.vs.total.w.gc.bm <- phylolm(Total.tGCN ~ Temperature + GC,phy=tree.filt,data=tree.data,model="BM")
+
+temp.vs.total.ou <- phylolm(Total.tGCN ~ Temperature,phy=tree.filt,data=tree.data,model="OUrandomRoot")
+total.vs.gc.ou <- phylolm(Total.tGCN ~ GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+temp.vs.total.w.gc.ou <- phylolm(Total.tGCN ~ Temperature + GC,data=tree.data,phy=tree.filt,model="OUrandomRoot")
+
+model.comp <- c(temp.vs.total.bm$aic,
+            total.vs.gc.bm$aic,
+            temp.vs.total.w.gc.bm$aic,
+            temp.vs.total.ou$aic,
+            total.vs.gc.ou$aic,
+            temp.vs.total.w.gc.ou$aic)
+
+best.model.index <- which.min(model.comp)
+
+model.comp - model.comp[best.model.index]
+```
+
+
+```{r}
+summary(temp.vs.total.w.gc.ou)
+
+gc.d.tgcn.fit.bm <- phylolm(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.no,phy=tree.filt,model="BM")
+gc.d.tgcn.fit.ou <- phylolm(Diversity.tGCN ~ GC,data=tgcn.summary.codon.order.no,phy=tree.filt,model="OUrandomRoot")
+# 
+models <- list(gc.d.tgcn.fit.bm,gc.d.tgcn.fit.ou)
+model.comp <-c(gc.d.tgcn.fit.bm$aic,gc.d.tgcn.fit.ou$aic)
+best.model <- models[[which.min(model.comp)]]
+model.comp
+model.comp - best.model$aic
+
+gc.d.tgcn.no <- ggplot(tgcn.summary.codon.order.no, aes(x=GC,y=Diversity.tGCN,color=Temperature)) +
+  geom_point() +
+  xlab("Genome-wide GC%") +
+  ylab("tRNA Diversity") +
+  geom_abline(intercept=best.model$coefficients[1],slope=best.model$coefficients[2]) +
+  geom_text(x = 0.4, y=15.4,label=modelFitToEquation(best.model),parse=T,inherit.aes = F,size=5) +
+  theme_cowplot() +
+  theme(aspect.ratio=1) + 
+  ggtitle("GC content vs. tRNA Diversity\nAT-ending Codons") +
+  scale_color_viridis_d()
+gc.d.tgcn.no
+```
+
+```{r}
+gc.values <- tree.data$GC
+#names(gc.values) <- tree.data$Species
+dtgcn.values <- tree.data$Diversity.tGCN
+#names(dtgcn.values) <- tree.data$Species
+x.pic <- pic(x=gc.values, phy=tree.filt)
+y.pic <- pic(x=dtgcn.values,phy=tree.filt)
+
+cor.test(x.pic,y.pic,method="spearman")
+
+```
+
+
